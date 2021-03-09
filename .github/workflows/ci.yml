@@ -1,0 +1,42 @@
+name: "CI"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: "**"
+
+concurrency:
+  group: ${{ github.event.pull_request && format('ci-pr-{0}', github.event.pull_request.number) || 'ci-main' }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: "Setup environment"
+        uses: ./.github/actions/setup-env
+
+      - name: "Build"
+        shell: bash
+        run: |
+          yarn build:prod
+
+      - name: "Check generated resources"
+        shell: bash
+        run: |
+          git diff
+          [ "0" == "$(git diff | wc -l | tr -d ' ')" ]
+
+      - name: "Upload build artifact"
+        uses: actions/upload-artifact@v2
+        with:
+          name: webapp-build
+          if-no-files-found: warn
+          path: |
+            dist

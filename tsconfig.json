@@ -1,0 +1,17 @@
+{
+  "include": ["src"],
+  "exclude": ["./node_modules"],
+  "compilerOptions": {
+    "lib": ["ES2021", "DOM"],
+    "target": "ES2021",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "downlevelIteration": true,
+    "jsx": "react-jsx"
+  }
+}
