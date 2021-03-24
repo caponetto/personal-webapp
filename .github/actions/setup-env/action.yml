@@ -1,5 +1,11 @@
 name: "Setup environment"
 
+inputs:
+  path:
+    description: "context path"
+    required: false
+    default: "."
+
 runs:
   using: "composite"
   steps:
@@ -12,6 +18,7 @@ runs:
       shell: bash
       run: |
         echo "STEP: Setup Yarn"
+        cd ${{ inputs.path }}
         npm install -g yarn@1.22.10
         yarn config set network-timeout 1000000
 
@@ -19,12 +26,14 @@ runs:
       shell: bash
       run: |
         echo "STEP: Bootstrap"
+        cd ${{ inputs.path }}
         yarn install
 
     - name: "Check yarn.lock"
       shell: bash
       run: |
         echo "STEP: Check yarn.lock"
+        cd ${{ inputs.path }}
         git diff yarn.lock;
         [ "0" == "$(git diff yarn.lock | wc -l | tr -d ' ')" ]
 
@@ -32,10 +41,12 @@ runs:
       shell: bash
       run: |
         echo "STEP: Check dependencies mismatches"
+        cd ${{ inputs.path }}
         npx --yes syncpack list-mismatches
 
     - name: "Check format"
       shell: bash
       run: |
         echo "STEP: Check format"
+        cd ${{ inputs.path }}
         yarn format:check

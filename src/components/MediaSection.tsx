@@ -4,13 +4,15 @@ import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import React from "react";
-import { Media } from "../Common/Media";
-import { MediaCard } from "../Components/MediaCard";
+import { Media } from "../common/Media";
+import { MediaCard } from "./MediaCard";
 
 interface MediaSectionProps {
   title: string;
   mediaList: Media[];
   fadeTime: number;
+  selectedKeywords: string[];
+  onKeywordClicked: (keyword: string) => void;
 }
 
 export function MediaSection(props: MediaSectionProps) {
@@ -30,7 +32,11 @@ export function MediaSection(props: MediaSectionProps) {
         <Grid container spacing={3}>
           {props.mediaList.map((item: Media, idx: number) => (
             <Grid item key={`${props.title}-${idx}`} sx={{ width: { xs: "100%", lg: "50%", xl: "33%" } }}>
-              <MediaCard {...item} />
+              <MediaCard
+                item={item}
+                selectedKeywords={props.selectedKeywords}
+                onKeywordClicked={props.onKeywordClicked}
+              />
             </Grid>
           ))}
         </Grid>

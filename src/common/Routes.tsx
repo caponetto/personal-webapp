@@ -2,28 +2,29 @@ export const routes = {
   nav: {
     root: "/",
     about: "/about",
+    journey: "/journey",
     text: "/text",
     talk: "/talk",
     code: "/code",
   },
 
   images: {
-    avatar: "/images/avatar.jpg",
-    tds: "/images/tds.png",
-    kie: "/images/kie.png",
+    avatar: "/static/images/avatar.png",
+    tds: "/static/images/tds.png",
+    kie: "/static/images/kie.png",
     unicamp: {
-      light: "/images/unicamp/light.png",
-      dark: "/images/unicamp/dark.png",
+      light: "/static/images/unicamp/light.png",
+      dark: "/static/images/unicamp/dark.png",
     },
-    tdc: "/images/tdc.png",
+    tdc: "/static/images/tdc.png",
     github: {
-      light: "/images/github/light.png",
-      dark: "/images/github/dark.png",
+      light: "/static/images/github/light.png",
+      dark: "/static/images/github/dark.png",
     },
   },
 
   slides: {
-    streamingDmnKafka: "/slides/streaming-decisions-with-dmn-and-kafka.pdf",
+    streamingDmnKafka: "/slides/2021-06-streaming-decisions-with-dmn-and-kafka.pdf",
   },
 
   urls: {

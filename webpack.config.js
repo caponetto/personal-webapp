@@ -8,6 +8,10 @@ module.exports = async (env, argv) => [
     entry: {
       index: "./src/index.tsx",
     },
+    performance: {
+      maxEntrypointSize: 500000,
+      maxAssetSize: 2000000,
+    },
     output: {
       path: path.resolve("./dist"),
       filename: "[name].js",
@@ -15,10 +19,6 @@ module.exports = async (env, argv) => [
     },
     stats: {
       excludeModules: true,
-    },
-    performance: {
-      maxAssetSize: 30000000,
-      maxEntrypointSize: 30000000,
     },
     module: {
       rules: [
@@ -54,7 +54,7 @@ module.exports = async (env, argv) => [
       new HtmlReplaceWebpackPlugin([
         {
           pattern: /(<!-- gtm):([\w-\/]+)(\s*-->)?/g,
-          replacement: (match, gtm, type) => {
+          replacement: (match, _gtm, type) => {
             const gtmResource = getGtmResource(argv);
             if (gtmResource) {
               return gtmResource[type] ?? `${match}`;
@@ -68,22 +68,24 @@ module.exports = async (env, argv) => [
           { from: "./static/images", to: "./static/images" },
           { from: "./static/favicon", to: "./static/favicon" },
           { from: "./static/slides", to: "./static/slides" },
-          { from: "./static/robots.txt", to: "./static/robots.txt" },
-          { from: "./static/site.webmanifest", to: "./static/site.webmanifest" },
+          { from: "./static/robots.txt", to: "./robots.txt" },
+          { from: "./static/site.webmanifest", to: "./site.webmanifest" },
         ],
       }),
     ],
     devServer: {
+      https: true,
+      host: "0.0.0.0",
+      port: 9001,
+      compress: true,
       historyApiFallback: true,
       static: [path.join(__dirname, "./dist"), path.join(__dirname, "./static")],
-      compress: true,
-      port: 9001,
     },
   },
 ];
 
 function getGtmResource() {
-  const gtmId = undefined; //"GTM-TX4N6TH";
+  const gtmId = process.env.GTM_ID;
   console.info(`Google Tag Manager :: ID: ${gtmId}`);
 
   if (!gtmId) {

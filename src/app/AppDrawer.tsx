@@ -2,38 +2,52 @@ import CodeIcon from "@mui/icons-material/Code";
 import ForumIcon from "@mui/icons-material/Forum";
 import InfoIcon from "@mui/icons-material/Info";
 import TextSnippetIcon from "@mui/icons-material/TextSnippet";
+import TimelineIcon from "@mui/icons-material/Timeline";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import React, { useMemo } from "react";
 import { useHistory } from "react-router";
-import { routes } from "./Common/Routes";
-import { DrawerListItem } from "./Components/DrawerListItem";
-import { FaceBadge } from "./Components/FaceBadge";
-import { SocialBar } from "./Components/SocialBar";
-import { COPYRIGHT, DRAWER_WIDTH, FULL_NAME, useApp } from "./Context/AppContext";
+import { routes } from "../common/Routes";
+import { DrawerListItem } from "../components/DrawerListItem";
+import { FaceBadge } from "../components/FaceBadge";
+import { SocialBar } from "../components/SocialBar";
+import { DRAWER_WIDTH, useApp } from "../context/AppContext";
 
 export function AppDrawer() {
   const app = useApp();
   const history = useHistory();
+  const denseList = useMediaQuery("(min-height:580px) and (max-height:630px)");
 
   const items = useMemo(
     () => (
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: "stretch", minHeight: "100%" }}>
         <FaceBadge
-          name={FULL_NAME}
+          name={app.data.fullName}
           avatarRoute={routes.images.avatar}
-          location={{ name: "Brazil", emojiIcon: "🇧🇷", url: routes.urls.mapsCountry }}
+          location={{
+            name: app.data.location.country,
+            emojiIcon: app.data.location.flag,
+            url: app.data.location.url,
+          }}
           onClick={() => app.goTo(routes.nav.about)}
         />
-        <List sx={{ flexGrow: 1 }}>
+        <List dense={denseList} sx={{ flexGrow: 1 }}>
           <DrawerListItem
             title={"About"}
             subtitle={"Words about myself"}
             icon={<InfoIcon />}
             onClick={() => app.goTo(routes.nav.about)}
-            selected={[routes.nav.root, routes.nav.about].includes(history.location.pathname)}
+            selected={history.location.pathname === routes.nav.about}
+          />
+          <DrawerListItem
+            title={"Journey"}
+            subtitle={"Education & Experience"}
+            icon={<TimelineIcon />}
+            onClick={() => app.goTo(routes.nav.journey)}
+            selected={history.location.pathname === routes.nav.journey}
           />
           <DrawerListItem
             title={"Text"}
@@ -58,18 +72,25 @@ export function AppDrawer() {
           />
         </List>
         <Box sx={{ width: 1, flexShrink: 0 }}>
-          <SocialBar />
+          <SocialBar sx={{ width: "60%", mx: "auto", mb: "10px" }} />
           <Typography variant="caption" component="div" align="center">
-            {COPYRIGHT}
+            {`© ${new Date().getFullYear()} ${app.data.fullName}`}
           </Typography>
         </Box>
       </Box>
     ),
-    [app, history]
+    [app, history.location.pathname, denseList]
+  );
+
+  const muiPaperStyle = useMemo(
+    () => ({
+      "& .MuiDrawer-paper": { overflow: "overlay", boxShadow: 2, boxSizing: "border-box", width: DRAWER_WIDTH },
+    }),
+    []
   );
 
   return (
-    <Box component="nav" sx={{ boxShadow: 2, width: { sm: DRAWER_WIDTH }, flexShrink: { sm: 0 } }}>
+    <Box component="nav" sx={{ width: { md: DRAWER_WIDTH }, height: "100%", flexShrink: { md: 0 } }}>
       <Drawer
         variant="temporary"
         open={app.drawerOpen}
@@ -78,8 +99,8 @@ export function AppDrawer() {
           onBackdropClick: () => app.setDrawerOpen(false),
         }}
         sx={{
-          display: { xs: "block", sm: "none" },
-          "& .MuiDrawer-paper": { boxSizing: "border-box", width: DRAWER_WIDTH },
+          display: { xs: "block", md: "none" },
+          ...muiPaperStyle,
         }}
       >
         {items}
@@ -87,8 +108,8 @@ export function AppDrawer() {
       <Drawer
         variant="permanent"
         sx={{
-          display: { xs: "none", sm: "block" },
-          "& .MuiDrawer-paper": { boxSizing: "border-box", width: DRAWER_WIDTH },
+          display: { xs: "none", md: "block" },
+          ...muiPaperStyle,
         }}
         open
       >

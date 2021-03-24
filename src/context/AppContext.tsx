@@ -1,11 +1,11 @@
-import { createContext, useContext, Dispatch } from "react";
+import { createContext, Dispatch, useContext } from "react";
+import { PersonalData } from "../common/PersonalData";
 
 export type ColorMode = "light" | "dark";
-export const FULL_NAME = "Guilherme Caponetto";
-export const COPYRIGHT = `© 2021 ${FULL_NAME}`;
-export const DRAWER_WIDTH = 295;
+export const DRAWER_WIDTH = 300;
 
 export interface AppContextType {
+  data: PersonalData;
   isLight: boolean;
   drawerOpen: boolean;
   setDrawerOpen: Dispatch<boolean>;

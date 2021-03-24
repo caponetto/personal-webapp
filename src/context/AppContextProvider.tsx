@@ -2,20 +2,23 @@ import { blueGrey, grey, teal } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React, { ReactNode, useCallback, useEffect, useMemo, useState } from "react";
 import { useHistory, useLocation } from "react-router";
-import { cookieNames, getCookie, setCookie } from "../Common/Cookies";
+import { cookieNames, getCookie, setCookie } from "../common/Cookies";
+import { PERSONAL_DATA } from "../common/Data";
 import { AppContext, ColorMode } from "./AppContext";
 
-interface ContextProps {
+interface AppContextProviderProps {
   children: ReactNode;
 }
 
-export function AppContextProvider(props: ContextProps) {
+export function AppContextProvider(props: AppContextProviderProps) {
   const location = useLocation();
   const history = useHistory();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [colorMode, setColorMode] = useState<ColorMode>(
     (getCookie(cookieNames.colorMode) as ColorMode) === "dark" ? "dark" : "light"
   );
+
+  const data = useMemo(() => PERSONAL_DATA, []);
 
   const isLight = useMemo(() => colorMode === "light", [colorMode]);
 
@@ -58,7 +61,7 @@ export function AppContextProvider(props: ContextProps) {
   }, [colorMode]);
 
   return (
-    <AppContext.Provider value={{ isLight, drawerOpen, setDrawerOpen, toggleColorMode, goTo }}>
+    <AppContext.Provider value={{ data, isLight, drawerOpen, setDrawerOpen, toggleColorMode, goTo }}>
       <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
     </AppContext.Provider>
   );

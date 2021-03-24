@@ -25,14 +25,18 @@ export function FaceBadge(props: FaceBadgeProps) {
         overlap="circular"
         anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
         badgeContent={
-          <Tooltip title={`Based on ${props.location.name}`} arrow>
-            <IconButton sx={{ color: "rgba(0,0,0,0.9)" }} onClick={() => window.open(props.location.url, "_blank")}>
+          <Tooltip title={`Currently based on ${props.location.name}`} arrow>
+            <IconButton
+              id="face-badge-location"
+              sx={{ color: "rgba(0,0,0,0.9)" }}
+              onClick={() => window.open(props.location.url, "_blank")}
+            >
               {props.location.emojiIcon}
             </IconButton>
           </Tooltip>
         }
       >
-        <IconButton onClick={props.onClick}>
+        <IconButton id="face-badge" onClick={props.onClick}>
           <Avatar alt={props.name} src={props.avatarRoute} sx={{ width: 150, height: 150, boxShadow: 3 }} />
         </IconButton>
       </Badge>
