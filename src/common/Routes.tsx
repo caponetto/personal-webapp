@@ -24,7 +24,7 @@ export const routes = {
   },
 
   slides: {
-    streamingDmnKafka: "/slides/2021-06-streaming-decisions-with-dmn-and-kafka.pdf",
+    streamingDmnKafka: "/static/slides/2021-06-streaming-decisions-with-dmn-and-kafka.pdf",
   },
 
   urls: {
