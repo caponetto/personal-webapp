@@ -107,6 +107,7 @@ export const PERSONAL_DATA: PersonalData = {
       "ReactJS",
       "Recommender Systems",
       "Regression",
+      "Scrum",
       "SQL",
       "Speech Enhancement",
       "Spring Framework",
