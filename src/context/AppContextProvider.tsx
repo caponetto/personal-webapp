@@ -4,6 +4,7 @@ import React, { ReactNode, useCallback, useEffect, useMemo, useState } from "rea
 import { useHistory, useLocation } from "react-router";
 import { cookieNames, getCookie, setCookie } from "../common/Cookies";
 import { PERSONAL_DATA } from "../common/Data";
+import { routes } from "../common/Routes";
 import { AppContext, ColorMode } from "./AppContext";
 
 interface AppContextProviderProps {
@@ -59,6 +60,16 @@ export function AppContextProvider(props: AppContextProviderProps) {
   useEffect(() => {
     setCookie(cookieNames.colorMode, colorMode);
   }, [colorMode]);
+
+  useEffect(() => {
+    const relativePath = location.pathname.slice(1);
+    if (relativePath === "" || !Object.values(routes.nav).includes(location.pathname)) {
+      return;
+    }
+
+    const routeName = relativePath.charAt(0).toUpperCase() + relativePath.slice(1);
+    document.title = `${data.fullName} | ${routeName}`;
+  }, [data.fullName, location.pathname]);
 
   return (
     <AppContext.Provider value={{ data, isLight, drawerOpen, setDrawerOpen, toggleColorMode, goTo }}>
