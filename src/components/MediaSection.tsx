@@ -19,7 +19,7 @@ export function MediaSection(props: MediaSectionProps) {
   return (
     <Fade in={true} timeout={props.fadeTime}>
       <Box sx={{ mt: "30px" }}>
-        <Divider textAlign="left" sx={{ mb: "30px", "::before": { width: "1%" } }}>
+        <Divider textAlign="left" sx={{ mb: "30px", "::before": { width: "1%" }, "::after": { width: "99%" } }}>
           <Typography
             fontWeight="light"
             variant="overline"
