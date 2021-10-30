@@ -1,4 +1,5 @@
 import Box from "@mui/material/Box";
+import CardActions from "@mui/material/CardActions";
 import Chip from "@mui/material/Chip";
 import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Grid";
@@ -6,7 +7,9 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import React, { ReactNode } from "react";
 import { HoverableCard } from "../components/HoverableCard";
+import { LinkedInButton } from "../components/LinkedInButton";
 import { Page } from "../components/Page";
+import { TwitterButton } from "../components/TwitterButton";
 import { useApp } from "../context/AppContext";
 import { usePageActive } from "../hooks/usePageActive";
 
@@ -46,6 +49,12 @@ export function AboutPage() {
               <Paragraph>Feel free to reach out to me on my social networks. :)</Paragraph>
             </Stack>
           </Fade>
+          <CardActions disableSpacing sx={{ pl: 0, display: { xs: "auto", md: "none" } }}>
+            <Stack spacing={2} direction="row">
+              <TwitterButton disableSpacing />
+              <LinkedInButton disableSpacing />
+            </Stack>
+          </CardActions>
         </HoverableCard>
       )}
     </Page>

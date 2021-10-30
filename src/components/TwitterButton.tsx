@@ -3,8 +3,17 @@ import React from "react";
 import { routes } from "../common/Routes";
 import { SocialButton } from "./SocialButton";
 
-export function TwitterButton() {
+interface TwitterButtonProps {
+  disableSpacing?: boolean;
+}
+
+export function TwitterButton(props: TwitterButtonProps) {
   return (
-    <SocialButton label="Twitter" icon={<TwitterIcon />} onClick={() => window.open(routes.urls.twitter, "_blank")} />
+    <SocialButton
+      label="Twitter"
+      icon={<TwitterIcon />}
+      disableSpacing={props.disableSpacing}
+      onClick={() => window.open(routes.urls.twitter, "_blank")}
+    />
   );
 }
