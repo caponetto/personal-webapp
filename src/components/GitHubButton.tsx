@@ -3,8 +3,17 @@ import React from "react";
 import { routes } from "../common/Routes";
 import { SocialButton } from "./SocialButton";
 
-export function GitHubButton() {
+interface GitHubButtonProps {
+  disableSpacing?: boolean;
+}
+
+export function GitHubButton(props: GitHubButtonProps) {
   return (
-    <SocialButton label="GitHub" icon={<GitHubIcon />} onClick={() => window.open(routes.urls.github, "_blank")} />
+    <SocialButton
+      label="GitHub"
+      icon={<GitHubIcon />}
+      disableSpacing={props.disableSpacing}
+      onClick={() => window.open(routes.urls.github, "_blank")}
+    />
   );
 }

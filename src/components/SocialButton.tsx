@@ -7,13 +7,19 @@ interface SocialButtonProps {
   label: string;
   icon: ReactNode;
   onClick: () => void;
+  disableSpacing?: boolean;
 }
 
 export function SocialButton(props: SocialButtonProps) {
   return (
     <Box display="flex" justifyContent="center">
       <Tooltip title={`${props.label} Profile`} arrow>
-        <IconButton id={`${props.label}-button`} aria-label={`Open ${props.label}`} onClick={props.onClick}>
+        <IconButton
+          id={`${props.label}-button`}
+          sx={{ p: props.disableSpacing ? "0" : "8px" }}
+          aria-label={`Open ${props.label}`}
+          onClick={props.onClick}
+        >
           {props.icon}
         </IconButton>
       </Tooltip>
