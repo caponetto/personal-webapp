@@ -1,6 +1,7 @@
 # personal-webapp
 
 [![CI](https://github.com/caponetto/personal-webapp/actions/workflows/ci.yml/badge.svg)](https://github.com/caponetto/personal-webapp/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/caponetto/personal-webapp.svg)](https://github.com/caponetto/personal-webapp/blob/main/LICENSE)
 
 Code of my personal [website](https://caponetto.dev).
 
