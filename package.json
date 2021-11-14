@@ -32,6 +32,7 @@
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.3.0",
+    "cypress": "^9.0.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.26.0",
@@ -44,6 +45,7 @@
     "style-loader": "^3.3.0",
     "react-devtools": "^4.19.2",
     "rimraf": "^3.0.2",
+    "start-server-and-test": "^1.14.0",
     "ts-loader": "^9.2.6",
     "typescript": "^4.4.3",
     "webpack": "^5.54.0",
@@ -57,7 +59,11 @@
     "build:prod": "yarn lint && rimraf dist && webpack --mode production",
     "start": "webpack serve --env dev --mode development",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "cy:open": "yarn cypress open --project cypress",
+    "cy:run": "yarn cypress run -b chrome --project cypress",
+    "cy:test": "yarn rimraf dist-test && yarn start-server-and-test start https-get://localhost:9001 cy:run",
+    "test": "yarn cy:test"
   },
   "babel": {
     "presets": [
