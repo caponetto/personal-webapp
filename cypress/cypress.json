@@ -8,5 +8,5 @@
   "chromeWebSecurity": false,
   "video": true,
   "defaultCommandTimeout": 10000,
-  "baseUrl": "https://localhost:9001"
+  "baseUrl": "https://localhost:9001/#"
 }
