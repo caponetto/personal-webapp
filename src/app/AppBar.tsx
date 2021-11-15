@@ -24,6 +24,7 @@ export function AppBar() {
     >
       <Toolbar>
         <IconButton
+          id="open-drawer-button"
           onClick={() => app.setDrawerOpen(!app.drawerOpen)}
           size="large"
           edge="start"

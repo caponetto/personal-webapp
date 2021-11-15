@@ -92,6 +92,7 @@ export function AppDrawer() {
   return (
     <Box component="nav" sx={{ width: { md: DRAWER_WIDTH }, height: "100%", flexShrink: { md: 0 } }}>
       <Drawer
+        id="temporary-drawer"
         variant="temporary"
         open={app.drawerOpen}
         ModalProps={{
@@ -106,6 +107,7 @@ export function AppDrawer() {
         {items}
       </Drawer>
       <Drawer
+        id="permanent-drawer"
         variant="permanent"
         sx={{
           display: { xs: "none", md: "block" },
