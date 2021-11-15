@@ -16,7 +16,11 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - name: "Checkout"
         uses: actions/checkout@v2
@@ -25,6 +29,8 @@ jobs:
 
       - name: "Setup environment"
         uses: ./.github/actions/setup-env
+        with:
+          os: ${{ matrix.os }}
 
       - name: "Build"
         shell: bash
@@ -42,7 +48,8 @@ jobs:
           git diff
           [ "0" == "$(git diff | wc -l | tr -d ' ')" ]
 
-      - name: "Upload build artifact"
+      - name: "Upload build artifact (Ubuntu only)"
+        if: matrix.os == 'ubuntu-latest'
         uses: actions/upload-artifact@v2
         with:
           name: webapp-build
@@ -52,6 +59,6 @@ jobs:
       - name: "Upload Test artifacts"
         uses: actions/upload-artifact@v2
         with:
-          name: test-artifacts
+          name: test-artifacts-${{ matrix.os }}
           path: |
             dist-test
