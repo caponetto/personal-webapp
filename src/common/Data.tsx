@@ -223,7 +223,7 @@ export const PERSONAL_DATA: PersonalData = {
     masterThesis: {
       type: "thesis",
       title: "Data-driven hierarchical structures in multi-task learning",
-      releaseDate: new Date("Nov 30, 2017"),
+      releaseDate: new Date("Oct 27, 2017"),
       publishedAt: "UNICAMP",
       keywords: [textKeywords.machineLearning, textKeywords.multiTaskLearning, textKeywords.clustering],
       url: "http://repositorio.unicamp.br/jspui/handle/REPOSIP/330241?locale=en",
