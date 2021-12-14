@@ -226,7 +226,7 @@ export const PERSONAL_DATA: PersonalData = {
       releaseDate: new Date("Oct 27, 2017"),
       publishedAt: "UNICAMP",
       keywords: [textKeywords.machineLearning, textKeywords.multiTaskLearning, textKeywords.clustering],
-      url: "http://repositorio.unicamp.br/Busca/Download?codigoArquivo=468378",
+      url: "http://repositorio.unicamp.br/Acervo/Detalhe/987989",
     },
     blogPosts: [
       {
