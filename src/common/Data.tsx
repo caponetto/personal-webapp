@@ -226,7 +226,7 @@ export const PERSONAL_DATA: PersonalData = {
       releaseDate: new Date("Oct 27, 2017"),
       publishedAt: "UNICAMP",
       keywords: [textKeywords.machineLearning, textKeywords.multiTaskLearning, textKeywords.clustering],
-      url: "http://repositorio.unicamp.br/jspui/handle/REPOSIP/330241?locale=en",
+      url: "http://repositorio.unicamp.br/Busca/Download?codigoArquivo=468378",
     },
     blogPosts: [
       {
