@@ -9,8 +9,6 @@
     "url": "https://github.com/caponetto/personal-webapp.git"
   },
   "dependencies": {
-    "@types/react-router": "5.1.17",
-    "@types/react-router-dom": "5.3.1",
     "@mui/material": "5.0.4",
     "@mui/icons-material": "5.0.4",
     "@emotion/react": "11.5.0",
@@ -27,6 +25,8 @@
     "@types/node": "^16.10.1",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
+    "@types/react-router": "5.1.17",
+    "@types/react-router-dom": "5.3.1",
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
     "babel-loader": "^8.2.2",
