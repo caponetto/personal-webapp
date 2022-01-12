@@ -21,7 +21,9 @@ const textKeywords = {
   openshift: "Openshift",
   optimization: "Optimization",
   randomSearch: "Random Search",
+  reactjs: "ReactJS",
   syncRepositories: "Sync Repositories",
+  teachableMachine: "Teachable Machine",
   vsCode: "VS Code",
 };
 
@@ -316,6 +318,14 @@ export const PERSONAL_DATA: PersonalData = {
         publishedAt: "KIE Community",
         keywords: [textKeywords.kogitoTooling, textKeywords.dmn, textKeywords.openshift],
         url: "https://medium.com/@caponetto/deploy-decisions-to-dmn-developer-sandbox-62c7d051b871",
+      },
+      {
+        type: "post",
+        title: "From training to deployment: Stop biting your nails with machine learning",
+        releaseDate: new Date("Jan 10, 2022"),
+        publishedAt: "Towards Data Science",
+        keywords: [textKeywords.teachableMachine, textKeywords.reactjs, textKeywords.openshift],
+        url: "https://towardsdatascience.com/from-training-to-deployment-stop-biting-your-nails-with-machine-learning-ffed31a59040",
       },
     ],
   },
