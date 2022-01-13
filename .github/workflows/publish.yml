@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  GTM_ID: ${{ secrets.GTM_ID }}
+  GTM_ID: "GTM-TX4N6TH"
   DISPLAY: ":99.0"
   START_SERVER_AND_TEST_INSECURE: "true"
 
