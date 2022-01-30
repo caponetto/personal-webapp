@@ -11,16 +11,18 @@ import { usePageActive } from "../hooks/usePageActive";
 export function CodePage() {
   const app = useApp();
   const active = usePageActive();
-  const keywordSelection = useKeywordSelection();
+  const keywordSelection = useKeywordSelection(app.data.code.keywords);
   const [filteredRepositories, setFilteredRepositories] = useState<Media[]>([]);
 
   useEffect(() => {
     setFilteredRepositories(
-      app.data.code.repositories.filter(
-        (media: Media) =>
-          keywordSelection.selected.length === 0 ||
-          media.keywords.some((keyword: string) => keywordSelection.selected.includes(keyword))
-      )
+      app.data.code.repositories
+        .filter(
+          (media: Media) =>
+            keywordSelection.selected.length === 0 ||
+            media.keywords.some((keyword: string) => keywordSelection.selected.includes(keyword))
+        )
+        .sort((a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime())
     );
   }, [app.data.code.repositories, keywordSelection.selected]);
 
@@ -42,9 +44,7 @@ export function CodePage() {
           fadeTime={1000}
           selectedKeywords={keywordSelection.selected}
           onKeywordClicked={keywordSelection.onItemClicked}
-          mediaList={filteredRepositories.sort(
-            (a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime()
-          )}
+          mediaList={filteredRepositories}
         />
       )}
     </Page>

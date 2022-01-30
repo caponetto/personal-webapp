@@ -1,22 +1,35 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { useHistory } from "react-router";
+import { QueryParams, useQueryParamKeywords } from "./useQueryParams";
 
-export function useKeywordSelection() {
-  const [selected, setSelected] = useState<string[]>([]);
+export function useKeywordSelection(availableKeywords: string[]) {
+  const history = useHistory();
+  const initialKeywords = useQueryParamKeywords(availableKeywords);
+  const [selected, setSelected] = useState<string[]>(initialKeywords ?? []);
 
   const onItemClicked = useCallback(
     (keyword: string) => {
-      if (selected.includes(keyword)) {
-        setSelected(selected.filter((k: string) => k !== keyword));
-      } else {
-        setSelected([...selected, keyword]);
+      if (!availableKeywords.includes(keyword)) {
+        return;
       }
+
+      const updatedSelection = selected.includes(keyword)
+        ? selected.filter((k: string) => k !== keyword)
+        : [...selected, keyword];
+      setSelected(updatedSelection);
     },
-    [selected]
+    [availableKeywords, selected]
   );
 
   const onClear = useCallback(() => {
     setSelected([]);
   }, []);
+
+  useEffect(() => {
+    history.replace({
+      search: selected.length > 0 ? `?${QueryParams.KEYWORDS}=${selected.join(",")}` : "",
+    });
+  }, [history, selected]);
 
   return {
     selected,

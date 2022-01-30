@@ -11,7 +11,7 @@ import { usePageActive } from "../hooks/usePageActive";
 export function TextPage() {
   const app = useApp();
   const active = usePageActive();
-  const keywordSelection = useKeywordSelection();
+  const keywordSelection = useKeywordSelection(app.data.text.keywords);
   const [includeMasterThesis, setIncludeMasterThesis] = useState(true);
   const [filteredBlogPosts, setFilteredBlogPosts] = useState<Media[]>([]);
 
@@ -22,11 +22,13 @@ export function TextPage() {
     );
 
     setFilteredBlogPosts(
-      app.data.text.blogPosts.filter(
-        (media: Media) =>
-          keywordSelection.selected.length === 0 ||
-          media.keywords.some((keyword: string) => keywordSelection.selected.includes(keyword))
-      )
+      app.data.text.blogPosts
+        .filter(
+          (media: Media) =>
+            keywordSelection.selected.length === 0 ||
+            media.keywords.some((keyword: string) => keywordSelection.selected.includes(keyword))
+        )
+        .sort((a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime())
     );
   }, [app.data.text.blogPosts, app.data.text.masterThesis.keywords, keywordSelection.selected]);
 
@@ -57,7 +59,7 @@ export function TextPage() {
           fadeTime={1500}
           selectedKeywords={keywordSelection.selected}
           onKeywordClicked={keywordSelection.onItemClicked}
-          mediaList={filteredBlogPosts.sort((a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime())}
+          mediaList={filteredBlogPosts}
         />
       )}
     </Page>
