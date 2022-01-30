@@ -11,25 +11,29 @@ import { usePageActive } from "../hooks/usePageActive";
 export function TalkPage() {
   const app = useApp();
   const active = usePageActive();
-  const keywordSelection = useKeywordSelection();
+  const keywordSelection = useKeywordSelection(app.data.talk.keywords);
   const [filteredLives, setFilteredLives] = useState<Media[]>([]);
   const [filteredConferences, setFilteredConferences] = useState<Media[]>([]);
 
   useEffect(() => {
     setFilteredLives(
-      app.data.talk.lives.filter(
-        (media: Media) =>
-          keywordSelection.selected.length === 0 ||
-          media.keywords.some((keyword: string) => keywordSelection.selected.includes(keyword))
-      )
+      app.data.talk.lives
+        .filter(
+          (media: Media) =>
+            keywordSelection.selected.length === 0 ||
+            media.keywords.some((keyword: string) => keywordSelection.selected.includes(keyword))
+        )
+        .sort((a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime())
     );
 
     setFilteredConferences(
-      app.data.talk.conferences.filter(
-        (media: Media) =>
-          keywordSelection.selected.length === 0 ||
-          media.keywords.some((keyword: string) => keywordSelection.selected.includes(keyword))
-      )
+      app.data.talk.conferences
+        .filter(
+          (media: Media) =>
+            keywordSelection.selected.length === 0 ||
+            media.keywords.some((keyword: string) => keywordSelection.selected.includes(keyword))
+        )
+        .sort((a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime())
     );
   }, [app.data.talk.conferences, app.data.talk.lives, keywordSelection.selected]);
 
@@ -51,7 +55,7 @@ export function TalkPage() {
           fadeTime={1000}
           selectedKeywords={keywordSelection.selected}
           onKeywordClicked={keywordSelection.onItemClicked}
-          mediaList={filteredLives.sort((a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime())}
+          mediaList={filteredLives}
         />
       )}
       {active && filteredConferences.length > 0 && (
@@ -60,9 +64,7 @@ export function TalkPage() {
           fadeTime={1500}
           selectedKeywords={keywordSelection.selected}
           onKeywordClicked={keywordSelection.onItemClicked}
-          mediaList={filteredConferences.sort(
-            (a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime()
-          )}
+          mediaList={filteredConferences}
         />
       )}
     </Page>
