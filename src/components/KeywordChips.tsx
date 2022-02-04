@@ -20,8 +20,8 @@ export function KeywordChips(props: KeywordChipsProps) {
       <Grid container rowSpacing={smallHeight ? 1 : 2} columnSpacing={1}>
         {props.keywords
           .sort((a: string, b: string) => a.localeCompare(b))
-          .map((keyword: string, idx: number) => (
-            <Grid item key={`keyword-${idx}`}>
+          .map((keyword: string) => (
+            <Grid item key={`keyword-chip-${keyword}`}>
               <Chip
                 label={keyword}
                 color="success"

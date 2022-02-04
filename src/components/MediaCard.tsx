@@ -100,8 +100,8 @@ export function MediaCard(props: MediaCardProps) {
         <Grid sx={{ height: { xs: "auto", lg: "50px" } }} container spacing={1}>
           {props.item.keywords
             .sort((a: string, b: string) => b.length - a.length)
-            .map((keyword: string, idx: number) => (
-              <Grid item key={`media-keyword-${idx}`}>
+            .map((keyword: string) => (
+              <Grid item key={`media-keyword-${keyword}`}>
                 <Chip
                   label={keyword}
                   color="success"
