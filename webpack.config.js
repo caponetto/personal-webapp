@@ -9,8 +9,8 @@ module.exports = async (env, argv) => [
       index: "./src/index.tsx",
     },
     performance: {
-      maxEntrypointSize: 500000,
-      maxAssetSize: 2000000,
+      maxEntrypointSize: 1024 * 1024 * 1,
+      maxAssetSize: 1024 * 1024 * 2,
     },
     output: {
       path: path.resolve("./dist"),
@@ -74,7 +74,7 @@ module.exports = async (env, argv) => [
       }),
     ],
     devServer: {
-      https: true,
+      server: "https",
       host: "0.0.0.0",
       port: 9001,
       compress: true,

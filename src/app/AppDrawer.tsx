@@ -6,6 +6,7 @@ import TimelineIcon from "@mui/icons-material/Timeline";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import React, { useMemo } from "react";
@@ -91,10 +92,12 @@ export function AppDrawer() {
 
   return (
     <Box component="nav" sx={{ width: { md: DRAWER_WIDTH }, height: "100%", flexShrink: { md: 0 } }}>
-      <Drawer
+      <SwipeableDrawer
         id="temporary-drawer"
         variant="temporary"
         open={app.drawerOpen}
+        onOpen={() => app.setDrawerOpen(true)}
+        onClose={() => app.setDrawerOpen(false)}
         ModalProps={{
           keepMounted: true,
           onBackdropClick: () => app.setDrawerOpen(false),
@@ -105,7 +108,7 @@ export function AppDrawer() {
         }}
       >
         {items}
-      </Drawer>
+      </SwipeableDrawer>
       <Drawer
         id="permanent-drawer"
         variant="permanent"
