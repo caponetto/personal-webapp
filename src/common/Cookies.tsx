@@ -1,4 +1,8 @@
 export function getCookie(name: string): string | undefined {
+  if (!navigator.cookieEnabled) {
+    return;
+  }
+
   const value = "; " + document.cookie;
   const parts = value.split("; " + name + "=");
 
@@ -8,6 +12,10 @@ export function getCookie(name: string): string | undefined {
 }
 
 export function setCookie(name: string, value: string): void {
+  if (!navigator.cookieEnabled) {
+    return;
+  }
+
   const date = new Date();
   date.setTime(date.getTime() + 10 * 365 * 24 * 60 * 60);
   document.cookie = name + "=" + value + "; expires=" + date.toUTCString() + "; path=/";
@@ -15,4 +23,5 @@ export function setCookie(name: string, value: string): void {
 
 export const cookieNames: Record<string, string> = {
   colorMode: "color_mode",
+  showSnackbar: "show_snackbar",
 };
