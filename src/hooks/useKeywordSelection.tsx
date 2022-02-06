@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
-import { useHistory } from "react-router";
+import { useNavigate } from "react-router";
 import { QueryParams, useQueryParamKeywords } from "./useQueryParams";
 
 export function useKeywordSelection(availableKeywords: string[]) {
-  const history = useHistory();
+  const navigate = useNavigate();
   const initialKeywords = useQueryParamKeywords(availableKeywords);
   const [selected, setSelected] = useState<string[]>(initialKeywords ?? []);
 
@@ -26,10 +26,13 @@ export function useKeywordSelection(availableKeywords: string[]) {
   }, []);
 
   useEffect(() => {
-    history.replace({
-      search: selected.length > 0 ? `?${QueryParams.KEYWORDS}=${selected.join(",")}` : "",
-    });
-  }, [history, selected]);
+    navigate(
+      {
+        search: selected.length > 0 ? `?${QueryParams.KEYWORDS}=${selected.join(",")}` : "",
+      },
+      { replace: true }
+    );
+  }, [navigate, selected]);
 
   return {
     selected,

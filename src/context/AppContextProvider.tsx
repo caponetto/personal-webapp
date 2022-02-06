@@ -1,7 +1,7 @@
 import { blueGrey, grey, teal } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React, { ReactNode, useCallback, useEffect, useMemo, useState } from "react";
-import { useHistory, useLocation } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import { cookieNames, getCookie, setCookie } from "../common/Cookies";
 import { PERSONAL_DATA } from "../common/Data";
 import { routes } from "../common/Routes";
@@ -13,7 +13,7 @@ interface AppContextProviderProps {
 
 export function AppContextProvider(props: AppContextProviderProps) {
   const location = useLocation();
-  const history = useHistory();
+  const navigate = useNavigate();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [colorMode, setColorMode] = useState<ColorMode>(
     (getCookie(cookieNames.colorMode) as ColorMode) === "dark" ? "dark" : "light"
@@ -52,9 +52,9 @@ export function AppContextProvider(props: AppContextProviderProps) {
       if (location.pathname === route) {
         return;
       }
-      history.push(route);
+      navigate(route);
     },
-    [history, location.pathname]
+    [location.pathname, navigate]
   );
 
   useEffect(() => {

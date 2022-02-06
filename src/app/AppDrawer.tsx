@@ -10,7 +10,7 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import React, { useMemo } from "react";
-import { useHistory } from "react-router";
+import { useLocation } from "react-router";
 import { routes } from "../common/Routes";
 import { DrawerListItem } from "../components/DrawerListItem";
 import { FaceBadge } from "../components/FaceBadge";
@@ -19,7 +19,7 @@ import { DRAWER_WIDTH, useApp } from "../context/AppContext";
 
 export function AppDrawer() {
   const app = useApp();
-  const history = useHistory();
+  const location = useLocation();
   const denseList = useMediaQuery("(min-height:580px) and (max-height:630px)");
 
   const items = useMemo(
@@ -41,35 +41,35 @@ export function AppDrawer() {
             subtitle={"Words about myself"}
             icon={<InfoIcon />}
             onClick={() => app.goTo(routes.nav.about)}
-            selected={history.location.pathname === routes.nav.about}
+            selected={location.pathname === routes.nav.about}
           />
           <DrawerListItem
             title={"Journey"}
             subtitle={"Education & Experience"}
             icon={<TimelineIcon />}
             onClick={() => app.goTo(routes.nav.journey)}
-            selected={history.location.pathname === routes.nav.journey}
+            selected={location.pathname === routes.nav.journey}
           />
           <DrawerListItem
             title={"Text"}
             subtitle={"Content that I've written"}
             icon={<TextSnippetIcon />}
             onClick={() => app.goTo(routes.nav.text)}
-            selected={history.location.pathname === routes.nav.text}
+            selected={location.pathname === routes.nav.text}
           />
           <DrawerListItem
             title={"Talk"}
             subtitle={"Things that I've talked about"}
             icon={<ForumIcon />}
             onClick={() => app.goTo(routes.nav.talk)}
-            selected={history.location.pathname === routes.nav.talk}
+            selected={location.pathname === routes.nav.talk}
           />
           <DrawerListItem
             title={"Code"}
             subtitle={"Lines worth highlighting"}
             icon={<CodeIcon />}
             onClick={() => app.goTo(routes.nav.code)}
-            selected={history.location.pathname === routes.nav.code}
+            selected={location.pathname === routes.nav.code}
           />
         </List>
         <Box sx={{ width: 1, flexShrink: 0 }}>
@@ -80,7 +80,7 @@ export function AppDrawer() {
         </Box>
       </Box>
     ),
-    [app, history.location.pathname, denseList]
+    [app, location.pathname, denseList]
   );
 
   const muiPaperStyle = useMemo(
