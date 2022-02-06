@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
 import React from "react";
-import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { routes } from "../common/Routes";
 import { AppContextProvider } from "../context/AppContextProvider";
 import { AboutPage } from "../pages/AboutPage";
@@ -23,19 +23,15 @@ export function App() {
           <AppDrawer />
           <Box component="main" sx={{ flexGrow: 1, p: "25px" }}>
             <Toolbar />
-            <Switch>
-              <Route exact path={routes.nav.root}>
-                <Redirect to={routes.nav.about} />
-              </Route>
-              <Route exact path={routes.nav.about} component={AboutPage} />
-              <Route exact path={routes.nav.journey} component={JourneyPage} />
-              <Route exact path={routes.nav.text} component={TextPage} />
-              <Route exact path={routes.nav.talk} component={TalkPage} />
-              <Route exact path={routes.nav.code} component={CodePage} />
-              <Route>
-                <Redirect to={routes.nav.about} />
-              </Route>
-            </Switch>
+            <Routes>
+              <Route path={routes.nav.root} element={<Navigate to={routes.nav.about} />} />
+              <Route path={routes.nav.about} element={<AboutPage />} />
+              <Route path={routes.nav.journey} element={<JourneyPage />} />
+              <Route path={routes.nav.text} element={<TextPage />} />
+              <Route path={routes.nav.talk} element={<TalkPage />} />
+              <Route path={routes.nav.code} element={<CodePage />} />
+              <Route path={routes.nav.any} element={<Navigate to={routes.nav.about} />} />
+            </Routes>
           </Box>
         </Box>
       </AppContextProvider>

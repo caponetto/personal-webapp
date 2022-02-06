@@ -6,6 +6,7 @@ export const routes = {
     text: "/text",
     talk: "/talk",
     code: "/code",
+    any: "*",
   },
 
   images: {
