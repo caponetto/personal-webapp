@@ -4,6 +4,7 @@ import Toolbar from "@mui/material/Toolbar";
 import React from "react";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { routes } from "../common/Routes";
+import { CookieSnackbar } from "../components/CookieSnackbar";
 import { AppContextProvider } from "../context/AppContextProvider";
 import { AboutPage } from "../pages/AboutPage";
 import { CodePage } from "../pages/CodePage";
@@ -21,6 +22,7 @@ export function App() {
           <CssBaseline />
           <AppBar />
           <AppDrawer />
+          <CookieSnackbar />
           <Box component="main" sx={{ flexGrow: 1, p: "25px" }}>
             <Toolbar />
             <Routes>
