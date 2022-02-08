@@ -8,7 +8,7 @@ import { useApp } from "../context/AppContext";
 import { useKeywordSelection } from "../hooks/useKeywordSelection";
 import { usePageActive } from "../hooks/usePageActive";
 
-export function TalkPage() {
+export default function TalkPage() {
   const app = useApp();
   const active = usePageActive();
   const keywordSelection = useKeywordSelection(app.data.talk.keywords);

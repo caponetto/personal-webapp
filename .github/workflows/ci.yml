@@ -42,12 +42,6 @@ jobs:
         run: |
           yarn test
 
-      - name: "Check generated resources"
-        shell: bash
-        run: |
-          git diff
-          [ "0" == "$(git diff | wc -l | tr -d ' ')" ]
-
       - name: "Upload build artifact (Ubuntu only)"
         if: matrix.os == 'ubuntu-latest'
         uses: actions/upload-artifact@v2

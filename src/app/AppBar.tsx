@@ -8,6 +8,7 @@ import React, { useMemo } from "react";
 import { AnimatedMoonIcon } from "../components/AnimatedMoonIcon";
 import { AnimatedSunIcon } from "../components/AnimatedSunIcon";
 import { DRAWER_WIDTH, useApp } from "../context/AppContext";
+import { AppFonts } from "./AppFonts";
 
 export function AppBar() {
   const app = useApp();
@@ -36,9 +37,15 @@ export function AppBar() {
         </IconButton>
         <Typography
           component="div"
-          sx={{ flexGrow: 1, fontWeight: "bold", letterSpacing: 1, fontSize: xxs ? "16px" : "20px" }}
+          sx={{
+            flexGrow: 1,
+            fontWeight: "bold",
+            letterSpacing: 1,
+            fontSize: xxs ? "16px" : "20px",
+            fontFamily: AppFonts.QUICKSAND,
+          }}
         >
-          {app.data.fullName}
+          {app.data.personal.fullName}
         </Typography>
         <Tooltip title={`Enable ${app.isLight ? "dark" : "light"} mode`} arrow>
           <IconButton

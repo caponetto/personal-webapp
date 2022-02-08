@@ -22,9 +22,14 @@ export function DrawerListItem(props: DrawerListItemProps) {
       key={`nav-${props.title}`}
       selected={props.selected}
       onClick={props.onClick}
+      sx={{ borderRadius: "16px 0px 0px 16px" }}
     >
       <ListItemIcon>{props.icon}</ListItemIcon>
-      <ListItemText primary={props.title} secondary={showSecondary ? props.subtitle : ""} />
+      <ListItemText
+        primaryTypographyProps={{ fontWeight: props.selected ? "bold" : "light" }}
+        primary={props.title}
+        secondary={showSecondary ? props.subtitle : ""}
+      />
     </ListItem>
   );
 }

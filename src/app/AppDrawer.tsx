@@ -26,12 +26,12 @@ export function AppDrawer() {
     () => (
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: "stretch", minHeight: "100%" }}>
         <FaceBadge
-          name={app.data.fullName}
+          name={app.data.personal.fullName}
           avatarRoute={routes.images.avatar}
           location={{
-            name: app.data.location.country,
-            emojiIcon: app.data.location.flag,
-            url: app.data.location.url,
+            name: app.data.personal.location.country,
+            emojiIcon: app.data.personal.location.flag,
+            url: app.data.personal.location.url,
           }}
           onClick={() => app.goTo(routes.nav.about)}
         />
@@ -75,12 +75,12 @@ export function AppDrawer() {
         <Box sx={{ width: 1, flexShrink: 0 }}>
           <SocialBar sx={{ width: "60%", mx: "auto", mb: "10px" }} />
           <Typography variant="caption" component="div" align="center">
-            {`© ${new Date().getFullYear()} ${app.data.fullName}`}
+            {`© ${new Date().getFullYear()} ${app.data.personal.fullName}`}
           </Typography>
         </Box>
       </Box>
     ),
-    [app, location.pathname, denseList]
+    [app, denseList, location.pathname]
   );
 
   const muiPaperStyle = useMemo(
