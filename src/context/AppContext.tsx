@@ -1,11 +1,11 @@
 import { createContext, Dispatch, useContext } from "react";
-import { PersonalData } from "../common/PersonalData";
+import { AppData } from "../app/AppData";
 
 export type ColorMode = "light" | "dark";
 export const DRAWER_WIDTH = 300;
 
 export interface AppContextType {
-  data: PersonalData;
+  data: AppData;
   isLight: boolean;
   drawerOpen: boolean;
   setDrawerOpen: Dispatch<boolean>;

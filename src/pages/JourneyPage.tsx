@@ -22,7 +22,7 @@ import { PageHeader } from "../components/PageHeader";
 import { useApp } from "../context/AppContext";
 import { usePageActive } from "../hooks/usePageActive";
 
-export function JourneyPage() {
+export default function JourneyPage() {
   const app = useApp();
   const active = usePageActive();
 

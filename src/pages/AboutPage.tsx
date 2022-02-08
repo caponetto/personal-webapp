@@ -13,7 +13,7 @@ import { TwitterButton } from "../components/TwitterButton";
 import { useApp } from "../context/AppContext";
 import { usePageActive } from "../hooks/usePageActive";
 
-export function AboutPage() {
+export default function AboutPage() {
   const app = useApp();
   const active = usePageActive();
 
@@ -23,11 +23,13 @@ export function AboutPage() {
         <HoverableCard sx={{ p: "28px", width: { xs: "100%", xl: "1170px" }, margin: "0 auto" }}>
           <Fade in={true} timeout={500}>
             <Stack spacing={4}>
-              <Typography variant="h6">Hi, there!</Typography>
+              <Typography variant="h6" sx={{ fontWeight: "normal" }}>
+                Hi, there! 👋
+              </Typography>
               <Paragraph>
                 My name is{" "}
                 <Box display="inline" fontWeight="bold">
-                  {app.data.fullName}
+                  {app.data.personal.fullName}
                 </Box>
                 . Welcome to my personal space!
               </Paragraph>
@@ -46,7 +48,7 @@ export function AboutPage() {
                   ))}
                 </Grid>
               </Box>
-              <Paragraph>Feel free to reach out to me on my social networks. :)</Paragraph>
+              <Paragraph>Feel free to reach out to me on my social networks. 😉</Paragraph>
             </Stack>
           </Fade>
           <CardActions disableSpacing sx={{ pl: 0, display: { xs: "auto", md: "none" } }}>

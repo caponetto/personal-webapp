@@ -6,5 +6,5 @@ interface PageProps {
 }
 
 export function Page(props: PageProps) {
-  return <Box sx={{ pb: "10px" }}>{props.children}</Box>;
+  return <Box sx={{ p: "16px 24px" }}>{props.children}</Box>;
 }

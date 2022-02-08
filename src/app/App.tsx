@@ -1,18 +1,21 @@
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
+import LinearProgress from "@mui/material/LinearProgress";
 import Toolbar from "@mui/material/Toolbar";
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { routes } from "../common/Routes";
 import { CookieSnackbar } from "../components/CookieSnackbar";
 import { AppContextProvider } from "../context/AppContextProvider";
-import { AboutPage } from "../pages/AboutPage";
-import { CodePage } from "../pages/CodePage";
-import { JourneyPage } from "../pages/JourneyPage";
-import { TalkPage } from "../pages/TalkPage";
-import { TextPage } from "../pages/TextPage";
 import { AppBar } from "./AppBar";
 import { AppDrawer } from "./AppDrawer";
+import "./AppFonts";
+
+const AboutPage = lazy(() => import("../pages/AboutPage"));
+const JourneyPage = lazy(() => import("../pages/JourneyPage"));
+const TextPage = lazy(() => import("../pages/TextPage"));
+const TalkPage = lazy(() => import("../pages/TalkPage"));
+const CodePage = lazy(() => import("../pages/CodePage"));
 
 export function App() {
   return (
@@ -23,17 +26,19 @@ export function App() {
           <AppBar />
           <AppDrawer />
           <CookieSnackbar />
-          <Box component="main" sx={{ flexGrow: 1, p: "25px" }}>
+          <Box component="main" sx={{ flexGrow: 1 }}>
             <Toolbar />
-            <Routes>
-              <Route path={routes.nav.root} element={<Navigate to={routes.nav.about} />} />
-              <Route path={routes.nav.about} element={<AboutPage />} />
-              <Route path={routes.nav.journey} element={<JourneyPage />} />
-              <Route path={routes.nav.text} element={<TextPage />} />
-              <Route path={routes.nav.talk} element={<TalkPage />} />
-              <Route path={routes.nav.code} element={<CodePage />} />
-              <Route path={routes.nav.any} element={<Navigate to={routes.nav.about} />} />
-            </Routes>
+            <Suspense fallback={<LinearProgress sx={{ height: "2px" }} />}>
+              <Routes>
+                <Route path={routes.nav.root} element={<Navigate to={routes.nav.about} />} />
+                <Route path={routes.nav.about} element={<AboutPage />} />
+                <Route path={routes.nav.journey} element={<JourneyPage />} />
+                <Route path={routes.nav.text} element={<TextPage />} />
+                <Route path={routes.nav.talk} element={<TalkPage />} />
+                <Route path={routes.nav.code} element={<CodePage />} />
+                <Route path={routes.nav.any} element={<Navigate to={routes.nav.about} />} />
+              </Routes>
+            </Suspense>
           </Box>
         </Box>
       </AppContextProvider>

@@ -5,8 +5,8 @@ export type Company = "Red Hat" | "Samsung" | "iFood" | "Motorola" | "B2ML Syste
 export interface Journey {
   title: string;
   period: {
-    start: string;
-    end?: string;
+    start: number;
+    end?: number | "Present";
   };
   location: University | Other | Company;
 }

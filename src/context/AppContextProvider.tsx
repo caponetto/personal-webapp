@@ -3,8 +3,13 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React, { ReactNode, useCallback, useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 import { cookieNames, getCookie, setCookie } from "../common/Cookies";
-import { PERSONAL_DATA } from "../common/Data";
 import { routes } from "../common/Routes";
+import { ABOUT_DATA } from "../data/AboutData";
+import { CODE_DATA } from "../data/CodeData";
+import { JOURNEY_DATA } from "../data/JourneyData";
+import { PERSONAL_DATA } from "../data/PersonalData";
+import { TALK_DATA } from "../data/TalkData";
+import { TEXT_DATA } from "../data/TextData";
 import { AppContext, ColorMode } from "./AppContext";
 
 interface AppContextProviderProps {
@@ -19,7 +24,17 @@ export function AppContextProvider(props: AppContextProviderProps) {
     (getCookie(cookieNames.colorMode) as ColorMode) === "dark" ? "dark" : "light"
   );
 
-  const data = useMemo(() => PERSONAL_DATA, []);
+  const data = useMemo(
+    () => ({
+      personal: PERSONAL_DATA,
+      about: ABOUT_DATA,
+      journey: JOURNEY_DATA,
+      text: TEXT_DATA,
+      talk: TALK_DATA,
+      code: CODE_DATA,
+    }),
+    []
+  );
 
   const isLight = useMemo(() => colorMode === "light", [colorMode]);
 
@@ -68,8 +83,8 @@ export function AppContextProvider(props: AppContextProviderProps) {
     }
 
     const routeName = relativePath.charAt(0).toUpperCase() + relativePath.slice(1);
-    document.title = `${data.fullName} | ${routeName}`;
-  }, [data.fullName, location.pathname]);
+    document.title = `${data.personal.fullName} | ${routeName}`;
+  }, [data.personal.fullName, location.pathname]);
 
   return (
     <AppContext.Provider value={{ data, isLight, drawerOpen, setDrawerOpen, toggleColorMode, goTo }}>
