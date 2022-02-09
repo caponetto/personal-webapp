@@ -1092,6 +1092,21 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/nunito@4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/nunito/-/nunito-4.5.3.tgz#875deb1b968999c82f06f616013b96465b30a3eb"
+  integrity sha512-23mSC2KPaq6TDCqTgaKonCMT432L2AZ7VG5OawEyCfnb8qVP3iruHtnx2lTWSTr4MvI4lp7yH+3hw+oGOSPVNw==
+
+"@fontsource/oxygen@4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/oxygen/-/oxygen-4.5.1.tgz#0a62e190693e602e7d023226dc1d9e335f14b268"
+  integrity sha512-0QWZi8E5Q4mrgp2YCWR2GjjaCqC1WzD7s3Avj5K9W1gdWJAMQHUTaygZ2GFWAPGNjGtzirYa49UFc6gn7hKXkw==
+
+"@fontsource/philosopher@4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/philosopher/-/philosopher-4.5.1.tgz#23ca41e6b3e8423362bddd58ad2e0cf551b34b8c"
+  integrity sha512-TentO2BegaxOl8JqHAKePkkt6MGqFPLnWYpkn8PMY0vufyq5GEl80N2Bs2r9S0YnxSvpqUYYrMT+pd2VFObmog==
+
 "@fontsource/quicksand@4.5.3":
   version "4.5.3"
   resolved "https://registry.yarnpkg.com/@fontsource/quicksand/-/quicksand-4.5.3.tgz#6b66fdb1a7acf1fcfbbfcffd59b66dfa9763fd32"
