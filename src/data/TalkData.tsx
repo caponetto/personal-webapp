@@ -35,7 +35,7 @@ export const TALK_DATA: TalkData = {
       releaseDate: new Date("Sept 15, 2020"),
       publishedAt: "KIE Community",
       keywords: [talkKeywords.businessCentral, talkKeywords.maven, talkKeywords.archetypes],
-      url: "https://www.youtube.com/watch?v=wWpOKILLlZI",
+      url: "https://www.youtube.com/watch?v=E07RXxiZdYc",
     },
     {
       type: "live",
