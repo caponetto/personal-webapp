@@ -1,15 +1,13 @@
 import Box from "@mui/material/Box";
 import CardActions from "@mui/material/CardActions";
-import Chip from "@mui/material/Chip";
 import Fade from "@mui/material/Fade";
-import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import React, { ReactNode } from "react";
+import { AppFonts } from "../app/AppFonts";
 import { HoverableCard } from "../components/HoverableCard";
-import { LinkedInButton } from "../components/LinkedInButton";
 import { Page } from "../components/Page";
-import { TwitterButton } from "../components/TwitterButton";
+import { SocialBar } from "../components/SocialBar";
 import { useApp } from "../context/AppContext";
 import { usePageActive } from "../hooks/usePageActive";
 
@@ -23,39 +21,26 @@ export default function AboutPage() {
         <HoverableCard sx={{ p: "28px", width: { xs: "100%", xl: "1170px" }, margin: "0 auto" }}>
           <Fade in={true} timeout={500}>
             <Stack spacing={4}>
-              <Typography variant="h6" sx={{ fontWeight: "normal" }}>
-                Hi, there! 👋
+              <Typography
+                component="div"
+                sx={{
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  fontFamily: AppFonts.PHILOSOPHER,
+                  fontSize: { xs: "16px", sm: "20px" },
+                }}
+              >
+                Welcome to my personal space 👋
               </Typography>
-              <Paragraph>
-                My name is{" "}
-                <Box display="inline" fontWeight="bold">
-                  {app.data.personal.fullName}
-                </Box>
-                . Welcome to my personal space!
-              </Paragraph>
               {app.data.about.paragraphs.map((paragraph: string, idx: number) => (
                 <Paragraph key={`about-paragraph-${idx}`}>{paragraph}</Paragraph>
               ))}
-              <Box>
-                <Typography sx={{ mb: "30px" }} component="div">
-                  Here is a list of things that I have worked with the most:
-                </Typography>
-                <Grid container spacing={1}>
-                  {app.data.about.skills.map((skill: string, idx: number) => (
-                    <Grid item key={`skill-${idx}`}>
-                      <Chip label={skill} color={"default"} variant={"outlined"} size={"small"} />
-                    </Grid>
-                  ))}
-                </Grid>
-              </Box>
-              <Paragraph>Feel free to reach out to me on my social networks. 😉</Paragraph>
             </Stack>
           </Fade>
-          <CardActions disableSpacing sx={{ pl: 0, display: { xs: "auto", md: "none" } }}>
-            <Stack spacing={2} direction="row">
-              <TwitterButton disableSpacing />
-              <LinkedInButton disableSpacing />
-            </Stack>
+          <CardActions disableSpacing sx={{ display: { xs: "auto", md: "none" } }}>
+            <Box sx={{ width: 1 }}>
+              <SocialBar sx={{ width: "150px", mx: "auto", float: "center" }} />
+            </Box>
           </CardActions>
         </HoverableCard>
       )}
@@ -66,7 +51,16 @@ export default function AboutPage() {
 function Paragraph(props: { children: ReactNode }) {
   return (
     <Typography component="div">
-      <Box sx={{ lineHeight: 1.7 }}>{props.children}</Box>
+      <Box
+        sx={{
+          textAlign: "justify",
+          lineHeight: 1.7,
+          fontFamily: AppFonts.NUNITO,
+          fontSize: { xs: "13px", sm: "16px" },
+        }}
+      >
+        {props.children}
+      </Box>
     </Typography>
   );
 }

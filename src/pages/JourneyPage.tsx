@@ -1,3 +1,4 @@
+import ConstructionIcon from "@mui/icons-material/Construction";
 import LaunchIcon from "@mui/icons-material/Launch";
 import SchoolIcon from "@mui/icons-material/School";
 import VerifiedIcon from "@mui/icons-material/Verified";
@@ -7,6 +8,7 @@ import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
+import Chip from "@mui/material/Chip";
 import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Grid";
 import List from "@mui/material/List";
@@ -21,6 +23,8 @@ import { Page } from "../components/Page";
 import { PageHeader } from "../components/PageHeader";
 import { useApp } from "../context/AppContext";
 import { usePageActive } from "../hooks/usePageActive";
+
+type JourneyKind = "education" | "certifications" | "toolbox" | "experience";
 
 export default function JourneyPage() {
   const app = useApp();
@@ -39,7 +43,11 @@ export default function JourneyPage() {
             <Grid container spacing={2}>
               <Fade in={true} timeout={1000}>
                 <Grid item xs={12} xl={6}>
-                  <JourneyCard title={"Education"} icon={<SchoolIcon />} items={app.data.journey.education} />
+                  <JourneyCard
+                    title={"Education"}
+                    icon={<SchoolIcon />}
+                    content={<JourneyList kind={"education"} items={app.data.journey.education} />}
+                  />
                 </Grid>
               </Fade>
               <Fade in={true} timeout={1500}>
@@ -47,15 +55,36 @@ export default function JourneyPage() {
                   <JourneyCard
                     title={"Certifications"}
                     icon={<VerifiedIcon />}
-                    items={app.data.journey.certification}
+                    content={<JourneyList kind={"certifications"} items={app.data.journey.certification} />}
+                  />
+                </Grid>
+              </Fade>
+              <Fade in={true} timeout={2000}>
+                <Grid item xs={12}>
+                  <JourneyCard
+                    title={"Toolbox"}
+                    icon={<ConstructionIcon />}
+                    content={
+                      <Grid container spacing={1}>
+                        {app.data.journey.toolbox.map((skill: string, idx: number) => (
+                          <Grid item key={`skill-${idx}`}>
+                            <Chip label={skill} color={"default"} variant={"outlined"} size={"small"} />
+                          </Grid>
+                        ))}
+                      </Grid>
+                    }
                   />
                 </Grid>
               </Fade>
             </Grid>
           </Grid>
-          <Fade in={true} timeout={2000}>
+          <Fade in={true} timeout={2500}>
             <Grid item xs={12} lg={5}>
-              <JourneyCard title={"Experience"} icon={<WorkIcon />} items={app.data.journey.experience} />
+              <JourneyCard
+                title={"Experience"}
+                icon={<WorkIcon />}
+                content={<JourneyList kind={"experience"} items={app.data.journey.experience} />}
+              />
             </Grid>
           </Fade>
         </Grid>
@@ -67,20 +96,14 @@ export default function JourneyPage() {
 interface JourneyCardProps {
   title: string;
   icon: ReactNode;
-  items: Journey[];
+  content: ReactNode;
 }
 
 function JourneyCard(props: JourneyCardProps) {
   return (
     <HoverableCard>
       <CardHeader avatar={props.icon} title={<Typography sx={{ fontSize: "18px" }}>{props.title}</Typography>} />
-      <CardContent>
-        <List dense={true}>
-          {props.items.map((item: Journey, idx: number) => (
-            <JourneyListItem key={`${props.title}-item-${idx}`} item={item} />
-          ))}
-        </List>
-      </CardContent>
+      <CardContent>{props.content}</CardContent>
       <CardActions sx={{ pt: 0, px: "16px" }}>
         <Box sx={{ width: 1 }}>
           <Button
@@ -96,6 +119,21 @@ function JourneyCard(props: JourneyCardProps) {
         </Box>
       </CardActions>
     </HoverableCard>
+  );
+}
+
+interface JourneyListProps {
+  kind: JourneyKind;
+  items: Journey[];
+}
+
+function JourneyList(props: JourneyListProps) {
+  return (
+    <List dense={true}>
+      {props.items.map((item: Journey, idx: number) => (
+        <JourneyListItem key={`${props.kind}-item-${idx}`} item={item} />
+      ))}
+    </List>
   );
 }
 

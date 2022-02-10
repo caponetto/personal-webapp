@@ -11,6 +11,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { format } from "date-fns";
 import React, { useMemo } from "react";
+import { AppFonts } from "../app/AppFonts";
 import { Media } from "../common/Media";
 import { routes } from "../common/Routes";
 import { useApp } from "../context/AppContext";
@@ -76,7 +77,12 @@ export function MediaCard(props: MediaCardProps) {
       <CardHeader
         title={
           <Typography
-            sx={{ fontSize: 16, fontWeight: "500", height: { xs: "auto", lg: "50px" } }}
+            sx={{
+              fontFamily: AppFonts.OXYGEN,
+              fontSize: { xs: "14px", sm: "16px" },
+              fontWeight: "bold",
+              height: { xs: "auto", lg: "50px" },
+            }}
             color={grey[app.isLight ? 700 : 500]}
             gutterBottom
           >
