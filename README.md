@@ -8,7 +8,7 @@ Code of my personal [website](https://caponetto.dev).
 ## Requirements
 
 - Node `16+`
-- Yarn `1.22.10` (`npm install -g yarn@1.22.10`)
+- Yarn (`npm install -g yarn`)
 
 ## Build for development
 
