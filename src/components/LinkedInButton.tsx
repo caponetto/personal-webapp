@@ -13,7 +13,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
       label="LinkedIn"
       icon={<LinkedInIcon />}
       disableSpacing={props.disableSpacing}
-      onClick={() => window.open(routes.urls.linkedin, "_blank")}
+      onClick={() => window.open(routes.urls.linkedin, "_blank", "noopener")}
     />
   );
 }

@@ -20,7 +20,7 @@ import { DRAWER_WIDTH, useApp } from "../context/AppContext";
 export function AppDrawer() {
   const app = useApp();
   const location = useLocation();
-  const denseList = useMediaQuery("(min-height:580px) and (max-height:630px)");
+  const denseList = useMediaQuery("(min-height:580px) and (max-height:600px)");
 
   const items = useMemo(
     () => (
@@ -94,6 +94,7 @@ export function AppDrawer() {
     <Box component="nav" sx={{ width: { md: DRAWER_WIDTH }, height: "100%", flexShrink: { md: 0 } }}>
       <SwipeableDrawer
         id="temporary-drawer"
+        disableSwipeToOpen
         variant="temporary"
         open={app.drawerOpen}
         onOpen={() => app.setDrawerOpen(true)}

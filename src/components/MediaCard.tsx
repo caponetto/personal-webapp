@@ -130,7 +130,7 @@ export function MediaCard(props: MediaCardProps) {
               size="small"
               endIcon={<LaunchIcon />}
               color="success"
-              onClick={() => window.open(props.item.url, "_blank")}
+              onClick={() => window.open(props.item.url, "_blank", "noopener")}
             >
               {accessMediaButtonLabel}
             </Button>

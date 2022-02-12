@@ -7,21 +7,60 @@ export interface JourneyData {
   toolbox: string[];
 }
 
+const locations = {
+  unicamp: {
+    name: "UNICAMP",
+    url: "https://www.unicamp.br",
+  },
+  unifei: {
+    name: "UNIFEI",
+    url: "https://unifei.edu.br",
+  },
+  udacity: {
+    name: "Udacity",
+    url: "https://www.udacity.com",
+  },
+  oracle: {
+    name: "Oracle",
+    url: "https://www.oracle.com",
+  },
+  redHat: {
+    name: "Red Hat",
+    url: "https://www.redhat.com",
+  },
+  samsung: {
+    name: "Samsung",
+    url: "https://www.samsung.com",
+  },
+  ifood: {
+    name: "iFood",
+    url: "https://www.ifood.com.br",
+  },
+  motorola: {
+    name: "Motorola",
+    url: "https://www.motorola.com",
+  },
+  b2ml: {
+    name: "B2ML Sistemas",
+    url: "https://www.b2ml.com.br",
+  },
+};
+
 export const JOURNEY_DATA: JourneyData = {
   education: [
     {
-      title: "M.Sc. in Computer Engineering",
+      title: "M.Sc. in Machine Learning",
       period: {
         start: 2017,
       },
-      location: "UNICAMP",
+      location: locations.unicamp,
     },
     {
       title: "B.Sc. in Computer Science",
       period: {
         start: 2011,
       },
-      location: "UNIFEI",
+      location: locations.unifei,
     },
   ],
   certification: [
@@ -30,14 +69,14 @@ export const JOURNEY_DATA: JourneyData = {
       period: {
         start: 2019,
       },
-      location: "Udacity",
+      location: locations.udacity,
     },
     {
       title: "Oracle Certified Professional, Java 6",
       period: {
         start: 2012,
       },
-      location: "Oracle",
+      location: locations.oracle,
     },
   ],
   experience: [
@@ -47,7 +86,7 @@ export const JOURNEY_DATA: JourneyData = {
         start: 2019,
         end: "Present",
       },
-      location: "Red Hat",
+      location: locations.redHat,
     },
     {
       title: "SW Engineer → Senior SW Engineer",
@@ -55,7 +94,7 @@ export const JOURNEY_DATA: JourneyData = {
         start: 2017,
         end: 2019,
       },
-      location: "Samsung",
+      location: locations.samsung,
     },
     {
       title: "SW Engineer",
@@ -63,7 +102,7 @@ export const JOURNEY_DATA: JourneyData = {
         start: 2017,
         end: 2017,
       },
-      location: "iFood",
+      location: locations.ifood,
     },
     {
       title: "Graduate Researcher",
@@ -71,7 +110,7 @@ export const JOURNEY_DATA: JourneyData = {
         start: 2015,
         end: 2017,
       },
-      location: "UNICAMP",
+      location: locations.unicamp,
     },
     {
       title: "Junior SW Engineer",
@@ -79,7 +118,7 @@ export const JOURNEY_DATA: JourneyData = {
         start: 2012,
         end: 2015,
       },
-      location: "Samsung",
+      location: locations.samsung,
     },
     {
       title: "SW Development Intern",
@@ -87,7 +126,7 @@ export const JOURNEY_DATA: JourneyData = {
         start: 2011,
         end: 2011,
       },
-      location: "Motorola",
+      location: locations.motorola,
     },
     {
       title: "Undergraduate Researcher",
@@ -95,7 +134,7 @@ export const JOURNEY_DATA: JourneyData = {
         start: 2007,
         end: 2010,
       },
-      location: "UNIFEI",
+      location: locations.unifei,
     },
     {
       title: "SW Development Intern",
@@ -103,7 +142,7 @@ export const JOURNEY_DATA: JourneyData = {
         start: 2007,
         end: 2007,
       },
-      location: "B2ML Systems",
+      location: locations.b2ml,
     },
   ],
   toolbox: [

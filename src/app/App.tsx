@@ -29,8 +29,8 @@ export function App() {
                 display: "flex",
                 minHeight: "100vh",
                 background: app.isLight
-                  ? "radial-gradient(ellipse at bottom, #ECEFF1 0%, #FFFFFF 100%)"
-                  : "radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%)",
+                  ? "radial-gradient(ellipse at top right, #E6EAEC 0%, #FFFFFF 100%)"
+                  : "radial-gradient(ellipse at top right, #1C2837 0%, #050608 100%)",
               }}
             >
               <CssBaseline />

@@ -11,6 +11,7 @@ import CardHeader from "@mui/material/CardHeader";
 import Chip from "@mui/material/Chip";
 import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
@@ -68,7 +69,13 @@ export default function JourneyPage() {
                       <Grid container spacing={1}>
                         {app.data.journey.toolbox.map((skill: string, idx: number) => (
                           <Grid item key={`skill-${idx}`}>
-                            <Chip label={skill} color={"default"} variant={"outlined"} size={"small"} />
+                            <Chip
+                              label={skill}
+                              color={"default"}
+                              variant={"outlined"}
+                              size={"small"}
+                              sx={{ borderRadius: "8px" }}
+                            />
                           </Grid>
                         ))}
                       </Grid>
@@ -112,7 +119,7 @@ function JourneyCard(props: JourneyCardProps) {
             size="small"
             endIcon={<LaunchIcon />}
             color="success"
-            onClick={() => window.open(routes.urls.linkedin, "_blank")}
+            onClick={() => window.open(routes.urls.linkedin, "_blank", "noopener")}
           >
             {"More Details"}
           </Button>
@@ -158,7 +165,16 @@ function JourneyListItem(props: JourneyListItemProps) {
             >
               {"@"}
             </Typography>
-            <Typography variant="overline">{props.item.location}</Typography>
+            <Link
+              color="inherit"
+              underline="hover"
+              rel="noreferrer"
+              variant="overline"
+              target="_blank"
+              href={props.item.location.url}
+            >
+              {props.item.location.name}
+            </Link>
           </Box>
         }
       />
