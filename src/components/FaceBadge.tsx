@@ -29,7 +29,7 @@ export function FaceBadge(props: FaceBadgeProps) {
             <IconButton
               id="face-badge-location"
               sx={{ color: "rgba(0,0,0,0.9)" }}
-              onClick={() => window.open(props.location.url, "_blank")}
+              onClick={() => window.open(props.location.url, "_blank", "noopener")}
             >
               {props.location.emojiIcon}
             </IconButton>

@@ -13,7 +13,7 @@ export function GitHubButton(props: GitHubButtonProps) {
       label="GitHub"
       icon={<GitHubIcon />}
       disableSpacing={props.disableSpacing}
-      onClick={() => window.open(routes.urls.github, "_blank")}
+      onClick={() => window.open(routes.urls.github, "_blank", "noopener")}
     />
   );
 }

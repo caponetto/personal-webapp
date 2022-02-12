@@ -13,7 +13,7 @@ export function TwitterButton(props: TwitterButtonProps) {
       label="Twitter"
       icon={<TwitterIcon />}
       disableSpacing={props.disableSpacing}
-      onClick={() => window.open(routes.urls.twitter, "_blank")}
+      onClick={() => window.open(routes.urls.twitter, "_blank", "noopener")}
     />
   );
 }
