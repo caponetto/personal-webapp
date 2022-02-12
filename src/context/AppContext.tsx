@@ -3,6 +3,7 @@ import { AppData } from "../app/AppData";
 
 export type ColorMode = "light" | "dark";
 export const DRAWER_WIDTH = 300;
+export const DRAWER_ITEM_WIDTH = DRAWER_WIDTH - 16;
 
 export interface AppContextType {
   data: AppData;
