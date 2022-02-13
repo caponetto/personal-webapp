@@ -8,7 +8,10 @@ import { DRAWER_ITEM_WIDTH } from "../context/AppContext";
 interface DrawerListItemProps {
   title: string;
   subtitle?: string;
-  icon: ReactNode;
+  icon: {
+    normal: ReactNode;
+    selected: ReactNode;
+  };
   selected: boolean;
   onClick: () => void;
 }
@@ -25,7 +28,7 @@ export function DrawerListItem(props: DrawerListItemProps) {
       onClick={props.onClick}
       sx={{ p: "4px 16px", borderRadius: "0 66px 66px 0", width: `${DRAWER_ITEM_WIDTH}px` }}
     >
-      <ListItemIcon>{props.icon}</ListItemIcon>
+      <ListItemIcon>{props.selected ? props.icon.selected : props.icon.normal}</ListItemIcon>
       <ListItemText
         primaryTypographyProps={{ fontWeight: props.selected ? "bold" : "light" }}
         primary={props.title}
