@@ -1,8 +1,8 @@
-import ConstructionIcon from "@mui/icons-material/Construction";
+import HomeRepairServiceOutlinedIcon from "@mui/icons-material/HomeRepairServiceOutlined";
 import LaunchIcon from "@mui/icons-material/Launch";
-import SchoolIcon from "@mui/icons-material/School";
-import VerifiedIcon from "@mui/icons-material/Verified";
-import WorkIcon from "@mui/icons-material/Work";
+import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
+import VerifiedOutlinedIcon from "@mui/icons-material/VerifiedOutlined";
+import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
@@ -46,7 +46,7 @@ export default function JourneyPage() {
                 <Grid item xs={12} xl={6}>
                   <JourneyCard
                     title={"Education"}
-                    icon={<SchoolIcon />}
+                    icon={<SchoolOutlinedIcon />}
                     content={<JourneyList kind={"education"} items={app.data.journey.education} />}
                   />
                 </Grid>
@@ -55,7 +55,7 @@ export default function JourneyPage() {
                 <Grid item xs={12} xl={6}>
                   <JourneyCard
                     title={"Certifications"}
-                    icon={<VerifiedIcon />}
+                    icon={<VerifiedOutlinedIcon />}
                     content={<JourneyList kind={"certifications"} items={app.data.journey.certification} />}
                   />
                 </Grid>
@@ -64,7 +64,7 @@ export default function JourneyPage() {
                 <Grid item xs={12}>
                   <JourneyCard
                     title={"Toolbox"}
-                    icon={<ConstructionIcon />}
+                    icon={<HomeRepairServiceOutlinedIcon />}
                     content={
                       <Grid container spacing={1}>
                         {app.data.journey.toolbox.map((skill: string, idx: number) => (
@@ -89,7 +89,7 @@ export default function JourneyPage() {
             <Grid item xs={12} lg={5}>
               <JourneyCard
                 title={"Experience"}
-                icon={<WorkIcon />}
+                icon={<WorkOutlineOutlinedIcon />}
                 content={<JourneyList kind={"experience"} items={app.data.journey.experience} />}
               />
             </Grid>
