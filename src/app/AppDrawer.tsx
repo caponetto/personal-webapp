@@ -1,8 +1,13 @@
-import CodeIcon from "@mui/icons-material/Code";
 import ForumIcon from "@mui/icons-material/Forum";
+import ForumOutlinedIcon from "@mui/icons-material/ForumOutlined";
 import InfoIcon from "@mui/icons-material/Info";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import SourceIcon from "@mui/icons-material/Source";
+import SourceOutlinedIcon from "@mui/icons-material/SourceOutlined";
 import TextSnippetIcon from "@mui/icons-material/TextSnippet";
-import TimelineIcon from "@mui/icons-material/Timeline";
+import TextSnippetOutlinedIcon from "@mui/icons-material/TextSnippetOutlined";
+import ViewTimelineIcon from "@mui/icons-material/ViewTimeline";
+import ViewTimelineOutlinedIcon from "@mui/icons-material/ViewTimelineOutlined";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -39,35 +44,35 @@ export function AppDrawer() {
           <DrawerListItem
             title={"About"}
             subtitle={"Words about myself"}
-            icon={<InfoIcon />}
+            icon={{ normal: <InfoOutlinedIcon />, selected: <InfoIcon /> }}
             onClick={() => app.goTo(routes.nav.about)}
             selected={location.pathname === routes.nav.about}
           />
           <DrawerListItem
             title={"Journey"}
             subtitle={"Education & Experience"}
-            icon={<TimelineIcon />}
+            icon={{ normal: <ViewTimelineOutlinedIcon />, selected: <ViewTimelineIcon /> }}
             onClick={() => app.goTo(routes.nav.journey)}
             selected={location.pathname === routes.nav.journey}
           />
           <DrawerListItem
             title={"Text"}
             subtitle={"Content that I've written"}
-            icon={<TextSnippetIcon />}
+            icon={{ normal: <TextSnippetOutlinedIcon />, selected: <TextSnippetIcon /> }}
             onClick={() => app.goTo(routes.nav.text)}
             selected={location.pathname === routes.nav.text}
           />
           <DrawerListItem
             title={"Talk"}
             subtitle={"Things that I've talked about"}
-            icon={<ForumIcon />}
+            icon={{ normal: <ForumOutlinedIcon />, selected: <ForumIcon /> }}
             onClick={() => app.goTo(routes.nav.talk)}
             selected={location.pathname === routes.nav.talk}
           />
           <DrawerListItem
             title={"Code"}
             subtitle={"Lines worth highlighting"}
-            icon={<CodeIcon />}
+            icon={{ normal: <SourceOutlinedIcon />, selected: <SourceIcon /> }}
             onClick={() => app.goTo(routes.nav.code)}
             selected={location.pathname === routes.nav.code}
           />
