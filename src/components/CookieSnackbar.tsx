@@ -2,7 +2,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import IconButton from "@mui/material/IconButton";
 import Snackbar from "@mui/material/Snackbar";
 import React, { useCallback, useMemo, useState } from "react";
-import { cookieNames, getCookie, setCookie } from "../common/Cookies";
+import { cookieNames, getCookie, setCookie } from "../cookies";
 
 export function CookieSnackbar() {
   const showSnackbarCookie = useMemo(() => getCookie(cookieNames.showSnackbar), []);
