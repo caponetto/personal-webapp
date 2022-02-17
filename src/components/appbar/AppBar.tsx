@@ -5,12 +5,15 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import React, { useMemo } from "react";
-import { AnimatedMoonIcon } from "../components/AnimatedMoonIcon";
-import { AnimatedSunIcon } from "../components/AnimatedSunIcon";
-import { DRAWER_WIDTH, useApp } from "../context/AppContext";
-import { AppFonts } from "./AppFonts";
+import { useApp } from "../../context/AppContext";
+import { Fonts } from "../../fonts";
+import { AnimatedMoonIcon, AnimatedSunIcon } from "../icon";
 
-export function AppBar() {
+interface AppBarProps {
+  drawerWidth: number;
+}
+
+export function AppBar(props: AppBarProps) {
   const app = useApp();
   const xxs = useMediaQuery("(max-width:350px)");
   const colorModeIcon = useMemo(() => (app.isLight ? <AnimatedMoonIcon /> : <AnimatedSunIcon />), [app.isLight]);
@@ -19,8 +22,8 @@ export function AppBar() {
     <MaterialAppBar
       position="fixed"
       sx={{
-        width: { md: `calc(100% - ${DRAWER_WIDTH}px)` },
-        ml: { md: `${DRAWER_WIDTH}px` },
+        width: { md: `calc(100% - ${props.drawerWidth}px)` },
+        ml: { md: `${props.drawerWidth}px` },
       }}
     >
       <Toolbar>
@@ -42,7 +45,7 @@ export function AppBar() {
             fontWeight: "bold",
             letterSpacing: 1,
             fontSize: xxs ? "16px" : "20px",
-            fontFamily: AppFonts.QUICKSAND,
+            fontFamily: Fonts.QUICKSAND,
           }}
         >
           {app.data.personal.fullName}

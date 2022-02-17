@@ -4,8 +4,8 @@ import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import React from "react";
-import { Media } from "../common/Media";
-import { MediaCard } from "./MediaCard";
+import { Media } from "../../data/Data";
+import { MediaCard } from "../card";
 
 interface MediaSectionProps {
   title: string;

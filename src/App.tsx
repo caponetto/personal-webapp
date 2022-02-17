@@ -4,19 +4,19 @@ import LinearProgress from "@mui/material/LinearProgress";
 import Toolbar from "@mui/material/Toolbar";
 import React, { lazy, Suspense } from "react";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
-import { routes } from "../common/Routes";
-import { CookieSnackbar } from "../components/CookieSnackbar";
-import { AppContext } from "../context/AppContext";
-import { AppContextProvider } from "../context/AppContextProvider";
-import { AppBar } from "./AppBar";
-import { AppDrawer } from "./AppDrawer";
-import "./AppFonts";
+import { AppBar } from "./components/appbar";
+import { AppDrawer } from "./components/drawer";
+import { CookieSnackbar } from "./components/snackbar";
+import { AppContext, DRAWER_ITEM_WIDTH, DRAWER_WIDTH } from "./context/AppContext";
+import { AppContextProvider } from "./context/AppContextProvider";
+import "./fonts";
+import { routes } from "./routes";
 
-const AboutPage = lazy(() => import("../pages/AboutPage"));
-const JourneyPage = lazy(() => import("../pages/JourneyPage"));
-const TextPage = lazy(() => import("../pages/TextPage"));
-const TalkPage = lazy(() => import("../pages/TalkPage"));
-const CodePage = lazy(() => import("../pages/CodePage"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const JourneyPage = lazy(() => import("./pages/JourneyPage"));
+const TextPage = lazy(() => import("./pages/TextPage"));
+const TalkPage = lazy(() => import("./pages/TalkPage"));
+const CodePage = lazy(() => import("./pages/CodePage"));
 
 export function App() {
   return (
@@ -34,8 +34,8 @@ export function App() {
               }}
             >
               <CssBaseline />
-              <AppBar />
-              <AppDrawer />
+              <AppBar drawerWidth={DRAWER_WIDTH} />
+              <AppDrawer drawerWidth={DRAWER_WIDTH} drawerItemWidth={DRAWER_ITEM_WIDTH} />
               <CookieSnackbar />
               <Box component="main" sx={{ flexGrow: 1 }}>
                 <Toolbar />

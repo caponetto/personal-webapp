@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Media } from "../common/Media";
-import { KeywordChips } from "../components/KeywordChips";
-import { MediaPageHeader } from "../components/MediaPageHeader";
-import { MediaSection } from "../components/MediaSection";
-import { Page } from "../components/Page";
+import { KeywordChips } from "../components/chip";
+import { MediaPageHeader, MediaSection, Page } from "../components/page";
 import { useApp } from "../context/AppContext";
+import { Media } from "../data/Data";
 import { useKeywordSelection } from "../hooks/useKeywordSelection";
 import { usePageActive } from "../hooks/usePageActive";
 

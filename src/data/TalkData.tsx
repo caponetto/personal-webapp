@@ -1,11 +1,5 @@
-import { Media } from "../common/Media";
-import { routes } from "../common/Routes";
-
-export interface TalkData {
-  keywords: string[];
-  lives: Media[];
-  conferences: Media[];
-}
+import { routes } from "../routes";
+import { TalkData } from "./Data";
 
 const talkKeywords = {
   apacheKafka: "Apache Kafka",

@@ -1,6 +1,4 @@
-export interface AboutData {
-  paragraphs: string[];
-}
+import { AboutData } from "./Data";
 
 export const ABOUT_DATA: AboutData = {
   paragraphs: [
