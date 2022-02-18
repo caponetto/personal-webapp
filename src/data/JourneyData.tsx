@@ -1,11 +1,4 @@
-import { Journey } from "../common/Journey";
-
-export interface JourneyData {
-  education: Journey[];
-  certification: Journey[];
-  experience: Journey[];
-  toolbox: string[];
-}
+import { JourneyData } from "./Data";
 
 const locations = {
   unicamp: {

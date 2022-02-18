@@ -1,10 +1,4 @@
-import { Media } from "../common/Media";
-
-export interface TextData {
-  keywords: string[];
-  masterThesis: Media;
-  blogPosts: Media[];
-}
+import { TextData } from "./Data";
 
 const textKeywords = {
   archetypes: "Archetypes",

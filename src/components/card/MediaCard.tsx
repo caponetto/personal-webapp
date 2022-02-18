@@ -11,10 +11,11 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { format } from "date-fns";
 import React, { useMemo } from "react";
-import { AppFonts } from "../app/AppFonts";
-import { Media } from "../common/Media";
-import { routes } from "../common/Routes";
-import { useApp } from "../context/AppContext";
+import { useApp } from "../../context/AppContext";
+import { Media } from "../../data/Data";
+import { Fonts } from "../../fonts";
+import { routes } from "../../routes";
+import { openExternalUrl } from "../../window";
 import { HoverableCard } from "./HoverableCard";
 
 interface MediaCardProps {
@@ -78,7 +79,7 @@ export function MediaCard(props: MediaCardProps) {
         title={
           <Typography
             sx={{
-              fontFamily: AppFonts.OXYGEN,
+              fontFamily: Fonts.OXYGEN,
               fontSize: { xs: "14px", sm: "16px" },
               fontWeight: "bold",
               height: { xs: "auto", lg: "50px" },
@@ -130,7 +131,7 @@ export function MediaCard(props: MediaCardProps) {
               size="small"
               endIcon={<LaunchIcon />}
               color="success"
-              onClick={() => window.open(props.item.url, "_blank", "noopener")}
+              onClick={() => props.item.url && openExternalUrl(props.item.url)}
             >
               {accessMediaButtonLabel}
             </Button>

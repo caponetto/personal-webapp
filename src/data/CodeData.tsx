@@ -1,9 +1,4 @@
-import { Media } from "../common/Media";
-
-export interface CodeData {
-  keywords: string[];
-  repositories: Media[];
-}
+import { CodeData } from "./Data";
 
 const codeKeywords = {
   apacheKafka: "Apache Kafka",

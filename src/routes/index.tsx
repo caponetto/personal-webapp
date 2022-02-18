@@ -29,10 +29,11 @@ export const routes = {
   },
 
   urls: {
-    twitter: "https://twitter.com/caponetto",
-    medium: "https://medium.com/@caponetto",
-    linkedin: "https://www.linkedin.com/in/ghcaponetto",
-    github: "https://github.com/caponetto",
+    social: {
+      twitter: "https://twitter.com/caponetto",
+      linkedin: "https://www.linkedin.com/in/ghcaponetto",
+      github: "https://github.com/caponetto",
+    },
     mapsCountry: "https://www.google.com/maps/place/Brazil",
   },
 };

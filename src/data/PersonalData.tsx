@@ -1,13 +1,5 @@
-import { routes } from "../common/Routes";
-
-export interface PersonalData {
-  fullName: string;
-  location: {
-    country: string;
-    flag: string;
-    url: string;
-  };
-}
+import { routes } from "../routes";
+import { PersonalData } from "./Data";
 
 export const PERSONAL_DATA: PersonalData = {
   fullName: "Guilherme Caponetto",

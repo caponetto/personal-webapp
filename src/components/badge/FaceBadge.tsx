@@ -3,6 +3,7 @@ import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import React from "react";
+import { openExternalUrl } from "../../window";
 
 interface FaceBadgeProps {
   name: string;
@@ -29,7 +30,7 @@ export function FaceBadge(props: FaceBadgeProps) {
             <IconButton
               id="face-badge-location"
               sx={{ color: "rgba(0,0,0,0.9)" }}
-              onClick={() => window.open(props.location.url, "_blank", "noopener")}
+              onClick={() => openExternalUrl(props.location.url)}
             >
               {props.location.emojiIcon}
             </IconButton>

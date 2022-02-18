@@ -4,12 +4,13 @@ import Fade from "@mui/material/Fade";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import React, { ReactNode } from "react";
-import { AppFonts } from "../app/AppFonts";
-import { HoverableCard } from "../components/HoverableCard";
-import { Page } from "../components/Page";
-import { SocialBar } from "../components/SocialBar";
+import { HoverableCard } from "../components/card";
+import { Page } from "../components/page";
+import { SocialBar } from "../components/social";
 import { useApp } from "../context/AppContext";
+import { Fonts } from "../fonts";
 import { usePageActive } from "../hooks/usePageActive";
+import { routes } from "../routes";
 
 export default function AboutPage() {
   const app = useApp();
@@ -26,7 +27,7 @@ export default function AboutPage() {
                 sx={{
                   textAlign: "center",
                   fontWeight: "bold",
-                  fontFamily: AppFonts.PHILOSOPHER,
+                  fontFamily: Fonts.PHILOSOPHER,
                   fontSize: { xs: "16px", sm: "20px" },
                 }}
               >
@@ -39,7 +40,7 @@ export default function AboutPage() {
           </Fade>
           <CardActions disableSpacing sx={{ display: { xs: "auto", md: "none" } }}>
             <Box sx={{ width: 1 }}>
-              <SocialBar sx={{ width: "150px", mx: "auto", float: "center" }} />
+              <SocialBar sx={{ width: "150px", mx: "auto", float: "center" }} urls={routes.urls.social} />
             </Box>
           </CardActions>
         </HoverableCard>
@@ -55,7 +56,7 @@ function Paragraph(props: { children: ReactNode }) {
         sx={{
           textAlign: "justify",
           lineHeight: 1.7,
-          fontFamily: AppFonts.NUNITO,
+          fontFamily: Fonts.NUNITO,
           fontSize: { xs: "13px", sm: "16px" },
         }}
       >

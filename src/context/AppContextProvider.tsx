@@ -2,7 +2,6 @@ import { blueGrey, grey, teal } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React, { ReactNode, useCallback, useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
-import { routes } from "../common/Routes";
 import { cookieNames, getCookie, setCookie } from "../cookies";
 import { ABOUT_DATA } from "../data/AboutData";
 import { CODE_DATA } from "../data/CodeData";
@@ -10,6 +9,7 @@ import { JOURNEY_DATA } from "../data/JourneyData";
 import { PERSONAL_DATA } from "../data/PersonalData";
 import { TALK_DATA } from "../data/TalkData";
 import { TEXT_DATA } from "../data/TextData";
+import { routes } from "../routes";
 import { AppContext, ColorMode } from "./AppContext";
 
 interface AppContextProviderProps {

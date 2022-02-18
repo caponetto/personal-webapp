@@ -17,13 +17,13 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import React, { ReactNode } from "react";
-import { Journey } from "../common/Journey";
-import { routes } from "../common/Routes";
-import { HoverableCard } from "../components/HoverableCard";
-import { Page } from "../components/Page";
-import { PageHeader } from "../components/PageHeader";
+import { HoverableCard } from "../components/card";
+import { Page, PageHeader } from "../components/page";
 import { useApp } from "../context/AppContext";
+import { Journey } from "../data/Data";
 import { usePageActive } from "../hooks/usePageActive";
+import { routes } from "../routes";
+import { openExternalUrl } from "../window";
 
 type JourneyKind = "education" | "certifications" | "toolbox" | "experience";
 
@@ -119,7 +119,7 @@ function JourneyCard(props: JourneyCardProps) {
             size="small"
             endIcon={<LaunchIcon />}
             color="success"
-            onClick={() => window.open(routes.urls.linkedin, "_blank", "noopener")}
+            onClick={() => openExternalUrl(routes.urls.social.linkedin)}
           >
             {"More Details"}
           </Button>
