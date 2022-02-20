@@ -16,6 +16,7 @@ export function SocialButton(props: SocialButtonProps) {
       <Tooltip title={`${props.label} Profile`} arrow>
         <IconButton
           id={`${props.label}-button`}
+          data-testid={`${props.label}-button`}
           sx={{ p: props.disableSpacing ? "0" : "8px" }}
           aria-label={`Open ${props.label}`}
           onClick={props.onClick}
