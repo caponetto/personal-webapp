@@ -61,7 +61,7 @@ export function MediaCard(props: MediaCardProps) {
     }
 
     if (props.item.publishedAt === "UNICAMP") {
-      return app.isLight ? routes.images.unicamp.light : routes.images.unicamp.dark;
+      return app.colorMode === "light" ? routes.images.unicamp.light : routes.images.unicamp.dark;
     }
 
     if (props.item.publishedAt === "The Developer's Conference") {
@@ -69,9 +69,9 @@ export function MediaCard(props: MediaCardProps) {
     }
 
     if (props.item.publishedAt === "GitHub") {
-      return app.isLight ? routes.images.github.light : routes.images.github.dark;
+      return app.colorMode === "light" ? routes.images.github.light : routes.images.github.dark;
     }
-  }, [app.isLight, props.item.publishedAt]);
+  }, [app.colorMode, props.item.publishedAt]);
 
   return (
     <HoverableCard>
@@ -84,7 +84,7 @@ export function MediaCard(props: MediaCardProps) {
               fontWeight: "bold",
               height: { xs: "auto", lg: "50px" },
             }}
-            color={grey[app.isLight ? 700 : 500]}
+            color={grey[app.colorMode === "light" ? 700 : 500]}
             gutterBottom
           >
             {props.item.title}

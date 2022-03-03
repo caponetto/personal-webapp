@@ -16,10 +16,12 @@ export const DRAWER_ITEM_WIDTH = DRAWER_WIDTH - 16;
 
 export interface AppContextType {
   data: AppData;
-  isLight: boolean;
+  colorMode: ColorMode;
+  setColorMode: Dispatch<ColorMode>;
   drawerOpen: boolean;
   setDrawerOpen: Dispatch<boolean>;
-  toggleColorMode: () => void;
+  settingsOpen: boolean;
+  setSettingsOpen: Dispatch<boolean>;
   goTo: (route: string) => void;
 }
 

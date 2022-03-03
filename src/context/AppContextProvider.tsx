@@ -2,6 +2,7 @@ import { blueGrey, grey, teal } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React, { ReactNode, useCallback, useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
+import { DARK_GRAY, WHITE_GRAY } from "../colors";
 import { cookieNames, getCookie, setCookie } from "../cookies";
 import { ABOUT_DATA } from "../data/AboutData";
 import { CODE_DATA } from "../data/CodeData";
@@ -20,6 +21,7 @@ export function AppContextProvider(props: AppContextProviderProps) {
   const location = useLocation();
   const navigate = useNavigate();
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
   const [colorMode, setColorMode] = useState<ColorMode>(
     (getCookie(cookieNames.colorMode) as ColorMode) === "dark" ? "dark" : "light"
   );
@@ -36,12 +38,6 @@ export function AppContextProvider(props: AppContextProviderProps) {
     []
   );
 
-  const isLight = useMemo(() => colorMode === "light", [colorMode]);
-
-  const toggleColorMode = useCallback(() => {
-    setColorMode((previous: ColorMode) => (previous === "light" ? "dark" : "light"));
-  }, []);
-
   const theme = useMemo(
     () =>
       createTheme({
@@ -50,15 +46,18 @@ export function AppContextProvider(props: AppContextProviderProps) {
             main: blueGrey[500],
           },
           success: {
-            main: isLight ? teal[700] : grey[500],
+            main: colorMode === "light" ? teal[700] : grey[500],
           },
           info: {
-            main: isLight ? grey[700] : grey[600],
+            main: colorMode === "light" ? grey[700] : grey[600],
           },
           mode: colorMode,
+          background: {
+            default: colorMode === "light" ? WHITE_GRAY : DARK_GRAY,
+          },
         },
       }),
-    [colorMode, isLight]
+    [colorMode]
   );
 
   const goTo = useCallback(
@@ -86,8 +85,22 @@ export function AppContextProvider(props: AppContextProviderProps) {
     document.title = `${data.personal.fullName} | ${routeName}`;
   }, [data.personal.fullName, location.pathname]);
 
+  const contextValue = useMemo(
+    () => ({
+      data,
+      colorMode,
+      setColorMode,
+      drawerOpen,
+      setDrawerOpen,
+      settingsOpen,
+      setSettingsOpen,
+      goTo,
+    }),
+    [data, colorMode, drawerOpen, settingsOpen, goTo]
+  );
+
   return (
-    <AppContext.Provider value={{ data, isLight, drawerOpen, setDrawerOpen, toggleColorMode, goTo }}>
+    <AppContext.Provider value={contextValue}>
       <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
     </AppContext.Provider>
   );
