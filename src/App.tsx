@@ -2,8 +2,9 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import LinearProgress from "@mui/material/LinearProgress";
 import Toolbar from "@mui/material/Toolbar";
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useMemo } from "react";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BLUE_UNIVERSE, DARK_GRAY, LIGHT_GRAY, WHITE_GRAY } from "./colors";
 import { AppBar } from "./components/appbar";
 import { AppDrawer } from "./components/drawer";
 import { CookieSnackbar } from "./components/snackbar";
@@ -19,6 +20,8 @@ const TalkPage = lazy(() => import("./pages/TalkPage"));
 const CodePage = lazy(() => import("./pages/CodePage"));
 
 export function App() {
+  const navigateToAbout = useMemo(() => <Navigate to={routes.nav.about} />, []);
+
   return (
     <HashRouter>
       <AppContextProvider>
@@ -28,9 +31,10 @@ export function App() {
               sx={{
                 display: "flex",
                 minHeight: "100vh",
-                background: app.isLight
-                  ? "radial-gradient(ellipse at top right, #E6EAEC 0%, #FFFFFF 100%)"
-                  : "radial-gradient(ellipse at top right, #1C2837 0%, #050608 100%)",
+                background:
+                  app.colorMode === "light"
+                    ? `linear-gradient(90deg, ${LIGHT_GRAY} 0%, ${WHITE_GRAY} 100%)`
+                    : `linear-gradient(90deg, ${BLUE_UNIVERSE} 0%, ${DARK_GRAY} 100%)`,
               }}
             >
               <CssBaseline />
@@ -41,13 +45,13 @@ export function App() {
                 <Toolbar />
                 <Suspense fallback={<LinearProgress sx={{ height: "2px" }} />}>
                   <Routes>
-                    <Route path={routes.nav.root} element={<Navigate to={routes.nav.about} />} />
+                    <Route path={routes.nav.root} element={navigateToAbout} />
                     <Route path={routes.nav.about} element={<AboutPage />} />
                     <Route path={routes.nav.journey} element={<JourneyPage />} />
                     <Route path={routes.nav.text} element={<TextPage />} />
                     <Route path={routes.nav.talk} element={<TalkPage />} />
                     <Route path={routes.nav.code} element={<CodePage />} />
-                    <Route path={routes.nav.any} element={<Navigate to={routes.nav.about} />} />
+                    <Route path={routes.nav.any} element={navigateToAbout} />
                   </Routes>
                 </Suspense>
               </Box>

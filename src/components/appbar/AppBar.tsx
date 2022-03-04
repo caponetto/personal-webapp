@@ -1,13 +1,15 @@
 import MenuIcon from "@mui/icons-material/Menu";
-import { AppBar as MaterialAppBar, Tooltip } from "@mui/material";
+import SettingsIcon from "@mui/icons-material/Settings";
+import { AppBar as MaterialAppBar } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
+import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import React, { useMemo } from "react";
+import React, { useRef } from "react";
 import { useApp } from "../../context/AppContext";
 import { Fonts } from "../../fonts";
-import { AnimatedMoonIcon, AnimatedSunIcon } from "../icon";
+import { SettingsPopover } from "../settings";
 
 interface AppBarProps {
   drawerWidth: number;
@@ -16,7 +18,7 @@ interface AppBarProps {
 export function AppBar(props: AppBarProps) {
   const app = useApp();
   const xxs = useMediaQuery("(max-width:350px)");
-  const colorModeIcon = useMemo(() => (app.isLight ? <AnimatedMoonIcon /> : <AnimatedSunIcon />), [app.isLight]);
+  const settingsButtonRef = useRef<HTMLButtonElement | null>(null);
 
   return (
     <MaterialAppBar
@@ -50,16 +52,22 @@ export function AppBar(props: AppBarProps) {
         >
           {app.data.personal.fullName}
         </Typography>
-        <Tooltip title={`Enable ${app.isLight ? "dark" : "light"} mode`} arrow>
+        <Tooltip title={"Settings"} arrow>
           <IconButton
-            id={`enable-${app.isLight ? "dark" : "light"}-mode-button`}
-            onClick={app.toggleColorMode}
+            ref={settingsButtonRef}
+            id={"settings-button"}
+            onClick={() => app.setSettingsOpen(true)}
             color="inherit"
-            aria-label={"Toggle color mode"}
+            aria-label={"Open settings"}
           >
-            {colorModeIcon}
+            <SettingsIcon />
           </IconButton>
         </Tooltip>
+        <SettingsPopover
+          anchor={settingsButtonRef.current}
+          open={app.settingsOpen}
+          onClose={() => app.setSettingsOpen(false)}
+        />
       </Toolbar>
     </MaterialAppBar>
   );
