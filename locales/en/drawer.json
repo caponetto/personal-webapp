@@ -1,0 +1,17 @@
+{
+  "about": {
+    "subtitle": "Words about myself"
+  },
+  "journey": {
+    "subtitle": "Education & experience"
+  },
+  "text": {
+    "subtitle": "Content that I've written"
+  },
+  "talk": {
+    "subtitle": "Things that I've talked about"
+  },
+  "code": {
+    "subtitle": "Projects worth highlighting"
+  }
+}

@@ -1,15 +1,27 @@
-import React, { useEffect, useState } from "react";
+import Typography from "@mui/material/Typography";
+import React, { useEffect, useMemo, useState } from "react";
+import { Trans, useTranslation } from "react-i18next";
 import { KeywordChips } from "../components/chip";
-import { MediaPageHeader, MediaSection, Page } from "../components/page";
+import { MediaSection, Page, PageHeader } from "../components/page";
 import { useApp } from "../context/AppContext";
-import { Media } from "../data/Data";
+import { Media } from "../data";
 import { useKeywordSelection } from "../hooks/useKeywordSelection";
 import { usePageActive } from "../hooks/usePageActive";
 
 export default function CodePage() {
   const app = useApp();
   const active = usePageActive();
-  const keywordSelection = useKeywordSelection(app.data.code.keywords);
+  const { t } = useTranslation();
+
+  const codeKeywords = useMemo(() => {
+    const repositoryKeywords = app.data.code.repositories.reduce(
+      (acc: string[], repo) => acc.concat(repo.keywordKeys),
+      []
+    );
+    return [...new Set(repositoryKeywords)];
+  }, [app.data.code.repositories]);
+
+  const keywordSelection = useKeywordSelection(codeKeywords);
   const [filteredRepositories, setFilteredRepositories] = useState<Media[]>([]);
 
   useEffect(() => {
@@ -18,7 +30,7 @@ export default function CodePage() {
         .filter(
           (media: Media) =>
             keywordSelection.selected.length === 0 ||
-            media.keywords.some((keyword: string) => keywordSelection.selected.includes(keyword))
+            media.keywordKeys.some((keyword: string) => keywordSelection.selected.includes(keyword))
         )
         .sort((a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime())
     );
@@ -26,10 +38,16 @@ export default function CodePage() {
 
   return (
     <Page>
-      <MediaPageHeader fadeTime={500} type={"code"} />
+      <PageHeader fadeTime={500}>
+        <Typography component="div" sx={{ mb: "30px", fontSize: { sm: "16px", lg: "18px" } }}>
+          <Trans i18nKey="code:header">
+            Here you can find some of my <strong>code</strong>
+          </Trans>
+        </Typography>
+      </PageHeader>
       {active && (
         <KeywordChips
-          keywords={app.data.code.keywords}
+          keywords={codeKeywords}
           selectedKeywords={keywordSelection.selected}
           onKeywordClicked={keywordSelection.onItemClicked}
           onClearSelection={keywordSelection.onClear}
@@ -38,7 +56,7 @@ export default function CodePage() {
       )}
       {active && filteredRepositories.length > 0 && (
         <MediaSection
-          title={"Repositories"}
+          title={t("literal:repositories")}
           fadeTime={1000}
           selectedKeywords={keywordSelection.selected}
           onKeywordClicked={keywordSelection.onItemClicked}

@@ -2,11 +2,11 @@
 
 exports[`LinkedInButton should match the snapshot 1`] = `
 <button
-  aria-label="Open LinkedIn"
+  aria-label="Open linkedin"
   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1l55se7-MuiButtonBase-root-MuiIconButton-root"
   data-mui-internal-clone-element="true"
-  data-testid="LinkedIn-button"
-  id="LinkedIn-button"
+  data-testid="linkedin-button"
+  id="linkedin-button"
   tabindex="0"
   type="button"
 >

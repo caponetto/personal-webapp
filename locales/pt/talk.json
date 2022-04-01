@@ -1,0 +1,11 @@
+{
+  "header": "Aqui você encontra algumas de minhas <1>apresentações</1>",
+  "lives": {
+    "workspaceCollaborationInBC": "Workspace collaboration in Business Central",
+    "mavenArchetypesInBC": "Maven archetype support in Business Central",
+    "streamDecisionsWithDmnAndKafka": "Streaming decisions with DMN and Kafka"
+  },
+  "conferences": {
+    "streamDecisionsWithDmnAndKafka": "Streaming suas decisões com DMN e Kafka"
+  }
+}

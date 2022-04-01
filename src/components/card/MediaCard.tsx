@@ -11,8 +11,9 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { format } from "date-fns";
 import React, { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
-import { Media } from "../../data/Data";
+import { Media } from "../../data";
 import { Fonts } from "../../fonts";
 import { routes } from "../../routes";
 import { openExternalUrl } from "../../window";
@@ -26,22 +27,23 @@ interface MediaCardProps {
 
 export function MediaCard(props: MediaCardProps) {
   const app = useApp();
+  const { t } = useTranslation();
 
   const accessMediaButtonLabel = useMemo(() => {
     if (["post", "thesis"].includes(props.item.type)) {
-      return "Read";
+      return t("literal:read");
     }
 
     if (props.item.type === "live") {
-      return "Watch";
+      return t("literal:watch");
     }
 
     if (props.item.type === "conference") {
-      return "Slides";
+      return t("literal:slides");
     }
 
-    return "View";
-  }, [props.item.type]);
+    return t("literal:view");
+  }, [props.item.type, t]);
 
   const formattedMediaDate = useMemo(() => {
     if (["code", "thesis"].includes(props.item.type)) {
@@ -105,16 +107,17 @@ export function MediaCard(props: MediaCardProps) {
       />
       <CardContent sx={{ pt: 0 }}>
         <Grid sx={{ height: { xs: "auto", lg: "50px" } }} container spacing={1}>
-          {props.item.keywords
-            .sort((a: string, b: string) => b.length - a.length)
-            .map((keyword: string) => (
-              <Grid item key={`media-keyword-${keyword}`}>
+          {[...props.item.keywordKeys]
+            .sort((a, b) => b.length - a.length)
+            .map((keywordKey) => (
+              <Grid item key={`media-keyword-${keywordKey}`}>
                 <Chip
-                  label={keyword}
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                  label={t(`literal:${keywordKey}` as any)}
                   color="success"
-                  variant={props.selectedKeywords.includes(keyword) ? "filled" : "outlined"}
+                  variant={props.selectedKeywords.includes(keywordKey) ? "filled" : "outlined"}
                   size="small"
-                  onClick={() => props.onKeywordClicked(keyword)}
+                  onClick={() => props.onKeywordClicked(keywordKey)}
                 />
               </Grid>
             ))}

@@ -15,6 +15,7 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import React, { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router";
 import { DrawerListItem } from ".";
 import { useApp } from "../../context/AppContext";
@@ -29,6 +30,7 @@ interface AppDrawerProps {
 
 export function AppDrawer(props: AppDrawerProps) {
   const app = useApp();
+  const { t } = useTranslation();
   const location = useLocation();
   const denseList = useMediaQuery("(min-height:580px) and (max-height:600px)");
 
@@ -48,40 +50,40 @@ export function AppDrawer(props: AppDrawerProps) {
         <List dense={denseList} sx={{ flexGrow: 1 }}>
           <DrawerListItem
             width={props.drawerItemWidth}
-            title={"About"}
-            subtitle={"Words about myself"}
+            title={t("literal:about")}
+            subtitle={t("drawer:about.subtitle")}
             icon={{ normal: <InfoOutlinedIcon />, selected: <InfoIcon /> }}
             onClick={() => app.goTo(routes.nav.about)}
             selected={location.pathname === routes.nav.about}
           />
           <DrawerListItem
             width={props.drawerItemWidth}
-            title={"Journey"}
-            subtitle={"Education & Experience"}
+            title={t("literal:journey")}
+            subtitle={t("drawer:journey.subtitle")}
             icon={{ normal: <ViewTimelineOutlinedIcon />, selected: <ViewTimelineIcon /> }}
             onClick={() => app.goTo(routes.nav.journey)}
             selected={location.pathname === routes.nav.journey}
           />
           <DrawerListItem
             width={props.drawerItemWidth}
-            title={"Text"}
-            subtitle={"Content that I've written"}
+            title={t("literal:text")}
+            subtitle={t("drawer:text.subtitle")}
             icon={{ normal: <TextSnippetOutlinedIcon />, selected: <TextSnippetIcon /> }}
             onClick={() => app.goTo(routes.nav.text)}
             selected={location.pathname === routes.nav.text}
           />
           <DrawerListItem
             width={props.drawerItemWidth}
-            title={"Talk"}
-            subtitle={"Things that I've talked about"}
+            title={t("literal:talk")}
+            subtitle={t("drawer:talk.subtitle")}
             icon={{ normal: <ForumOutlinedIcon />, selected: <ForumIcon /> }}
             onClick={() => app.goTo(routes.nav.talk)}
             selected={location.pathname === routes.nav.talk}
           />
           <DrawerListItem
             width={props.drawerItemWidth}
-            title={"Code"}
-            subtitle={"Lines worth highlighting"}
+            title={t("literal:code")}
+            subtitle={t("drawer:code.subtitle")}
             icon={{ normal: <SourceOutlinedIcon />, selected: <SourceIcon /> }}
             onClick={() => app.goTo(routes.nav.code)}
             selected={location.pathname === routes.nav.code}
@@ -90,12 +92,12 @@ export function AppDrawer(props: AppDrawerProps) {
         <Box sx={{ width: 1, flexShrink: 0 }}>
           <SocialBar sx={{ width: "60%", mx: "auto", mb: "10px" }} urls={routes.urls.social} />
           <Typography variant="caption" component="div" align="center">
-            {`© ${new Date().getFullYear()} ${app.data.personal.fullName}`}
+            {t("common:copyright", { year: new Date().getFullYear(), name: app.data.personal.fullName })}
           </Typography>
         </Box>
       </Box>
     ),
-    [app, denseList, location.pathname, props.drawerItemWidth]
+    [app, denseList, location.pathname, props.drawerItemWidth, t]
   );
 
   const muiPaperStyle = useMemo(

@@ -3,6 +3,7 @@ import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { openExternalUrl } from "../../window";
 
 interface FaceBadgeProps {
@@ -13,6 +14,7 @@ interface FaceBadgeProps {
 }
 
 export function FaceBadge(props: FaceBadgeProps) {
+  const { t } = useTranslation();
   return (
     <Box
       sx={{
@@ -26,7 +28,7 @@ export function FaceBadge(props: FaceBadgeProps) {
         overlap="circular"
         anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
         badgeContent={
-          <Tooltip title={`Currently based on ${props.location.name}`} arrow>
+          <Tooltip title={t("common:location.tooltip", { location: props.location.name }).toString()} arrow>
             <IconButton
               id="face-badge-location"
               sx={{ color: "rgba(0,0,0,0.9)" }}

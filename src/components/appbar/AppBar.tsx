@@ -7,6 +7,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import React, { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
 import { Fonts } from "../../fonts";
 import { SettingsPopover } from "../settings";
@@ -18,6 +19,7 @@ interface AppBarProps {
 export function AppBar(props: AppBarProps) {
   const app = useApp();
   const xxs = useMediaQuery("(max-width:350px)");
+  const { t } = useTranslation();
   const settingsButtonRef = useRef<HTMLButtonElement | null>(null);
 
   return (
@@ -52,13 +54,13 @@ export function AppBar(props: AppBarProps) {
         >
           {app.data.personal.fullName}
         </Typography>
-        <Tooltip title={"Settings"} arrow>
+        <Tooltip title={t("literal:settings").toString()} arrow>
           <IconButton
             ref={settingsButtonRef}
-            id={"settings-button"}
+            id="settings-button"
             onClick={() => app.setSettingsOpen(true)}
             color="inherit"
-            aria-label={"Open settings"}
+            aria-label="Open settings"
           >
             <SettingsIcon />
           </IconButton>

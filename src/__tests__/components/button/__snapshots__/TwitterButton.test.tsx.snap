@@ -2,11 +2,11 @@
 
 exports[`TwitterButton should match the snapshot 1`] = `
 <button
-  aria-label="Open Twitter"
+  aria-label="Open twitter"
   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1l55se7-MuiButtonBase-root-MuiIconButton-root"
   data-mui-internal-clone-element="true"
-  data-testid="Twitter-button"
-  id="Twitter-button"
+  data-testid="twitter-button"
+  id="twitter-button"
   tabindex="0"
   type="button"
 >

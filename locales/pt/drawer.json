@@ -1,0 +1,17 @@
+{
+  "about": {
+    "subtitle": "Palavras sobre mim"
+  },
+  "journey": {
+    "subtitle": "Educação & experiência"
+  },
+  "text": {
+    "subtitle": "Conteúdo que escrevi"
+  },
+  "talk": {
+    "subtitle": "Assuntos que apresentei"
+  },
+  "code": {
+    "subtitle": "Projetos que destaco"
+  }
+}

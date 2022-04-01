@@ -1,0 +1,15 @@
+{
+  "header": "Here you can find some of my <1>code</1>",
+  "repositories": {
+    "bhc": "Bayesian Hierarchical Clustering",
+    "vsCodeQuarkusDJL": "Editor services on VS Code with Quarkus and DJL",
+    "lessIsMore": "Less is more",
+    "jupyterNotebooks": "Jupyter Notebooks",
+    "vsCodeDiffViewer": "VS Code Diff Viewer",
+    "vsCodeToxicityClassifier": "VS Code Toxicity classifier",
+    "streamDecisionsWithDmnAndKafka": "Streaming decisions with DMN and Kafka",
+    "vsCodeObjectDetection": "VS Code Object Detection",
+    "personalWebApp": "This web app :)",
+    "teachableMachinePlayground": "Teachable Machine Playground"
+  }
+}
