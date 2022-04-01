@@ -1,16 +1,12 @@
 import { blueGrey, grey, teal } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React, { ReactNode, useCallback, useEffect, useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router";
 import { DARK_GRAY, WHITE_GRAY } from "../colors";
 import { cookieNames, getCookie, setCookie } from "../cookies";
-import { ABOUT_DATA } from "../data/AboutData";
-import { CODE_DATA } from "../data/CodeData";
-import { JOURNEY_DATA } from "../data/JourneyData";
-import { PERSONAL_DATA } from "../data/PersonalData";
-import { TALK_DATA } from "../data/TalkData";
-import { TEXT_DATA } from "../data/TextData";
-import { routes } from "../routes";
+import { useData } from "../hooks/useData";
+import { pages, routes } from "../routes";
 import { AppContext, ColorMode } from "./AppContext";
 
 interface AppContextProviderProps {
@@ -20,22 +16,12 @@ interface AppContextProviderProps {
 export function AppContextProvider(props: AppContextProviderProps) {
   const location = useLocation();
   const navigate = useNavigate();
+  const { t } = useTranslation();
+  const data = useData();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [colorMode, setColorMode] = useState<ColorMode>(
     (getCookie(cookieNames.colorMode) as ColorMode) === "dark" ? "dark" : "light"
-  );
-
-  const data = useMemo(
-    () => ({
-      personal: PERSONAL_DATA,
-      about: ABOUT_DATA,
-      journey: JOURNEY_DATA,
-      text: TEXT_DATA,
-      talk: TALK_DATA,
-      code: CODE_DATA,
-    }),
-    []
   );
 
   const theme = useMemo(
@@ -81,9 +67,10 @@ export function AppContextProvider(props: AppContextProviderProps) {
       return;
     }
 
-    const routeName = relativePath.charAt(0).toUpperCase() + relativePath.slice(1);
-    document.title = `${data.personal.fullName} | ${routeName}`;
-  }, [data.personal.fullName, location.pathname]);
+    const fullName = t("personal:fullName");
+    const pageName = t(`literal:${relativePath as pages}`);
+    document.title = `${fullName} | ${pageName}`;
+  }, [location.pathname, t]);
 
   const contextValue = useMemo(
     () => ({

@@ -1,12 +1,10 @@
-name: "Publish"
+name: "Release"
 
 on:
   workflow_dispatch:
 
 env:
   GTM_ID: "GTM-TX4N6TH"
-  DISPLAY: ":99.0"
-  START_SERVER_AND_TEST_INSECURE: "true"
 
 jobs:
   publish:
@@ -26,6 +24,9 @@ jobs:
           token: ${{ secrets.TOKEN }}
           repository: caponetto/caponetto.github.io
 
+      - name: "Setup Git"
+        uses: ./personal-webapp/.github/actions/setup-git
+
       - name: "Setup environment"
         uses: ./personal-webapp/.github/actions/setup-env
         with:
@@ -37,12 +38,6 @@ jobs:
         run: |
           yarn build:prod
 
-      - name: "Test"
-        working-directory: ${{ github.workspace }}/personal-webapp
-        shell: bash
-        run: |
-          yarn test
-
       - name: "Deploy to GitHub Pages (caponetto.github.io)"
         working-directory: ${{ github.workspace }}/caponetto.github.io
         shell: bash
@@ -53,10 +48,6 @@ jobs:
 
           echo "Copy resources"
           cp -r ${{ github.workspace }}/personal-webapp/dist/* .
-
-          echo "Configure git"
-          git config --global user.name "Guilherme Caponetto"
-          git config --global user.email "638737+caponetto@users.noreply.github.com"
 
           echo "Commit changes and push"
           git add .

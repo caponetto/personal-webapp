@@ -1,0 +1,19 @@
+{
+  "header": "Aqui você encontra alguns de meus <1>textos</1>",
+  "mastersThesis": "Estruturas hierárquicas orientadas por dados em aprendizado multi-tarefa",
+  "blogPosts": {
+    "workspaceCollaboration": "Workspace collaboration via change requests",
+    "playingWithObjectDetection": "Playing with object detection",
+    "randomVsGridSearch": "Random Search vs Grid Search for hyperparameter optimization",
+    "mavenArchetypesInBC": "Maven archetype support in Business Central",
+    "emptyReposInBC": "Import an empty repository into Business Central",
+    "squashCommitsInBC": "Squash commits when merging a change request",
+    "improvedWorkflowInBC": "An improved development workflow on Business Central using our new DevTools",
+    "exportAsGist": "Exporting diagrams as GitHub gists",
+    "backendKogitoTooling": "Backend support on Kogito Tooling",
+    "authoringOnGitpod": "Four steps to author BPMN and DMN assets on gitpod.io",
+    "dmnDevSandbox": "Deploy decisions to DMN Developer Sandbox",
+    "teachableMachineBitingNails": "From training to deployment: Stop biting your nails with machine learning",
+    "deployKieSandboxToOpenshift": "Deploy your KIE Sandbox to OpenShift"
+  }
+}

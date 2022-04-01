@@ -17,25 +17,27 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import React, { ReactNode } from "react";
+import { Trans, useTranslation } from "react-i18next";
 import { HoverableCard } from "../components/card";
 import { Page, PageHeader } from "../components/page";
 import { useApp } from "../context/AppContext";
-import { Journey } from "../data/Data";
+import { Journey, JourneyKind } from "../data";
 import { usePageActive } from "../hooks/usePageActive";
 import { routes } from "../routes";
 import { openExternalUrl } from "../window";
 
-type JourneyKind = "education" | "certifications" | "toolbox" | "experience";
-
 export default function JourneyPage() {
   const app = useApp();
+  const { t } = useTranslation();
   const active = usePageActive();
 
   return (
     <Page>
       <PageHeader fadeTime={500}>
         <Typography component="div" sx={{ mb: "30px", fontSize: { sm: "16px", lg: "18px" } }}>
-          Here you can see my <strong>journey</strong> summary
+          <Trans i18nKey="journey:header">
+            Here you can see my <strong>journey</strong> summary
+          </Trans>
         </Typography>
       </PageHeader>
       {active && (
@@ -45,39 +47,41 @@ export default function JourneyPage() {
               <Fade in={true} timeout={1000}>
                 <Grid item xs={12} xl={6}>
                   <JourneyCard
-                    title={"Education"}
+                    title={t("literal:education")}
                     icon={<SchoolOutlinedIcon />}
-                    content={<JourneyList kind={"education"} items={app.data.journey.education} />}
+                    content={<JourneyList kind="education" items={app.data.journey.education} />}
                   />
                 </Grid>
               </Fade>
               <Fade in={true} timeout={1500}>
                 <Grid item xs={12} xl={6}>
                   <JourneyCard
-                    title={"Certifications"}
+                    title={t("literal:certifications")}
                     icon={<VerifiedOutlinedIcon />}
-                    content={<JourneyList kind={"certifications"} items={app.data.journey.certification} />}
+                    content={<JourneyList kind="certifications" items={app.data.journey.certification} />}
                   />
                 </Grid>
               </Fade>
               <Fade in={true} timeout={2000}>
                 <Grid item xs={12}>
                   <JourneyCard
-                    title={"Toolbox"}
+                    title={t("literal:toolbox")}
                     icon={<HomeRepairServiceOutlinedIcon />}
                     content={
                       <Grid container spacing={1}>
-                        {app.data.journey.toolbox.map((skill: string, idx: number) => (
-                          <Grid item key={`skill-${idx}`}>
-                            <Chip
-                              label={skill}
-                              color={"default"}
-                              variant={"outlined"}
-                              size={"small"}
-                              sx={{ borderRadius: "8px" }}
-                            />
-                          </Grid>
-                        ))}
+                        {[...app.data.journey.toolbox]
+                          .sort((a, b) => a.localeCompare(b))
+                          .map((skill: string) => (
+                            <Grid item key={`skill-${skill}`}>
+                              <Chip
+                                label={skill}
+                                color="default"
+                                variant="outlined"
+                                size="small"
+                                sx={{ borderRadius: "8px" }}
+                              />
+                            </Grid>
+                          ))}
                       </Grid>
                     }
                   />
@@ -88,9 +92,9 @@ export default function JourneyPage() {
           <Fade in={true} timeout={2500}>
             <Grid item xs={12} lg={5}>
               <JourneyCard
-                title={"Experience"}
+                title={t("literal:experience")}
                 icon={<WorkOutlineOutlinedIcon />}
-                content={<JourneyList kind={"experience"} items={app.data.journey.experience} />}
+                content={<JourneyList kind="experience" items={app.data.journey.experience} />}
               />
             </Grid>
           </Fade>
@@ -107,6 +111,7 @@ interface JourneyCardProps {
 }
 
 function JourneyCard(props: JourneyCardProps) {
+  const { t } = useTranslation();
   return (
     <HoverableCard>
       <CardHeader avatar={props.icon} title={<Typography sx={{ fontSize: "18px" }}>{props.title}</Typography>} />
@@ -121,7 +126,7 @@ function JourneyCard(props: JourneyCardProps) {
             color="success"
             onClick={() => openExternalUrl(routes.urls.social.linkedin)}
           >
-            {"More Details"}
+            {t("literal:moreDetails")}
           </Button>
         </Box>
       </CardActions>

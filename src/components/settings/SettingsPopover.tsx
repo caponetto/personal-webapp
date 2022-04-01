@@ -9,6 +9,7 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import Typography from "@mui/material/Typography";
 import React, { ChangeEvent, useCallback, useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import { ColorMode, useApp } from "../../context/AppContext";
 
 interface SettingsPopoverProps {
@@ -19,6 +20,7 @@ interface SettingsPopoverProps {
 
 export function SettingsPopover(props: SettingsPopoverProps) {
   const app = useApp();
+  const { t, i18n } = useTranslation();
 
   const onThemeChanged = useCallback(
     (event: ChangeEvent<HTMLInputElement>) => {
@@ -27,9 +29,12 @@ export function SettingsPopover(props: SettingsPopoverProps) {
     [app]
   );
 
-  const onLanguageChanged = useCallback((event: ChangeEvent<HTMLInputElement>) => {
-    // Nothing to do for now.
-  }, []);
+  const onLanguageChanged = useCallback(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      i18n.changeLanguage((event.target as HTMLInputElement).value);
+    },
+    [i18n]
+  );
 
   const smallRadioButton = useMemo(
     () => (
@@ -47,7 +52,7 @@ export function SettingsPopover(props: SettingsPopoverProps) {
 
   return (
     <Popover
-      id={"settings-popover"}
+      id="settings-popover"
       open={props.open}
       anchorEl={props.anchor}
       onClose={props.onClose}
@@ -65,7 +70,7 @@ export function SettingsPopover(props: SettingsPopoverProps) {
           <Box>
             <FormControl sx={{ width: "100%" }}>
               <FormLabel id="theme-form" focused={false}>
-                <Typography variant="overline">Theme</Typography>
+                <Typography variant="overline">{t("literal:theme")}</Typography>
               </FormLabel>
               <RadioGroup
                 aria-labelledby="theme-form"
@@ -73,23 +78,24 @@ export function SettingsPopover(props: SettingsPopoverProps) {
                 onChange={onThemeChanged}
                 name="theme-group"
               >
-                <FormControlLabel value="light" control={smallRadioButton} label="Light" />
-                <FormControlLabel value="dark" control={smallRadioButton} label="Dark" />
+                <FormControlLabel value="light" control={smallRadioButton} label={t("literal:light").toString()} />
+                <FormControlLabel value="dark" control={smallRadioButton} label={t("literal:dark").toString()} />
               </RadioGroup>
             </FormControl>
           </Box>
           <Box>
             <FormControl sx={{ width: "100%" }}>
               <FormLabel id="language-form" focused={false}>
-                <Typography variant="overline">Language</Typography>
+                <Typography variant="overline">{t("literal:language")}</Typography>
               </FormLabel>
               <RadioGroup
                 aria-labelledby="language-form"
-                value={"english"}
+                value={i18n.resolvedLanguage}
                 onChange={onLanguageChanged}
                 name="language-group"
               >
-                <FormControlLabel value="english" control={smallRadioButton} label="English" />
+                <FormControlLabel value="en" control={smallRadioButton} label={"English"} />
+                <FormControlLabel value="pt" control={smallRadioButton} label={"Português"} />
               </RadioGroup>
             </FormControl>
           </Box>

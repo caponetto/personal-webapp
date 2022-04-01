@@ -1,5 +1,6 @@
 import TwitterIcon from "@mui/icons-material/Twitter";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { SocialButton } from "./SocialButton";
 
 interface TwitterButtonProps {
@@ -8,9 +9,10 @@ interface TwitterButtonProps {
 }
 
 export function TwitterButton(props: TwitterButtonProps) {
+  const { t } = useTranslation();
   return (
     <SocialButton
-      label="Twitter"
+      label={t("literal:twitter")}
       icon={<TwitterIcon />}
       disableSpacing={props.disableSpacing}
       onClick={props.onClick}

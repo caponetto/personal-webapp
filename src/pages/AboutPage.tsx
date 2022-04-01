@@ -31,7 +31,7 @@ export default function AboutPage() {
                   fontSize: { xs: "16px", sm: "20px" },
                 }}
               >
-                Welcome to my personal space 👋
+                {app.data.about.welcome}
               </Typography>
               {app.data.about.paragraphs.map((paragraph: string, idx: number) => (
                 <Paragraph key={`about-paragraph-${idx}`}>{paragraph}</Paragraph>

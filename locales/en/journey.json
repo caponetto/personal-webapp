@@ -1,0 +1,11 @@
+{
+  "header": "Here you can see my <1>journey</1> summary",
+  "education": {
+    "master": {
+      "title": "M.Sc. in Machine Learning"
+    },
+    "bachelor": {
+      "title": "B.Sc. in Computer Science"
+    }
+  }
+}

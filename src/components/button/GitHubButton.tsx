@@ -1,5 +1,6 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { SocialButton } from "./SocialButton";
 
 interface GitHubButtonProps {
@@ -8,7 +9,13 @@ interface GitHubButtonProps {
 }
 
 export function GitHubButton(props: GitHubButtonProps) {
+  const { t } = useTranslation();
   return (
-    <SocialButton label="GitHub" icon={<GitHubIcon />} disableSpacing={props.disableSpacing} onClick={props.onClick} />
+    <SocialButton
+      label={t("literal:github")}
+      icon={<GitHubIcon />}
+      disableSpacing={props.disableSpacing}
+      onClick={props.onClick}
+    />
   );
 }
