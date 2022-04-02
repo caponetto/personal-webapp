@@ -1,4 +1,4 @@
-name: "Release"
+name: "Publish :: Release"
 
 on:
   workflow_dispatch:
@@ -23,9 +23,6 @@ jobs:
           path: ${{ github.workspace }}/caponetto.github.io
           token: ${{ secrets.TOKEN }}
           repository: caponetto/caponetto.github.io
-
-      - name: "Setup Git"
-        uses: ./personal-webapp/.github/actions/setup-git
 
       - name: "Setup environment"
         uses: ./personal-webapp/.github/actions/setup-env

@@ -1,11 +1,12 @@
-name: "Staging"
+name: "Publish :: Development"
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [main]
 
 env:
   GTM_ID: ""
-  CONTEXT_PATH: "/staging"
+  CONTEXT_PATH: "/dev"
 
 jobs:
   publish:
@@ -25,9 +26,6 @@ jobs:
           token: ${{ secrets.TOKEN }}
           repository: caponetto/caponetto.github.io
 
-      - name: "Setup Git"
-        uses: ./personal-webapp/.github/actions/setup-git
-
       - name: "Setup environment"
         uses: ./personal-webapp/.github/actions/setup-env
         with:
@@ -39,19 +37,19 @@ jobs:
         run: |
           yarn build:prod
 
-      - name: "Deploy to GitHub Pages Staging area (caponetto.github.io)"
+      - name: "Deploy to GitHub Pages - development version (caponetto.github.io)"
         working-directory: ${{ github.workspace }}/caponetto.github.io
         shell: bash
         run: |
           echo "Reset deployment dir"
-          rm -rf staging
-          mkdir staging
-          cd staging
+          rm -rf dev
+          mkdir dev
+          cd dev
 
           echo "Copy resources"
           cp -r ${{ github.workspace }}/personal-webapp/dist/* .
 
           echo "Commit changes and push"
           git add .
-          git commit -m "Staging Deploy ${{ github.sha }}" || echo "No changes."
+          git commit -m "Deploy for Development ${{ github.sha }}" || echo "No changes."
           git push origin main
