@@ -7,6 +7,7 @@ on:
 env:
   GTM_ID: ""
   CONTEXT_PATH: "/dev"
+  VERSION: ${{ github.sha }}
 
 jobs:
   publish:
@@ -35,7 +36,7 @@ jobs:
         working-directory: ${{ github.workspace }}/personal-webapp
         shell: bash
         run: |
-          yarn build:prod
+          yarn build:dev
 
       - name: "Deploy to GitHub Pages - development version (caponetto.github.io)"
         working-directory: ${{ github.workspace }}/caponetto.github.io

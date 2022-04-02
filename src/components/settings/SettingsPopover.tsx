@@ -99,6 +99,16 @@ export function SettingsPopover(props: SettingsPopoverProps) {
               </RadioGroup>
             </FormControl>
           </Box>
+          <Box>
+            <FormControl sx={{ width: "100%" }}>
+              <FormLabel id="version-form" focused={false}>
+                <Typography variant="overline">{t("literal:version")}</Typography>
+              </FormLabel>
+              <Typography color="gray" variant="body2">
+                {process.env["WEBPACK_REPLACE__version"]?.substring(0, 12)}
+              </Typography>
+            </FormControl>
+          </Box>
         </Box>
         <Box>
           <IconButton
