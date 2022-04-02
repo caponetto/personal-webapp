@@ -65,7 +65,7 @@ module.exports = async (env, argv) => [
       ]),
       new CopyPlugin({
         patterns: [
-          { from: "./locales", to: "./locales" },
+          { from: "./static/locales", to: "./static/locales" },
           { from: "./static/images", to: "./static/images" },
           { from: "./static/favicon", to: "./static/favicon" },
           { from: "./static/slides", to: "./static/slides" },
