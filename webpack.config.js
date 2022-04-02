@@ -66,6 +66,7 @@ module.exports = async (env, argv) => [
       ]),
       new EnvironmentPlugin({
         WEBPACK_REPLACE__contextPath: getContextPath(),
+        WEBPACK_REPLACE__version: getVersion(),
       }),
       new CopyPlugin({
         patterns: [
@@ -88,6 +89,12 @@ module.exports = async (env, argv) => [
     },
   },
 ];
+
+function getVersion() {
+  const version = process.env.VERSION;
+  console.info(`Version :: ${version}`);
+  return version ?? process.env.USER ?? "local";
+}
 
 function getContextPath() {
   const contextPath = process.env.CONTEXT_PATH;

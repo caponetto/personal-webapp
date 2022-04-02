@@ -10,6 +10,7 @@ on:
 
 env:
   GTM_ID: "GTM-TX4N6TH"
+  VERSION: ${{ github.event.inputs.tag }}
 
 jobs:
   publish:
