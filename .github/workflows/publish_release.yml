@@ -2,6 +2,11 @@ name: "Publish :: Release"
 
 on:
   workflow_dispatch:
+    inputs:
+      tag:
+        type: string
+        required: true
+        description: "The tag to publish"
 
 env:
   GTM_ID: "GTM-TX4N6TH"
@@ -14,6 +19,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          ref: ${{ github.event.inputs.tag }}
           path: ${{ github.workspace }}/personal-webapp
 
       - name: "Checkout caponetto.github.io"
@@ -48,5 +54,5 @@ jobs:
 
           echo "Commit changes and push"
           git add .
-          git commit -m "Deploy ${{ github.sha }}" || echo "No changes."
+          git commit -m "Deploy ${{ github.event.inputs.tag }}" || echo "No changes."
           git push origin main
