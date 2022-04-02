@@ -13,6 +13,13 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - name: "Setup Git"
+      shell: bash
+      run: |
+        echo "STEP: Setup Git"
+        git config --global user.name "Guilherme Caponetto"
+        git config --global user.email "638737+caponetto@users.noreply.github.com"
+
     - name: "Setup Node"
       uses: actions/setup-node@v2
       with:
