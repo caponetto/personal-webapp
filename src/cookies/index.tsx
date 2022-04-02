@@ -20,7 +20,7 @@ export function setCookie(name: string, value: string): void {
 
   const date = new Date();
   date.setMonth(date.getMonth() + 5);
-  document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/`;
+  document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/;SameSite=Strict`;
 }
 
 export const cookieNames: Record<string, string> = {
