@@ -5,6 +5,7 @@ on:
 
 env:
   GTM_ID: ""
+  CONTEXT_PATH: "/staging"
 
 jobs:
   publish:

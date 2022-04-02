@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlReplaceWebpackPlugin = require("html-replace-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const { EnvironmentPlugin } = require("webpack");
 
 module.exports = async (env, argv) => [
   {
@@ -63,6 +64,9 @@ module.exports = async (env, argv) => [
           },
         },
       ]),
+      new EnvironmentPlugin({
+        WEBPACK_REPLACE__contextPath: getContextPath(),
+      }),
       new CopyPlugin({
         patterns: [
           { from: "./static/locales", to: "./static/locales" },
@@ -84,6 +88,12 @@ module.exports = async (env, argv) => [
     },
   },
 ];
+
+function getContextPath() {
+  const contextPath = process.env.CONTEXT_PATH;
+  console.info(`Context Path :: ${contextPath}`);
+  return contextPath ?? "";
+}
 
 function getGtmResource() {
   const gtmId = process.env.GTM_ID;
