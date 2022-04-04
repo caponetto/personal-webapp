@@ -1,6 +1,8 @@
 name: "Publish :: Release"
 
 on:
+  release:
+    types: [published]
   workflow_dispatch:
     inputs:
       tag:
@@ -8,19 +10,32 @@ on:
         required: true
         description: "The tag to publish"
 
-env:
-  GTM_ID: "GTM-TX4N6TH"
-  VERSION: ${{ github.event.inputs.tag }}
-
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
+      - name: "Get release"
+        id: get_release
+        if: ${{ github.event_name != 'workflow_dispatch' }}
+        uses: bruceadams/get-release@v1.2.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+      - name: "Resolve version"
+        id: resolve_version
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo ::set-output name=version::${{ github.event.inputs.tag }}
+          else
+            echo ::set-output name=version::${{ steps.get_release.outputs.tag_name }}
+          fi
+
       - name: "Checkout personal-webapp"
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          ref: ${{ github.event.inputs.tag }}
+          ref: ${{ steps.resolve_version.outputs.version }}
           path: ${{ github.workspace }}/personal-webapp
 
       - name: "Checkout caponetto.github.io"
@@ -38,6 +53,9 @@ jobs:
 
       - name: "Build"
         working-directory: ${{ github.workspace }}/personal-webapp
+        env:
+          GTM_ID: "GTM-TX4N6TH"
+          VERSION: ${{ steps.resolve_version.outputs.version }}
         shell: bash
         run: |
           yarn build:prod
@@ -55,5 +73,5 @@ jobs:
 
           echo "Commit changes and push"
           git add .
-          git commit -m "Deploy ${{ github.event.inputs.tag }}" || echo "No changes."
+          git commit -m "Deploy ${{ steps.resolve_version.outputs.version }}" || echo "No changes."
           git push origin main

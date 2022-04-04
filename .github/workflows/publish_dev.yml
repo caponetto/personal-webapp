@@ -4,11 +4,6 @@ on:
   push:
     branches: [main]
 
-env:
-  GTM_ID: ""
-  CONTEXT_PATH: "/dev"
-  VERSION: ${{ github.sha }}
-
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -34,6 +29,10 @@ jobs:
 
       - name: "Build"
         working-directory: ${{ github.workspace }}/personal-webapp
+        env:
+          GTM_ID: ""
+          CONTEXT_PATH: "/dev"
+          VERSION: ${{ github.sha }}
         shell: bash
         run: |
           yarn build:dev
