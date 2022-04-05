@@ -7,6 +7,7 @@ import CardHeader from "@mui/material/CardHeader";
 import Chip from "@mui/material/Chip";
 import { grey } from "@mui/material/colors";
 import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { format } from "date-fns";
@@ -16,7 +17,6 @@ import { useApp } from "../../context/AppContext";
 import { Media } from "../../data";
 import { Fonts } from "../../fonts";
 import { routes } from "../../routes";
-import { openExternalUrl } from "../../window";
 import { HoverableCard } from "./HoverableCard";
 
 interface MediaCardProps {
@@ -129,15 +129,11 @@ export function MediaCard(props: MediaCardProps) {
             {formattedMediaDate}
           </Typography>
           {props.item.url && (
-            <Button
-              sx={{ float: "right" }}
-              size="small"
-              endIcon={<LaunchIcon />}
-              color="success"
-              onClick={() => props.item.url && openExternalUrl(props.item.url)}
-            >
-              {accessMediaButtonLabel}
-            </Button>
+            <Link underline="none" rel="noreferrer" target="_blank" href={props.item.url}>
+              <Button sx={{ float: "right" }} size="small" endIcon={<LaunchIcon />} color="success">
+                {accessMediaButtonLabel}
+              </Button>
+            </Link>
           )}
         </Box>
       </CardActions>
