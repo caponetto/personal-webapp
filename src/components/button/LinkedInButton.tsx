@@ -5,7 +5,7 @@ import { SocialButton } from "./SocialButton";
 
 interface LinkedInButtonProps {
   disableSpacing?: boolean;
-  onClick: () => void;
+  url: string;
 }
 
 export function LinkedInButton(props: LinkedInButtonProps) {
@@ -15,7 +15,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
       label={t("literal:linkedin")}
       icon={<LinkedInIcon />}
       disableSpacing={props.disableSpacing}
-      onClick={props.onClick}
+      url={props.url}
     />
   );
 }

@@ -5,7 +5,7 @@ import { usingTestingI18nContext } from "../../TestContextWrapper";
 
 describe("LinkedInButton", () => {
   it("should match the snapshot", async () => {
-    const { getByTestId } = render(usingTestingI18nContext(<LinkedInButton onClick={jest.fn()} />).wrapper);
+    const { getByTestId } = render(usingTestingI18nContext(<LinkedInButton url="" />).wrapper);
     expect(getByTestId("linkedin-button")).toMatchSnapshot();
   });
 });

@@ -5,7 +5,7 @@ import { SocialButton } from "./SocialButton";
 
 interface TwitterButtonProps {
   disableSpacing?: boolean;
-  onClick: () => void;
+  url: string;
 }
 
 export function TwitterButton(props: TwitterButtonProps) {
@@ -15,7 +15,7 @@ export function TwitterButton(props: TwitterButtonProps) {
       label={t("literal:twitter")}
       icon={<TwitterIcon />}
       disableSpacing={props.disableSpacing}
-      onClick={props.onClick}
+      url={props.url}
     />
   );
 }

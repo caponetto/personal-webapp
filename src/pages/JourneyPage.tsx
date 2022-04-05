@@ -24,7 +24,6 @@ import { useApp } from "../context/AppContext";
 import { Journey, JourneyKind } from "../data";
 import { usePageActive } from "../hooks/usePageActive";
 import { routes } from "../routes";
-import { openExternalUrl } from "../window";
 
 export default function JourneyPage() {
   const app = useApp();
@@ -118,16 +117,17 @@ function JourneyCard(props: JourneyCardProps) {
       <CardContent>{props.content}</CardContent>
       <CardActions sx={{ pt: 0, px: "16px" }}>
         <Box sx={{ width: 1 }}>
-          <Button
-            id={`${props.title}-more-details-button`}
-            sx={{ float: "right" }}
-            size="small"
-            endIcon={<LaunchIcon />}
-            color="success"
-            onClick={() => openExternalUrl(routes.urls.social.linkedin)}
-          >
-            {t("literal:moreDetails")}
-          </Button>
+          <Link underline="none" rel="noreferrer" target="_blank" href={routes.urls.social.linkedin}>
+            <Button
+              id={`${props.title}-more-details-button`}
+              sx={{ float: "right" }}
+              size="small"
+              endIcon={<LaunchIcon />}
+              color="success"
+            >
+              {t("literal:moreDetails")}
+            </Button>
+          </Link>
         </Box>
       </CardActions>
     </HoverableCard>

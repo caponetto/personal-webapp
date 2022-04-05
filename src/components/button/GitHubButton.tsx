@@ -5,7 +5,7 @@ import { SocialButton } from "./SocialButton";
 
 interface GitHubButtonProps {
   disableSpacing?: boolean;
-  onClick: () => void;
+  url: string;
 }
 
 export function GitHubButton(props: GitHubButtonProps) {
@@ -15,7 +15,7 @@ export function GitHubButton(props: GitHubButtonProps) {
       label={t("literal:github")}
       icon={<GitHubIcon />}
       disableSpacing={props.disableSpacing}
-      onClick={props.onClick}
+      url={props.url}
     />
   );
 }

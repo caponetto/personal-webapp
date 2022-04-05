@@ -2,9 +2,9 @@ import { Badge, Tooltip } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
+import Link from "@mui/material/Link";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { openExternalUrl } from "../../window";
 
 interface FaceBadgeProps {
   name: string;
@@ -29,13 +29,11 @@ export function FaceBadge(props: FaceBadgeProps) {
         anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
         badgeContent={
           <Tooltip title={t("common:location.tooltip", { location: props.location.name }).toString()} arrow>
-            <IconButton
-              id="face-badge-location"
-              sx={{ color: "rgba(0,0,0,0.9)" }}
-              onClick={() => openExternalUrl(props.location.url)}
-            >
-              {props.location.emojiIcon}
-            </IconButton>
+            <Link underline="none" rel="noreferrer" target="_blank" href={props.location.url}>
+              <IconButton id="face-badge-location" sx={{ color: "rgba(0,0,0,0.9)" }}>
+                {props.location.emojiIcon}
+              </IconButton>
+            </Link>
           </Tooltip>
         }
       >
