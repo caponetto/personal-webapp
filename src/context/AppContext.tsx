@@ -14,6 +14,8 @@ export interface AppContextType {
   setDrawerOpen: Dispatch<boolean>;
   settingsOpen: boolean;
   setSettingsOpen: Dispatch<boolean>;
+  snackbarOpen: boolean;
+  closeSnackbar: () => void;
   goTo: (route: string) => void;
 }
 
