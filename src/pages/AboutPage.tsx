@@ -19,31 +19,33 @@ export default function AboutPage() {
   return (
     <Page>
       {active && (
-        <HoverableCard sx={{ p: "28px", width: { xs: "100%", xl: "1170px" }, margin: "0 auto" }}>
-          <Fade in={true} timeout={500}>
-            <Stack spacing={4}>
-              <Typography
-                component="div"
-                sx={{
-                  textAlign: "center",
-                  fontWeight: "bold",
-                  fontFamily: Fonts.PHILOSOPHER,
-                  fontSize: { xs: "16px", sm: "20px" },
-                }}
-              >
-                {app.data.about.welcome}
-              </Typography>
-              {app.data.about.paragraphs.map((paragraph: string, idx: number) => (
-                <Paragraph key={`about-paragraph-${idx}`}>{paragraph}</Paragraph>
-              ))}
-            </Stack>
-          </Fade>
-          <CardActions disableSpacing sx={{ display: { xs: "auto", md: "none" } }}>
-            <Box sx={{ width: 1 }}>
-              <SocialBar sx={{ width: "150px", mx: "auto", float: "center" }} urls={routes.urls.social} />
-            </Box>
-          </CardActions>
-        </HoverableCard>
+        <Fade in={true} timeout={1000}>
+          <div>
+            <HoverableCard sx={{ p: "28px", width: { xs: "100%", xl: "1170px" }, margin: "0 auto" }}>
+              <Stack spacing={4}>
+                <Typography
+                  component="div"
+                  sx={{
+                    textAlign: "center",
+                    fontWeight: "bold",
+                    fontFamily: Fonts.PHILOSOPHER,
+                    fontSize: { xs: "16px", sm: "20px" },
+                  }}
+                >
+                  {app.data.about.welcome}
+                </Typography>
+                {app.data.about.paragraphs.map((paragraph: string, idx: number) => (
+                  <Paragraph key={`about-paragraph-${idx}`}>{paragraph}</Paragraph>
+                ))}
+              </Stack>
+              <CardActions disableSpacing sx={{ display: { xs: "auto", md: "none" } }}>
+                <Box sx={{ width: 1 }}>
+                  <SocialBar sx={{ width: "150px", mx: "auto", float: "center" }} urls={routes.urls.social} />
+                </Box>
+              </CardActions>
+            </HoverableCard>
+          </div>
+        </Fade>
       )}
     </Page>
   );

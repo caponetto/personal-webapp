@@ -43,7 +43,7 @@ export default function JourneyPage() {
         <Grid container spacing={2}>
           <Grid item xs={12} lg={7}>
             <Grid container spacing={2}>
-              <Fade in={true} timeout={1000}>
+              <Fade in={true} timeout={500}>
                 <Grid item xs={12} xl={6}>
                   <JourneyCard
                     title={t("literal:education")}
@@ -52,7 +52,7 @@ export default function JourneyPage() {
                   />
                 </Grid>
               </Fade>
-              <Fade in={true} timeout={1500}>
+              <Fade in={true} timeout={1000}>
                 <Grid item xs={12} xl={6}>
                   <JourneyCard
                     title={t("literal:certifications")}
@@ -61,7 +61,7 @@ export default function JourneyPage() {
                   />
                 </Grid>
               </Fade>
-              <Fade in={true} timeout={2000}>
+              <Fade in={true} timeout={1500}>
                 <Grid item xs={12}>
                   <JourneyCard
                     title={t("literal:toolbox")}
@@ -88,7 +88,7 @@ export default function JourneyPage() {
               </Fade>
             </Grid>
           </Grid>
-          <Fade in={true} timeout={2500}>
+          <Fade in={true} timeout={2000}>
             <Grid item xs={12} lg={5}>
               <JourneyCard
                 title={t("literal:experience")}

@@ -12,7 +12,6 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
@@ -21,6 +20,7 @@ import { DrawerListItem } from ".";
 import { useApp } from "../../context/AppContext";
 import { routes } from "../../routes";
 import { FaceBadge } from "../badge";
+import { Copyright } from "../copyright";
 import { SocialBar } from "../social";
 
 interface AppDrawerProps {
@@ -91,9 +91,7 @@ export function AppDrawer(props: AppDrawerProps) {
         </List>
         <Box sx={{ width: 1, flexShrink: 0 }}>
           <SocialBar sx={{ width: "60%", mx: "auto", mb: "10px" }} urls={routes.urls.social} />
-          <Typography variant="caption" component="div" align="center">
-            {t("common:copyright", { year: new Date().getFullYear(), name: app.data.personal.fullName })}
-          </Typography>
+          <Copyright />
         </Box>
       </Box>
     ),

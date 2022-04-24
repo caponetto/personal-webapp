@@ -20,6 +20,10 @@ export function AppContextProvider(props: AppContextProviderProps) {
   const data = useData();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const showSnackbarCookie = useMemo(() => getCookie(cookieNames.showSnackbar), []);
+  const [snackbarOpen, setSnackbarOpen] = useState(
+    navigator.cookieEnabled && (showSnackbarCookie === undefined || showSnackbarCookie === "true")
+  );
   const [colorMode, setColorMode] = useState<ColorMode>(
     (getCookie(cookieNames.colorMode) as ColorMode) === "dark" ? "dark" : "light"
   );
@@ -57,6 +61,11 @@ export function AppContextProvider(props: AppContextProviderProps) {
     [location.pathname, navigate]
   );
 
+  const closeSnackbar = useCallback(() => {
+    setSnackbarOpen(false);
+    setCookie(cookieNames.showSnackbar, "false");
+  }, []);
+
   useEffect(() => {
     setCookie(cookieNames.colorMode, colorMode);
   }, [colorMode]);
@@ -81,9 +90,11 @@ export function AppContextProvider(props: AppContextProviderProps) {
       setDrawerOpen,
       settingsOpen,
       setSettingsOpen,
+      snackbarOpen,
+      closeSnackbar,
       goTo,
     }),
-    [data, colorMode, drawerOpen, settingsOpen, goTo]
+    [data, colorMode, drawerOpen, settingsOpen, snackbarOpen, closeSnackbar, goTo]
   );
 
   return (
