@@ -23,7 +23,7 @@ export function ScrollTop(props: ScrollTopProps) {
       }
 
       anchor.scrollIntoView({
-        behavior: "smooth",
+        behavior: "auto",
         block: "center",
       });
     },
