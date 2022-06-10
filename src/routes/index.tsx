@@ -12,22 +12,22 @@ export const routes = {
   },
 
   images: {
-    avatar: "/static/images/avatar.webp",
-    tds: "/static/images/tds.webp",
-    kie: "/static/images/kie.webp",
+    avatar: "static/images/avatar.webp",
+    tds: "static/images/tds.webp",
+    kie: "static/images/kie.webp",
     unicamp: {
-      light: "/static/images/unicamp/light.webp",
-      dark: "/static/images/unicamp/dark.webp",
+      light: "static/images/unicamp/light.webp",
+      dark: "static/images/unicamp/dark.webp",
     },
-    tdc: "/static/images/tdc.webp",
+    tdc: "static/images/tdc.webp",
     github: {
-      light: "/static/images/github/light.webp",
-      dark: "/static/images/github/dark.webp",
+      light: "static/images/github/light.webp",
+      dark: "static/images/github/dark.webp",
     },
   },
 
   slides: {
-    streamingDmnKafka: "/static/slides/2021-06-streaming-decisions-with-dmn-and-kafka.pdf",
+    streamingDmnKafka: "static/slides/2021-06-streaming-decisions-with-dmn-and-kafka.pdf",
   },
 
   urls: {
