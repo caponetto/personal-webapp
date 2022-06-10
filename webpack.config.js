@@ -4,91 +4,107 @@ const HtmlReplaceWebpackPlugin = require("html-replace-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const { EnvironmentPlugin } = require("webpack");
 
-module.exports = async (env, argv) => [
-  {
-    entry: {
-      index: "./src/index.tsx",
-    },
-    performance: {
-      maxEntrypointSize: 1024 * 1024 * 1,
-      maxAssetSize: 1024 * 1024 * 2,
-    },
-    output: {
-      path: path.resolve("./dist"),
-      filename: "[name].js",
-      chunkFilename: "[name].bundle.js",
-    },
-    stats: {
-      excludeModules: true,
-    },
-    module: {
-      rules: [
+module.exports = async (env, argv) => {
+  const isDevelopment = argv.mode === "development";
+  const devtool = isDevelopment ? { devtool: "inline-source-map" } : {};
+  const sourceMapsLoader = isDevelopment
+    ? [
         {
-          test: /\.tsx?$/,
-          use: [
-            {
-              loader: "ts-loader",
-              options: {
-                compilerOptions: {
-                  sourceMap: false,
+          test: /\.js$/,
+          enforce: "pre",
+          use: ["source-map-loader"],
+        },
+      ]
+    : [];
+
+  return [
+    {
+      entry: {
+        index: "./src/index.tsx",
+      },
+      ...devtool,
+      performance: {
+        maxEntrypointSize: 1024 * 1024 * 1,
+        maxAssetSize: 1024 * 1024 * 2,
+      },
+      output: {
+        path: path.resolve("./dist"),
+        filename: "[name].js",
+        chunkFilename: "[name].bundle.js",
+      },
+      stats: {
+        excludeModules: true,
+      },
+      module: {
+        rules: [
+          ...sourceMapsLoader,
+          {
+            test: /\.tsx?$/,
+            use: [
+              {
+                loader: "ts-loader",
+                options: {
+                  compilerOptions: {
+                    sourceMap: false,
+                  },
                 },
               },
-            },
-          ],
-        },
-        {
-          test: /\.css$/,
-          use: ["style-loader", "css-loader"],
-        },
-      ],
-    },
-    resolve: {
-      extensions: [".tsx", ".ts", ".js", ".jsx"],
-      modules: [path.resolve("./node_modules"), path.resolve("./src")],
-    },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: "./static/index.html",
-        inject: false,
-        minify: false,
-      }),
-      new HtmlReplaceWebpackPlugin([
-        {
-          pattern: /(<!-- gtm):([\w-\/]+)(\s*-->)?/g,
-          replacement: (match, _gtm, type) => {
-            const gtmResource = getGtmResource(argv);
-            if (gtmResource) {
-              return gtmResource[type] ?? `${match}`;
-            }
-            return `${match}`;
+            ],
           },
-        },
-      ]),
-      new EnvironmentPlugin({
-        WEBPACK_REPLACE__contextPath: getContextPath(),
-        WEBPACK_REPLACE__version: getVersion(),
-      }),
-      new CopyPlugin({
-        patterns: [
-          { from: "./static/locales", to: "./static/locales" },
-          { from: "./static/images", to: "./static/images" },
-          { from: "./static/favicon", to: "./static/favicon" },
-          { from: "./static/slides", to: "./static/slides" },
-          { from: "./static/robots.txt", to: "./robots.txt" },
-          { from: "./static/site.webmanifest", to: "./site.webmanifest" },
+          {
+            test: /\.css$/,
+            use: ["style-loader", "css-loader"],
+          },
         ],
-      }),
-    ],
-    devServer: {
-      server: "https",
-      host: "0.0.0.0",
-      port: 9001,
-      compress: true,
-      historyApiFallback: true,
-      static: [path.join(__dirname, "./dist"), path.join(__dirname, "./static")],
+      },
+      resolve: {
+        extensions: [".tsx", ".ts", ".js", ".jsx"],
+        modules: [path.resolve("./node_modules"), path.resolve("./src")],
+      },
+      plugins: [
+        new HtmlWebpackPlugin({
+          template: "./static/index.html",
+          inject: false,
+          minify: false,
+        }),
+        new HtmlReplaceWebpackPlugin([
+          {
+            pattern: /(<!-- gtm):([\w-\/]+)(\s*-->)?/g,
+            replacement: (match, _gtm, type) => {
+              const gtmResource = getGtmResource();
+              if (gtmResource) {
+                return gtmResource[type] ?? `${match}`;
+              }
+              return `${match}`;
+            },
+          },
+        ]),
+        new EnvironmentPlugin({
+          WEBPACK_REPLACE__contextPath: getContextPath(),
+          WEBPACK_REPLACE__version: getVersion(),
+        }),
+        new CopyPlugin({
+          patterns: [
+            { from: "./static/locales", to: "./static/locales" },
+            { from: "./static/images", to: "./static/images" },
+            { from: "./static/favicon", to: "./static/favicon" },
+            { from: "./static/slides", to: "./static/slides" },
+            { from: "./static/robots.txt", to: "./robots.txt" },
+            { from: "./static/site.webmanifest", to: "./site.webmanifest" },
+          ],
+        }),
+      ],
+      devServer: {
+        server: "https",
+        host: "0.0.0.0",
+        port: 9001,
+        compress: true,
+        historyApiFallback: true,
+        static: [path.join(__dirname, "./dist"), path.join(__dirname, "./static")],
+      },
     },
-  },
-];
+  ];
+};
 
 function getVersion() {
   const version = process.env.VERSION;

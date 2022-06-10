@@ -8,7 +8,7 @@ import Popover from "@mui/material/Popover";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import Typography from "@mui/material/Typography";
-import React, { ChangeEvent, useCallback, useMemo } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { ColorMode, useApp } from "../../context/AppContext";
 
@@ -22,32 +22,15 @@ export function SettingsPopover(props: SettingsPopoverProps) {
   const app = useApp();
   const { t, i18n } = useTranslation();
 
-  const onThemeChanged = useCallback(
-    (event: ChangeEvent<HTMLInputElement>) => {
-      app.setColorMode((event.target as HTMLInputElement).value as ColorMode);
-    },
-    [app]
-  );
-
-  const onLanguageChanged = useCallback(
-    (event: ChangeEvent<HTMLInputElement>) => {
-      i18n.changeLanguage((event.target as HTMLInputElement).value);
-    },
-    [i18n]
-  );
-
-  const smallRadioButton = useMemo(
-    () => (
-      <Radio
-        sx={{
-          "& .MuiSvgIcon-root": {
-            fontSize: 16,
-          },
-        }}
-        size="small"
-      />
-    ),
-    []
+  const smallRadioButton = (
+    <Radio
+      sx={{
+        "& .MuiSvgIcon-root": {
+          fontSize: 16,
+        },
+      }}
+      size="small"
+    />
   );
 
   return (
@@ -75,7 +58,7 @@ export function SettingsPopover(props: SettingsPopoverProps) {
               <RadioGroup
                 aria-labelledby="theme-form"
                 value={app.colorMode}
-                onChange={onThemeChanged}
+                onChange={(event) => app.updateColorMode((event.target as HTMLInputElement).value as ColorMode)}
                 name="theme-group"
               >
                 <FormControlLabel value="light" control={smallRadioButton} label={t("literal:light").toString()} />
@@ -91,7 +74,7 @@ export function SettingsPopover(props: SettingsPopoverProps) {
               <RadioGroup
                 aria-labelledby="language-form"
                 value={i18n.resolvedLanguage}
-                onChange={onLanguageChanged}
+                onChange={(event) => i18n.changeLanguage((event.target as HTMLInputElement).value)}
                 name="language-group"
               >
                 <FormControlLabel value="en" control={smallRadioButton} label={"English"} />

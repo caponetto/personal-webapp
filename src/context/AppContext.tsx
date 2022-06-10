@@ -1,5 +1,6 @@
 import { createContext, Dispatch, useContext } from "react";
 import { AppData } from "../data";
+import { OpenState, OpenStateAction } from "./OpenState";
 
 export type ColorMode = "light" | "dark";
 
@@ -9,13 +10,9 @@ export const DRAWER_ITEM_WIDTH = DRAWER_WIDTH - 16;
 export interface AppContextType {
   data: AppData;
   colorMode: ColorMode;
-  setColorMode: Dispatch<ColorMode>;
-  drawerOpen: boolean;
-  setDrawerOpen: Dispatch<boolean>;
-  settingsOpen: boolean;
-  setSettingsOpen: Dispatch<boolean>;
-  snackbarOpen: boolean;
-  closeSnackbar: () => void;
+  updateColorMode: (colorMode: ColorMode) => void;
+  openState: OpenState;
+  openStateDispatch: Dispatch<OpenStateAction>;
   goTo: (route: string) => void;
 }
 

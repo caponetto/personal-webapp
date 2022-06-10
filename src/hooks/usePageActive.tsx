@@ -1,13 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useTimeout } from "./useTimeout";
 
 export function usePageActive() {
   const [active, setActive] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setActive(true);
-    }, 0);
-  }, []);
-
+  useTimeout(() => setActive(true), 0);
   return active;
 }

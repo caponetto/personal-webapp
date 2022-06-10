@@ -12,17 +12,17 @@ export const routes = {
   },
 
   images: {
-    avatar: "/static/images/avatar.png",
-    tds: "/static/images/tds.png",
-    kie: "/static/images/kie.png",
+    avatar: "/static/images/avatar.webp",
+    tds: "/static/images/tds.webp",
+    kie: "/static/images/kie.webp",
     unicamp: {
-      light: "/static/images/unicamp/light.png",
-      dark: "/static/images/unicamp/dark.png",
+      light: "/static/images/unicamp/light.webp",
+      dark: "/static/images/unicamp/dark.webp",
     },
-    tdc: "/static/images/tdc.png",
+    tdc: "/static/images/tdc.webp",
     github: {
-      light: "/static/images/github/light.png",
-      dark: "/static/images/github/dark.png",
+      light: "/static/images/github/light.webp",
+      dark: "/static/images/github/dark.webp",
     },
   },
 

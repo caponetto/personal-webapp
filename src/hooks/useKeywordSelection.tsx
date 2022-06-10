@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { QueryParams, useQueryParamKeywords } from "./useQueryParams";
 
@@ -7,23 +7,20 @@ export function useKeywordSelection(availableKeywords: string[]) {
   const initialKeywords = useQueryParamKeywords(availableKeywords);
   const [selected, setSelected] = useState<string[]>(initialKeywords ?? []);
 
-  const onItemClicked = useCallback(
-    (keyword: string) => {
-      if (!availableKeywords.includes(keyword)) {
-        return;
-      }
+  const onItemClicked = (keyword: string) => {
+    if (!availableKeywords.includes(keyword)) {
+      return;
+    }
 
-      const updatedSelection = selected.includes(keyword)
-        ? selected.filter((k: string) => k !== keyword)
-        : [...selected, keyword];
-      setSelected(updatedSelection);
-    },
-    [availableKeywords, selected]
-  );
+    const updatedSelection = selected.includes(keyword)
+      ? selected.filter((k: string) => k !== keyword)
+      : [...selected, keyword];
+    setSelected(updatedSelection);
+  };
 
-  const onClear = useCallback(() => {
+  const onClear = () => {
     setSelected([]);
-  }, []);
+  };
 
   useEffect(() => {
     navigate(

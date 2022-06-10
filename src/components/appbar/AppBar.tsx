@@ -9,6 +9,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
+import { OpenStateActions } from "../../context/OpenState";
 import { Fonts } from "../../fonts";
 import { SettingsPopover } from "../settings";
 
@@ -33,7 +34,7 @@ export function AppBar(props: AppBarProps) {
       <Toolbar>
         <IconButton
           id="open-drawer-button"
-          onClick={() => app.setDrawerOpen(!app.drawerOpen)}
+          onClick={() => app.openStateDispatch({ type: OpenStateActions.DRAWER_TOGGLE })}
           size="large"
           edge="start"
           color="inherit"
@@ -58,7 +59,7 @@ export function AppBar(props: AppBarProps) {
           <IconButton
             ref={settingsButtonRef}
             id="settings-button"
-            onClick={() => app.setSettingsOpen(true)}
+            onClick={() => app.openStateDispatch({ type: OpenStateActions.SETTINGS_OPEN })}
             color="inherit"
             aria-label="Open settings"
           >
@@ -67,8 +68,8 @@ export function AppBar(props: AppBarProps) {
         </Tooltip>
         <SettingsPopover
           anchor={settingsButtonRef.current}
-          open={app.settingsOpen}
-          onClose={() => app.setSettingsOpen(false)}
+          open={app.openState.settings}
+          onClose={() => app.openStateDispatch({ type: OpenStateActions.SETTINGS_CLOSE })}
         />
       </Toolbar>
     </MaterialAppBar>

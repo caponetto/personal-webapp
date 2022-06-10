@@ -1,10 +1,11 @@
 import Typography from "@mui/material/Typography";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useDeferredValue, useMemo } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { KeywordChips } from "../components/chip";
 import { MediaSection, Page, PageHeader } from "../components/page";
 import { useApp } from "../context/AppContext";
-import { Media } from "../data";
+import { buildUniqueKeywords } from "../data";
+import { useFilteredMedias } from "../hooks/useFilteredMedias";
 import { useKeywordSelection } from "../hooks/useKeywordSelection";
 import { usePageActive } from "../hooks/usePageActive";
 
@@ -12,29 +13,10 @@ export default function CodePage() {
   const app = useApp();
   const active = usePageActive();
   const { t } = useTranslation();
-
-  const codeKeywords = useMemo(() => {
-    const repositoryKeywords = app.data.code.repositories.reduce(
-      (acc: string[], repo) => acc.concat(repo.keywordKeys),
-      []
-    );
-    return [...new Set(repositoryKeywords)];
-  }, [app.data.code.repositories]);
-
+  const codeKeywords = useMemo(() => buildUniqueKeywords(app.data.code.repositories), [app.data.code.repositories]);
   const keywordSelection = useKeywordSelection(codeKeywords);
-  const [filteredRepositories, setFilteredRepositories] = useState<Media[]>([]);
-
-  useEffect(() => {
-    setFilteredRepositories(
-      app.data.code.repositories
-        .filter(
-          (media: Media) =>
-            keywordSelection.selected.length === 0 ||
-            media.keywordKeys.some((keyword: string) => keywordSelection.selected.includes(keyword))
-        )
-        .sort((a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime())
-    );
-  }, [app.data.code.repositories, keywordSelection.selected]);
+  const deferredKeywordSelected = useDeferredValue(keywordSelection.selected);
+  const filteredRepositories = useFilteredMedias(app.data.code.repositories, deferredKeywordSelected);
 
   return (
     <Page>
@@ -48,7 +30,7 @@ export default function CodePage() {
       {active && (
         <KeywordChips
           keywords={codeKeywords}
-          selectedKeywords={keywordSelection.selected}
+          selectedKeywords={deferredKeywordSelected}
           onKeywordClicked={keywordSelection.onItemClicked}
           onClearSelection={keywordSelection.onClear}
           fadeTime={500}
@@ -58,7 +40,7 @@ export default function CodePage() {
         <MediaSection
           title={t("literal:repositories")}
           fadeTime={1000}
-          selectedKeywords={keywordSelection.selected}
+          selectedKeywords={deferredKeywordSelected}
           onKeywordClicked={keywordSelection.onItemClicked}
           mediaList={filteredRepositories}
         />

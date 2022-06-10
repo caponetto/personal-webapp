@@ -1,13 +1,14 @@
 import { blueGrey, grey, teal } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import React, { ReactNode, useCallback, useEffect, useMemo, useState } from "react";
+import React, { ReactNode, useCallback, useEffect, useMemo, useReducer } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router";
 import { DARK_GRAY, WHITE_GRAY } from "../colors";
-import { cookieNames, getCookie, setCookie } from "../cookies";
+import { useCookie } from "../hooks/useCookies";
 import { useData } from "../hooks/useData";
 import { pages, routes } from "../routes";
 import { AppContext, ColorMode } from "./AppContext";
+import { OpenStateActions, openStateReducer } from "./OpenState";
 
 interface AppContextProviderProps {
   children: ReactNode;
@@ -18,15 +19,15 @@ export function AppContextProvider(props: AppContextProviderProps) {
   const navigate = useNavigate();
   const { t } = useTranslation();
   const data = useData();
-  const [drawerOpen, setDrawerOpen] = useState(false);
-  const [settingsOpen, setSettingsOpen] = useState(false);
-  const showSnackbarCookie = useMemo(() => getCookie(cookieNames.showSnackbar), []);
-  const [snackbarOpen, setSnackbarOpen] = useState(
-    navigator.cookieEnabled && (showSnackbarCookie === undefined || showSnackbarCookie === "true")
-  );
-  const [colorMode, setColorMode] = useState<ColorMode>(
-    (getCookie(cookieNames.colorMode) as ColorMode) === "dark" ? "dark" : "light"
-  );
+
+  const [colorMode, updateColorMode] = useCookie<ColorMode>("color_mode", "light");
+  const [showSnackbar, updateShowSnackbar] = useCookie<boolean>("show_snackbar", navigator.cookieEnabled);
+
+  const [openState, openStateDispatch] = useReducer(openStateReducer, {
+    drawer: false,
+    settings: false,
+    snackbar: showSnackbar,
+  });
 
   const theme = useMemo(
     () =>
@@ -52,7 +53,6 @@ export function AppContextProvider(props: AppContextProviderProps) {
 
   const goTo = useCallback(
     (route: string) => {
-      setDrawerOpen(false);
       if (location.pathname === route) {
         return;
       }
@@ -61,18 +61,17 @@ export function AppContextProvider(props: AppContextProviderProps) {
     [location.pathname, navigate]
   );
 
-  const closeSnackbar = useCallback(() => {
-    setSnackbarOpen(false);
-    setCookie(cookieNames.showSnackbar, "false");
-  }, []);
+  useEffect(() => {
+    updateShowSnackbar(openState.snackbar);
+  }, [openState.snackbar, updateShowSnackbar]);
 
   useEffect(() => {
-    setCookie(cookieNames.colorMode, colorMode);
-  }, [colorMode]);
+    openStateDispatch({ type: OpenStateActions.DRAWER_CLOSE });
+  }, [location.pathname]);
 
   useEffect(() => {
     const relativePath = location.pathname.slice(1);
-    if (relativePath === "" || !Object.values(routes.nav).includes(location.pathname)) {
+    if (!relativePath || !Object.values(routes.nav).includes(location.pathname)) {
       return;
     }
 
@@ -85,16 +84,12 @@ export function AppContextProvider(props: AppContextProviderProps) {
     () => ({
       data,
       colorMode,
-      setColorMode,
-      drawerOpen,
-      setDrawerOpen,
-      settingsOpen,
-      setSettingsOpen,
-      snackbarOpen,
-      closeSnackbar,
+      updateColorMode,
+      openState,
+      openStateDispatch,
       goTo,
     }),
-    [data, colorMode, drawerOpen, settingsOpen, snackbarOpen, closeSnackbar, goTo]
+    [data, colorMode, updateColorMode, openState, goTo]
   );
 
   return (

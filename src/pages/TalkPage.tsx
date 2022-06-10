@@ -1,10 +1,11 @@
 import Typography from "@mui/material/Typography";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useDeferredValue, useMemo } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { KeywordChips } from "../components/chip";
 import { MediaSection, Page, PageHeader } from "../components/page";
 import { useApp } from "../context/AppContext";
-import { Media } from "../data";
+import { buildUniqueKeywords } from "../data";
+import { useFilteredMedias } from "../hooks/useFilteredMedias";
 import { useKeywordSelection } from "../hooks/useKeywordSelection";
 import { usePageActive } from "../hooks/usePageActive";
 
@@ -12,41 +13,14 @@ export default function TalkPage() {
   const app = useApp();
   const active = usePageActive();
   const { t } = useTranslation();
-
-  const talkKeywords = useMemo(() => {
-    const liveKeywords = app.data.talk.lives.reduce((acc: string[], live) => acc.concat(live.keywordKeys), []);
-    const conferenceKeywords = app.data.talk.conferences.reduce(
-      (acc: string[], conference) => acc.concat(conference.keywordKeys),
-      []
-    );
-    return [...new Set([...liveKeywords, ...conferenceKeywords])];
-  }, [app.data.talk.conferences, app.data.talk.lives]);
-
+  const talkKeywords = useMemo(
+    () => buildUniqueKeywords(app.data.talk.lives, app.data.talk.conferences),
+    [app.data.talk.conferences, app.data.talk.lives]
+  );
   const keywordSelection = useKeywordSelection(talkKeywords);
-  const [filteredLives, setFilteredLives] = useState<Media[]>([]);
-  const [filteredConferences, setFilteredConferences] = useState<Media[]>([]);
-
-  useEffect(() => {
-    setFilteredLives(
-      app.data.talk.lives
-        .filter(
-          (media: Media) =>
-            keywordSelection.selected.length === 0 ||
-            media.keywordKeys.some((keyword: string) => keywordSelection.selected.includes(keyword))
-        )
-        .sort((a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime())
-    );
-
-    setFilteredConferences(
-      app.data.talk.conferences
-        .filter(
-          (media: Media) =>
-            keywordSelection.selected.length === 0 ||
-            media.keywordKeys.some((keyword: string) => keywordSelection.selected.includes(keyword))
-        )
-        .sort((a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime())
-    );
-  }, [app.data.talk.conferences, app.data.talk.lives, keywordSelection.selected]);
+  const deferredKeywordSelected = useDeferredValue(keywordSelection.selected);
+  const filteredLives = useFilteredMedias(app.data.talk.lives, deferredKeywordSelected);
+  const filteredConferences = useFilteredMedias(app.data.talk.conferences, deferredKeywordSelected);
 
   return (
     <Page>
@@ -60,7 +34,7 @@ export default function TalkPage() {
       {active && (
         <KeywordChips
           keywords={talkKeywords}
-          selectedKeywords={keywordSelection.selected}
+          selectedKeywords={deferredKeywordSelected}
           onKeywordClicked={keywordSelection.onItemClicked}
           onClearSelection={keywordSelection.onClear}
           fadeTime={500}
@@ -70,7 +44,7 @@ export default function TalkPage() {
         <MediaSection
           title={t("literal:lives")}
           fadeTime={1000}
-          selectedKeywords={keywordSelection.selected}
+          selectedKeywords={deferredKeywordSelected}
           onKeywordClicked={keywordSelection.onItemClicked}
           mediaList={filteredLives}
         />
@@ -79,7 +53,7 @@ export default function TalkPage() {
         <MediaSection
           title={t("literal:conferences")}
           fadeTime={1500}
-          selectedKeywords={keywordSelection.selected}
+          selectedKeywords={deferredKeywordSelected}
           onKeywordClicked={keywordSelection.onItemClicked}
           mediaList={filteredConferences}
         />

@@ -1,4 +1,4 @@
-import React, { lazy, useMemo } from "react";
+import React, { lazy } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { routes } from "../../routes";
 
@@ -9,7 +9,7 @@ const TalkPage = lazy(() => import("../TalkPage"));
 const CodePage = lazy(() => import("../CodePage"));
 
 export function RouteSwitch() {
-  const navigateToAbout = useMemo(() => <Navigate to={routes.nav.about} replace />, []);
+  const navigateToAbout = <Navigate to={routes.nav.about} replace />;
 
   return (
     <Routes>
