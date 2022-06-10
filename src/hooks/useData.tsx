@@ -227,14 +227,16 @@ export function useData() {
 
   const text = useMemo(
     () => ({
-      mastersThesis: {
-        type: "thesis",
-        title: t("text:mastersThesis"),
-        releaseDate: new Date("Oct 27, 2017"),
-        publishedAt: "UNICAMP",
-        keywordKeys: ["machineLearning", "multiTaskLearning", "clustering"],
-        url: routes.urls.mastersThesis,
-      },
+      mastersThesis: [
+        {
+          type: "thesis",
+          title: t("text:mastersThesis"),
+          releaseDate: new Date("Oct 27, 2017"),
+          publishedAt: "UNICAMP",
+          keywordKeys: ["machineLearning", "multiTaskLearning", "clustering"],
+          url: routes.urls.mastersThesis,
+        },
+      ],
       blogPosts: [
         {
           type: "post",

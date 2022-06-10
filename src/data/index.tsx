@@ -18,7 +18,7 @@ export interface AppData {
     toolbox: string[];
   };
   text: {
-    mastersThesis: Media;
+    mastersThesis: Media[];
     blogPosts: Media[];
   };
   talk: {
@@ -51,4 +51,13 @@ export interface Media {
   publishedAt: "KIE Community" | "Towards Data Science" | "UNICAMP" | "The Developer's Conference" | "GitHub";
   keywordKeys: string[];
   url?: string;
+}
+
+export function buildUniqueKeywords(...mediasArray: Media[][]): string[] {
+  let keywords: string[] = [];
+  mediasArray.forEach((medias) => {
+    const mediaKeywords = medias.reduce((acc: string[], m) => acc.concat(m.keywordKeys), []);
+    keywords = keywords.concat(mediaKeywords);
+  });
+  return [...new Set(keywords)];
 }

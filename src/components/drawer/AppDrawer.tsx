@@ -18,6 +18,7 @@ import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router";
 import { DrawerListItem } from ".";
 import { useApp } from "../../context/AppContext";
+import { OpenStateActions } from "../../context/OpenState";
 import { routes } from "../../routes";
 import { FaceBadge } from "../badge";
 import { Copyright } from "../copyright";
@@ -111,12 +112,12 @@ export function AppDrawer(props: AppDrawerProps) {
         id="temporary-drawer"
         disableSwipeToOpen
         variant="temporary"
-        open={app.drawerOpen}
-        onOpen={() => app.setDrawerOpen(true)}
-        onClose={() => app.setDrawerOpen(false)}
+        open={app.openState.drawer}
+        onOpen={() => app.openStateDispatch({ type: OpenStateActions.DRAWER_OPEN })}
+        onClose={() => app.openStateDispatch({ type: OpenStateActions.DRAWER_CLOSE })}
         ModalProps={{
           keepMounted: true,
-          onBackdropClick: () => app.setDrawerOpen(false),
+          onBackdropClick: () => app.openStateDispatch({ type: OpenStateActions.DRAWER_CLOSE }),
         }}
         sx={{
           display: { xs: "block", md: "none" },

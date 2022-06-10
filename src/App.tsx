@@ -16,8 +16,9 @@ import "./fonts";
 import i18n from "./i18n";
 import { RouteSwitch } from "./pages/routeswitch";
 
+const BACK_TO_TOP_ANCHOR = "back-to-top-anchor";
+
 export function App() {
-  const backToTopAnchor = "back-to-top-anchor";
   return (
     <HashRouter>
       <I18nextProvider i18n={i18n}>
@@ -41,12 +42,12 @@ export function App() {
                   <AppDrawer drawerWidth={DRAWER_WIDTH} drawerItemWidth={DRAWER_ITEM_WIDTH} />
                   <CookieSnackbar />
                   <Box component="main" sx={{ flexGrow: 1 }}>
-                    <Toolbar id={backToTopAnchor} />
+                    <Toolbar id={BACK_TO_TOP_ANCHOR} />
                     <Suspense fallback={<LinearProgress sx={{ height: "2px" }} />}>
                       <RouteSwitch />
                     </Suspense>
                   </Box>
-                  <ScrollTop anchor={backToTopAnchor} />
+                  <ScrollTop anchor={BACK_TO_TOP_ANCHOR} />
                 </Box>
               )}
             </AppContext.Consumer>
