@@ -20,7 +20,10 @@ export function useQueryParams(name: string): string | undefined {
   return decodeURIComponent(value);
 }
 
-export function useQueryParamKeywords(availableKeywords: string[]): string[] | undefined {
-  const keywords = useQueryParams(QueryParams.KEYWORDS);
-  return keywords?.split(",").filter((k) => availableKeywords.includes(k));
+export function useQueryParamKeywords(): string[] {
+  return useQueryParams(QueryParams.KEYWORDS)?.split(",") ?? [];
+}
+
+export function prepareKeywordsQueryParams(keywords: string[]): string {
+  return `${QueryParams.KEYWORDS}=${encodeURIComponent(keywords.join(","))}`;
 }

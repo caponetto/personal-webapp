@@ -16,13 +16,13 @@ import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
 import { Media } from "../../data";
 import { Fonts } from "../../fonts";
+import { KeywordSelection } from "../../hooks/useKeywordSelection";
 import { routes } from "../../routes";
 import { HoverableCard } from "./HoverableCard";
 
 interface MediaCardProps {
   item: Media;
-  selectedKeywords: string[];
-  onKeywordClicked: (keyword: string) => void;
+  keywordSelection: KeywordSelection;
 }
 
 export function MediaCard(props: MediaCardProps) {
@@ -115,9 +115,9 @@ export function MediaCard(props: MediaCardProps) {
                   // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   label={t(`literal:${keywordKey}` as any)}
                   color="success"
-                  variant={props.selectedKeywords.includes(keywordKey) ? "filled" : "outlined"}
+                  variant={props.keywordSelection.selectionMap.get(keywordKey) ? "filled" : "outlined"}
                   size="small"
-                  onClick={() => props.onKeywordClicked(keywordKey)}
+                  onClick={() => props.keywordSelection.onItemSelected(keywordKey)}
                 />
               </Grid>
             ))}

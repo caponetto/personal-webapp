@@ -5,14 +5,14 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import React from "react";
 import { Media } from "../../data";
+import { KeywordSelection } from "../../hooks/useKeywordSelection";
 import { MediaCard } from "../card";
 
 interface MediaSectionProps {
   title: string;
   mediaList: Media[];
   fadeTime: number;
-  selectedKeywords: string[];
-  onKeywordClicked: (keyword: string) => void;
+  keywordSelection: KeywordSelection;
 }
 
 export function MediaSection(props: MediaSectionProps) {
@@ -32,11 +32,7 @@ export function MediaSection(props: MediaSectionProps) {
         <Grid container spacing={3}>
           {props.mediaList.map((item: Media, idx: number) => (
             <Grid item key={`${props.title}-${idx}`} sx={{ width: { xs: "100%", lg: "50%", xl: "33%" } }}>
-              <MediaCard
-                item={item}
-                selectedKeywords={props.selectedKeywords}
-                onKeywordClicked={props.onKeywordClicked}
-              />
+              <MediaCard item={item} keywordSelection={props.keywordSelection} />
             </Grid>
           ))}
         </Grid>
