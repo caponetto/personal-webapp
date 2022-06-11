@@ -4,7 +4,6 @@ import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
-import Chip from "@mui/material/Chip";
 import { grey } from "@mui/material/colors";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
@@ -18,6 +17,7 @@ import { Media } from "../../data";
 import { Fonts } from "../../fonts";
 import { KeywordSelection } from "../../hooks/useKeywordSelection";
 import { routes } from "../../routes";
+import { StaticChip } from "../chip/StaticChip";
 import { HoverableCard } from "./HoverableCard";
 
 interface MediaCardProps {
@@ -111,7 +111,7 @@ export function MediaCard(props: MediaCardProps) {
             .sort((a, b) => b.length - a.length)
             .map((keywordKey) => (
               <Grid item key={`media-keyword-${keywordKey}`}>
-                <Chip
+                <StaticChip
                   // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   label={t(`literal:${keywordKey}` as any)}
                   color="success"

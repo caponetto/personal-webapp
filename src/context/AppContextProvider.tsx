@@ -47,6 +47,15 @@ export function AppContextProvider(props: AppContextProviderProps) {
             default: colorMode === "light" ? WHITE_GRAY : DARK_GRAY,
           },
         },
+        components: {
+          MuiAppBar: {
+            styleOverrides: {
+              root: {
+                transition: "all 0.2s linear",
+              },
+            },
+          },
+        },
       }),
     [colorMode]
   );

@@ -4,7 +4,7 @@ const HtmlReplaceWebpackPlugin = require("html-replace-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const { EnvironmentPlugin } = require("webpack");
 
-module.exports = async (env, argv) => {
+module.exports = async (_env, argv) => {
   const isDevelopment = argv.mode === "development";
   const devtool = isDevelopment ? { devtool: "inline-source-map" } : {};
   const sourceMapsLoader = isDevelopment

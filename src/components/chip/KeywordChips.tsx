@@ -1,10 +1,10 @@
-import Chip from "@mui/material/Chip";
 import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Grid";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import React, { useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { KeywordSelection } from "../../hooks/useKeywordSelection";
+import { StaticChip } from "./StaticChip";
 
 interface KeywordChipsProps {
   fadeTime: number;
@@ -25,7 +25,7 @@ export function KeywordChips(props: KeywordChipsProps) {
           .sort((a, b) => resolveLiteral(a).localeCompare(resolveLiteral(b)))
           .map((keywordKey) => (
             <Grid item key={`keyword-chip-${keywordKey}`}>
-              <Chip
+              <StaticChip
                 label={resolveLiteral(keywordKey)}
                 color="success"
                 variant={props.keywordSelection.selectionMap.get(keywordKey) ? "filled" : "outlined"}
@@ -36,7 +36,7 @@ export function KeywordChips(props: KeywordChipsProps) {
           ))}
         <Fade in={props.keywordSelection.isAnySelected} timeout={300}>
           <Grid item sx={{ display: props.keywordSelection.isAnySelected ? "block" : "none" }}>
-            <Chip
+            <StaticChip
               label={t("literal:showAll")}
               color="secondary"
               variant={"filled"}
