@@ -44,11 +44,18 @@ export interface Journey {
   };
 }
 
+export type MediaKind = "post" | "thesis" | "live" | "conference" | "code";
+export type MediaPublishedAt =
+  | "KIE Community"
+  | "Towards Data Science"
+  | "UNICAMP"
+  | "The Developer's Conference"
+  | "GitHub";
 export interface Media {
-  type: "post" | "thesis" | "live" | "conference" | "code";
+  kind: MediaKind;
   title: string;
   releaseDate: Date;
-  publishedAt: "KIE Community" | "Towards Data Science" | "UNICAMP" | "The Developer's Conference" | "GitHub";
+  publishedAt: MediaPublishedAt;
   keywordKeys: string[];
   url?: string;
 }

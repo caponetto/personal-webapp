@@ -1,21 +1,16 @@
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 import { Media } from "../data";
 import { KeywordSelection } from "./useKeywordSelection";
 
+const sortByReleaseDate = (a: Media, b: Media) => b.releaseDate.getTime() - a.releaseDate.getTime();
+
 export function useFilteredMedias(medias: Media[], keywordSelection: KeywordSelection) {
-  const [filteredMedias, setFilteredMedias] = useState<Media[]>([]);
-
-  useEffect(() => {
-    setFilteredMedias(
-      medias
-        .filter(
-          (media) =>
-            !keywordSelection.isAnySelected ||
-            media.keywordKeys.some((keyword) => keywordSelection.selectionMap.get(keyword))
-        )
-        .sort((a, b) => b.releaseDate.getTime() - a.releaseDate.getTime())
-    );
+  return useMemo(() => {
+    if (!keywordSelection.isAnySelected) {
+      return medias.sort(sortByReleaseDate);
+    }
+    return medias
+      .filter((media) => media.keywordKeys.some((keyword) => keywordSelection.selectionMap.get(keyword)))
+      .sort(sortByReleaseDate);
   }, [keywordSelection.isAnySelected, keywordSelection.selectionMap, medias]);
-
-  return filteredMedias;
 }
