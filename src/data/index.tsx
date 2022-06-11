@@ -52,12 +52,3 @@ export interface Media {
   keywordKeys: string[];
   url?: string;
 }
-
-export function buildUniqueKeywords(...mediasArray: Media[][]): string[] {
-  let keywords: string[] = [];
-  mediasArray.forEach((medias) => {
-    const mediaKeywords = medias.reduce((acc: string[], m) => acc.concat(m.keywordKeys), []);
-    keywords = keywords.concat(mediaKeywords);
-  });
-  return [...new Set(keywords)];
-}
