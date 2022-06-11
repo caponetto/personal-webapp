@@ -229,7 +229,7 @@ export function useData() {
     () => ({
       mastersThesis: [
         {
-          type: "thesis",
+          kind: "thesis",
           title: t("text:mastersThesis"),
           releaseDate: new Date("Oct 27, 2017"),
           publishedAt: "UNICAMP",
@@ -239,7 +239,7 @@ export function useData() {
       ],
       blogPosts: [
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.workspaceCollaboration"),
           releaseDate: new Date("Sep 25, 2019"),
           publishedAt: "KIE Community",
@@ -247,7 +247,7 @@ export function useData() {
           url: routes.urls.blogPosts.workspaceCollaboration,
         },
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.playingWithObjectDetection"),
           releaseDate: new Date("Oct 11, 2019"),
           publishedAt: "Towards Data Science",
@@ -255,7 +255,7 @@ export function useData() {
           url: routes.urls.blogPosts.playingWithObjectDetection,
         },
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.randomVsGridSearch"),
           releaseDate: new Date("Nov 14, 2019"),
           publishedAt: "Towards Data Science",
@@ -263,7 +263,7 @@ export function useData() {
           url: routes.urls.blogPosts.randomVsGridSearch,
         },
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.mavenArchetypesInBC"),
           releaseDate: new Date("Jan 21, 2020"),
           publishedAt: "KIE Community",
@@ -271,7 +271,7 @@ export function useData() {
           url: routes.urls.blogPosts.mavenArchetypesInBC,
         },
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.emptyReposInBC"),
           releaseDate: new Date("Feb 28, 2020"),
           publishedAt: "KIE Community",
@@ -279,7 +279,7 @@ export function useData() {
           url: routes.urls.blogPosts.emptyReposInBC,
         },
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.squashCommitsInBC"),
           releaseDate: new Date("Feb 28, 2020"),
           publishedAt: "KIE Community",
@@ -287,7 +287,7 @@ export function useData() {
           url: routes.urls.blogPosts.squashCommitsInBC,
         },
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.improvedWorkflowInBC"),
           releaseDate: new Date("Mar 31, 2020"),
           publishedAt: "KIE Community",
@@ -295,7 +295,7 @@ export function useData() {
           url: routes.urls.blogPosts.improvedWorkflowInBC,
         },
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.exportAsGist"),
           releaseDate: new Date("Apr 9, 2020"),
           publishedAt: "KIE Community",
@@ -303,7 +303,7 @@ export function useData() {
           url: routes.urls.blogPosts.exportAsGist,
         },
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.backendKogitoTooling"),
           releaseDate: new Date("Sept 22, 2020"),
           publishedAt: "KIE Community",
@@ -311,7 +311,7 @@ export function useData() {
           url: routes.urls.blogPosts.backendKogitoTooling,
         },
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.authoringOnGitpod"),
           releaseDate: new Date("Aug 9, 2021"),
           publishedAt: "KIE Community",
@@ -319,7 +319,7 @@ export function useData() {
           url: routes.urls.blogPosts.authoringOnGitpod,
         },
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.dmnDevSandbox"),
           releaseDate: new Date("Aug 23, 2021"),
           publishedAt: "KIE Community",
@@ -327,7 +327,7 @@ export function useData() {
           url: routes.urls.blogPosts.dmnDevSandbox,
         },
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.teachableMachineBitingNails"),
           releaseDate: new Date("Jan 10, 2022"),
           publishedAt: "Towards Data Science",
@@ -335,7 +335,7 @@ export function useData() {
           url: routes.urls.blogPosts.teachableMachineBitingNails,
         },
         {
-          type: "post",
+          kind: "post",
           title: t("text:blogPosts.deployKieSandboxToOpenshift"),
           releaseDate: new Date("Jan 27, 2022"),
           publishedAt: "KIE Community",
@@ -351,7 +351,7 @@ export function useData() {
     () => ({
       lives: [
         {
-          type: "live",
+          kind: "live",
           title: t("talk:lives.workspaceCollaborationInBC"),
           releaseDate: new Date("Sept 8, 2020"),
           publishedAt: "KIE Community",
@@ -359,7 +359,7 @@ export function useData() {
           url: routes.urls.lives.workspaceCollaborationInBC,
         },
         {
-          type: "live",
+          kind: "live",
           title: t("talk:lives.mavenArchetypesInBC"),
           releaseDate: new Date("Sept 15, 2020"),
           publishedAt: "KIE Community",
@@ -367,7 +367,7 @@ export function useData() {
           url: routes.urls.lives.mavenArchetypesInBC,
         },
         {
-          type: "live",
+          kind: "live",
           title: t("talk:lives.streamDecisionsWithDmnAndKafka"),
           releaseDate: new Date("Jun 8, 2021"),
           publishedAt: "KIE Community",
@@ -377,7 +377,7 @@ export function useData() {
       ],
       conferences: [
         {
-          type: "conference",
+          kind: "conference",
           title: t("talk:conferences.streamDecisionsWithDmnAndKafka"),
           releaseDate: new Date("Jun 8, 2021"),
           publishedAt: "The Developer's Conference",
@@ -393,7 +393,7 @@ export function useData() {
     () => ({
       repositories: [
         {
-          type: "code",
+          kind: "code",
           title: t("code:repositories.bhc"),
           releaseDate: new Date("Feb 16, 2021"),
           publishedAt: "GitHub",
@@ -401,7 +401,7 @@ export function useData() {
           url: routes.urls.repositories.bhc,
         },
         {
-          type: "code",
+          kind: "code",
           title: t("code:repositories.vsCodeQuarkusDJL"),
           releaseDate: new Date("Oct 16, 2020"),
           publishedAt: "GitHub",
@@ -409,7 +409,7 @@ export function useData() {
           url: routes.urls.repositories.vsCodeQuarkusDJL,
         },
         {
-          type: "code",
+          kind: "code",
           title: t("code:repositories.lessIsMore"),
           releaseDate: new Date("Apr 10, 2021"),
           publishedAt: "GitHub",
@@ -417,7 +417,7 @@ export function useData() {
           url: routes.urls.repositories.lessIsMore,
         },
         {
-          type: "code",
+          kind: "code",
           title: t("code:repositories.jupyterNotebooks"),
           releaseDate: new Date("Oct 8, 2019"),
           publishedAt: "GitHub",
@@ -425,7 +425,7 @@ export function useData() {
           url: routes.urls.repositories.jupyterNotebooks,
         },
         {
-          type: "code",
+          kind: "code",
           title: t("code:repositories.vsCodeDiffViewer"),
           releaseDate: new Date("Feb 23, 2021"),
           publishedAt: "GitHub",
@@ -433,7 +433,7 @@ export function useData() {
           url: routes.urls.repositories.vsCodeDiffViewer,
         },
         {
-          type: "code",
+          kind: "code",
           title: t("code:repositories.vsCodeToxicityClassifier"),
           releaseDate: new Date("Sept 19, 2020"),
           publishedAt: "GitHub",
@@ -441,7 +441,7 @@ export function useData() {
           url: routes.urls.repositories.vsCodeToxicityClassifier,
         },
         {
-          type: "code",
+          kind: "code",
           title: t("code:repositories.streamDecisionsWithDmnAndKafka"),
           releaseDate: new Date("Jun 2, 2021"),
           publishedAt: "GitHub",
@@ -449,7 +449,7 @@ export function useData() {
           url: routes.urls.repositories.streamDecisionsWithDmnAndKafka,
         },
         {
-          type: "code",
+          kind: "code",
           title: t("code:repositories.vsCodeObjectDetection"),
           releaseDate: new Date("Jul 4, 2020"),
           publishedAt: "GitHub",
@@ -457,7 +457,7 @@ export function useData() {
           url: routes.urls.repositories.vsCodeObjectDetection,
         },
         {
-          type: "code",
+          kind: "code",
           title: t("code:repositories.personalWebApp"),
           releaseDate: new Date("Oct 24, 2021"),
           publishedAt: "GitHub",
@@ -465,7 +465,7 @@ export function useData() {
           url: routes.urls.repositories.personalWebApp,
         },
         {
-          type: "code",
+          kind: "code",
           title: t("code:repositories.teachableMachinePlayground"),
           releaseDate: new Date("Jan 9, 2022"),
           publishedAt: "GitHub",

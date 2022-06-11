@@ -30,28 +30,28 @@ export function MediaCard(props: MediaCardProps) {
   const { t } = useTranslation();
 
   const accessMediaButtonLabel = useMemo(() => {
-    if (["post", "thesis"].includes(props.item.type)) {
+    if (["post", "thesis"].includes(props.item.kind)) {
       return t("literal:read");
     }
 
-    if (props.item.type === "live") {
+    if (props.item.kind === "live") {
       return t("literal:watch");
     }
 
-    if (props.item.type === "conference") {
+    if (props.item.kind === "conference") {
       return t("literal:slides");
     }
 
     return t("literal:view");
-  }, [props.item.type, t]);
+  }, [props.item.kind, t]);
 
   const formattedMediaDate = useMemo(() => {
-    if (["code", "thesis"].includes(props.item.type)) {
+    if (["code", "thesis"].includes(props.item.kind)) {
       return format(props.item.releaseDate, "yyyy");
     }
 
     return format(props.item.releaseDate, "MMM dd, yyyy");
-  }, [props.item.releaseDate, props.item.type]);
+  }, [props.item.releaseDate, props.item.kind]);
 
   const iconRoute = useMemo(() => {
     if (props.item.publishedAt === "KIE Community") {
