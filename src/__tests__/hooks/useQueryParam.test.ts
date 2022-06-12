@@ -17,13 +17,15 @@ const mockLocationTo = (args: { pathname?: string; search?: string }) => {
   }));
 };
 
-describe("useQueryParam", () => {
+describe("useQueryParam :: prepareKeywordsQueryParam", () => {
   it("should prepare 'keywords' query params accordingly", () => {
     const queryParam = prepareKeywordsQueryParam(["foo", "bar", "baz"]);
     const expectedKeywords = encodeURIComponent("foo,bar,baz");
     expect(queryParam).toEqual(`${QueryParams.KEYWORDS}=${expectedKeywords}`);
   });
+});
 
+describe("useQueryParam :: useQueryParam", () => {
   it("should return undefined when the query param is not found", () => {
     mockLocationTo({});
     const { result } = renderHook(() => useQueryParam("inexistent"));
@@ -35,7 +37,9 @@ describe("useQueryParam", () => {
     const { result } = renderHook(() => useQueryParam("foo"));
     expect(result.current).toEqual("bar");
   });
+});
 
+describe("useQueryParam :: useQueryParamKeywords", () => {
   it("should return the 'keywords' query param value accordingly", () => {
     const expectedKeywords = encodeURIComponent("foo,bar,baz");
     mockLocationTo({ search: `?${QueryParams.KEYWORDS}=${expectedKeywords}&foo=bar` });

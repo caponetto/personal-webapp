@@ -8,7 +8,7 @@ describe("useFilteredMedias", () => {
     expect(result.current).toEqual([]);
   });
 
-  it("should return empty array when no there is no selection match", () => {
+  it("should return empty array when there is no selection match", () => {
     const medias = [
       createMedia({ title: "Foo", keywordKeys: ["foo1", "foo2", "foo3"] }),
       createMedia({ title: "Bar", keywordKeys: ["bar1", "bar2", "bar3"] }),
