@@ -4,7 +4,7 @@ export enum QueryParams {
   KEYWORDS = "k",
 }
 
-export function useQueryParams(name: string): string | undefined {
+export function useQueryParam(name: string): string | undefined {
   const location = useLocation();
 
   const urlSearchParams = new URLSearchParams(location.search);
@@ -21,9 +21,9 @@ export function useQueryParams(name: string): string | undefined {
 }
 
 export function useQueryParamKeywords(): string[] {
-  return useQueryParams(QueryParams.KEYWORDS)?.split(",") ?? [];
+  return useQueryParam(QueryParams.KEYWORDS)?.split(",") ?? [];
 }
 
-export function prepareKeywordsQueryParams(keywords: string[]): string {
+export function prepareKeywordsQueryParam(keywords: string[]): string {
   return `${QueryParams.KEYWORDS}=${encodeURIComponent(keywords.join(","))}`;
 }

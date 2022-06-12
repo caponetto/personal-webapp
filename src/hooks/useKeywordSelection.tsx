@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router";
 import { Media } from "../data";
-import { prepareKeywordsQueryParams, useQueryParamKeywords } from "./useQueryParams";
+import { prepareKeywordsQueryParam, useQueryParamKeywords } from "./useQueryParam";
 
 export interface KeywordSelection {
   selectionMap: Map<string, boolean>;
@@ -65,7 +65,7 @@ export function useKeywordSelection(...arrayOfArrays: Media[][]): KeywordSelecti
   useEffect(() => {
     navigate(
       {
-        search: isAnySelected ? `?${prepareKeywordsQueryParams(selected)}` : "",
+        search: isAnySelected ? `?${prepareKeywordsQueryParam(selected)}` : "",
       },
       { replace: true }
     );

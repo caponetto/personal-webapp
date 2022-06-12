@@ -1,5 +1,4 @@
-import { act } from "@testing-library/react";
-import { renderHook } from "@testing-library/react-hooks/dom";
+import { renderHook, act } from "@testing-library/react-hooks/dom";
 import Cookies from "js-cookie";
 import { ColorMode } from "../../context/AppContext";
 import { useCookie } from "../../hooks/useCookie";
