@@ -27,7 +27,7 @@ describe("useTimeout", () => {
     jest.advanceTimersByTime(delay * 0.9);
     result.current.clear();
     jest.advanceTimersByTime(delay);
-    expect(callback).not.toHaveBeenCalledTimes(1);
+    expect(callback).not.toHaveBeenCalled();
   });
 
   it("should call the callback on the right time after reset", () => {

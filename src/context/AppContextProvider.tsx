@@ -4,7 +4,7 @@ import React, { ReactNode, useCallback, useEffect, useMemo, useReducer } from "r
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router";
 import { DARK_GRAY, WHITE_GRAY } from "../colors";
-import { useCookie } from "../hooks/useCookies";
+import { useCookie } from "../hooks/useCookie";
 import { useData } from "../hooks/useData";
 import { pages, routes } from "../routes";
 import { AppContext, ColorMode } from "./AppContext";
