@@ -10,7 +10,8 @@ import RadioGroup from "@mui/material/RadioGroup";
 import Typography from "@mui/material/Typography";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { ColorMode, useApp } from "../../context/AppContext";
+import { ColorMode } from "../../colors";
+import { useApp } from "../../context/AppContext";
 
 interface SettingsPopoverProps {
   anchor: HTMLButtonElement | null;

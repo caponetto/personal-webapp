@@ -117,7 +117,7 @@ export function MediaCard(props: MediaCardProps) {
                   color="success"
                   variant={props.keywordSelection.selectionMap.get(keywordKey) ? "filled" : "outlined"}
                   size="small"
-                  onClick={() => props.keywordSelection.onItemSelected(keywordKey)}
+                  onClick={() => props.keywordSelection.onToggleSelection(keywordKey)}
                 />
               </Grid>
             ))}

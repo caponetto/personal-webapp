@@ -2,7 +2,7 @@ import { Media, MediaKind, MediaPublishedAt } from "../data";
 
 export const DEFAULT_KEYWORD_SELECTION = {
   selectionMap: new Map(),
-  onItemSelected: jest.fn(),
+  onToggleSelection: jest.fn(),
   onClearSelection: jest.fn(),
   isAnySelected: false,
 };
