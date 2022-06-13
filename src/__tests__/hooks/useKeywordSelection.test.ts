@@ -82,7 +82,7 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
     expect(result.current.selectionMap).toEqual(expectedSelectionMap);
   });
 
-  it("should not select anything when the selection map does not have the given keyword in onItemSelected", () => {
+  it("should not do anything when the selection map does not have the given keyword", () => {
     mockUseQueryParamKeywords.mockReturnValueOnce([]);
 
     const media1 = createMedia({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
@@ -100,14 +100,14 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
     expect(result.current.isAnySelected).toBeFalsy();
 
     act(() => {
-      result.current.onItemSelected("Inexistent Keyword");
+      result.current.onToggleSelection("Inexistent Keyword");
     });
 
     expect(result.current.isAnySelected).toBeFalsy();
     expect(result.current.selectionMap).toEqual(expectedSelectionMap);
   });
 
-  it("should select keywords through onItemSelected accordingly", () => {
+  it("should select keywords through onToggleSelection accordingly", () => {
     mockUseQueryParamKeywords.mockReturnValueOnce([]);
 
     const media1 = createMedia({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
@@ -125,11 +125,38 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
     expect(result.current.isAnySelected).toBeFalsy();
 
     act(() => {
-      result.current.onItemSelected("Quarkus");
-      result.current.onItemSelected("ReactJS");
+      result.current.onToggleSelection("Quarkus");
+      result.current.onToggleSelection("ReactJS");
     });
 
     expect(result.current.isAnySelected).toBeTruthy();
+    expect(result.current.selectionMap).toEqual(expectedSelectionMap);
+    expect(router.useNavigate).toHaveBeenCalled();
+  });
+
+  it("should unselect keywords through onToggleSelection accordingly", () => {
+    mockUseQueryParamKeywords.mockReturnValueOnce(["Machine Learning", "TensorFlow"]);
+
+    const media1 = createMedia({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
+    const media2 = createMedia({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
+    const media3 = createMedia({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
+    const expectedSelectionMap = new Map([
+      ["TypeScript", false],
+      ["ReactJS", false],
+      ["Machine Learning", false],
+      ["Quarkus", false],
+      ["TensorFlow", false],
+    ]);
+
+    const { result } = renderHook(() => useKeywordSelection([media1, media2], [media3]));
+    expect(result.current.isAnySelected).toBeTruthy();
+
+    act(() => {
+      result.current.onToggleSelection("Machine Learning");
+      result.current.onToggleSelection("TensorFlow");
+    });
+
+    expect(result.current.isAnySelected).toBeFalsy();
     expect(result.current.selectionMap).toEqual(expectedSelectionMap);
     expect(router.useNavigate).toHaveBeenCalled();
   });

@@ -30,7 +30,7 @@ export function KeywordChips(props: KeywordChipsProps) {
                 color="success"
                 variant={props.keywordSelection.selectionMap.get(keywordKey) ? "filled" : "outlined"}
                 size={smallHeight ? "small" : "medium"}
-                onClick={() => props.keywordSelection.onItemSelected(keywordKey)}
+                onClick={() => props.keywordSelection.onToggleSelection(keywordKey)}
               />
             </Grid>
           ))}

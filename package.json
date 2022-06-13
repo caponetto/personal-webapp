@@ -82,8 +82,9 @@
     "format:check": "prettier --check .",
     "cy:open": "yarn cypress open --project cypress",
     "cy:run": "yarn cypress run -b chrome --project cypress",
-    "cy:test": "yarn rimraf dist-test && yarn start-server-and-test start https-get://localhost:9001 cy:run",
-    "test": "jest --silent --verbose && yarn cy:test",
+    "cy:test": "yarn start-server-and-test start https-get://localhost:9001 cy:run",
+    "jest:run": "jest --silent",
+    "test": "rimraf dist-test && yarn jest:run && yarn cy:test",
     "prepare": "husky install"
   },
   "babel": {

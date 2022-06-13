@@ -3,11 +3,11 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React, { ReactNode, useCallback, useEffect, useMemo, useReducer } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router";
-import { DARK_GRAY, WHITE_GRAY } from "../colors";
+import { ColorMode, Colors } from "../colors";
 import { useCookie } from "../hooks/useCookie";
 import { useData } from "../hooks/useData";
 import { pages, routes } from "../routes";
-import { AppContext, ColorMode } from "./AppContext";
+import { AppContext } from "./AppContext";
 import { OpenStateActions, openStateReducer } from "./OpenState";
 
 interface AppContextProviderProps {
@@ -44,16 +44,7 @@ export function AppContextProvider(props: AppContextProviderProps) {
           },
           mode: colorMode,
           background: {
-            default: colorMode === "light" ? WHITE_GRAY : DARK_GRAY,
-          },
-        },
-        components: {
-          MuiAppBar: {
-            styleOverrides: {
-              root: {
-                transition: "all 0.2s linear",
-              },
-            },
+            default: colorMode === "light" ? Colors.WhiteGray : Colors.DarkGray,
           },
         },
       }),

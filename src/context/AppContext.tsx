@@ -1,11 +1,7 @@
 import { createContext, Dispatch, useContext } from "react";
+import { ColorMode } from "../colors";
 import { AppData } from "../data";
 import { OpenState, OpenStateAction } from "./OpenState";
-
-export type ColorMode = "light" | "dark";
-
-export const DRAWER_WIDTH = 300;
-export const DRAWER_ITEM_WIDTH = DRAWER_WIDTH - 16;
 
 export interface AppContextType {
   data: AppData;

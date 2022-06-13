@@ -10,4 +10,7 @@ module.exports = {
     "^.+\\.jsx?$": "babel-jest",
     "^.+\\.tsx?$": "ts-jest",
   },
+  collectCoverage: true,
+  coverageDirectory: "./dist-test/coverage",
+  verbose: true,
 };

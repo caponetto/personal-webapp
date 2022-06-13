@@ -8,10 +8,6 @@ export function useQueryParam(name: string): string | undefined {
   const location = useLocation();
 
   const urlSearchParams = new URLSearchParams(location.search);
-  if (!urlSearchParams.has(name)) {
-    return;
-  }
-
   const value = urlSearchParams.get(name);
   if (!value) {
     return;

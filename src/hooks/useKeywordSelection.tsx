@@ -5,7 +5,7 @@ import { prepareKeywordsQueryParam, useQueryParamKeywords } from "./useQueryPara
 
 export interface KeywordSelection {
   selectionMap: Map<string, boolean>;
-  onItemSelected: (keyword: string) => void;
+  onToggleSelection: (keyword: string) => void;
   onClearSelection: () => void;
   isAnySelected: boolean;
 }
@@ -44,13 +44,13 @@ export function useKeywordSelection(...arrayOfArrays: Media[][]): KeywordSelecti
 
   const isAnySelected = useMemo(() => selected.length > 0, [selected]);
 
-  const onItemSelected = (keyword: string) => {
+  const onToggleSelection = (keyword: string) => {
     if (!selectionMap.has(keyword)) {
       return;
     }
     const isSelected = !!selectionMap.get(keyword);
     setSelectionMap((prevState) => new Map([...prevState.entries(), [keyword, !isSelected]]));
-    setSelected(isSelected ? selected.filter((k: string) => k !== keyword) : [...selected, keyword]);
+    setSelected((prevState) => (isSelected ? prevState.filter((k: string) => k !== keyword) : [...prevState, keyword]));
   };
 
   const onClearSelection = () => {
@@ -73,7 +73,7 @@ export function useKeywordSelection(...arrayOfArrays: Media[][]): KeywordSelecti
 
   return {
     selectionMap,
-    onItemSelected,
+    onToggleSelection,
     onClearSelection,
     isAnySelected,
   };
