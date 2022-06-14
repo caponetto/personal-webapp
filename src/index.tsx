@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { App } from "./App";
 
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-const root = ReactDOM.createRoot(document.getElementById("app")!);
-root.render(<App />);
+const app = document.getElementById("app");
+if (!app) {
+  throw new Error("Missing app container - check index.html.");
+}
+ReactDOM.createRoot(app).render(<App />);

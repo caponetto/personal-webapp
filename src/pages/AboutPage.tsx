@@ -14,10 +14,10 @@ import { routes } from "../routes";
 
 export default function AboutPage() {
   const app = useApp();
-  const active = usePageActive();
+  const active = usePageActive(0);
 
   return (
-    <Page>
+    <Page name={"about"}>
       {active && (
         <Fade in={true} timeout={1000}>
           <div>

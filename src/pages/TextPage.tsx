@@ -10,14 +10,14 @@ import { usePageActive } from "../hooks/usePageActive";
 
 export default function TextPage() {
   const app = useApp();
-  const active = usePageActive();
+  const active = usePageActive(0);
   const { t } = useTranslation();
   const keywordSelection = useKeywordSelection(app.data.text.mastersThesis, app.data.text.blogPosts);
   const filteredMasterThesis = useFilteredMedias(app.data.text.mastersThesis, keywordSelection);
   const filteredBlogPosts = useFilteredMedias(app.data.text.blogPosts, keywordSelection);
 
   return (
-    <Page>
+    <Page name="text">
       <PageHeader fadeTime={500}>
         <Typography component="div" sx={{ mb: "30px", fontSize: { sm: "16px", lg: "18px" } }}>
           <Trans i18nKey="text:header">

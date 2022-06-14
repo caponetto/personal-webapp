@@ -10,14 +10,14 @@ import { usePageActive } from "../hooks/usePageActive";
 
 export default function TalkPage() {
   const app = useApp();
-  const active = usePageActive();
+  const active = usePageActive(0);
   const { t } = useTranslation();
   const keywordSelection = useKeywordSelection(app.data.talk.lives, app.data.talk.conferences);
   const filteredLives = useFilteredMedias(app.data.talk.lives, keywordSelection);
   const filteredConferences = useFilteredMedias(app.data.talk.conferences, keywordSelection);
 
   return (
-    <Page>
+    <Page name="talk">
       <PageHeader fadeTime={500}>
         <Typography component="div" sx={{ mb: "30px", fontSize: { sm: "16px", lg: "18px" } }}>
           <Trans i18nKey="talk:header">

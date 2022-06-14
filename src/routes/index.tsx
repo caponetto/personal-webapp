@@ -1,4 +1,4 @@
-export type pages = "about" | "journey" | "text" | "talk" | "code";
+export type PageNames = "about" | "journey" | "text" | "talk" | "code";
 
 export const routes = {
   nav: {

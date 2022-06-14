@@ -6,7 +6,7 @@ import { useLocation, useNavigate } from "react-router";
 import { ColorMode, Colors } from "../colors";
 import { useCookie } from "../hooks/useCookie";
 import { useData } from "../hooks/useData";
-import { pages, routes } from "../routes";
+import { PageNames, routes } from "../routes";
 import { AppContext } from "./AppContext";
 import { OpenStateActions, openStateReducer } from "./OpenState";
 
@@ -76,7 +76,7 @@ export function AppContextProvider(props: AppContextProviderProps) {
     }
 
     const fullName = t("personal:fullName");
-    const pageName = t(`literal:${relativePath as pages}`);
+    const pageName = t(`literal:${relativePath as PageNames}`);
     document.title = `${fullName} | ${pageName}`;
   }, [location.pathname, t]);
 

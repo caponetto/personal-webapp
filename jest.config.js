@@ -6,6 +6,9 @@ module.exports = {
   transformIgnorePatterns: [],
   testRegex: "/__tests__/.*\\.test\\.(jsx?|tsx?)$",
   testEnvironment: "jsdom",
+  moduleNameMapper: {
+    "\\.(css|less|sass|scss)$": "<rootDir>/src/__tests__/__mocks__/styleMock.js",
+  },
   transform: {
     "^.+\\.jsx?$": "babel-jest",
     "^.+\\.tsx?$": "ts-jest",

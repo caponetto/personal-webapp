@@ -28,10 +28,10 @@ import { routes } from "../routes";
 export default function JourneyPage() {
   const app = useApp();
   const { t } = useTranslation();
-  const active = usePageActive();
+  const active = usePageActive(0);
 
   return (
-    <Page>
+    <Page name="journey">
       <PageHeader fadeTime={500}>
         <Typography component="div" sx={{ mb: "30px", fontSize: { sm: "16px", lg: "18px" } }}>
           <Trans i18nKey="journey:header">
