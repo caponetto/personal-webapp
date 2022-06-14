@@ -1,0 +1,797 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TalkPage should match the snapshot 1`] = `
+<div
+  class="MuiBox-root css-zcrwk5"
+  data-testid="talk-page"
+>
+  <div
+    class="MuiBox-root css-0"
+    style="opacity: 1; webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+  >
+    <div
+      class="MuiTypography-root MuiTypography-body1 css-1xx02jo-MuiTypography-root"
+    >
+      header
+    </div>
+  </div>
+  <div
+    class="MuiGrid-root MuiGrid-container css-oys8bv-MuiGrid-root"
+    style="opacity: 1; webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-ojae38-MuiButtonBase-root-MuiChip-root"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+        >
+          apacheKafka
+        </span>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-ojae38-MuiButtonBase-root-MuiChip-root"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+        >
+          archetypes
+        </span>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-ojae38-MuiButtonBase-root-MuiChip-root"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+        >
+          businessCentral
+        </span>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-ojae38-MuiButtonBase-root-MuiChip-root"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+        >
+          changeRequests
+        </span>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-ojae38-MuiButtonBase-root-MuiChip-root"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+        >
+          dmn
+        </span>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-ojae38-MuiButtonBase-root-MuiChip-root"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+        >
+          git
+        </span>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-ojae38-MuiButtonBase-root-MuiChip-root"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+        >
+          maven
+        </span>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-ojae38-MuiButtonBase-root-MuiChip-root"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+        >
+          openShift
+        </span>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-1uydgkw-MuiGrid-root"
+      style="opacity: 0; visibility: hidden;"
+    >
+      <div
+        class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-clickable MuiChip-clickableColorSecondary MuiChip-filledSecondary css-1eafsfe-MuiButtonBase-root-MuiChip-root"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+        >
+          showAll
+        </span>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiBox-root css-46b038"
+    style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+  >
+    <div
+      class="MuiDivider-root MuiDivider-fullWidth MuiDivider-withChildren MuiDivider-textAlignLeft css-7xiqxz-MuiDivider-root"
+      role="separator"
+    >
+      <span
+        class="MuiDivider-wrapper css-qywfm8-MuiDivider-wrapper"
+      >
+        <div
+          class="MuiTypography-root MuiTypography-overline css-z7dlxs-MuiTypography-root"
+        >
+          lives
+        </div>
+      </span>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-zow5z4-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+          >
+            <div
+              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+              >
+                lives.streamDecisionsWithDmnAndKafka
+              </p>
+            </div>
+            <div
+              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+            >
+              <img
+                alt=""
+                aria-label="KIE Community"
+                class=""
+                data-mui-internal-clone-element="true"
+                loading="lazy"
+                src="static/images/kie.webp"
+                style="margin: 4px 8px 0px 16px; width: 20px; height: 20px;"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              >
+                <div
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-f1lf8e-MuiButtonBase-root-MuiChip-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                  >
+                    apacheKafka
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              >
+                <div
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-f1lf8e-MuiButtonBase-root-MuiChip-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                  >
+                    openShift
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              >
+                <div
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-f1lf8e-MuiButtonBase-root-MuiChip-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                  >
+                    dmn
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+          >
+            <div
+              class="MuiBox-root css-8atqhb"
+            >
+              <div
+                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+              >
+                Jun 08, 2021
+              </div>
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-vql6bw-MuiTypography-root-MuiLink-root"
+                href="https://www.youtube.com/watch?v=pgj4jmkAl5A"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <button
+                  class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  watch
+                  <span
+                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      data-testid="LaunchIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+          >
+            <div
+              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+              >
+                lives.mavenArchetypesInBC
+              </p>
+            </div>
+            <div
+              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+            >
+              <img
+                alt=""
+                aria-label="KIE Community"
+                class=""
+                data-mui-internal-clone-element="true"
+                loading="lazy"
+                src="static/images/kie.webp"
+                style="margin: 4px 8px 0px 16px; width: 20px; height: 20px;"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              >
+                <div
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-f1lf8e-MuiButtonBase-root-MuiChip-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                  >
+                    businessCentral
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              >
+                <div
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-f1lf8e-MuiButtonBase-root-MuiChip-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                  >
+                    archetypes
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              >
+                <div
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-f1lf8e-MuiButtonBase-root-MuiChip-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                  >
+                    maven
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+          >
+            <div
+              class="MuiBox-root css-8atqhb"
+            >
+              <div
+                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+              >
+                Sep 15, 2020
+              </div>
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-vql6bw-MuiTypography-root-MuiLink-root"
+                href="https://www.youtube.com/watch?v=E07RXxiZdYc"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <button
+                  class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  watch
+                  <span
+                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      data-testid="LaunchIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+          >
+            <div
+              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+              >
+                lives.workspaceCollaborationInBC
+              </p>
+            </div>
+            <div
+              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+            >
+              <img
+                alt=""
+                aria-label="KIE Community"
+                class=""
+                data-mui-internal-clone-element="true"
+                loading="lazy"
+                src="static/images/kie.webp"
+                style="margin: 4px 8px 0px 16px; width: 20px; height: 20px;"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              >
+                <div
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-f1lf8e-MuiButtonBase-root-MuiChip-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                  >
+                    businessCentral
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              >
+                <div
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-f1lf8e-MuiButtonBase-root-MuiChip-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                  >
+                    changeRequests
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              >
+                <div
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-f1lf8e-MuiButtonBase-root-MuiChip-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                  >
+                    git
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+          >
+            <div
+              class="MuiBox-root css-8atqhb"
+            >
+              <div
+                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+              >
+                Sep 08, 2020
+              </div>
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-vql6bw-MuiTypography-root-MuiLink-root"
+                href="https://www.youtube.com/watch?v=wWpOKILLlZI"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <button
+                  class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  watch
+                  <span
+                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      data-testid="LaunchIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiBox-root css-46b038"
+    style="opacity: 1; webkit-transition: opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+  >
+    <div
+      class="MuiDivider-root MuiDivider-fullWidth MuiDivider-withChildren MuiDivider-textAlignLeft css-7xiqxz-MuiDivider-root"
+      role="separator"
+    >
+      <span
+        class="MuiDivider-wrapper css-qywfm8-MuiDivider-wrapper"
+      >
+        <div
+          class="MuiTypography-root MuiTypography-overline css-z7dlxs-MuiTypography-root"
+        >
+          conferences
+        </div>
+      </span>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-zow5z4-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+          >
+            <div
+              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+              >
+                conferences.streamDecisionsWithDmnAndKafka
+              </p>
+            </div>
+            <div
+              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+            >
+              <img
+                alt=""
+                aria-label="The Developer's Conference"
+                class=""
+                data-mui-internal-clone-element="true"
+                loading="lazy"
+                src="static/images/tdc.webp"
+                style="margin: 4px 8px 0px 16px; width: 20px; height: 20px;"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              >
+                <div
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-f1lf8e-MuiButtonBase-root-MuiChip-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                  >
+                    apacheKafka
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              >
+                <div
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-f1lf8e-MuiButtonBase-root-MuiChip-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                  >
+                    openShift
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              >
+                <div
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-f1lf8e-MuiButtonBase-root-MuiChip-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                  >
+                    dmn
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+          >
+            <div
+              class="MuiBox-root css-8atqhb"
+            >
+              <div
+                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+              >
+                Jun 08, 2021
+              </div>
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-vql6bw-MuiTypography-root-MuiLink-root"
+                href="static/slides/2021-06-streaming-decisions-with-dmn-and-kafka.pdf"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <button
+                  class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  slides
+                  <span
+                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      data-testid="LaunchIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
