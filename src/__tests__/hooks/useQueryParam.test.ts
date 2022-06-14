@@ -1,21 +1,11 @@
 import { renderHook } from "@testing-library/react-hooks/dom";
-import * as router from "react-router";
 import {
   prepareKeywordsQueryParam,
   QueryParams,
   useQueryParam,
   useQueryParamKeywords,
 } from "../../hooks/useQueryParam";
-
-const mockLocationTo = (args: { pathname?: string; search?: string }) => {
-  jest.spyOn(router, "useLocation").mockImplementation(() => ({
-    pathname: args.pathname ?? "/",
-    search: args.search ?? "",
-    hash: "#",
-    key: "default",
-    state: undefined,
-  }));
-};
+import { mockLocationTo } from "../TestBuilders";
 
 describe("useQueryParam :: prepareKeywordsQueryParam", () => {
   it("should prepare 'keywords' query params accordingly", () => {

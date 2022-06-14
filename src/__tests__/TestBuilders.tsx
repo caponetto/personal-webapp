@@ -1,3 +1,4 @@
+import * as router from "react-router";
 import { Media, MediaKind, MediaPublishedAt } from "../data";
 
 export const DEFAULT_KEYWORD_SELECTION = {
@@ -20,3 +21,13 @@ export const createMedia = (args: {
   releaseDate: args.releasedDate ?? new Date(),
   publishedAt: args.publishedAt ?? "GitHub",
 });
+
+export const mockLocationTo = (args: { pathname?: string; search?: string }) => {
+  jest.spyOn(router, "useLocation").mockImplementation(() => ({
+    pathname: args.pathname ?? "/",
+    search: args.search ?? "",
+    hash: "#",
+    key: "default",
+    state: undefined,
+  }));
+};
