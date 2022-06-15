@@ -109,7 +109,7 @@ export function AppDrawer(props: AppDrawerProps) {
   return (
     <Box component="nav" sx={{ width: { md: props.drawerWidth }, height: "100%", flexShrink: { md: 0 } }}>
       <SwipeableDrawer
-        id="temporary-drawer"
+        data-testid="temporary-drawer"
         disableSwipeToOpen
         variant="temporary"
         open={app.openState.drawer}
@@ -127,7 +127,7 @@ export function AppDrawer(props: AppDrawerProps) {
         {items}
       </SwipeableDrawer>
       <Drawer
-        id="permanent-drawer"
+        data-testid="permanent-drawer"
         variant="permanent"
         sx={{
           display: { xs: "none", md: "block" },
