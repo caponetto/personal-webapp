@@ -33,7 +33,7 @@ export function AppBar(props: AppBarProps) {
     >
       <Toolbar>
         <IconButton
-          id="open-drawer-button"
+          data-testid="open-drawer-button"
           onClick={() => app.openStateDispatch({ type: OpenStateActions.DRAWER_TOGGLE })}
           size="large"
           edge="start"

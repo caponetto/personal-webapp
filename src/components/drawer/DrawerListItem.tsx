@@ -21,7 +21,7 @@ export function DrawerListItem(props: DrawerListItemProps) {
 
   return (
     <ListItem
-      id={`${props.title}-item-button`}
+      data-testid={`${props.title.toLowerCase()}-item-button`}
       button
       key={`nav-${props.title}`}
       selected={props.selected}

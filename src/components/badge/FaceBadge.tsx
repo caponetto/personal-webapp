@@ -30,14 +30,12 @@ export function FaceBadge(props: FaceBadgeProps) {
         badgeContent={
           <Tooltip title={t("common:location.tooltip", { location: props.location.name }).toString()} arrow>
             <Link underline="none" rel="noreferrer" target="_blank" href={props.location.url}>
-              <IconButton id="face-badge-location" sx={{ color: "rgba(0,0,0,0.9)" }}>
-                {props.location.emojiIcon}
-              </IconButton>
+              <IconButton sx={{ color: "rgba(0,0,0,0.9)" }}>{props.location.emojiIcon}</IconButton>
             </Link>
           </Tooltip>
         }
       >
-        <IconButton id="face-badge" onClick={props.onClick}>
+        <IconButton data-testid="face-badge" onClick={props.onClick}>
           <Avatar alt={props.name} src={props.avatarRoute} sx={{ width: 150, height: 150, boxShadow: 3 }} />
         </IconButton>
       </Badge>
