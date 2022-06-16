@@ -1,4 +1,4 @@
-name: "Publish :: Development"
+name: "Publish :: Staging"
 
 on:
   push:
@@ -31,25 +31,25 @@ jobs:
         working-directory: ${{ github.workspace }}/personal-webapp
         env:
           GTM_ID: ""
-          CONTEXT_PATH: "/dev"
+          CONTEXT_PATH: "/staging"
           VERSION: ${{ github.sha }}
         shell: bash
         run: |
           yarn build:prod
 
-      - name: "Deploy to GitHub Pages - development version (caponetto.github.io)"
+      - name: "Deploy to GitHub Pages - staging version (caponetto.github.io)"
         working-directory: ${{ github.workspace }}/caponetto.github.io
         shell: bash
         run: |
           echo "Reset deployment dir"
-          rm -rf dev
-          mkdir dev
-          cd dev
+          rm -rf staging
+          mkdir staging
+          cd staging
 
           echo "Copy resources"
           cp -r ${{ github.workspace }}/personal-webapp/dist/* .
 
           echo "Commit changes and push"
           git add .
-          git commit -m "Deploy for Development ${{ github.sha }}" || echo "No changes."
+          git commit -m "Deploy Staging ${{ github.sha }}" || echo "No changes."
           git push origin main
