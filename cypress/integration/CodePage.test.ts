@@ -1,33 +1,33 @@
 describe("CodePage", () => {
   beforeEach(() => {
-    cy.viewport(1000, 800);
+    cy.setScreen("large");
   });
 
   it("should navigate to /code when clicking in the Code list item", () => {
     cy.visit("/");
-    cy.get('[data-testid="permanent-drawer"]').within(() => {
-      cy.get('[data-testid="code-item-button"]').click();
+    cy.getDrawer("permanent").within(() => {
+      cy.getDrawerItem("code").click();
     });
-    cy.url().should("include", "/code");
+    cy.assertLocation("/code");
   });
 
   it("should navigate to /code when clicking in the Code list item (small screen)", () => {
-    cy.viewport(400, 600);
+    cy.setScreen("small");
     cy.visit("/about");
-    cy.get('[data-testid="open-drawer-button"]').click();
-    cy.get('[data-testid="temporary-drawer"]').within(() => {
-      cy.get('[data-testid="code-item-button"]').click();
-      cy.url().should("include", "/code");
+    cy.openDrawer();
+    cy.getDrawer("temporary").within(() => {
+      cy.getDrawerItem("code").click();
+      cy.assertLocation("/code");
     });
   });
 
   it("should select the Code item when clicking on its item", () => {
     cy.visit("/about");
-    cy.get('[data-testid="permanent-drawer"]').within(() => {
-      cy.get('[data-testid="code-item-button"]').should("not.have.class", "Mui-selected");
-      cy.get('[data-testid="code-item-button"]').click();
-      cy.get('[data-testid="code-item-button"]').should("have.class", "Mui-selected");
-      cy.get('[data-testid="about-item-button"]').should("not.have.class", "Mui-selected");
+    cy.getDrawer("permanent").within(() => {
+      cy.getDrawerItem("code").should("not.have.class", "Mui-selected");
+      cy.getDrawerItem("code").click();
+      cy.getDrawerItem("code").should("have.class", "Mui-selected");
+      cy.getDrawerItem("about").should("not.have.class", "Mui-selected");
     });
   });
 });

@@ -1,33 +1,33 @@
 describe("JourneyPage", () => {
   beforeEach(() => {
-    cy.viewport(1000, 800);
+    cy.setScreen("large");
   });
 
   it("should navigate to /journey when clicking in the Journey list item", () => {
     cy.visit("/");
-    cy.get('[data-testid="permanent-drawer"]').within(() => {
-      cy.get('[data-testid="journey-item-button"]').click();
+    cy.getDrawer("permanent").within(() => {
+      cy.getDrawerItem("journey").click();
     });
-    cy.url().should("include", "/journey");
+    cy.assertLocation("/journey");
   });
 
   it("should navigate to /journey when clicking in the Journey list item (small screen)", () => {
-    cy.viewport(400, 600);
+    cy.setScreen("small");
     cy.visit("/text");
-    cy.get('[data-testid="open-drawer-button"]').click();
-    cy.get('[data-testid="temporary-drawer"]').within(() => {
-      cy.get('[data-testid="journey-item-button"]').click();
-      cy.url().should("include", "/journey");
+    cy.openDrawer();
+    cy.getDrawer("temporary").within(() => {
+      cy.getDrawerItem("journey").click();
+      cy.assertLocation("/journey");
     });
   });
 
   it("should select the Journey item when clicking on its item", () => {
     cy.visit("/about");
-    cy.get('[data-testid="permanent-drawer"]').within(() => {
-      cy.get('[data-testid="journey-item-button"]').should("not.have.class", "Mui-selected");
-      cy.get('[data-testid="journey-item-button"]').click();
-      cy.get('[data-testid="journey-item-button"]').should("have.class", "Mui-selected");
-      cy.get('[data-testid="about-item-button"]').should("not.have.class", "Mui-selected");
+    cy.getDrawer("permanent").within(() => {
+      cy.getDrawerItem("journey").should("not.have.class", "Mui-selected");
+      cy.getDrawerItem("journey").click();
+      cy.getDrawerItem("journey").should("have.class", "Mui-selected");
+      cy.getDrawerItem("about").should("not.have.class", "Mui-selected");
     });
   });
 });
