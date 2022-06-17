@@ -1,6 +1,5 @@
 import Grid from "@mui/material/Grid";
 import { SxProps, Theme } from "@mui/system";
-import React from "react";
 import { GitHubButton, LinkedInButton, TwitterButton } from "../button";
 
 interface SocialBarProps {

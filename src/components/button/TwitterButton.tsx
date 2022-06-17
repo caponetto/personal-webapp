@@ -1,5 +1,4 @@
 import TwitterIcon from "@mui/icons-material/Twitter";
-import React from "react";
 import { useTranslation } from "react-i18next";
 import { SocialButton } from "./SocialButton";
 

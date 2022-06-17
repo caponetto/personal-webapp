@@ -13,7 +13,7 @@ import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router";
 import { DrawerListItem } from ".";

@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Zoom from "@mui/material/Zoom";
-import React, { MouseEvent } from "react";
+import { MouseEvent } from "react";
 import { useApp } from "../../context/AppContext";
 
 interface ScrollTopProps {

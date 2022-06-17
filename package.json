@@ -37,7 +37,7 @@
     "@testing-library/react-hooks": "^8.0.0",
     "@types/jest": "^28.1.1",
     "@types/js-cookie": "^3.0.2",
-    "@types/node": "^17.0.41",
+    "@types/node": "^18.0.0",
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
     "@types/react-router": "^5.1.18",
@@ -67,6 +67,7 @@
     "style-loader": "^3.3.0",
     "ts-jest": "^28.0.4",
     "ts-loader": "^9.3.0",
+    "ts-node": "^10.8.1",
     "typescript": "^4.7.3",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.8.0",
@@ -90,14 +91,19 @@
   "babel": {
     "presets": [
       [
-        "@babel/env",
+        "@babel/preset-env",
         {
           "targets": {
             "node": "current"
           }
         }
       ],
-      "@babel/react"
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
     ]
   }
 }

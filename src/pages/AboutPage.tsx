@@ -3,7 +3,7 @@ import CardActions from "@mui/material/CardActions";
 import Fade from "@mui/material/Fade";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { HoverableCard } from "../components/card";
 import { Page } from "../components/page";
 import { SocialBar } from "../components/social";

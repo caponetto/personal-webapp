@@ -6,7 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
 import { OpenStateActions } from "../../context/OpenState";

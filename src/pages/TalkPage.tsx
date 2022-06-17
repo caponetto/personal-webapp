@@ -1,5 +1,4 @@
 import Typography from "@mui/material/Typography";
-import React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { KeywordChips } from "../components/chip";
 import { MediaSection, Page, PageHeader } from "../components/page";

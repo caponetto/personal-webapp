@@ -8,7 +8,6 @@ import Popover from "@mui/material/Popover";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import Typography from "@mui/material/Typography";
-import React from "react";
 import { useTranslation } from "react-i18next";
 import { ColorMode } from "../../colors";
 import { useApp } from "../../context/AppContext";

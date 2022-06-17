@@ -1,10 +1,10 @@
 import Box from "@mui/material/Box";
-import React from "react";
+import { ReactNode } from "react";
 import { PageNames } from "../../routes";
 
 interface PageProps {
   name: PageNames;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export function Page(props: PageProps) {

@@ -1,7 +1,6 @@
 import CloseIcon from "@mui/icons-material/Close";
 import IconButton from "@mui/material/IconButton";
 import Snackbar from "@mui/material/Snackbar";
-import React from "react";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
 import { OpenStateActions } from "../../context/OpenState";

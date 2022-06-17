@@ -10,14 +10,14 @@ import Link from "@mui/material/Link";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { format } from "date-fns";
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
 import { Media } from "../../data";
 import { Fonts } from "../../fonts";
 import { KeywordSelection } from "../../hooks/useKeywordSelection";
 import { routes } from "../../routes";
-import { StaticChip } from "../chip/StaticChip";
+import { HoverableChip } from "../chip/HoverableChip";
 import { HoverableCard } from "./HoverableCard";
 
 interface MediaCardProps {
@@ -111,7 +111,7 @@ export function MediaCard(props: MediaCardProps) {
             .sort((a, b) => b.length - a.length)
             .map((keywordKey) => (
               <Grid item key={`media-keyword-${keywordKey}`}>
-                <StaticChip
+                <HoverableChip
                   // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   label={t(`literal:${keywordKey}` as any)}
                   color="success"
