@@ -3,7 +3,6 @@ import Divider from "@mui/material/Divider";
 import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import React from "react";
 import { Media } from "../../data";
 import { KeywordSelection } from "../../hooks/useKeywordSelection";
 import { MediaCard } from "../card";

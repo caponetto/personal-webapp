@@ -1,6 +1,6 @@
 import Card from "@mui/material/Card";
 import { SxProps, Theme } from "@mui/system";
-import React, { ReactNode, useState } from "react";
+import { ReactNode, useState } from "react";
 
 interface HoverableCardProps {
   children: ReactNode;
@@ -12,7 +12,7 @@ export function HoverableCard(props: HoverableCardProps) {
 
   return (
     <Card
-      sx={props.sx}
+      sx={{ ...props.sx }}
       elevation={isMouseOver ? 5 : 2}
       onMouseOver={() => setMouseOver(true)}
       onMouseLeave={() => setMouseOver(false)}

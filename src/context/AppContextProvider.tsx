@@ -1,6 +1,6 @@
 import { blueGrey, grey, teal } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import React, { ReactNode, useCallback, useEffect, useMemo, useReducer } from "react";
+import { ReactNode, useCallback, useEffect, useMemo, useReducer } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router";
 import { ColorMode, Colors } from "../colors";

@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import LinearProgress from "@mui/material/LinearProgress";
 import Toolbar from "@mui/material/Toolbar";
-import React, { ReactNode, Suspense } from "react";
+import { ReactNode, Suspense } from "react";
 import { I18nextProvider } from "react-i18next";
 import { HashRouter } from "react-router-dom";
 import { Colors } from "./colors";

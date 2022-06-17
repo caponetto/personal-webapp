@@ -16,7 +16,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { HoverableCard } from "../components/card";
 import { Page, PageHeader } from "../components/page";

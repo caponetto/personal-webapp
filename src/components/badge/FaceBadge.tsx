@@ -3,7 +3,6 @@ import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Link from "@mui/material/Link";
-import React from "react";
 import { useTranslation } from "react-i18next";
 
 interface FaceBadgeProps {

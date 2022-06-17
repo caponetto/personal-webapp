@@ -2,7 +2,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface DrawerListItemProps {
   width: number;

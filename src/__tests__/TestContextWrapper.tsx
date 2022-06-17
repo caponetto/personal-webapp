@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { I18nextProvider } from "react-i18next";
 import { AppContextProvider } from "../context/AppContextProvider";
 import i18n from "./I18nForTests";

@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import Fade from "@mui/material/Fade";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface PageHeaderProps {
   fadeTime: number;
