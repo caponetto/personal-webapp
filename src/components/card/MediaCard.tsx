@@ -10,14 +10,16 @@ import Link from "@mui/material/Link";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { format } from "date-fns";
+import { enUS, ptBR } from "date-fns/locale";
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
 import { Media } from "../../data";
 import { Fonts } from "../../fonts";
 import { KeywordSelection } from "../../hooks/useKeywordSelection";
+import { SupportedLanguages } from "../../i18n";
 import { routes } from "../../routes";
-import { HoverableChip } from "../chip/HoverableChip";
+import { StaticChip } from "../chip/StaticChip";
 import { HoverableCard } from "./HoverableCard";
 
 interface MediaCardProps {
@@ -27,7 +29,7 @@ interface MediaCardProps {
 
 export function MediaCard(props: MediaCardProps) {
   const app = useApp();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const accessMediaButtonLabel = useMemo(() => {
     if (["post", "thesis"].includes(props.item.kind)) {
@@ -50,8 +52,10 @@ export function MediaCard(props: MediaCardProps) {
       return format(props.item.releaseDate, "yyyy");
     }
 
-    return format(props.item.releaseDate, "MMM dd, yyyy");
-  }, [props.item.releaseDate, props.item.kind]);
+    return format(props.item.releaseDate, "PPP", {
+      locale: i18n.resolvedLanguage === SupportedLanguages.PT ? ptBR : enUS,
+    });
+  }, [props.item.kind, props.item.releaseDate, i18n.resolvedLanguage]);
 
   const iconRoute = useMemo(() => {
     if (props.item.publishedAt === "KIE Community") {
@@ -111,7 +115,7 @@ export function MediaCard(props: MediaCardProps) {
             .sort((a, b) => b.length - a.length)
             .map((keywordKey) => (
               <Grid item key={`media-keyword-${keywordKey}`}>
-                <HoverableChip
+                <StaticChip
                   // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   label={t(`literal:${keywordKey}` as any)}
                   color="success"

@@ -11,6 +11,7 @@ import Typography from "@mui/material/Typography";
 import { useTranslation } from "react-i18next";
 import { ColorMode } from "../../colors";
 import { useApp } from "../../context/AppContext";
+import { SupportedLanguages } from "../../i18n";
 
 interface SettingsPopoverProps {
   anchor: HTMLButtonElement | null;
@@ -77,8 +78,8 @@ export function SettingsPopover(props: SettingsPopoverProps) {
                 onChange={(event) => i18n.changeLanguage((event.target as HTMLInputElement).value)}
                 name="language-group"
               >
-                <FormControlLabel value="en" control={smallRadioButton} label={"English"} />
-                <FormControlLabel value="pt" control={smallRadioButton} label={"Português"} />
+                <FormControlLabel value={SupportedLanguages.EN} control={smallRadioButton} label={"English"} />
+                <FormControlLabel value={SupportedLanguages.PT} control={smallRadioButton} label={"Português"} />
               </RadioGroup>
             </FormControl>
           </Box>
