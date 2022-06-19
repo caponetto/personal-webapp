@@ -5,6 +5,8 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Zoom from "@mui/material/Zoom";
 import { MouseEvent } from "react";
 import { useApp } from "../../context/AppContext";
+import { Tooltip } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 interface ScrollTopProps {
   anchor: string;
@@ -12,6 +14,7 @@ interface ScrollTopProps {
 
 export function ScrollTop(props: ScrollTopProps) {
   const app = useApp();
+  const { t } = useTranslation();
   const scrollTrigger = useScrollTrigger();
 
   const scrollToAnchor = (event: MouseEvent<HTMLDivElement>) => {
@@ -32,9 +35,11 @@ export function ScrollTop(props: ScrollTopProps) {
       {!app.openState.snackbar && (
         <Zoom in={scrollTrigger}>
           <Box onClick={scrollToAnchor} role="presentation" sx={{ position: "fixed", bottom: 16, right: 16 }}>
-            <Fab color="secondary" size="small" aria-label="scroll back to top">
-              <KeyboardArrowUpIcon />
-            </Fab>
+            <Tooltip title={t("literal:scrollToTop")} arrow>
+              <Fab color="secondary" size="small" aria-label="scroll back to top">
+                <KeyboardArrowUpIcon />
+              </Fab>
+            </Tooltip>
           </Box>
         </Zoom>
       )}
