@@ -11,9 +11,9 @@ export default function TalkPage() {
   const app = useApp();
   const active = usePageActive(0);
   const { t } = useTranslation();
-  const keywordSelection = useKeywordSelection(app.data.talk.lives, app.data.talk.conferences);
-  const filteredLives = useFilteredMedias(app.data.talk.lives, keywordSelection);
-  const filteredConferences = useFilteredMedias(app.data.talk.conferences, keywordSelection);
+  const keywordSelection = useKeywordSelection(app.schema.talk.lives, app.schema.talk.conferences);
+  const filteredLives = useFilteredMedias(app.schema.talk.lives, keywordSelection);
+  const filteredConferences = useFilteredMedias(app.schema.talk.conferences, keywordSelection);
 
   return (
     <Page name="talk">
@@ -30,7 +30,7 @@ export default function TalkPage() {
           title={t("literal:lives")}
           fadeTime={1000}
           keywordSelection={keywordSelection}
-          mediaList={filteredLives}
+          mediaItems={filteredLives}
         />
       )}
       {active && filteredConferences.length > 0 && (
@@ -38,7 +38,7 @@ export default function TalkPage() {
           title={t("literal:conferences")}
           fadeTime={1500}
           keywordSelection={keywordSelection}
-          mediaList={filteredConferences}
+          mediaItems={filteredConferences}
         />
       )}
     </Page>

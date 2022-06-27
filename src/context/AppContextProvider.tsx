@@ -5,9 +5,9 @@ import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router";
 import { ColorMode, Colors } from "../colors";
 import { useCookie } from "../hooks/useCookie";
-import { useData } from "../hooks/useData";
+import { useSchema } from "../hooks/useSchema";
 import { PageNames, routes } from "../routes";
-import { AppContext } from "./AppContext";
+import { AppContext, AppContextDispatch } from "./AppContext";
 import { OpenStateActions, openStateReducer } from "./OpenState";
 
 interface AppContextProviderProps {
@@ -17,8 +17,8 @@ interface AppContextProviderProps {
 export function AppContextProvider(props: AppContextProviderProps) {
   const location = useLocation();
   const navigate = useNavigate();
+  const schema = useSchema();
   const { t } = useTranslation();
-  const data = useData();
 
   const [colorMode, updateColorMode] = useCookie<ColorMode>("color_mode", "light");
   const [showSnackbar, updateShowSnackbar] = useCookie<boolean>("show_snackbar", navigator.cookieEnabled);
@@ -75,26 +75,30 @@ export function AppContextProvider(props: AppContextProviderProps) {
       return;
     }
 
-    const fullName = t("personal:fullName");
+    const fullName = `${schema.personal.firstName} ${schema.personal.lastName}`;
     const pageName = t(`literal:${relativePath as PageNames}`);
     document.title = `${fullName} | ${pageName}`;
-  }, [location.pathname, t]);
+  }, [location.pathname, schema.personal, t]);
 
-  const contextValue = useMemo(
+  const appContextValue = useMemo(
     () => ({
-      data,
+      schema,
       colorMode,
-      updateColorMode,
       openState,
-      openStateDispatch,
-      goTo,
     }),
-    [data, colorMode, updateColorMode, openState, goTo]
+    [schema, colorMode, openState]
+  );
+
+  const appContextDispatchValue = useMemo(
+    () => ({ openStateDispatch, goTo, updateColorMode }),
+    [goTo, updateColorMode]
   );
 
   return (
-    <AppContext.Provider value={contextValue}>
-      <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
+    <AppContext.Provider value={appContextValue}>
+      <AppContextDispatch.Provider value={appContextDispatchValue}>
+        <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
+      </AppContextDispatch.Provider>
     </AppContext.Provider>
   );
 }

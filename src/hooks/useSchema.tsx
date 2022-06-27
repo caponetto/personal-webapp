@@ -1,12 +1,13 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { AppData } from "../data";
+import { AppSchema } from "../context/AppContext";
 import { routes } from "../routes";
+import { About, Code, Journey, Personal, Place, Talk, Text } from "../schema";
 
-export function useData() {
+export function useSchema() {
   const { t } = useTranslation();
 
-  const locations = useMemo(
+  const locations = useMemo<{ [key: string]: Pick<Place, "name" | "url"> }>(
     () => ({
       unicamp: {
         name: t("literal:unicamp"),
@@ -48,19 +49,20 @@ export function useData() {
     [t]
   );
 
-  const personal = useMemo(
+  const personal = useMemo<Personal>(
     () => ({
-      fullName: t("personal:fullName"),
-      location: {
-        country: t("literal:brazil"),
-        flag: "🇧🇷",
+      firstName: t("personal:firstName"),
+      lastName: t("personal:lastName"),
+      country: {
+        name: t("literal:brazil"),
         url: routes.urls.mapsCountry,
+        emoji: "🇧🇷",
       },
     }),
     [t]
   );
 
-  const about = useMemo(
+  const about = useMemo<About>(
     () => ({
       welcome: t("about:welcome"),
       paragraphs: Array.from(t("about:paragraphs", { returnObjects: true })),
@@ -68,10 +70,11 @@ export function useData() {
     [t]
   );
 
-  const journey = useMemo(
+  const journey = useMemo<Journey>(
     () => ({
       education: [
         {
+          kind: "education",
           title: t("journey:education.master.title"),
           period: {
             start: 2017,
@@ -79,6 +82,7 @@ export function useData() {
           location: locations.unicamp,
         },
         {
+          kind: "education",
           title: t("journey:education.bachelor.title"),
           period: {
             start: 2011,
@@ -88,6 +92,7 @@ export function useData() {
       ],
       certification: [
         {
+          kind: "certification",
           title: t("literal:computerVisionNanoDegree"),
           period: {
             start: 2019,
@@ -95,6 +100,7 @@ export function useData() {
           location: locations.udacity,
         },
         {
+          kind: "certification",
           title: t("literal:oracleCertifiedProfessionalJavaSix"),
           period: {
             start: 2012,
@@ -104,6 +110,7 @@ export function useData() {
       ],
       experience: [
         {
+          kind: "experience",
           title: `${t("literal:softwareEngineer")} → ${t("literal:seniorSoftwareEngineer")}`,
           period: {
             start: 2019,
@@ -112,6 +119,7 @@ export function useData() {
           location: locations.redHat,
         },
         {
+          kind: "experience",
           title: `${t("literal:softwareEngineer")} → ${t("literal:seniorSoftwareEngineer")}`,
           period: {
             start: 2017,
@@ -120,6 +128,7 @@ export function useData() {
           location: locations.samsung,
         },
         {
+          kind: "experience",
           title: t("literal:softwareEngineer"),
           period: {
             start: 2017,
@@ -128,6 +137,7 @@ export function useData() {
           location: locations.iFood,
         },
         {
+          kind: "experience",
           title: t("literal:graduateResearcher"),
           period: {
             start: 2015,
@@ -136,6 +146,7 @@ export function useData() {
           location: locations.unicamp,
         },
         {
+          kind: "experience",
           title: t("literal:juniorSoftwareEngineer"),
           period: {
             start: 2012,
@@ -144,6 +155,7 @@ export function useData() {
           location: locations.samsung,
         },
         {
+          kind: "experience",
           title: t("literal:softwareDevelopmentIntern"),
           period: {
             start: 2011,
@@ -152,6 +164,7 @@ export function useData() {
           location: locations.motorola,
         },
         {
+          kind: "experience",
           title: t("literal:undergraduateResearcher"),
           period: {
             start: 2007,
@@ -160,6 +173,7 @@ export function useData() {
           location: locations.unifei,
         },
         {
+          kind: "experience",
           title: t("literal:softwareDevelopmentIntern"),
           period: {
             start: 2007,
@@ -225,14 +239,14 @@ export function useData() {
     [t, locations]
   );
 
-  const text = useMemo(
+  const text = useMemo<Text>(
     () => ({
-      mastersThesis: [
+      mastersTheses: [
         {
           kind: "thesis",
           title: t("text:mastersThesis"),
           releaseDate: new Date("Oct 27, 2017"),
-          publishedAt: "UNICAMP",
+          publication: "unicamp",
           keywordKeys: ["machineLearning", "multiTaskLearning", "clustering"],
           url: routes.urls.mastersThesis,
         },
@@ -242,7 +256,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.workspaceCollaboration"),
           releaseDate: new Date("Sep 25, 2019"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["businessCentral", "git", "changeRequests"],
           url: routes.urls.blogPosts.workspaceCollaboration,
         },
@@ -250,7 +264,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.playingWithObjectDetection"),
           releaseDate: new Date("Oct 11, 2019"),
-          publishedAt: "Towards Data Science",
+          publication: "towardsDataScience",
           keywordKeys: ["machineLearning", "computerVision", "objectDetection"],
           url: routes.urls.blogPosts.playingWithObjectDetection,
         },
@@ -258,7 +272,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.randomVsGridSearch"),
           releaseDate: new Date("Nov 14, 2019"),
-          publishedAt: "Towards Data Science",
+          publication: "towardsDataScience",
           keywordKeys: ["machineLearning", "optimization", "randomSearch"],
           url: routes.urls.blogPosts.randomVsGridSearch,
         },
@@ -266,7 +280,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.mavenArchetypesInBC"),
           releaseDate: new Date("Jan 21, 2020"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["businessCentral", "maven", "archetypes"],
           url: routes.urls.blogPosts.mavenArchetypesInBC,
         },
@@ -274,7 +288,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.emptyReposInBC"),
           releaseDate: new Date("Feb 28, 2020"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["businessCentral", "git", "maven"],
           url: routes.urls.blogPosts.emptyReposInBC,
         },
@@ -282,7 +296,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.squashCommitsInBC"),
           releaseDate: new Date("Feb 28, 2020"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["businessCentral", "git", "changeRequests"],
           url: routes.urls.blogPosts.squashCommitsInBC,
         },
@@ -290,7 +304,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.improvedWorkflowInBC"),
           releaseDate: new Date("Mar 31, 2020"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["businessCentral", "git", "syncRepositories"],
           url: routes.urls.blogPosts.improvedWorkflowInBC,
         },
@@ -298,7 +312,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.exportAsGist"),
           releaseDate: new Date("Apr 9, 2020"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["kieTools", "github", "dmn", "bpmn"],
           url: routes.urls.blogPosts.exportAsGist,
         },
@@ -306,7 +320,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.backendKogitoTooling"),
           releaseDate: new Date("Sept 22, 2020"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["kieTools", "backend", "vsCode"],
           url: routes.urls.blogPosts.backendKogitoTooling,
         },
@@ -314,7 +328,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.authoringOnGitpod"),
           releaseDate: new Date("Aug 9, 2021"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["kieTools", "gitpod", "bpmn", "dmn"],
           url: routes.urls.blogPosts.authoringOnGitpod,
         },
@@ -322,7 +336,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.dmnDevSandbox"),
           releaseDate: new Date("Aug 23, 2021"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["kieTools", "dmn", "openShift"],
           url: routes.urls.blogPosts.dmnDevSandbox,
         },
@@ -330,7 +344,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.teachableMachineBitingNails"),
           releaseDate: new Date("Jan 10, 2022"),
-          publishedAt: "Towards Data Science",
+          publication: "towardsDataScience",
           keywordKeys: ["teachableMachine", "reactJs", "openShift"],
           url: routes.urls.blogPosts.teachableMachineBitingNails,
         },
@@ -338,7 +352,7 @@ export function useData() {
           kind: "post",
           title: t("text:blogPosts.deployKieSandboxToOpenshift"),
           releaseDate: new Date("Jan 27, 2022"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["kieTools", "openShift"],
           url: routes.urls.blogPosts.deployKieSandboxToOpenshift,
         },
@@ -347,14 +361,14 @@ export function useData() {
     [t]
   );
 
-  const talk = useMemo(
+  const talk = useMemo<Talk>(
     () => ({
       lives: [
         {
           kind: "live",
           title: t("talk:lives.workspaceCollaborationInBC"),
           releaseDate: new Date("Sept 8, 2020"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["businessCentral", "git", "changeRequests"],
           url: routes.urls.lives.workspaceCollaborationInBC,
         },
@@ -362,7 +376,7 @@ export function useData() {
           kind: "live",
           title: t("talk:lives.mavenArchetypesInBC"),
           releaseDate: new Date("Sept 15, 2020"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["businessCentral", "maven", "archetypes"],
           url: routes.urls.lives.mavenArchetypesInBC,
         },
@@ -370,7 +384,7 @@ export function useData() {
           kind: "live",
           title: t("talk:lives.streamDecisionsWithDmnAndKafka"),
           releaseDate: new Date("Jun 8, 2021"),
-          publishedAt: "KIE Community",
+          publication: "kieCommunity",
           keywordKeys: ["dmn", "openShift", "apacheKafka"],
           url: routes.urls.lives.streamDecisionsWithDmnAndKafka,
         },
@@ -380,7 +394,7 @@ export function useData() {
           kind: "conference",
           title: t("talk:conferences.streamDecisionsWithDmnAndKafka"),
           releaseDate: new Date("Jun 8, 2021"),
-          publishedAt: "The Developer's Conference",
+          publication: "theDevelopersConference",
           keywordKeys: ["dmn", "openShift", "apacheKafka"],
           url: routes.slides.streamingDmnKafka,
         },
@@ -389,14 +403,14 @@ export function useData() {
     [t]
   );
 
-  const code = useMemo(
+  const code = useMemo<Code>(
     () => ({
       repositories: [
         {
           kind: "code",
           title: t("code:repositories.bhc"),
           releaseDate: new Date("Feb 16, 2021"),
-          publishedAt: "GitHub",
+          publication: "gitHub",
           keywordKeys: ["python", "clustering", "bayesianStatistics"],
           url: routes.urls.repositories.bhc,
         },
@@ -404,7 +418,7 @@ export function useData() {
           kind: "code",
           title: t("code:repositories.vsCodeQuarkusDJL"),
           releaseDate: new Date("Oct 16, 2020"),
-          publishedAt: "GitHub",
+          publication: "gitHub",
           keywordKeys: ["computerVision", "quarkus", "vsCodeExtension", "typeScript"],
           url: routes.urls.repositories.vsCodeQuarkusDJL,
         },
@@ -412,7 +426,7 @@ export function useData() {
           kind: "code",
           title: t("code:repositories.lessIsMore"),
           releaseDate: new Date("Apr 10, 2021"),
-          publishedAt: "GitHub",
+          publication: "gitHub",
           keywordKeys: ["artifact", "gitHubActions", "typeScript"],
           url: routes.urls.repositories.lessIsMore,
         },
@@ -420,7 +434,7 @@ export function useData() {
           kind: "code",
           title: t("code:repositories.jupyterNotebooks"),
           releaseDate: new Date("Oct 8, 2019"),
-          publishedAt: "GitHub",
+          publication: "gitHub",
           keywordKeys: ["machineLearning", "jupyterNotebooks"],
           url: routes.urls.repositories.jupyterNotebooks,
         },
@@ -428,7 +442,7 @@ export function useData() {
           kind: "code",
           title: t("code:repositories.vsCodeDiffViewer"),
           releaseDate: new Date("Feb 23, 2021"),
-          publishedAt: "GitHub",
+          publication: "gitHub",
           keywordKeys: ["vsCodeExtension", "gitDiff", "typeScript"],
           url: routes.urls.repositories.vsCodeDiffViewer,
         },
@@ -436,7 +450,7 @@ export function useData() {
           kind: "code",
           title: t("code:repositories.vsCodeToxicityClassifier"),
           releaseDate: new Date("Sept 19, 2020"),
-          publishedAt: "GitHub",
+          publication: "gitHub",
           keywordKeys: ["vsCodeExtension", "tensorFlowJs", "typeScript"],
           url: routes.urls.repositories.vsCodeToxicityClassifier,
         },
@@ -444,7 +458,7 @@ export function useData() {
           kind: "code",
           title: t("code:repositories.streamDecisionsWithDmnAndKafka"),
           releaseDate: new Date("Jun 2, 2021"),
-          publishedAt: "GitHub",
+          publication: "gitHub",
           keywordKeys: ["apacheKafka", "dmn", "docker", "quarkus"],
           url: routes.urls.repositories.streamDecisionsWithDmnAndKafka,
         },
@@ -452,7 +466,7 @@ export function useData() {
           kind: "code",
           title: t("code:repositories.vsCodeObjectDetection"),
           releaseDate: new Date("Jul 4, 2020"),
-          publishedAt: "GitHub",
+          publication: "gitHub",
           keywordKeys: ["vsCodeExtension", "typeScript", "tensorFlowJs"],
           url: routes.urls.repositories.vsCodeObjectDetection,
         },
@@ -460,7 +474,7 @@ export function useData() {
           kind: "code",
           title: t("code:repositories.personalWebApp"),
           releaseDate: new Date("Oct 24, 2021"),
-          publishedAt: "GitHub",
+          publication: "gitHub",
           keywordKeys: ["reactJs", "typeScript", "webApp"],
           url: routes.urls.repositories.personalWebApp,
         },
@@ -468,7 +482,7 @@ export function useData() {
           kind: "code",
           title: t("code:repositories.teachableMachinePlayground"),
           releaseDate: new Date("Jan 9, 2022"),
-          publishedAt: "GitHub",
+          publication: "gitHub",
           keywordKeys: ["teachableMachine", "reactJs", "openShift"],
           url: routes.urls.repositories.teachableMachinePlayground,
         },
@@ -477,16 +491,15 @@ export function useData() {
     [t]
   );
 
-  return useMemo(
-    () =>
-      ({
-        personal,
-        about,
-        journey,
-        text,
-        talk,
-        code,
-      } as AppData),
+  return useMemo<AppSchema>(
+    () => ({
+      personal,
+      about,
+      journey,
+      text,
+      talk,
+      code,
+    }),
     [about, code, journey, personal, talk, text]
   );
 }

@@ -17,7 +17,7 @@ import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router";
 import { DrawerListItem } from ".";
-import { useApp } from "../../context/AppContext";
+import { useApp, useAppDispatch } from "../../context/AppContext";
 import { OpenStateActions } from "../../context/OpenState";
 import { routes } from "../../routes";
 import { FaceBadge } from "../badge";
@@ -31,6 +31,7 @@ interface AppDrawerProps {
 
 export function AppDrawer(props: AppDrawerProps) {
   const app = useApp();
+  const appDispatch = useAppDispatch();
   const { t } = useTranslation();
   const location = useLocation();
   const denseList = useMediaQuery("(min-height:580px) and (max-height:600px)");
@@ -39,14 +40,14 @@ export function AppDrawer(props: AppDrawerProps) {
     () => (
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: "stretch", minHeight: "100%" }}>
         <FaceBadge
-          name={app.data.personal.fullName}
+          name={`${app.schema.personal.firstName} ${app.schema.personal.lastName}`}
           avatarRoute={routes.images.avatar}
           location={{
-            name: app.data.personal.location.country,
-            emojiIcon: app.data.personal.location.flag,
-            url: app.data.personal.location.url,
+            name: app.schema.personal.country.name,
+            emojiIcon: app.schema.personal.country.emoji,
+            url: app.schema.personal.country.url,
           }}
-          onClick={() => app.goTo(routes.nav.about)}
+          onClick={() => appDispatch.goTo(routes.nav.about)}
         />
         <List dense={denseList} sx={{ flexGrow: 1 }}>
           <DrawerListItem
@@ -54,7 +55,7 @@ export function AppDrawer(props: AppDrawerProps) {
             title={t("literal:about")}
             subtitle={t("drawer:about.subtitle")}
             icon={{ normal: <InfoOutlinedIcon />, selected: <InfoIcon /> }}
-            onClick={() => app.goTo(routes.nav.about)}
+            onClick={() => appDispatch.goTo(routes.nav.about)}
             selected={location.pathname === routes.nav.about}
           />
           <DrawerListItem
@@ -62,7 +63,7 @@ export function AppDrawer(props: AppDrawerProps) {
             title={t("literal:journey")}
             subtitle={t("drawer:journey.subtitle")}
             icon={{ normal: <ViewTimelineOutlinedIcon />, selected: <ViewTimelineIcon /> }}
-            onClick={() => app.goTo(routes.nav.journey)}
+            onClick={() => appDispatch.goTo(routes.nav.journey)}
             selected={location.pathname === routes.nav.journey}
           />
           <DrawerListItem
@@ -70,7 +71,7 @@ export function AppDrawer(props: AppDrawerProps) {
             title={t("literal:text")}
             subtitle={t("drawer:text.subtitle")}
             icon={{ normal: <TextSnippetOutlinedIcon />, selected: <TextSnippetIcon /> }}
-            onClick={() => app.goTo(routes.nav.text)}
+            onClick={() => appDispatch.goTo(routes.nav.text)}
             selected={location.pathname === routes.nav.text}
           />
           <DrawerListItem
@@ -78,7 +79,7 @@ export function AppDrawer(props: AppDrawerProps) {
             title={t("literal:talk")}
             subtitle={t("drawer:talk.subtitle")}
             icon={{ normal: <ForumOutlinedIcon />, selected: <ForumIcon /> }}
-            onClick={() => app.goTo(routes.nav.talk)}
+            onClick={() => appDispatch.goTo(routes.nav.talk)}
             selected={location.pathname === routes.nav.talk}
           />
           <DrawerListItem
@@ -86,7 +87,7 @@ export function AppDrawer(props: AppDrawerProps) {
             title={t("literal:code")}
             subtitle={t("drawer:code.subtitle")}
             icon={{ normal: <SourceOutlinedIcon />, selected: <SourceIcon /> }}
-            onClick={() => app.goTo(routes.nav.code)}
+            onClick={() => appDispatch.goTo(routes.nav.code)}
             selected={location.pathname === routes.nav.code}
           />
         </List>
@@ -96,7 +97,7 @@ export function AppDrawer(props: AppDrawerProps) {
         </Box>
       </Box>
     ),
-    [app, denseList, location.pathname, props.drawerItemWidth, t]
+    [app.schema.personal, appDispatch, denseList, location.pathname, props.drawerItemWidth, t]
   );
 
   const muiPaperStyle = useMemo(
@@ -113,11 +114,11 @@ export function AppDrawer(props: AppDrawerProps) {
         disableSwipeToOpen
         variant="temporary"
         open={app.openState.drawer}
-        onOpen={() => app.openStateDispatch({ type: OpenStateActions.DRAWER_OPEN })}
-        onClose={() => app.openStateDispatch({ type: OpenStateActions.DRAWER_CLOSE })}
+        onOpen={() => appDispatch.openStateDispatch({ type: OpenStateActions.DRAWER_OPEN })}
+        onClose={() => appDispatch.openStateDispatch({ type: OpenStateActions.DRAWER_CLOSE })}
         ModalProps={{
           keepMounted: true,
-          onBackdropClick: () => app.openStateDispatch({ type: OpenStateActions.DRAWER_CLOSE }),
+          onBackdropClick: () => appDispatch.openStateDispatch({ type: OpenStateActions.DRAWER_CLOSE }),
         }}
         sx={{
           display: { xs: "block", md: "none" },

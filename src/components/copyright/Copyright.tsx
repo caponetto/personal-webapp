@@ -8,7 +8,10 @@ export function Copyright() {
 
   return (
     <Typography variant="caption" component="div" align="center">
-      {t("common:copyright", { year: new Date().getFullYear(), name: app.data.personal.fullName })}
+      {t("common:copyright", {
+        year: new Date().getFullYear(),
+        name: `${app.schema.personal.firstName} ${app.schema.personal.lastName}`,
+      })}
     </Typography>
   );
 }

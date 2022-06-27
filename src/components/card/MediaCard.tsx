@@ -14,16 +14,16 @@ import { enUS, ptBR } from "date-fns/locale";
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
-import { Media } from "../../data";
 import { Fonts } from "../../fonts";
 import { KeywordSelection } from "../../hooks/useKeywordSelection";
 import { SupportedLanguages } from "../../i18n";
 import { routes } from "../../routes";
+import { MediaItem } from "../../schema";
 import { StaticChip } from "../chip/StaticChip";
 import { HoverableCard } from "./HoverableCard";
 
 interface MediaCardProps {
-  item: Media;
+  item: MediaItem;
   keywordSelection: KeywordSelection;
 }
 
@@ -57,27 +57,28 @@ export function MediaCard(props: MediaCardProps) {
     });
   }, [props.item.kind, props.item.releaseDate, i18n.resolvedLanguage]);
 
-  const iconRoute = useMemo(() => {
-    if (props.item.publishedAt === "KIE Community") {
-      return routes.images.kie;
+  const publicationIcon = useMemo<{ name: string; route: string }>(() => {
+    switch (props.item.publication) {
+      case "kieCommunity":
+        return { name: t("literal:kieCommunity"), route: routes.images.kie };
+      case "towardsDataScience":
+        return { name: t("literal:towardsDataScience"), route: routes.images.tds };
+      case "unicamp":
+        return {
+          name: t("literal:unicamp"),
+          route: app.colorMode === "light" ? routes.images.unicamp.light : routes.images.unicamp.dark,
+        };
+      case "theDevelopersConference":
+        return { name: t("literal:theDevelopersConference"), route: routes.images.tdc };
+      case "gitHub":
+        return {
+          name: t("literal:github"),
+          route: app.colorMode === "light" ? routes.images.github.light : routes.images.github.dark,
+        };
+      default:
+        throw new Error("Unsupported publication type");
     }
-
-    if (props.item.publishedAt === "Towards Data Science") {
-      return routes.images.tds;
-    }
-
-    if (props.item.publishedAt === "UNICAMP") {
-      return app.colorMode === "light" ? routes.images.unicamp.light : routes.images.unicamp.dark;
-    }
-
-    if (props.item.publishedAt === "The Developer's Conference") {
-      return routes.images.tdc;
-    }
-
-    if (props.item.publishedAt === "GitHub") {
-      return app.colorMode === "light" ? routes.images.github.light : routes.images.github.dark;
-    }
-  }, [app.colorMode, props.item.publishedAt]);
+  }, [app.colorMode, props.item.publication, t]);
 
   return (
     <HoverableCard>
@@ -97,11 +98,11 @@ export function MediaCard(props: MediaCardProps) {
           </Typography>
         }
         action={
-          iconRoute && (
-            <Tooltip title={props.item.publishedAt} arrow>
+          publicationIcon && (
+            <Tooltip title={publicationIcon.name} arrow>
               <img
                 style={{ margin: "4px 8px 0px 16px", width: "20px", height: "20px" }}
-                src={iconRoute}
+                src={publicationIcon.route}
                 alt={""}
                 loading="lazy"
               />

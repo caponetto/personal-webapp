@@ -6,6 +6,7 @@ const { EnvironmentPlugin } = require("webpack");
 
 module.exports = async (_env, argv) => {
   const isDevelopment = argv.mode === "development";
+  const gtmResource = getGtmResource();
   const devtool = isDevelopment ? { devtool: "inline-source-map" } : {};
   const sourceMapsLoader = isDevelopment
     ? [
@@ -69,9 +70,8 @@ module.exports = async (_env, argv) => {
         }),
         new HtmlReplaceWebpackPlugin([
           {
-            pattern: /(<!-- gtm):([\w-\/]+)(\s*-->)?/g,
+            pattern: /(<!-- gtm):([\w-/]+)(\s*-->)?/g,
             replacement: (match, _gtm, type) => {
-              const gtmResource = getGtmResource();
               if (gtmResource) {
                 return gtmResource[type] ?? `${match}`;
               }
@@ -120,7 +120,7 @@ function getContextPath() {
 
 function getGtmResource() {
   const gtmId = process.env.GTM_ID;
-  console.info(`Google Tag Manager :: ID: ${gtmId}`);
+  console.info(`Google Tag Manager ID :: ${gtmId}`);
 
   if (!gtmId) {
     return undefined;

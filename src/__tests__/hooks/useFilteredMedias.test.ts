@@ -1,6 +1,6 @@
 import { renderHook } from "@testing-library/react-hooks/dom";
 import { useFilteredMedias } from "../../hooks/useFilteredMedias";
-import { createMedia, DEFAULT_KEYWORD_SELECTION } from "../TestBuilders";
+import { createMediaItem, DEFAULT_KEYWORD_SELECTION } from "../TestBuilders";
 
 describe("useFilteredMedias", () => {
   it("should return empty array when there is no media available", () => {
@@ -10,9 +10,9 @@ describe("useFilteredMedias", () => {
 
   it("should return empty array when there is no selection match", () => {
     const medias = [
-      createMedia({ title: "Foo", keywordKeys: ["foo1", "foo2", "foo3"] }),
-      createMedia({ title: "Bar", keywordKeys: ["bar1", "bar2", "bar3"] }),
-      createMedia({ title: "Baz", keywordKeys: ["baz1", "baz2", "baz3"] }),
+      createMediaItem({ title: "Foo", keywordKeys: ["foo1", "foo2", "foo3"] }),
+      createMediaItem({ title: "Bar", keywordKeys: ["bar1", "bar2", "bar3"] }),
+      createMediaItem({ title: "Baz", keywordKeys: ["baz1", "baz2", "baz3"] }),
     ];
     const { result } = renderHook(() =>
       useFilteredMedias(medias, {
@@ -26,8 +26,8 @@ describe("useFilteredMedias", () => {
 
   it("should return all medias when there is no selection", () => {
     const medias = [
-      createMedia({ title: "Foo", keywordKeys: ["foo"] }),
-      createMedia({ title: "Bar", keywordKeys: ["bar"] }),
+      createMediaItem({ title: "Foo", keywordKeys: ["foo"] }),
+      createMediaItem({ title: "Bar", keywordKeys: ["bar"] }),
     ];
     const { result } = renderHook(() =>
       useFilteredMedias(medias, { ...DEFAULT_KEYWORD_SELECTION, isAnySelected: false })
@@ -35,9 +35,9 @@ describe("useFilteredMedias", () => {
     expect(result.current).toEqual(medias);
   });
 
-  it("should return all medias sorted desc by releasedDate when there is no selection", () => {
-    const foo = createMedia({ title: "Foo", keywordKeys: ["foo", "common"], releasedDate: new Date("2010-01-01") });
-    const bar = createMedia({ title: "Bar", keywordKeys: ["bar", "common"], releasedDate: new Date("2020-01-01") });
+  it("should return all medias sorted desc by releaseDate when there is no selection", () => {
+    const foo = createMediaItem({ title: "Foo", keywordKeys: ["foo", "common"], releaseDate: new Date("2010-01-01") });
+    const bar = createMediaItem({ title: "Bar", keywordKeys: ["bar", "common"], releaseDate: new Date("2020-01-01") });
     const { result } = renderHook(() =>
       useFilteredMedias([foo, bar], { ...DEFAULT_KEYWORD_SELECTION, isAnySelected: false })
     );
@@ -45,9 +45,9 @@ describe("useFilteredMedias", () => {
   });
 
   it("should return filtered medias by their keywords when selected", () => {
-    const foo = createMedia({ title: "Foo", keywordKeys: ["foo1", "foo2", "foo3"] });
-    const bar = createMedia({ title: "Bar", keywordKeys: ["bar1", "bar2", "bar3"] });
-    const baz = createMedia({ title: "Baz", keywordKeys: ["baz1", "baz2", "baz3"] });
+    const foo = createMediaItem({ title: "Foo", keywordKeys: ["foo1", "foo2", "foo3"] });
+    const bar = createMediaItem({ title: "Bar", keywordKeys: ["bar1", "bar2", "bar3"] });
+    const baz = createMediaItem({ title: "Baz", keywordKeys: ["baz1", "baz2", "baz3"] });
     const { result } = renderHook(() =>
       useFilteredMedias([foo, bar, baz], {
         ...DEFAULT_KEYWORD_SELECTION,
@@ -62,10 +62,10 @@ describe("useFilteredMedias", () => {
     expect(result.current).toEqual([bar, baz]);
   });
 
-  it("should return filtered medias by a common keyword when selected and sorted desc by releasedDate", () => {
-    const foo = createMedia({ title: "Foo", keywordKeys: ["foo", "common"], releasedDate: new Date("2010-01-01") });
-    const bar = createMedia({ title: "Bar", keywordKeys: ["bar", "common"], releasedDate: new Date("2020-01-01") });
-    const baz = createMedia({ title: "Baz", keywordKeys: ["baz"] });
+  it("should return filtered medias by a common keyword when selected and sorted desc by releaseDate", () => {
+    const foo = createMediaItem({ title: "Foo", keywordKeys: ["foo", "common"], releaseDate: new Date("2010-01-01") });
+    const bar = createMediaItem({ title: "Bar", keywordKeys: ["bar", "common"], releaseDate: new Date("2020-01-01") });
+    const baz = createMediaItem({ title: "Baz", keywordKeys: ["baz"] });
     const { result } = renderHook(() =>
       useFilteredMedias([foo, bar, baz], {
         ...DEFAULT_KEYWORD_SELECTION,

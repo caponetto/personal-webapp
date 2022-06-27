@@ -2,7 +2,7 @@ import { act, renderHook } from "@testing-library/react-hooks/dom";
 import * as router from "react-router";
 import { buildInitialSelectionMap, useKeywordSelection } from "../../hooks/useKeywordSelection";
 import { useQueryParamKeywords } from "../../hooks/useQueryParam";
-import { createMedia } from "../TestBuilders";
+import { createMediaItem } from "../TestBuilders";
 
 jest.spyOn(router, "useNavigate").mockReturnValue(jest.fn());
 
@@ -16,9 +16,9 @@ describe("useKeywordSelection :: buildInitialSelectionMap", () => {
   });
 
   it("should build an empty map when there are no keywords", () => {
-    const media1 = createMedia({ title: "Media 1" });
-    const media2 = createMedia({ title: "Media 2" });
-    const media3 = createMedia({ title: "Media 3" });
+    const media1 = createMediaItem({ title: "Media 1" });
+    const media2 = createMediaItem({ title: "Media 2" });
+    const media3 = createMediaItem({ title: "Media 3" });
 
     const selectionMap = buildInitialSelectionMap([media1, media2], [media3]);
 
@@ -26,9 +26,9 @@ describe("useKeywordSelection :: buildInitialSelectionMap", () => {
   });
 
   it("should build initial selection map accordingly", () => {
-    const media1 = createMedia({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
-    const media2 = createMedia({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
-    const media3 = createMedia({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
+    const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
+    const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
+    const media3 = createMediaItem({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
     const expectedInitialSelectionMap = new Map([
       ["TypeScript", false],
       ["ReactJS", false],
@@ -47,9 +47,9 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
   it("should initialize the KeywordSelection with all entries unselected", () => {
     mockUseQueryParamKeywords.mockReturnValueOnce([]);
 
-    const media1 = createMedia({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
-    const media2 = createMedia({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
-    const media3 = createMedia({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
+    const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
+    const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
+    const media3 = createMediaItem({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
     const expectedSelectionMap = new Map([
       ["TypeScript", false],
       ["ReactJS", false],
@@ -66,9 +66,9 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
   it("should initialize the KeywordSelection with selected keywords that match with query param", () => {
     mockUseQueryParamKeywords.mockReturnValueOnce(["Machine Learning", "TensorFlow"]);
 
-    const media1 = createMedia({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
-    const media2 = createMedia({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
-    const media3 = createMedia({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
+    const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
+    const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
+    const media3 = createMediaItem({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
     const expectedSelectionMap = new Map([
       ["TypeScript", false],
       ["ReactJS", false],
@@ -85,9 +85,9 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
   it("should not do anything when the selection map does not have the given keyword", () => {
     mockUseQueryParamKeywords.mockReturnValueOnce([]);
 
-    const media1 = createMedia({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
-    const media2 = createMedia({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
-    const media3 = createMedia({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
+    const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
+    const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
+    const media3 = createMediaItem({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
     const expectedSelectionMap = new Map([
       ["TypeScript", false],
       ["ReactJS", false],
@@ -110,9 +110,9 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
   it("should select keywords through onToggleSelection accordingly", () => {
     mockUseQueryParamKeywords.mockReturnValueOnce([]);
 
-    const media1 = createMedia({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
-    const media2 = createMedia({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
-    const media3 = createMedia({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
+    const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
+    const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
+    const media3 = createMediaItem({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
     const expectedSelectionMap = new Map([
       ["TypeScript", false],
       ["ReactJS", true],
@@ -137,9 +137,9 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
   it("should unselect keywords through onToggleSelection accordingly", () => {
     mockUseQueryParamKeywords.mockReturnValueOnce(["Machine Learning", "TensorFlow"]);
 
-    const media1 = createMedia({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
-    const media2 = createMedia({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
-    const media3 = createMedia({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
+    const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
+    const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
+    const media3 = createMediaItem({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
     const expectedSelectionMap = new Map([
       ["TypeScript", false],
       ["ReactJS", false],
@@ -164,9 +164,9 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
   it("should clear the selection through onClearSelection", () => {
     mockUseQueryParamKeywords.mockReturnValueOnce(["Machine Learning", "TensorFlow"]);
 
-    const media1 = createMedia({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
-    const media2 = createMedia({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
-    const media3 = createMedia({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
+    const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
+    const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
+    const media3 = createMediaItem({ title: "Media 3", keywordKeys: ["Quarkus", "TensorFlow"] });
     const expectedSelectionMap = new Map([
       ["TypeScript", false],
       ["ReactJS", false],

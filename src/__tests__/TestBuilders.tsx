@@ -1,5 +1,5 @@
 import * as router from "react-router";
-import { Media, MediaKind, MediaPublishedAt } from "../data";
+import { MediaItem } from "../schema";
 
 export const DEFAULT_KEYWORD_SELECTION = {
   selectionMap: new Map(),
@@ -8,18 +8,12 @@ export const DEFAULT_KEYWORD_SELECTION = {
   isAnySelected: false,
 };
 
-export const createMedia = (args: {
-  title: string;
-  keywordKeys?: string[];
-  kind?: MediaKind;
-  releasedDate?: Date;
-  publishedAt?: MediaPublishedAt;
-}): Media => ({
-  title: args.title,
+export const createMediaItem = (args: Partial<MediaItem>): MediaItem => ({
+  title: args.title ?? "Title",
   keywordKeys: args.keywordKeys ?? [],
   kind: args.kind ?? "post",
-  releaseDate: args.releasedDate ?? new Date(),
-  publishedAt: args.publishedAt ?? "GitHub",
+  releaseDate: args.releaseDate ?? new Date(),
+  publication: args.publication ?? "gitHub",
 });
 
 export const mockLocationTo = (args: { pathname?: string; search?: string }) => {

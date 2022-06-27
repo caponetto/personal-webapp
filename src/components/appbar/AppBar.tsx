@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { useApp } from "../../context/AppContext";
+import { useApp, useAppDispatch } from "../../context/AppContext";
 import { OpenStateActions } from "../../context/OpenState";
 import { Fonts } from "../../fonts";
 import { SettingsPopover } from "../settings";
@@ -19,6 +19,7 @@ interface AppBarProps {
 
 export function AppBar(props: AppBarProps) {
   const app = useApp();
+  const appDispatch = useAppDispatch();
   const xxs = useMediaQuery("(max-width:350px)");
   const { t } = useTranslation();
   const settingsButtonRef = useRef<HTMLButtonElement | null>(null);
@@ -34,7 +35,7 @@ export function AppBar(props: AppBarProps) {
       <Toolbar>
         <IconButton
           data-testid="open-drawer-button"
-          onClick={() => app.openStateDispatch({ type: OpenStateActions.DRAWER_TOGGLE })}
+          onClick={() => appDispatch.openStateDispatch({ type: OpenStateActions.DRAWER_TOGGLE })}
           size="large"
           edge="start"
           color="inherit"
@@ -53,13 +54,13 @@ export function AppBar(props: AppBarProps) {
             fontFamily: Fonts.QUICKSAND,
           }}
         >
-          {app.data.personal.fullName}
+          {`${app.schema.personal.firstName} ${app.schema.personal.lastName}`}
         </Typography>
         <Tooltip title={t("literal:settings").toString()} arrow>
           <IconButton
             ref={settingsButtonRef}
             id="settings-button"
-            onClick={() => app.openStateDispatch({ type: OpenStateActions.SETTINGS_OPEN })}
+            onClick={() => appDispatch.openStateDispatch({ type: OpenStateActions.SETTINGS_OPEN })}
             color="inherit"
             aria-label="Open settings"
           >
@@ -69,7 +70,7 @@ export function AppBar(props: AppBarProps) {
         <SettingsPopover
           anchor={settingsButtonRef.current}
           open={app.openState.settings}
-          onClose={() => app.openStateDispatch({ type: OpenStateActions.SETTINGS_CLOSE })}
+          onClose={() => appDispatch.openStateDispatch({ type: OpenStateActions.SETTINGS_CLOSE })}
         />
       </Toolbar>
     </MaterialAppBar>

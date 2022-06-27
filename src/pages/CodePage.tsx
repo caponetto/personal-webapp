@@ -11,8 +11,8 @@ export default function CodePage() {
   const app = useApp();
   const active = usePageActive(0);
   const { t } = useTranslation();
-  const keywordSelection = useKeywordSelection(app.data.code.repositories);
-  const filteredRepositories = useFilteredMedias(app.data.code.repositories, keywordSelection);
+  const keywordSelection = useKeywordSelection(app.schema.code.repositories);
+  const filteredRepositories = useFilteredMedias(app.schema.code.repositories, keywordSelection);
 
   return (
     <Page name="code">
@@ -29,7 +29,7 @@ export default function CodePage() {
           title={t("literal:repositories")}
           fadeTime={1000}
           keywordSelection={keywordSelection}
-          mediaList={filteredRepositories}
+          mediaItems={filteredRepositories}
         />
       )}
     </Page>

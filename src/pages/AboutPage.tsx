@@ -32,9 +32,9 @@ export default function AboutPage() {
                     fontSize: { xs: "16px", sm: "20px" },
                   }}
                 >
-                  {app.data.about.welcome}
+                  {app.schema.about.welcome}
                 </Typography>
-                {app.data.about.paragraphs.map((paragraph: string, idx: number) => (
+                {app.schema.about.paragraphs.map((paragraph: string, idx: number) => (
                   <Paragraph key={`about-paragraph-${idx}`}>{paragraph}</Paragraph>
                 ))}
               </Stack>
