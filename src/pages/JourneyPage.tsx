@@ -21,9 +21,9 @@ import { Trans, useTranslation } from "react-i18next";
 import { HoverableCard } from "../components/card";
 import { Page, PageHeader } from "../components/page";
 import { useApp } from "../context/AppContext";
-import { Journey, JourneyKind } from "../data";
 import { usePageActive } from "../hooks/usePageActive";
 import { routes } from "../routes";
+import { JourneyItem, JourneyKind } from "../schema";
 
 export default function JourneyPage() {
   const app = useApp();
@@ -48,7 +48,7 @@ export default function JourneyPage() {
                   <JourneyCard
                     title={t("literal:education")}
                     icon={<SchoolOutlinedIcon />}
-                    content={<JourneyList kind="education" items={app.data.journey.education} />}
+                    content={<JourneyList kind="education" items={app.schema.journey.education} />}
                   />
                 </Grid>
               </Fade>
@@ -57,7 +57,7 @@ export default function JourneyPage() {
                   <JourneyCard
                     title={t("literal:certifications")}
                     icon={<VerifiedOutlinedIcon />}
-                    content={<JourneyList kind="certifications" items={app.data.journey.certification} />}
+                    content={<JourneyList kind="certification" items={app.schema.journey.certification} />}
                   />
                 </Grid>
               </Fade>
@@ -68,7 +68,7 @@ export default function JourneyPage() {
                     icon={<HomeRepairServiceOutlinedIcon />}
                     content={
                       <Grid container spacing={1}>
-                        {[...app.data.journey.toolbox]
+                        {[...app.schema.journey.toolbox]
                           .sort((a, b) => a.localeCompare(b))
                           .map((skill: string) => (
                             <Grid item key={`skill-${skill}`}>
@@ -93,7 +93,7 @@ export default function JourneyPage() {
               <JourneyCard
                 title={t("literal:experience")}
                 icon={<WorkOutlineOutlinedIcon />}
-                content={<JourneyList kind="experience" items={app.data.journey.experience} />}
+                content={<JourneyList kind="experience" items={app.schema.journey.experience} />}
               />
             </Grid>
           </Fade>
@@ -136,13 +136,13 @@ function JourneyCard(props: JourneyCardProps) {
 
 interface JourneyListProps {
   kind: JourneyKind;
-  items: Journey[];
+  items: JourneyItem[];
 }
 
 function JourneyList(props: JourneyListProps) {
   return (
     <List dense={true}>
-      {props.items.map((item: Journey, idx: number) => (
+      {props.items.map((item: JourneyItem, idx: number) => (
         <JourneyListItem key={`${props.kind}-item-${idx}`} item={item} />
       ))}
     </List>
@@ -150,7 +150,7 @@ function JourneyList(props: JourneyListProps) {
 }
 
 interface JourneyListItemProps {
-  item: Journey;
+  item: JourneyItem;
 }
 
 function JourneyListItem(props: JourneyListItemProps) {
@@ -160,7 +160,7 @@ function JourneyListItem(props: JourneyListItemProps) {
         primary={props.item.title}
         secondary={
           <Box component="span">
-            <Typography variant="overline">{props.item.period.start}</Typography>
+            <Typography variant="overline">{String(props.item.period.start)}</Typography>
             {props.item.period.end && (
               <Typography variant="overline" sx={{ ml: "5px" }}>{`→ ${props.item.period.end}`}</Typography>
             )}

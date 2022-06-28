@@ -1,13 +1,13 @@
 import { useMemo } from "react";
-import { Media } from "../data";
+import { MediaItem } from "../schema";
 import { KeywordSelection } from "./useKeywordSelection";
 
-export function useFilteredMedias(medias: Media[], keywordSelection: KeywordSelection) {
+export function useFilteredMedias(items: MediaItem[], keywordSelection: KeywordSelection) {
   return useMemo(() => {
-    const filteredMedias = keywordSelection.isAnySelected
-      ? medias.filter((media) => media.keywordKeys.some((keyword) => keywordSelection.selectionMap.get(keyword)))
-      : medias;
+    const filteredItems = keywordSelection.isAnySelected
+      ? items.filter((item) => item.keywordKeys.some((keyword) => keywordSelection.selectionMap.get(keyword)))
+      : items;
 
-    return filteredMedias.sort((a, b) => b.releaseDate.getTime() - a.releaseDate.getTime());
-  }, [keywordSelection.isAnySelected, keywordSelection.selectionMap, medias]);
+    return filteredItems.sort((a, b) => b.releaseDate.getTime() - a.releaseDate.getTime());
+  }, [keywordSelection.isAnySelected, keywordSelection.selectionMap, items]);
 }

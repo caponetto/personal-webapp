@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router";
-import { Media } from "../data";
+import { MediaItem } from "../schema";
 import { prepareKeywordsQueryParam, useQueryParamKeywords } from "./useQueryParam";
 
 export interface KeywordSelection {
@@ -10,11 +10,11 @@ export interface KeywordSelection {
   isAnySelected: boolean;
 }
 
-export function buildInitialSelectionMap(...arrayOfArrays: Media[][]): Map<string, boolean> {
+export function buildInitialSelectionMap(...arrayOfArrays: MediaItem[][]): Map<string, boolean> {
   const initialSelectionMap = new Map<string, boolean>();
-  arrayOfArrays.forEach((medias: Media[]) => {
-    medias
-      .reduce((keywordArray: string[], m: Media) => keywordArray.concat(m.keywordKeys), [])
+  arrayOfArrays.forEach((items: MediaItem[]) => {
+    items
+      .reduce((keywordArray: string[], m: MediaItem) => keywordArray.concat(m.keywordKeys), [])
       .forEach((keyword: string) => {
         if (!initialSelectionMap.has(keyword)) {
           initialSelectionMap.set(keyword, false);
@@ -24,7 +24,7 @@ export function buildInitialSelectionMap(...arrayOfArrays: Media[][]): Map<strin
   return initialSelectionMap;
 }
 
-export function useKeywordSelection(...arrayOfArrays: Media[][]): KeywordSelection {
+export function useKeywordSelection(...arrayOfArrays: MediaItem[][]): KeywordSelection {
   const navigate = useNavigate();
   const queryParamKeywords = useQueryParamKeywords();
 

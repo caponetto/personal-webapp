@@ -87,23 +87,5 @@
     "jest:run": "jest --silent",
     "test": "rimraf dist-test && yarn jest:run && yarn cy:test",
     "prepare": "husky install"
-  },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ],
-      [
-        "@babel/preset-react",
-        {
-          "runtime": "automatic"
-        }
-      ]
-    ]
   }
 }

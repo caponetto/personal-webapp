@@ -227,7 +227,7 @@ exports[`TalkPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -368,7 +368,7 @@ exports[`TalkPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -509,7 +509,7 @@ exports[`TalkPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -673,7 +673,7 @@ exports[`TalkPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="The Developer's Conference"
+                aria-label="theDevelopersConference"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"

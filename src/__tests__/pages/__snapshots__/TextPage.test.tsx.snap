@@ -497,7 +497,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="UNICAMP"
+                aria-label="unicamp"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -661,7 +661,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -784,7 +784,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="Towards Data Science"
+                aria-label="towardsDataScience"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -925,7 +925,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -1066,7 +1066,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -1225,7 +1225,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -1366,7 +1366,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -1525,7 +1525,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -1666,7 +1666,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -1807,7 +1807,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -1948,7 +1948,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -2089,7 +2089,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="Towards Data Science"
+                aria-label="towardsDataScience"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -2230,7 +2230,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="Towards Data Science"
+                aria-label="towardsDataScience"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"
@@ -2371,7 +2371,7 @@ exports[`TextPage should match the snapshot 1`] = `
             >
               <img
                 alt=""
-                aria-label="KIE Community"
+                aria-label="kieCommunity"
                 class=""
                 data-mui-internal-clone-element="true"
                 loading="lazy"

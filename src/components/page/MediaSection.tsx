@@ -3,13 +3,13 @@ import Divider from "@mui/material/Divider";
 import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import { Media } from "../../data";
 import { KeywordSelection } from "../../hooks/useKeywordSelection";
+import { MediaItem } from "../../schema";
 import { MediaCard } from "../card";
 
 interface MediaSectionProps {
   title: string;
-  mediaList: Media[];
+  mediaItems: MediaItem[];
   fadeTime: number;
   keywordSelection: KeywordSelection;
 }
@@ -29,7 +29,7 @@ export function MediaSection(props: MediaSectionProps) {
           </Typography>
         </Divider>
         <Grid container spacing={3}>
-          {props.mediaList.map((item: Media, idx: number) => (
+          {props.mediaItems.map((item: MediaItem, idx: number) => (
             <Grid item key={`${props.title}-${idx}`} sx={{ width: { xs: "100%", lg: "50%", xl: "33%" } }}>
               <MediaCard item={item} keywordSelection={props.keywordSelection} />
             </Grid>

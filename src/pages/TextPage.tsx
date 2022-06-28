@@ -11,9 +11,9 @@ export default function TextPage() {
   const app = useApp();
   const active = usePageActive(0);
   const { t } = useTranslation();
-  const keywordSelection = useKeywordSelection(app.data.text.mastersThesis, app.data.text.blogPosts);
-  const filteredMasterThesis = useFilteredMedias(app.data.text.mastersThesis, keywordSelection);
-  const filteredBlogPosts = useFilteredMedias(app.data.text.blogPosts, keywordSelection);
+  const keywordSelection = useKeywordSelection(app.schema.text.mastersTheses, app.schema.text.blogPosts);
+  const filteredMasterThesis = useFilteredMedias(app.schema.text.mastersTheses, keywordSelection);
+  const filteredBlogPosts = useFilteredMedias(app.schema.text.blogPosts, keywordSelection);
 
   return (
     <Page name="text">
@@ -30,7 +30,7 @@ export default function TextPage() {
           title={t("literal:mastersThesis")}
           fadeTime={1000}
           keywordSelection={keywordSelection}
-          mediaList={filteredMasterThesis}
+          mediaItems={filteredMasterThesis}
         />
       )}
       {active && filteredBlogPosts.length > 0 && (
@@ -38,7 +38,7 @@ export default function TextPage() {
           title={t("literal:blogPosts")}
           fadeTime={1500}
           keywordSelection={keywordSelection}
-          mediaList={filteredBlogPosts}
+          mediaItems={filteredBlogPosts}
         />
       )}
     </Page>
