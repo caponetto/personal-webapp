@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 const HtmlReplaceWebpackPlugin = require("html-replace-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const { EnvironmentPlugin } = require("webpack");
@@ -25,7 +26,7 @@ module.exports = async (_env, argv) => {
       },
       ...devtool,
       performance: {
-        maxEntrypointSize: 1024 * 1024 * 1,
+        maxEntrypointSize: 1024 * 1024 * 2,
         maxAssetSize: 1024 * 1024 * 2,
       },
       output: {
@@ -35,6 +36,9 @@ module.exports = async (_env, argv) => {
       },
       stats: {
         excludeModules: true,
+      },
+      optimization: {
+        minimizer: [new HtmlMinimizerPlugin()],
       },
       module: {
         rules: [
@@ -66,7 +70,7 @@ module.exports = async (_env, argv) => {
         new HtmlWebpackPlugin({
           template: "./static/index.html",
           inject: false,
-          minify: "auto",
+          minify: false,
         }),
         new HtmlReplaceWebpackPlugin([
           {

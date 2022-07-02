@@ -52,6 +52,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "html-minimizer-webpack-plugin": "^4.0.0",
     "html-replace-webpack-plugin": "^2.6.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.0",
