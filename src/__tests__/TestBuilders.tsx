@@ -16,12 +16,12 @@ export const createMediaItem = (args: Partial<MediaItem>): MediaItem => ({
   publication: args.publication ?? "gitHub",
 });
 
-export const mockLocationTo = (args: { pathname?: string; search?: string }) => {
+export const mockLocationTo = (args: Partial<router.Location>) => {
   jest.spyOn(router, "useLocation").mockImplementation(() => ({
     pathname: args.pathname ?? "/",
     search: args.search ?? "",
-    hash: "#",
-    key: "default",
-    state: undefined,
+    hash: args.hash ?? "#",
+    key: args.key ?? "default",
+    state: args.state ?? undefined,
   }));
 };
