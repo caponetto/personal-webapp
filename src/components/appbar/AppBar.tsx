@@ -20,7 +20,7 @@ interface AppBarProps {
 export function AppBar(props: AppBarProps) {
   const app = useApp();
   const appDispatch = useAppDispatch();
-  const xxs = useMediaQuery("(max-width:350px)");
+  const isExtraSmall = useMediaQuery("(max-width:350px)");
   const { t } = useTranslation();
   const settingsButtonRef = useRef<HTMLButtonElement | null>(null);
 
@@ -50,7 +50,7 @@ export function AppBar(props: AppBarProps) {
             flexGrow: 1,
             fontWeight: "bold",
             letterSpacing: 1,
-            fontSize: xxs ? "16px" : "20px",
+            fontSize: isExtraSmall ? "16px" : "20px",
             fontFamily: Fonts.QUICKSAND,
           }}
         >

@@ -7,6 +7,12 @@ import { useFilteredMedias } from "../hooks/useFilteredMedias";
 import { useKeywordSelection } from "../hooks/useKeywordSelection";
 import { usePageActive } from "../hooks/usePageActive";
 
+const PAGE_FADE_TIME = {
+  header: 500,
+  keywordChips: 500,
+  repositoriesSection: 1000,
+};
+
 export default function CodePage() {
   const app = useApp();
   const active = usePageActive(0);
@@ -16,21 +22,25 @@ export default function CodePage() {
 
   return (
     <Page name="code">
-      <PageHeader fadeTime={500}>
+      <PageHeader fadeTime={PAGE_FADE_TIME.header}>
         <Typography component="div" sx={{ mb: "30px", fontSize: { sm: "16px", lg: "18px" } }}>
           <Trans i18nKey="code:header">
             Here you can find some of my <strong>code</strong>
           </Trans>
         </Typography>
       </PageHeader>
-      {active && <KeywordChips fadeTime={500} keywordSelection={keywordSelection} />}
-      {active && filteredRepositories.length > 0 && (
-        <MediaSection
-          title={t("literal:repositories")}
-          fadeTime={1000}
-          keywordSelection={keywordSelection}
-          mediaItems={filteredRepositories}
-        />
+      {active && (
+        <>
+          <KeywordChips fadeTime={PAGE_FADE_TIME.keywordChips} keywordSelection={keywordSelection} />
+          {filteredRepositories.length > 0 && (
+            <MediaSection
+              title={t("literal:repositories")}
+              fadeTime={PAGE_FADE_TIME.repositoriesSection}
+              keywordSelection={keywordSelection}
+              mediaItems={filteredRepositories}
+            />
+          )}
+        </>
       )}
     </Page>
   );

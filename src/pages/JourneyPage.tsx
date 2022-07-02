@@ -25,6 +25,10 @@ import { usePageActive } from "../hooks/usePageActive";
 import { routes } from "../routes";
 import { JourneyItem, JourneyKind } from "../schema";
 
+const PAGE_FADE_TIME = {
+  header: 500,
+};
+
 export default function JourneyPage() {
   const app = useApp();
   const { t } = useTranslation();
@@ -32,7 +36,7 @@ export default function JourneyPage() {
 
   return (
     <Page name="journey">
-      <PageHeader fadeTime={500}>
+      <PageHeader fadeTime={PAGE_FADE_TIME.header}>
         <Typography component="div" sx={{ mb: "30px", fontSize: { sm: "16px", lg: "18px" } }}>
           <Trans i18nKey="journey:header">
             Here you can see my <strong>journey</strong> summary
