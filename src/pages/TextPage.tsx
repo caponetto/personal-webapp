@@ -7,6 +7,13 @@ import { useFilteredMedias } from "../hooks/useFilteredMedias";
 import { useKeywordSelection } from "../hooks/useKeywordSelection";
 import { usePageActive } from "../hooks/usePageActive";
 
+const PAGE_FADE_TIME = {
+  header: 500,
+  keywordChips: 500,
+  masterThesisSection: 1000,
+  blogPostsSection: 1500,
+};
+
 export default function TextPage() {
   const app = useApp();
   const active = usePageActive(0);
@@ -17,29 +24,33 @@ export default function TextPage() {
 
   return (
     <Page name="text">
-      <PageHeader fadeTime={500}>
+      <PageHeader fadeTime={PAGE_FADE_TIME.header}>
         <Typography component="div" sx={{ mb: "30px", fontSize: { sm: "16px", lg: "18px" } }}>
           <Trans i18nKey="text:header">
             Here you can find some of my <strong>texts</strong>
           </Trans>
         </Typography>
       </PageHeader>
-      {active && <KeywordChips fadeTime={500} keywordSelection={keywordSelection} />}
-      {active && filteredMasterThesis.length > 0 && (
-        <MediaSection
-          title={t("literal:mastersThesis")}
-          fadeTime={1000}
-          keywordSelection={keywordSelection}
-          mediaItems={filteredMasterThesis}
-        />
-      )}
-      {active && filteredBlogPosts.length > 0 && (
-        <MediaSection
-          title={t("literal:blogPosts")}
-          fadeTime={1500}
-          keywordSelection={keywordSelection}
-          mediaItems={filteredBlogPosts}
-        />
+      {active && (
+        <>
+          <KeywordChips fadeTime={PAGE_FADE_TIME.keywordChips} keywordSelection={keywordSelection} />
+          {filteredMasterThesis.length > 0 && (
+            <MediaSection
+              title={t("literal:mastersThesis")}
+              fadeTime={PAGE_FADE_TIME.masterThesisSection}
+              keywordSelection={keywordSelection}
+              mediaItems={filteredMasterThesis}
+            />
+          )}
+          {filteredBlogPosts.length > 0 && (
+            <MediaSection
+              title={t("literal:blogPosts")}
+              fadeTime={PAGE_FADE_TIME.blogPostsSection}
+              keywordSelection={keywordSelection}
+              mediaItems={filteredBlogPosts}
+            />
+          )}
+        </>
       )}
     </Page>
   );

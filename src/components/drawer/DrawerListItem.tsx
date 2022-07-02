@@ -9,7 +9,7 @@ interface DrawerListItemProps {
   title: string;
   subtitle?: string;
   icon: {
-    normal: ReactNode;
+    initial: ReactNode;
     selected: ReactNode;
   };
   selected: boolean;
@@ -28,7 +28,7 @@ export function DrawerListItem(props: DrawerListItemProps) {
       onClick={props.onClick}
       sx={{ p: "4px 16px", borderRadius: "0 66px 66px 0", width: `${props.width}px` }}
     >
-      <ListItemIcon>{props.selected ? props.icon.selected : props.icon.normal}</ListItemIcon>
+      <ListItemIcon>{props.selected ? props.icon.selected : props.icon.initial}</ListItemIcon>
       <ListItemText
         primaryTypographyProps={{ fontWeight: props.selected ? "bold" : "light" }}
         primary={props.title}

@@ -54,7 +54,7 @@ export function AppDrawer(props: AppDrawerProps) {
             width={props.drawerItemWidth}
             title={t("literal:about")}
             subtitle={t("drawer:about.subtitle")}
-            icon={{ normal: <InfoOutlinedIcon />, selected: <InfoIcon /> }}
+            icon={{ initial: <InfoOutlinedIcon />, selected: <InfoIcon /> }}
             onClick={() => appDispatch.goTo(routes.nav.about)}
             selected={location.pathname === routes.nav.about}
           />
@@ -62,7 +62,7 @@ export function AppDrawer(props: AppDrawerProps) {
             width={props.drawerItemWidth}
             title={t("literal:journey")}
             subtitle={t("drawer:journey.subtitle")}
-            icon={{ normal: <ViewTimelineOutlinedIcon />, selected: <ViewTimelineIcon /> }}
+            icon={{ initial: <ViewTimelineOutlinedIcon />, selected: <ViewTimelineIcon /> }}
             onClick={() => appDispatch.goTo(routes.nav.journey)}
             selected={location.pathname === routes.nav.journey}
           />
@@ -70,7 +70,7 @@ export function AppDrawer(props: AppDrawerProps) {
             width={props.drawerItemWidth}
             title={t("literal:text")}
             subtitle={t("drawer:text.subtitle")}
-            icon={{ normal: <TextSnippetOutlinedIcon />, selected: <TextSnippetIcon /> }}
+            icon={{ initial: <TextSnippetOutlinedIcon />, selected: <TextSnippetIcon /> }}
             onClick={() => appDispatch.goTo(routes.nav.text)}
             selected={location.pathname === routes.nav.text}
           />
@@ -78,7 +78,7 @@ export function AppDrawer(props: AppDrawerProps) {
             width={props.drawerItemWidth}
             title={t("literal:talk")}
             subtitle={t("drawer:talk.subtitle")}
-            icon={{ normal: <ForumOutlinedIcon />, selected: <ForumIcon /> }}
+            icon={{ initial: <ForumOutlinedIcon />, selected: <ForumIcon /> }}
             onClick={() => appDispatch.goTo(routes.nav.talk)}
             selected={location.pathname === routes.nav.talk}
           />
@@ -86,7 +86,7 @@ export function AppDrawer(props: AppDrawerProps) {
             width={props.drawerItemWidth}
             title={t("literal:code")}
             subtitle={t("drawer:code.subtitle")}
-            icon={{ normal: <SourceOutlinedIcon />, selected: <SourceIcon /> }}
+            icon={{ initial: <SourceOutlinedIcon />, selected: <SourceIcon /> }}
             onClick={() => appDispatch.goTo(routes.nav.code)}
             selected={location.pathname === routes.nav.code}
           />
