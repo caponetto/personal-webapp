@@ -66,7 +66,7 @@ module.exports = async (_env, argv) => {
         new HtmlWebpackPlugin({
           template: "./static/index.html",
           inject: false,
-          minify: false,
+          minify: "auto",
         }),
         new HtmlReplaceWebpackPlugin([
           {
