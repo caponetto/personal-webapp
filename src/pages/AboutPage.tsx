@@ -12,8 +12,8 @@ import { Fonts } from "../fonts";
 import { usePageActive } from "../hooks/usePageActive";
 import { routes } from "../routes";
 
-const PAGE_FADE_TIME = {
-  content: 1000,
+const FADE_TIME = {
+  card: 500,
 };
 
 export default function AboutPage() {
@@ -23,7 +23,7 @@ export default function AboutPage() {
   return (
     <Page name={"about"}>
       {active && (
-        <Fade in={true} timeout={PAGE_FADE_TIME.content}>
+        <Fade in={true} timeout={FADE_TIME.card}>
           <div>
             <HoverableCard sx={{ p: "28px", width: { xs: "100%", xl: "1170px" }, margin: "0 auto" }}>
               <Stack spacing={4}>

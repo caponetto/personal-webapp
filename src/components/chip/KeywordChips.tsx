@@ -7,8 +7,10 @@ import { useTranslation } from "react-i18next";
 import { KeywordSelection } from "../../hooks/useKeywordSelection";
 import { StaticChip } from "./StaticChip";
 
+const DEFAULT_FADE_TIME = 500;
+
 interface KeywordChipsProps {
-  fadeTime: number;
+  fadeTime?: number;
   keywordSelection: KeywordSelection;
 }
 
@@ -20,7 +22,7 @@ export function KeywordChips(props: KeywordChipsProps) {
   const resolveLiteral = useCallback((key: string) => t(`literal:${key}` as any), [t]);
 
   return (
-    <Fade in={true} timeout={props.fadeTime}>
+    <Fade in={true} timeout={props.fadeTime ?? DEFAULT_FADE_TIME}>
       <Grid container rowSpacing={isSmall ? 1 : 2} columnSpacing={1}>
         {[...props.keywordSelection.selectionMap.keys()]
           .sort((a, b) => resolveLiteral(a).localeCompare(resolveLiteral(b)))

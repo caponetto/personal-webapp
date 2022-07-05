@@ -79,8 +79,13 @@ export function SettingsPopover(props: SettingsPopoverProps) {
                 onChange={(event) => i18n.changeLanguage((event.target as HTMLInputElement).value)}
                 name="language-group"
               >
-                <FormControlLabel value={SupportedLanguages.EN} control={smallRadioButton} label={"English"} />
-                <FormControlLabel value={SupportedLanguages.PT} control={smallRadioButton} label={"Português"} />
+                <FormControlLabel value={SupportedLanguages.English} control={smallRadioButton} label={"English"} />
+                <FormControlLabel
+                  value={SupportedLanguages.Portuguese}
+                  control={smallRadioButton}
+                  label={"Português"}
+                />
+                <FormControlLabel value={SupportedLanguages.Spanish} control={smallRadioButton} label={"Español"} />
               </RadioGroup>
             </FormControl>
           </Box>

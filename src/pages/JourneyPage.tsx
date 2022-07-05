@@ -25,8 +25,11 @@ import { usePageActive } from "../hooks/usePageActive";
 import { routes } from "../routes";
 import { JourneyItem, JourneyKind } from "../schema";
 
-const PAGE_FADE_TIME = {
-  header: 500,
+const SECTION_FADE_TIME = {
+  education: 1000,
+  certifications: 1200,
+  toolbox: 1400,
+  experience: 1600,
 };
 
 export default function JourneyPage() {
@@ -36,7 +39,7 @@ export default function JourneyPage() {
 
   return (
     <Page name="journey">
-      <PageHeader fadeTime={PAGE_FADE_TIME.header}>
+      <PageHeader>
         <Typography component="div" sx={{ mb: "30px", fontSize: { sm: "16px", lg: "18px" } }}>
           <Trans i18nKey="journey:header">
             Here you can see my <strong>journey</strong> summary
@@ -47,7 +50,7 @@ export default function JourneyPage() {
         <Grid container spacing={2}>
           <Grid item xs={12} lg={7}>
             <Grid container spacing={2}>
-              <Fade in={true} timeout={500}>
+              <Fade in={true} timeout={SECTION_FADE_TIME.education}>
                 <Grid item xs={12} xl={6}>
                   <JourneyCard
                     title={t("literal:education")}
@@ -56,7 +59,7 @@ export default function JourneyPage() {
                   />
                 </Grid>
               </Fade>
-              <Fade in={true} timeout={1000}>
+              <Fade in={true} timeout={SECTION_FADE_TIME.certifications}>
                 <Grid item xs={12} xl={6}>
                   <JourneyCard
                     title={t("literal:certifications")}
@@ -65,7 +68,7 @@ export default function JourneyPage() {
                   />
                 </Grid>
               </Fade>
-              <Fade in={true} timeout={1500}>
+              <Fade in={true} timeout={SECTION_FADE_TIME.toolbox}>
                 <Grid item xs={12}>
                   <JourneyCard
                     title={t("literal:toolbox")}
@@ -92,7 +95,7 @@ export default function JourneyPage() {
               </Fade>
             </Grid>
           </Grid>
-          <Fade in={true} timeout={2000}>
+          <Fade in={true} timeout={SECTION_FADE_TIME.experience}>
             <Grid item xs={12} lg={5}>
               <JourneyCard
                 title={t("literal:experience")}

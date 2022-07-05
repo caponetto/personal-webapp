@@ -7,16 +7,26 @@ import { KeywordSelection } from "../../hooks/useKeywordSelection";
 import { MediaItem } from "../../schema";
 import { MediaCard } from "../card";
 
+const DEFAULT_FADE_TIME: MediaSectionFadeTime = {
+  title: 500,
+  item: 1000,
+};
+
+export interface MediaSectionFadeTime {
+  title: number;
+  item: number;
+}
+
 interface MediaSectionProps {
   title: string;
   mediaItems: MediaItem[];
-  fadeTime: number;
+  fadeTime?: MediaSectionFadeTime;
   keywordSelection: KeywordSelection;
 }
 
 export function MediaSection(props: MediaSectionProps) {
   return (
-    <Fade in={true} timeout={props.fadeTime}>
+    <Fade in={true} timeout={props.fadeTime?.title ?? DEFAULT_FADE_TIME.title}>
       <Box sx={{ mt: "30px" }}>
         <Divider textAlign="left" sx={{ mb: "30px", "::before": { width: "1%" }, "::after": { width: "99%" } }}>
           <Typography
@@ -30,9 +40,11 @@ export function MediaSection(props: MediaSectionProps) {
         </Divider>
         <Grid container spacing={3}>
           {props.mediaItems.map((item: MediaItem, idx: number) => (
-            <Grid item key={`${props.title}-${idx}`} sx={{ width: { xs: "100%", lg: "50%", xl: "33%" } }}>
-              <MediaCard item={item} keywordSelection={props.keywordSelection} />
-            </Grid>
+            <Fade in={true} timeout={props.fadeTime?.item ?? DEFAULT_FADE_TIME.item} key={`${props.title}-${idx}`}>
+              <Grid item sx={{ width: { xs: "100%", lg: "50%", xl: "33%" } }}>
+                <MediaCard item={item} keywordSelection={props.keywordSelection} />
+              </Grid>
+            </Fade>
           ))}
         </Grid>
       </Box>

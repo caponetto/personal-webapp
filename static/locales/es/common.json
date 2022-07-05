@@ -1,0 +1,12 @@
+{
+  "social": {
+    "tooltip": "Perfil {{kind}}"
+  },
+  "location": {
+    "tooltip": "Actualmente vive en {{location}}"
+  },
+  "copyright": "© {{year}} {{name}}",
+  "messages": {
+    "storedCookies": "Sus preferencias se guardan en su navegador."
+  }
+}

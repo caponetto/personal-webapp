@@ -4,26 +4,28 @@ import Backend from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
 
 export enum SupportedLanguages {
-  EN = "en",
-  PT = "pt",
+  English = "en",
+  Portuguese = "pt",
+  Spanish = "es",
 }
 
-const contextPath = process.env["WEBPACK_REPLACE__contextPath"];
+const CONTEXT_PATH = process.env["WEBPACK_REPLACE__contextPath"];
+const NAMESPACES = ["about", "code", "common", "drawer", "journey", "literal", "personal", "talk", "text"];
 
 i18n
   .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: SupportedLanguages.EN,
+    fallbackLng: SupportedLanguages.English,
     supportedLngs: Object.values(SupportedLanguages),
-    ns: ["about", "code", "common", "drawer", "journey", "literal", "personal", "talk", "text"],
+    ns: NAMESPACES,
     interpolation: {
       escapeValue: false,
     },
     debug: false,
     backend: {
-      loadPath: `${contextPath}/static/locales/{{lng}}/{{ns}}.json`,
+      loadPath: `${CONTEXT_PATH}/static/locales/{{lng}}/{{ns}}.json`,
     },
   });
 
