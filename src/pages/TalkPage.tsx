@@ -7,13 +7,6 @@ import { useFilteredMedias } from "../hooks/useFilteredMedias";
 import { useKeywordSelection } from "../hooks/useKeywordSelection";
 import { usePageActive } from "../hooks/usePageActive";
 
-const PAGE_FADE_TIME = {
-  header: 500,
-  keywordChips: 500,
-  livesSection: 1000,
-  conferencesSection: 1500,
-};
-
 export default function TalkPage() {
   const app = useApp();
   const active = usePageActive(0);
@@ -24,7 +17,7 @@ export default function TalkPage() {
 
   return (
     <Page name="talk">
-      <PageHeader fadeTime={PAGE_FADE_TIME.header}>
+      <PageHeader>
         <Typography component="div" sx={{ mb: "30px", fontSize: { sm: "16px", lg: "18px" } }}>
           <Trans i18nKey="talk:header">
             Here you can find some of my <strong>talks</strong>
@@ -33,19 +26,13 @@ export default function TalkPage() {
       </PageHeader>
       {active && (
         <>
-          <KeywordChips fadeTime={PAGE_FADE_TIME.keywordChips} keywordSelection={keywordSelection} />
+          <KeywordChips keywordSelection={keywordSelection} />
           {filteredLives.length > 0 && (
-            <MediaSection
-              title={t("literal:lives")}
-              fadeTime={PAGE_FADE_TIME.livesSection}
-              keywordSelection={keywordSelection}
-              mediaItems={filteredLives}
-            />
+            <MediaSection title={t("literal:lives")} keywordSelection={keywordSelection} mediaItems={filteredLives} />
           )}
           {filteredConferences.length > 0 && (
             <MediaSection
               title={t("literal:conferences")}
-              fadeTime={PAGE_FADE_TIME.conferencesSection}
               keywordSelection={keywordSelection}
               mediaItems={filteredConferences}
             />

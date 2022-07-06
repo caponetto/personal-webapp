@@ -401,7 +401,7 @@ exports[`CodePage should match the snapshot 1`] = `
   </div>
   <div
     class="MuiBox-root css-46b038"
-    style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    style="opacity: 1; webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
   >
     <div
       class="MuiDivider-root MuiDivider-fullWidth MuiDivider-withChildren MuiDivider-textAlignLeft css-7xiqxz-MuiDivider-root"
@@ -422,6 +422,7 @@ exports[`CodePage should match the snapshot 1`] = `
     >
       <div
         class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
@@ -563,6 +564,7 @@ exports[`CodePage should match the snapshot 1`] = `
       </div>
       <div
         class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
@@ -704,6 +706,7 @@ exports[`CodePage should match the snapshot 1`] = `
       </div>
       <div
         class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
@@ -863,6 +866,7 @@ exports[`CodePage should match the snapshot 1`] = `
       </div>
       <div
         class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
@@ -1004,6 +1008,7 @@ exports[`CodePage should match the snapshot 1`] = `
       </div>
       <div
         class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
@@ -1145,6 +1150,7 @@ exports[`CodePage should match the snapshot 1`] = `
       </div>
       <div
         class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
@@ -1286,6 +1292,7 @@ exports[`CodePage should match the snapshot 1`] = `
       </div>
       <div
         class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
@@ -1445,6 +1452,7 @@ exports[`CodePage should match the snapshot 1`] = `
       </div>
       <div
         class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
@@ -1586,6 +1594,7 @@ exports[`CodePage should match the snapshot 1`] = `
       </div>
       <div
         class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
@@ -1727,6 +1736,7 @@ exports[`CodePage should match the snapshot 1`] = `
       </div>
       <div
         class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"

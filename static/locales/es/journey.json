@@ -1,0 +1,11 @@
+{
+  "header": "Aquí puedes ver el resumen de mi <1>trayectoria</1>",
+  "education": {
+    "master": {
+      "title": "Máster en Aprendizaje Automático"
+    },
+    "bachelor": {
+      "title": "Bachillerato en Ciencia de la Computación"
+    }
+  }
+}

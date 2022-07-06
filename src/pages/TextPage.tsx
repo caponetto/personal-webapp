@@ -7,13 +7,6 @@ import { useFilteredMedias } from "../hooks/useFilteredMedias";
 import { useKeywordSelection } from "../hooks/useKeywordSelection";
 import { usePageActive } from "../hooks/usePageActive";
 
-const PAGE_FADE_TIME = {
-  header: 500,
-  keywordChips: 500,
-  masterThesisSection: 1000,
-  blogPostsSection: 1500,
-};
-
 export default function TextPage() {
   const app = useApp();
   const active = usePageActive(0);
@@ -24,7 +17,7 @@ export default function TextPage() {
 
   return (
     <Page name="text">
-      <PageHeader fadeTime={PAGE_FADE_TIME.header}>
+      <PageHeader>
         <Typography component="div" sx={{ mb: "30px", fontSize: { sm: "16px", lg: "18px" } }}>
           <Trans i18nKey="text:header">
             Here you can find some of my <strong>texts</strong>
@@ -33,11 +26,10 @@ export default function TextPage() {
       </PageHeader>
       {active && (
         <>
-          <KeywordChips fadeTime={PAGE_FADE_TIME.keywordChips} keywordSelection={keywordSelection} />
+          <KeywordChips keywordSelection={keywordSelection} />
           {filteredMasterThesis.length > 0 && (
             <MediaSection
               title={t("literal:mastersThesis")}
-              fadeTime={PAGE_FADE_TIME.masterThesisSection}
               keywordSelection={keywordSelection}
               mediaItems={filteredMasterThesis}
             />
@@ -45,7 +37,6 @@ export default function TextPage() {
           {filteredBlogPosts.length > 0 && (
             <MediaSection
               title={t("literal:blogPosts")}
-              fadeTime={PAGE_FADE_TIME.blogPostsSection}
               keywordSelection={keywordSelection}
               mediaItems={filteredBlogPosts}
             />

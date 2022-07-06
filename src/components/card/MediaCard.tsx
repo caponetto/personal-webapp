@@ -10,7 +10,7 @@ import Link from "@mui/material/Link";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { format } from "date-fns";
-import { enUS, ptBR } from "date-fns/locale";
+import { enUS, es, ptBR } from "date-fns/locale";
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
@@ -47,15 +47,27 @@ export function MediaCard(props: MediaCardProps) {
     return t("literal:view");
   }, [props.item.kind, t]);
 
+  const dateLocale = useMemo(() => {
+    switch (i18n.resolvedLanguage) {
+      case SupportedLanguages.Portuguese:
+        return ptBR;
+      case SupportedLanguages.Spanish:
+        return es;
+      case SupportedLanguages.English:
+      default:
+        return enUS;
+    }
+  }, [i18n.resolvedLanguage]);
+
   const formattedMediaDate = useMemo(() => {
     if (["code", "thesis"].includes(props.item.kind)) {
       return format(props.item.releaseDate, "yyyy");
     }
 
     return format(props.item.releaseDate, "PPP", {
-      locale: i18n.resolvedLanguage === SupportedLanguages.PT ? ptBR : enUS,
+      locale: dateLocale,
     });
-  }, [props.item.kind, props.item.releaseDate, i18n.resolvedLanguage]);
+  }, [dateLocale, props.item.kind, props.item.releaseDate]);
 
   const publicationIcon = useMemo<{ name: string; route: string }>(() => {
     switch (props.item.publication) {
