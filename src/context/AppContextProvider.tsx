@@ -7,7 +7,8 @@ import { ColorMode, Colors } from "../colors";
 import { useCookie } from "../hooks/useCookie";
 import { useSchema } from "../hooks/useSchema";
 import { PageNames, routes } from "../routes";
-import { AppContext, AppContextDispatch } from "./AppContext";
+import { AppContext } from "./AppContext";
+import { AppContextDispatch } from "./AppContextDispatch";
 import { OpenStateActions, openStateReducer } from "./OpenState";
 
 interface AppContextProviderProps {

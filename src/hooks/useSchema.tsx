@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { AppSchema } from "../context/AppContext";
+import { AppSchema } from "../context/AppSchema";
 import { routes } from "../routes";
 import { About, Code, Journey, Personal, Place, Talk, Text } from "../schema";
 

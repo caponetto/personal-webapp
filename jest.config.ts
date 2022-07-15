@@ -5,12 +5,12 @@ export default async (): Promise<Config.InitialOptions> => {
     reporters: ["default"],
     moduleDirectories: ["node_modules", "src"],
     moduleFileExtensions: ["js", "jsx", "ts", "tsx"],
-    setupFilesAfterEnv: ["./src/__tests__/jest.setup.ts"],
+    setupFilesAfterEnv: ["./src/jest/jest.setup.ts"],
     transformIgnorePatterns: [],
     testRegex: "/__tests__/.*\\.test\\.(jsx?|tsx?)$",
     testEnvironment: "jsdom",
     moduleNameMapper: {
-      "\\.(css|less|sass|scss)$": "<rootDir>/src/__tests__/__mocks__/styleMock.ts",
+      "\\.(css|less|sass|scss)$": "<rootDir>/src/jest/__mocks__/styleMock.ts",
     },
     transform: {
       "^.+\\.jsx?$": "babel-jest",

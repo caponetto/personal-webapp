@@ -2,7 +2,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import IconButton from "@mui/material/IconButton";
 import Snackbar from "@mui/material/Snackbar";
 import { useTranslation } from "react-i18next";
-import { useApp, useAppDispatch } from "../../context/AppContext";
+import { useApp } from "../../context/AppContext";
+import { useAppDispatch } from "../../context/AppContextDispatch";
 import { OpenStateActions } from "../../context/OpenState";
 
 export function CookieSnackbar() {

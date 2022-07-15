@@ -10,7 +10,8 @@ import RadioGroup from "@mui/material/RadioGroup";
 import Typography from "@mui/material/Typography";
 import { useTranslation } from "react-i18next";
 import { ColorMode } from "../../colors";
-import { useApp, useAppDispatch } from "../../context/AppContext";
+import { useApp } from "../../context/AppContext";
+import { useAppDispatch } from "../../context/AppContextDispatch";
 import { SupportedLanguages } from "../../i18n";
 
 interface SettingsPopoverProps {
