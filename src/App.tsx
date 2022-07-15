@@ -14,7 +14,7 @@ import { AppContext } from "./context/AppContext";
 import { AppContextProvider } from "./context/AppContextProvider";
 import "./fonts";
 import i18n from "./i18n";
-import { RouteSwitch } from "./pages/routeswitch";
+import { RouteSwitch } from "./pages";
 
 const BACK_TO_TOP_ANCHOR = "back-to-top-anchor";
 const DRAWER_WIDTH = 300;
