@@ -1,3 +1,4 @@
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import HomeRepairServiceOutlinedIcon from "@mui/icons-material/HomeRepairServiceOutlined";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import VerifiedOutlinedIcon from "@mui/icons-material/VerifiedOutlined";
@@ -16,8 +17,9 @@ import { JourneyList } from "./JourneyList";
 const SECTION_FADE_TIME = {
   education: 1000,
   certifications: 1200,
-  toolbox: 1400,
-  experience: 1600,
+  awards: 1400,
+  toolbox: 1600,
+  experience: 1800,
 };
 
 export default function JourneyPage() {
@@ -78,6 +80,15 @@ export default function JourneyPage() {
                           ))}
                       </Grid>
                     }
+                  />
+                </Grid>
+              </Fade>
+              <Fade in={true} timeout={SECTION_FADE_TIME.awards}>
+                <Grid item xs={12} xl={6}>
+                  <JourneyCard
+                    title={t("literal:awards")}
+                    icon={<EmojiEventsIcon />}
+                    content={<JourneyList kind="award" items={app.schema.journey.award} />}
                   />
                 </Grid>
               </Fade>

@@ -1,5 +1,5 @@
 export type PublicationKind = "kieCommunity" | "towardsDataScience" | "unicamp" | "theDevelopersConference" | "gitHub";
-export type JourneyKind = "certification" | "education" | "experience" | "toolbox";
+export type JourneyKind = "award" | "certification" | "education" | "experience" | "toolbox";
 export type MediaKind = "post" | "thesis" | "live" | "conference" | "code";
 
 export interface Place {
@@ -41,6 +41,7 @@ export interface About {
 }
 
 export interface Journey {
+  award: JourneyItem[];
   education: JourneyItem[];
   certification: JourneyItem[];
   experience: JourneyItem[];

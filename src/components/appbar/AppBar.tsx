@@ -1,6 +1,6 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import SettingsIcon from "@mui/icons-material/Settings";
-import { AppBar as MaterialAppBar } from "@mui/material";
+import { AppBar as MaterialAppBar, Box } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
 import Tooltip from "@mui/material/Tooltip";
@@ -61,17 +61,19 @@ export function AppBar(props: AppBarProps) {
           {`${app.schema.personal.firstName} ${app.schema.personal.lastName}`}
         </Typography>
         <Tooltip title={t("literal:settings").toString()} arrow>
-          <RotateWhileHover degrees={90}>
-            <IconButton
-              ref={settingsButtonRef}
-              id="settings-button"
-              onClick={() => appDispatch.openStateDispatch({ type: OpenStateActions.SETTINGS_OPEN })}
-              color="inherit"
-              aria-label="Open settings"
-            >
-              <SettingsIcon />
-            </IconButton>
-          </RotateWhileHover>
+          <Box>
+            <RotateWhileHover degrees={90}>
+              <IconButton
+                ref={settingsButtonRef}
+                id="settings-button"
+                onClick={() => appDispatch.openStateDispatch({ type: OpenStateActions.SETTINGS_OPEN })}
+                color="inherit"
+                aria-label="Open settings"
+              >
+                <SettingsIcon />
+              </IconButton>
+            </RotateWhileHover>
+          </Box>
         </Tooltip>
         <SettingsPopover
           anchor={settingsButtonRef.current}
