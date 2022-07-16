@@ -72,6 +72,16 @@ export function useSchema() {
 
   const journey = useMemo<Journey>(
     () => ({
+      award: [
+        {
+          kind: "award",
+          title: t("literal:meritHonorDiploma"),
+          period: {
+            start: 2011,
+          },
+          location: locations.unifei,
+        },
+      ],
       education: [
         {
           kind: "education",
