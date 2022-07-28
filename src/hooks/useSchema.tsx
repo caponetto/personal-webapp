@@ -11,39 +11,39 @@ export function useSchema() {
     () => ({
       unicamp: {
         name: t("literal:unicamp"),
-        url: routes.urls.unicamp,
+        url: "https://www.unicamp.br",
       },
       unifei: {
         name: t("literal:unifei"),
-        url: routes.urls.unifei,
+        url: "https://unifei.edu.br",
       },
       udacity: {
         name: t("literal:udacity"),
-        url: routes.urls.udacity,
+        url: "https://www.udacity.com",
       },
       oracle: {
         name: t("literal:oracle"),
-        url: routes.urls.oracle,
+        url: "https://www.oracle.com",
       },
       redHat: {
         name: t("literal:redHat"),
-        url: routes.urls.redHat,
+        url: "https://www.redhat.com",
       },
       samsung: {
         name: t("literal:samsung"),
-        url: routes.urls.samsung,
+        url: "https://www.samsung.com",
       },
       iFood: {
         name: t("literal:iFood"),
-        url: routes.urls.iFood,
+        url: "https://www.ifood.com.br",
       },
       motorola: {
         name: t("literal:motorola"),
-        url: routes.urls.motorola,
+        url: "https://www.motorola.com",
       },
       b2ml: {
         name: t("literal:b2mlSystems"),
-        url: routes.urls.b2ml,
+        url: "https://www.b2ml.com.br",
       },
     }),
     [t]
@@ -55,8 +55,13 @@ export function useSchema() {
       lastName: t("personal:lastName"),
       country: {
         name: t("literal:brazil"),
-        url: routes.urls.mapsCountry,
+        url: "https://www.google.com/maps/place/Brazil",
         emoji: "🇧🇷",
+      },
+      urls: {
+        github: "https://github.com/caponetto",
+        linkedin: "https://www.linkedin.com/in/ghcaponetto",
+        twitter: "https://twitter.com/caponetto",
       },
     }),
     [t]
@@ -258,7 +263,7 @@ export function useSchema() {
           releaseDate: new Date("Oct 27, 2017"),
           publication: "unicamp",
           keywordKeys: ["machineLearning", "multiTaskLearning", "clustering"],
-          url: routes.urls.mastersThesis,
+          url: "http://repositorio.unicamp.br/Acervo/Detalhe/987989",
         },
       ],
       blogPosts: [
@@ -268,7 +273,7 @@ export function useSchema() {
           releaseDate: new Date("Sep 25, 2019"),
           publication: "kieCommunity",
           keywordKeys: ["businessCentral", "git", "changeRequests"],
-          url: routes.urls.blogPosts.workspaceCollaboration,
+          url: "https://medium.com/kie-foundation/workspace-collaboration-via-change-requests-65b5fe96564e",
         },
         {
           kind: "post",
@@ -276,7 +281,7 @@ export function useSchema() {
           releaseDate: new Date("Oct 11, 2019"),
           publication: "towardsDataScience",
           keywordKeys: ["machineLearning", "computerVision", "objectDetection"],
-          url: routes.urls.blogPosts.playingWithObjectDetection,
+          url: "https://towardsdatascience.com/playing-with-object-detection-8f116ec0ce4d",
         },
         {
           kind: "post",
@@ -284,7 +289,7 @@ export function useSchema() {
           releaseDate: new Date("Nov 14, 2019"),
           publication: "towardsDataScience",
           keywordKeys: ["machineLearning", "optimization", "randomSearch"],
-          url: routes.urls.blogPosts.randomVsGridSearch,
+          url: "https://towardsdatascience.com/random-search-vs-grid-search-for-hyperparameter-optimization-345e1422899d",
         },
         {
           kind: "post",
@@ -292,7 +297,7 @@ export function useSchema() {
           releaseDate: new Date("Jan 21, 2020"),
           publication: "kieCommunity",
           keywordKeys: ["businessCentral", "maven", "archetypes"],
-          url: routes.urls.blogPosts.mavenArchetypesInBC,
+          url: "https://medium.com/kie-foundation/maven-archetype-support-in-business-central-b5fdf5e98556",
         },
         {
           kind: "post",
@@ -300,7 +305,7 @@ export function useSchema() {
           releaseDate: new Date("Feb 28, 2020"),
           publication: "kieCommunity",
           keywordKeys: ["businessCentral", "git", "maven"],
-          url: routes.urls.blogPosts.emptyReposInBC,
+          url: "https://medium.com/kie-foundation/import-an-empty-repository-into-business-central-b3fb76bab103",
         },
         {
           kind: "post",
@@ -308,7 +313,7 @@ export function useSchema() {
           releaseDate: new Date("Feb 28, 2020"),
           publication: "kieCommunity",
           keywordKeys: ["businessCentral", "git", "changeRequests"],
-          url: routes.urls.blogPosts.squashCommitsInBC,
+          url: "https://medium.com/kie-foundation/squash-commits-when-merging-a-change-request-bb8bcdc992c5",
         },
         {
           kind: "post",
@@ -316,7 +321,7 @@ export function useSchema() {
           releaseDate: new Date("Mar 31, 2020"),
           publication: "kieCommunity",
           keywordKeys: ["businessCentral", "git", "syncRepositories"],
-          url: routes.urls.blogPosts.improvedWorkflowInBC,
+          url: "https://medium.com/kie-foundation/an-improved-development-workflow-on-business-central-using-our-new-devtools-48fb14f39be9",
         },
         {
           kind: "post",
@@ -324,7 +329,7 @@ export function useSchema() {
           releaseDate: new Date("Apr 9, 2020"),
           publication: "kieCommunity",
           keywordKeys: ["kieTools", "github", "dmn", "bpmn"],
-          url: routes.urls.blogPosts.exportAsGist,
+          url: "https://medium.com/kie-foundation/exporting-diagrams-as-github-gists-a7c57b5f2b41",
         },
         {
           kind: "post",
@@ -332,7 +337,7 @@ export function useSchema() {
           releaseDate: new Date("Sept 22, 2020"),
           publication: "kieCommunity",
           keywordKeys: ["kieTools", "backend", "vsCode"],
-          url: routes.urls.blogPosts.backendKogitoTooling,
+          url: "https://medium.com/kie-foundation/backend-support-on-kogito-tooling-8be682a60b88",
         },
         {
           kind: "post",
@@ -340,7 +345,7 @@ export function useSchema() {
           releaseDate: new Date("Aug 9, 2021"),
           publication: "kieCommunity",
           keywordKeys: ["kieTools", "gitpod", "bpmn", "dmn"],
-          url: routes.urls.blogPosts.authoringOnGitpod,
+          url: "https://medium.com/@caponetto/four-steps-to-author-bpmn-and-dmn-assets-on-gitpod-io-2e0aa82b33d7",
         },
         {
           kind: "post",
@@ -348,7 +353,7 @@ export function useSchema() {
           releaseDate: new Date("Aug 23, 2021"),
           publication: "kieCommunity",
           keywordKeys: ["kieTools", "dmn", "openShift"],
-          url: routes.urls.blogPosts.dmnDevSandbox,
+          url: "https://medium.com/@caponetto/deploy-decisions-to-dmn-developer-sandbox-62c7d051b871",
         },
         {
           kind: "post",
@@ -356,7 +361,7 @@ export function useSchema() {
           releaseDate: new Date("Jan 10, 2022"),
           publication: "towardsDataScience",
           keywordKeys: ["teachableMachine", "reactJs", "openShift"],
-          url: routes.urls.blogPosts.teachableMachineBitingNails,
+          url: "https://towardsdatascience.com/from-training-to-deployment-stop-biting-your-nails-with-machine-learning-ffed31a59040",
         },
         {
           kind: "post",
@@ -364,7 +369,7 @@ export function useSchema() {
           releaseDate: new Date("Jan 27, 2022"),
           publication: "kieCommunity",
           keywordKeys: ["kieTools", "openShift"],
-          url: routes.urls.blogPosts.deployKieSandboxToOpenshift,
+          url: "https://medium.com/@caponetto/deploy-your-kie-sandbox-to-openshift-f0b8442d046d",
         },
       ],
     }),
@@ -380,7 +385,7 @@ export function useSchema() {
           releaseDate: new Date("Sept 8, 2020"),
           publication: "kieCommunity",
           keywordKeys: ["businessCentral", "git", "changeRequests"],
-          url: routes.urls.lives.workspaceCollaborationInBC,
+          url: "https://www.youtube.com/watch?v=wWpOKILLlZI",
         },
         {
           kind: "live",
@@ -388,7 +393,7 @@ export function useSchema() {
           releaseDate: new Date("Sept 15, 2020"),
           publication: "kieCommunity",
           keywordKeys: ["businessCentral", "maven", "archetypes"],
-          url: routes.urls.lives.mavenArchetypesInBC,
+          url: "https://www.youtube.com/watch?v=E07RXxiZdYc",
         },
         {
           kind: "live",
@@ -396,7 +401,7 @@ export function useSchema() {
           releaseDate: new Date("Jun 8, 2021"),
           publication: "kieCommunity",
           keywordKeys: ["dmn", "openShift", "apacheKafka"],
-          url: routes.urls.lives.streamDecisionsWithDmnAndKafka,
+          url: "https://www.youtube.com/watch?v=pgj4jmkAl5A",
         },
       ],
       conferences: [
@@ -406,7 +411,7 @@ export function useSchema() {
           releaseDate: new Date("Jun 8, 2021"),
           publication: "theDevelopersConference",
           keywordKeys: ["dmn", "openShift", "apacheKafka"],
-          url: routes.slides.streamingDmnKafka,
+          url: routes.static.slides.streamingDmnKafka,
         },
       ],
     }),
@@ -422,7 +427,7 @@ export function useSchema() {
           releaseDate: new Date("Feb 16, 2021"),
           publication: "gitHub",
           keywordKeys: ["python", "clustering", "bayesianStatistics"],
-          url: routes.urls.repositories.bhc,
+          url: "https://github.com/caponetto/bayesian-hierarchical-clustering",
         },
         {
           kind: "code",
@@ -430,7 +435,7 @@ export function useSchema() {
           releaseDate: new Date("Oct 16, 2020"),
           publication: "gitHub",
           keywordKeys: ["computerVision", "quarkus", "vsCodeExtension", "typeScript"],
-          url: routes.urls.repositories.vsCodeQuarkusDJL,
+          url: "https://github.com/caponetto/vscode-quarkus-djl",
         },
         {
           kind: "code",
@@ -438,7 +443,7 @@ export function useSchema() {
           releaseDate: new Date("Apr 10, 2021"),
           publication: "gitHub",
           keywordKeys: ["artifact", "gitHubActions", "typeScript"],
-          url: routes.urls.repositories.lessIsMore,
+          url: "https://github.com/caponetto/less-is-more",
         },
         {
           kind: "code",
@@ -446,7 +451,7 @@ export function useSchema() {
           releaseDate: new Date("Oct 8, 2019"),
           publication: "gitHub",
           keywordKeys: ["machineLearning", "jupyterNotebooks"],
-          url: routes.urls.repositories.jupyterNotebooks,
+          url: "https://github.com/caponetto/jupyter-notebooks",
         },
         {
           kind: "code",
@@ -454,7 +459,7 @@ export function useSchema() {
           releaseDate: new Date("Feb 23, 2021"),
           publication: "gitHub",
           keywordKeys: ["vsCodeExtension", "gitDiff", "typeScript"],
-          url: routes.urls.repositories.vsCodeDiffViewer,
+          url: "https://github.com/caponetto/vscode-diff-viewer",
         },
         {
           kind: "code",
@@ -462,7 +467,7 @@ export function useSchema() {
           releaseDate: new Date("Sept 19, 2020"),
           publication: "gitHub",
           keywordKeys: ["vsCodeExtension", "tensorFlowJs", "typeScript"],
-          url: routes.urls.repositories.vsCodeToxicityClassifier,
+          url: "https://github.com/caponetto/vscode-tfjs-toxicity",
         },
         {
           kind: "code",
@@ -470,7 +475,7 @@ export function useSchema() {
           releaseDate: new Date("Jun 2, 2021"),
           publication: "gitHub",
           keywordKeys: ["apacheKafka", "dmn", "docker", "quarkus"],
-          url: routes.urls.repositories.streamDecisionsWithDmnAndKafka,
+          url: "https://github.com/caponetto/streaming-dmn-kafka",
         },
         {
           kind: "code",
@@ -478,7 +483,7 @@ export function useSchema() {
           releaseDate: new Date("Jul 4, 2020"),
           publication: "gitHub",
           keywordKeys: ["vsCodeExtension", "typeScript", "tensorFlowJs"],
-          url: routes.urls.repositories.vsCodeObjectDetection,
+          url: "https://github.com/caponetto/vscode-tfjs-coco-ssd",
         },
         {
           kind: "code",
@@ -486,7 +491,7 @@ export function useSchema() {
           releaseDate: new Date("Oct 24, 2021"),
           publication: "gitHub",
           keywordKeys: ["reactJs", "typeScript", "webApp"],
-          url: routes.urls.repositories.personalWebApp,
+          url: "https://github.com/caponetto/personal-webapp",
         },
         {
           kind: "code",
@@ -494,7 +499,7 @@ export function useSchema() {
           releaseDate: new Date("Jan 9, 2022"),
           publication: "gitHub",
           keywordKeys: ["teachableMachine", "reactJs", "openShift"],
-          url: routes.urls.repositories.teachableMachinePlayground,
+          url: "https://github.com/caponetto/teachable-machine-playground",
         },
       ],
     }),

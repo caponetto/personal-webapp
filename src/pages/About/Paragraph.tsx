@@ -1,9 +1,8 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import { ReactNode } from "react";
 import { Fonts } from "../../fonts";
 
-export function Paragraph(props: { children: ReactNode }) {
+export function Paragraph(props: { content: string }) {
   return (
     <Typography component="div">
       <Box
@@ -14,7 +13,7 @@ export function Paragraph(props: { children: ReactNode }) {
           fontSize: { xs: "13px", sm: "16px" },
         }}
       >
-        {props.children}
+        {props.content}
       </Box>
     </Typography>
   );

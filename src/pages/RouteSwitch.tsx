@@ -13,13 +13,12 @@ export function RouteSwitch() {
 
   return (
     <Routes>
-      <Route path={routes.nav.root} element={navigateToAbout} />
       <Route path={routes.nav.about} element={<AboutPage />} />
       <Route path={routes.nav.journey} element={<JourneyPage />} />
       <Route path={routes.nav.text} element={<TextPage />} />
       <Route path={routes.nav.talk} element={<TalkPage />} />
       <Route path={routes.nav.code} element={<CodePage />} />
-      <Route path={routes.nav.any} element={navigateToAbout} />
+      <Route path="*" element={navigateToAbout} />
     </Routes>
   );
 }

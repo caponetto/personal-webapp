@@ -8,8 +8,6 @@ import { Page } from "../../components/page";
 import { SocialBar } from "../../components/social";
 import { useApp } from "../../context/AppContext";
 import { Fonts } from "../../fonts";
-import { usePageActive } from "../../hooks/usePageActive";
-import { routes } from "../../routes";
 import { Paragraph } from "./Paragraph";
 
 const FADE_TIME = {
@@ -17,40 +15,39 @@ const FADE_TIME = {
 };
 
 export default function AboutPage() {
-  const app = useApp();
-  const active = usePageActive(0);
+  const {
+    schema: { personal, about },
+  } = useApp();
 
   return (
     <Page name={"about"}>
-      {active && (
-        <Fade in={true} timeout={FADE_TIME.card}>
-          <div>
-            <HoverableCard sx={{ p: "28px", width: { xs: "100%", xl: "1170px" }, margin: "0 auto" }}>
-              <Stack spacing={4}>
-                <Typography
-                  component="div"
-                  sx={{
-                    textAlign: "center",
-                    fontWeight: "bold",
-                    fontFamily: Fonts.PHILOSOPHER,
-                    fontSize: { xs: "16px", sm: "20px" },
-                  }}
-                >
-                  {app.schema.about.welcome}
-                </Typography>
-                {app.schema.about.paragraphs.map((paragraph: string, idx: number) => (
-                  <Paragraph key={`about-paragraph-${idx}`}>{paragraph}</Paragraph>
-                ))}
-              </Stack>
-              <CardActions disableSpacing sx={{ display: { xs: "auto", md: "none" } }}>
-                <Box sx={{ width: 1 }}>
-                  <SocialBar sx={{ width: "150px", mx: "auto", float: "center" }} urls={routes.urls.social} />
-                </Box>
-              </CardActions>
-            </HoverableCard>
-          </div>
-        </Fade>
-      )}
+      <Fade in={true} timeout={FADE_TIME.card}>
+        <div>
+          <HoverableCard sx={{ p: "28px", width: { xs: "100%", xl: "1170px" }, margin: "0 auto" }}>
+            <Stack spacing={4}>
+              <Typography
+                component="div"
+                sx={{
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  fontFamily: Fonts.PHILOSOPHER,
+                  fontSize: { xs: "16px", sm: "20px" },
+                }}
+              >
+                {about.welcome}
+              </Typography>
+              {about.paragraphs.map((paragraph: string, idx: number) => (
+                <Paragraph key={`about-paragraph-${idx}`} content={paragraph} />
+              ))}
+            </Stack>
+            <CardActions disableSpacing sx={{ display: { xs: "auto", md: "none" } }}>
+              <Box sx={{ width: 1 }}>
+                <SocialBar sx={{ width: "150px", mx: "auto", float: "center" }} urls={personal.urls} />
+              </Box>
+            </CardActions>
+          </HoverableCard>
+        </div>
+      </Fade>
     </Page>
   );
 }

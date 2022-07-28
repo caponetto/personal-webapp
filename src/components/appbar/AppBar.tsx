@@ -1,6 +1,6 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import SettingsIcon from "@mui/icons-material/Settings";
-import { AppBar as MaterialAppBar, Box } from "@mui/material";
+import { AppBar as MuiAppBar, Box } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
 import Tooltip from "@mui/material/Tooltip";
@@ -8,12 +8,11 @@ import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router";
 import { useApp } from "../../context/AppContext";
-import { useAppDispatch } from "../../context/AppContextDispatch";
 import { OpenStateActions } from "../../context/OpenState";
 import { Fonts } from "../../fonts";
 import { routes } from "../../routes";
-import { RotateWhileHover } from "../motion";
 import { SettingsPopover } from "../settings";
 
 interface AppBarProps {
@@ -22,13 +21,13 @@ interface AppBarProps {
 
 export function AppBar(props: AppBarProps) {
   const app = useApp();
-  const appDispatch = useAppDispatch();
+  const navigate = useNavigate();
   const isExtraSmall = useMediaQuery("(max-width:350px)");
   const { t } = useTranslation();
   const settingsButtonRef = useRef<HTMLButtonElement | null>(null);
 
   return (
-    <MaterialAppBar
+    <MuiAppBar
       position="fixed"
       sx={{
         width: { md: `calc(100% - ${props.drawerWidth}px)` },
@@ -38,7 +37,7 @@ export function AppBar(props: AppBarProps) {
       <Toolbar>
         <IconButton
           data-testid="open-drawer-button"
-          onClick={() => appDispatch.openStateDispatch({ type: OpenStateActions.DRAWER_TOGGLE })}
+          onClick={() => app.openStateDispatch({ type: OpenStateActions.DRAWER_TOGGLE })}
           size="large"
           edge="start"
           color="inherit"
@@ -49,7 +48,7 @@ export function AppBar(props: AppBarProps) {
         </IconButton>
         <Typography
           component="div"
-          onClick={() => appDispatch.goTo(routes.nav.about)}
+          onClick={() => navigate(routes.nav.about)}
           sx={{
             flexGrow: 1,
             fontWeight: "bold",
@@ -62,25 +61,23 @@ export function AppBar(props: AppBarProps) {
         </Typography>
         <Tooltip title={t("literal:settings").toString()} arrow>
           <Box>
-            <RotateWhileHover degrees={90}>
-              <IconButton
-                ref={settingsButtonRef}
-                id="settings-button"
-                onClick={() => appDispatch.openStateDispatch({ type: OpenStateActions.SETTINGS_OPEN })}
-                color="inherit"
-                aria-label="Open settings"
-              >
-                <SettingsIcon />
-              </IconButton>
-            </RotateWhileHover>
+            <IconButton
+              ref={settingsButtonRef}
+              id="settings-button"
+              onClick={() => app.openStateDispatch({ type: OpenStateActions.SETTINGS_OPEN })}
+              color="inherit"
+              aria-label="Open settings"
+            >
+              <SettingsIcon />
+            </IconButton>
           </Box>
         </Tooltip>
         <SettingsPopover
           anchor={settingsButtonRef.current}
           open={app.openState.settings}
-          onClose={() => appDispatch.openStateDispatch({ type: OpenStateActions.SETTINGS_CLOSE })}
+          onClose={() => app.openStateDispatch({ type: OpenStateActions.SETTINGS_CLOSE })}
         />
       </Toolbar>
-    </MaterialAppBar>
+    </MuiAppBar>
   );
 }

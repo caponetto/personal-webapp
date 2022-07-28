@@ -26,28 +26,32 @@ interface MediaSectionProps {
 
 export function MediaSection(props: MediaSectionProps) {
   return (
-    <Fade in={true} timeout={props.fadeTime?.title ?? DEFAULT_FADE_TIME.title}>
-      <Box sx={{ mt: "30px" }}>
-        <Divider textAlign="left" sx={{ mb: "30px", "::before": { width: "1%" }, "::after": { width: "99%" } }}>
-          <Typography
-            fontWeight="light"
-            variant="overline"
-            component="div"
-            sx={{ fontSize: "14px", color: "text.secondary" }}
-          >
-            {props.title}
-          </Typography>
-        </Divider>
-        <Grid container spacing={3}>
-          {props.mediaItems.map((item: MediaItem, idx: number) => (
-            <Fade in={true} timeout={props.fadeTime?.item ?? DEFAULT_FADE_TIME.item} key={`${props.title}-${idx}`}>
-              <Grid item sx={{ width: { xs: "100%", lg: "50%", xl: "33%" } }}>
-                <MediaCard item={item} keywordSelection={props.keywordSelection} />
-              </Grid>
-            </Fade>
-          ))}
-        </Grid>
-      </Box>
-    </Fade>
+    <>
+      {props.mediaItems.length > 0 && (
+        <Fade in={true} timeout={props.fadeTime?.title ?? DEFAULT_FADE_TIME.title}>
+          <Box sx={{ mt: "30px" }}>
+            <Divider textAlign="left" sx={{ mb: "30px", "::before": { width: "1%" }, "::after": { width: "99%" } }}>
+              <Typography
+                fontWeight="light"
+                variant="overline"
+                component="div"
+                sx={{ fontSize: "14px", color: "text.secondary" }}
+              >
+                {props.title}
+              </Typography>
+            </Divider>
+            <Grid container spacing={3}>
+              {props.mediaItems.map((item: MediaItem, idx: number) => (
+                <Fade in={true} timeout={props.fadeTime?.item ?? DEFAULT_FADE_TIME.item} key={`${props.title}-${idx}`}>
+                  <Grid item sx={{ width: { xs: "100%", lg: "50%", xl: "33%" } }}>
+                    <MediaCard item={item} keywordSelection={props.keywordSelection} />
+                  </Grid>
+                </Fade>
+              ))}
+            </Grid>
+          </Box>
+        </Fade>
+      )}
+    </>
   );
 }

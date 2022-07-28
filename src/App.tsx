@@ -9,9 +9,10 @@ import { Colors } from "./colors";
 import { AppBar } from "./components/appbar";
 import { AppDrawer } from "./components/drawer";
 import { ScrollTop } from "./components/scrolltop";
-import { CookieSnackbar } from "./components/snackbar";
+import { StorageSnackbar } from "./components/snackbar";
 import { AppContext } from "./context/AppContext";
 import { AppContextProvider } from "./context/AppContextProvider";
+import { OpenStateActions } from "./context/OpenState";
 import "./fonts";
 import i18n from "./i18n";
 import { RouteSwitch } from "./pages";
@@ -29,14 +30,12 @@ export function App() {
           <AppContainer>
             <AppBar drawerWidth={DRAWER_WIDTH} />
             <AppDrawer drawerWidth={DRAWER_WIDTH} drawerItemWidth={DRAWER_ITEM_WIDTH} />
-            <CookieSnackbar />
             <Box component="main" sx={{ flexGrow: 1 }}>
               <Toolbar id={BACK_TO_TOP_ANCHOR} />
               <Suspense fallback={<LinearProgress sx={{ height: "2px" }} />}>
                 <RouteSwitch />
               </Suspense>
             </Box>
-            <ScrollTop anchor={BACK_TO_TOP_ANCHOR} />
           </AppContainer>
         </Suspense>
       </I18nextProvider>
@@ -64,6 +63,11 @@ function AppContainer(props: { children: ReactNode }) {
           >
             <CssBaseline />
             {props.children}
+            <StorageSnackbar
+              isOpen={app.openState.snackbar}
+              onClose={() => app.openStateDispatch({ type: OpenStateActions.SNACKBAR_CLOSE })}
+            />
+            <ScrollTop canShow={!app.openState.snackbar} anchor={BACK_TO_TOP_ANCHOR} />
           </Box>
         )}
       </AppContext.Consumer>

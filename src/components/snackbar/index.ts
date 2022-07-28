@@ -1,1 +1,1 @@
-export { CookieSnackbar } from "./CookieSnackbar";
+export { StorageSnackbar } from "./StorageSnackbar";

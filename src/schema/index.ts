@@ -33,6 +33,11 @@ export interface Personal {
   firstName: string;
   lastName: string;
   country: Required<Place>;
+  urls: {
+    github: string;
+    linkedin: string;
+    twitter: string;
+  };
 }
 
 export interface About {

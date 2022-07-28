@@ -1,8 +1,8 @@
 import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
+import { ExternalLink } from "../../components/link";
 import { JourneyItem } from "../../schema";
 
 interface JourneyListItemProps {
@@ -26,16 +26,9 @@ export function JourneyListItem(props: JourneyListItemProps) {
             >
               {"@"}
             </Typography>
-            <Link
-              color="inherit"
-              underline="hover"
-              rel="noreferrer"
-              variant="overline"
-              target="_blank"
-              href={props.item.location.url}
-            >
+            <ExternalLink color="inherit" underline="hover" variant="overline" href={props.item.location.url}>
               {props.item.location.name}
-            </Link>
+            </ExternalLink>
           </Box>
         }
       />

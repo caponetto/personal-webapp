@@ -9,6 +9,7 @@ describe("TextPage", () => {
       cy.getDrawerItem("text").click();
     });
     cy.assertLocation("/text");
+    cy.title().should("contain", "| Text");
   });
 
   it("should navigate to /text when clicking in the Text list item (small screen)", () => {
