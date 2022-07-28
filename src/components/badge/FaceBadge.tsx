@@ -2,12 +2,12 @@ import { Badge, Tooltip } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
-import Link from "@mui/material/Link";
 import { useTranslation } from "react-i18next";
+import { ExternalLink } from "../link";
 
 interface FaceBadgeProps {
   name: string;
-  avatarRoute: string;
+  imageSource: string;
   location: { name: string; url: string; emojiIcon: string };
   onClick?: () => void;
 }
@@ -27,15 +27,15 @@ export function FaceBadge(props: FaceBadgeProps) {
         overlap="circular"
         anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
         badgeContent={
-          <Tooltip title={t("common:location.tooltip", { location: props.location.name }).toString()} arrow>
-            <Link underline="none" rel="noreferrer" target="_blank" href={props.location.url}>
+          <ExternalLink href={props.location.url}>
+            <Tooltip title={t("common:location.tooltip", { location: props.location.name }).toString()} arrow>
               <IconButton sx={{ color: "rgba(0,0,0,0.9)" }}>{props.location.emojiIcon}</IconButton>
-            </Link>
-          </Tooltip>
+            </Tooltip>
+          </ExternalLink>
         }
       >
         <IconButton data-testid="face-badge" onClick={props.onClick}>
-          <Avatar alt={props.name} src={props.avatarRoute} sx={{ width: 150, height: 150, boxShadow: 3 }} />
+          <Avatar alt={props.name} src={props.imageSource} sx={{ width: 150, height: 150, boxShadow: 3 }} />
         </IconButton>
       </Badge>
     </Box>

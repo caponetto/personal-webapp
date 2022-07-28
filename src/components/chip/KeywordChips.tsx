@@ -19,7 +19,7 @@ export function KeywordChips(props: KeywordChipsProps) {
   const isSmall = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const resolveLiteral = useCallback((key: string) => t(`literal:${key}` as any), [t]);
+  const resolveLiteral = useCallback((key: string) => t(`literal:${key}` as any) as string, [t]);
 
   return (
     <Fade in={true} timeout={props.fadeTime ?? DEFAULT_FADE_TIME}>

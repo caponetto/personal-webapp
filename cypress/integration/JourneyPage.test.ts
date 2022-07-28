@@ -9,6 +9,7 @@ describe("JourneyPage", () => {
       cy.getDrawerItem("journey").click();
     });
     cy.assertLocation("/journey");
+    cy.title().should("contain", "| Journey");
   });
 
   it("should navigate to /journey when clicking in the Journey list item (small screen)", () => {

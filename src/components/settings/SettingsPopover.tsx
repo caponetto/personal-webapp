@@ -11,7 +11,6 @@ import Typography from "@mui/material/Typography";
 import { useTranslation } from "react-i18next";
 import { ColorMode } from "../../colors";
 import { useApp } from "../../context/AppContext";
-import { useAppDispatch } from "../../context/AppContextDispatch";
 import { SupportedLanguages } from "../../i18n";
 
 interface SettingsPopoverProps {
@@ -21,8 +20,7 @@ interface SettingsPopoverProps {
 }
 
 export function SettingsPopover(props: SettingsPopoverProps) {
-  const app = useApp();
-  const appDispatch = useAppDispatch();
+  const { colorMode, updateColorMode } = useApp();
   const { t, i18n } = useTranslation();
 
   const smallRadioButton = (
@@ -60,8 +58,8 @@ export function SettingsPopover(props: SettingsPopoverProps) {
               </FormLabel>
               <RadioGroup
                 aria-labelledby="theme-form"
-                value={app.colorMode}
-                onChange={(event) => appDispatch.updateColorMode((event.target as HTMLInputElement).value as ColorMode)}
+                value={colorMode}
+                onChange={(event) => updateColorMode((event.target as HTMLInputElement).value as ColorMode)}
                 name="theme-group"
               >
                 <FormControlLabel value="light" control={smallRadioButton} label={t("literal:light").toString()} />

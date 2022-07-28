@@ -35,6 +35,7 @@ describe("AboutPage", () => {
       cy.getDrawerItem("about").click();
     });
     cy.assertLocation("/about");
+    cy.title().should("contain", "| About");
   });
 
   it("should navigate to /about when clicking on the FaceBadge from other page (small screen)", () => {

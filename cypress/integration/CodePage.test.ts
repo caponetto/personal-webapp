@@ -9,6 +9,7 @@ describe("CodePage", () => {
       cy.getDrawerItem("code").click();
     });
     cy.assertLocation("/code");
+    cy.title().should("contain", "| Code");
   });
 
   it("should navigate to /code when clicking in the Code list item (small screen)", () => {

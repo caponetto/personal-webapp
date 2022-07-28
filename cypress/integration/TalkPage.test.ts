@@ -9,6 +9,7 @@ describe("TalkPage", () => {
       cy.getDrawerItem("talk").click();
     });
     cy.assertLocation("/talk");
+    cy.title().should("contain", "| Talk");
   });
 
   it("should navigate to /talk when clicking in the Talk list item (small screen)", () => {

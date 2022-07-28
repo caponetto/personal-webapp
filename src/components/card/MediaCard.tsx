@@ -1,12 +1,9 @@
-import LaunchIcon from "@mui/icons-material/Launch";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
 import { grey } from "@mui/material/colors";
 import Grid from "@mui/material/Grid";
-import Link from "@mui/material/Link";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { format } from "date-fns";
@@ -19,6 +16,7 @@ import { KeywordSelection } from "../../hooks/useKeywordSelection";
 import { SupportedLanguages } from "../../i18n";
 import { routes } from "../../routes";
 import { MediaItem } from "../../schema";
+import { ExternalLinkButton } from "../button";
 import { StaticChip } from "../chip/StaticChip";
 import { HoverableCard } from "./HoverableCard";
 
@@ -28,8 +26,10 @@ interface MediaCardProps {
 }
 
 export function MediaCard(props: MediaCardProps) {
-  const app = useApp();
+  const { colorMode } = useApp();
   const { t, i18n } = useTranslation();
+
+  const isLightMode = useMemo(() => colorMode === "light", [colorMode]);
 
   const accessMediaButtonLabel = useMemo(() => {
     if (["post", "thesis"].includes(props.item.kind)) {
@@ -72,25 +72,25 @@ export function MediaCard(props: MediaCardProps) {
   const publicationIcon = useMemo<{ name: string; route: string }>(() => {
     switch (props.item.publication) {
       case "kieCommunity":
-        return { name: t("literal:kieCommunity"), route: routes.images.kie };
+        return { name: t("literal:kieCommunity"), route: routes.static.images.kie };
       case "towardsDataScience":
-        return { name: t("literal:towardsDataScience"), route: routes.images.tds };
+        return { name: t("literal:towardsDataScience"), route: routes.static.images.tds };
       case "unicamp":
         return {
           name: t("literal:unicamp"),
-          route: app.colorMode === "light" ? routes.images.unicamp.light : routes.images.unicamp.dark,
+          route: isLightMode ? routes.static.images.unicamp.light : routes.static.images.unicamp.dark,
         };
       case "theDevelopersConference":
-        return { name: t("literal:theDevelopersConference"), route: routes.images.tdc };
+        return { name: t("literal:theDevelopersConference"), route: routes.static.images.tdc };
       case "gitHub":
         return {
           name: t("literal:github"),
-          route: app.colorMode === "light" ? routes.images.github.light : routes.images.github.dark,
+          route: isLightMode ? routes.static.images.github.light : routes.static.images.github.dark,
         };
       default:
         throw new Error("Unsupported publication type");
     }
-  }, [app.colorMode, props.item.publication, t]);
+  }, [isLightMode, props.item.publication, t]);
 
   return (
     <HoverableCard>
@@ -103,7 +103,7 @@ export function MediaCard(props: MediaCardProps) {
               fontWeight: "bold",
               height: { xs: "auto", lg: "50px" },
             }}
-            color={grey[app.colorMode === "light" ? 700 : 500]}
+            color={grey[isLightMode ? 700 : 500]}
             gutterBottom
           >
             {props.item.title}
@@ -130,7 +130,7 @@ export function MediaCard(props: MediaCardProps) {
               <Grid item key={`media-keyword-${keywordKey}`}>
                 <StaticChip
                   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                  label={t(`literal:${keywordKey}` as any)}
+                  label={t(`literal:${keywordKey}` as any) as string}
                   color="success"
                   variant={props.keywordSelection.selectionMap.get(keywordKey) ? "filled" : "outlined"}
                   size="small"
@@ -145,13 +145,7 @@ export function MediaCard(props: MediaCardProps) {
           <Typography sx={{ fontSize: 13, float: "left", lineHeight: "30px" }} color="text.secondary" component="div">
             {formattedMediaDate}
           </Typography>
-          {props.item.url && (
-            <Link underline="none" rel="noreferrer" target="_blank" href={props.item.url}>
-              <Button sx={{ float: "right" }} size="small" endIcon={<LaunchIcon />} color="success">
-                {accessMediaButtonLabel}
-              </Button>
-            </Link>
-          )}
+          {props.item.url && <ExternalLinkButton title={accessMediaButtonLabel} href={props.item.url} />}
         </Box>
       </CardActions>
     </HoverableCard>

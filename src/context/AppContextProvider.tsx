@@ -1,14 +1,13 @@
 import { blueGrey, grey, teal } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { ReactNode, useCallback, useEffect, useMemo, useReducer } from "react";
+import { ReactNode, useEffect, useMemo, useReducer } from "react";
 import { useTranslation } from "react-i18next";
-import { useLocation, useNavigate } from "react-router";
+import { useLocation } from "react-router";
 import { ColorMode, Colors } from "../colors";
 import { useCookie } from "../hooks/useCookie";
 import { useSchema } from "../hooks/useSchema";
 import { PageNames, routes } from "../routes";
 import { AppContext } from "./AppContext";
-import { AppContextDispatch } from "./AppContextDispatch";
 import { OpenStateActions, openStateReducer } from "./OpenState";
 
 interface AppContextProviderProps {
@@ -17,7 +16,6 @@ interface AppContextProviderProps {
 
 export function AppContextProvider(props: AppContextProviderProps) {
   const location = useLocation();
-  const navigate = useNavigate();
   const schema = useSchema();
   const { t } = useTranslation();
 
@@ -52,16 +50,6 @@ export function AppContextProvider(props: AppContextProviderProps) {
     [colorMode]
   );
 
-  const goTo = useCallback(
-    (route: string) => {
-      if (location.pathname === route) {
-        return;
-      }
-      navigate(route);
-    },
-    [location.pathname, navigate]
-  );
-
   useEffect(() => {
     updateShowSnackbar(openState.snackbar);
   }, [openState.snackbar, updateShowSnackbar]);
@@ -71,8 +59,12 @@ export function AppContextProvider(props: AppContextProviderProps) {
   }, [location.pathname]);
 
   useEffect(() => {
+    if (!Object.values(routes.nav).includes(location.pathname)) {
+      return;
+    }
+
     const relativePath = location.pathname.slice(1);
-    if (!relativePath || !Object.values(routes.nav).includes(location.pathname)) {
+    if (!relativePath) {
       return;
     }
 
@@ -86,20 +78,15 @@ export function AppContextProvider(props: AppContextProviderProps) {
       schema,
       colorMode,
       openState,
+      openStateDispatch,
+      updateColorMode,
     }),
-    [schema, colorMode, openState]
-  );
-
-  const appContextDispatchValue = useMemo(
-    () => ({ openStateDispatch, goTo, updateColorMode }),
-    [goTo, updateColorMode]
+    [schema, colorMode, openState, updateColorMode]
   );
 
   return (
     <AppContext.Provider value={appContextValue}>
-      <AppContextDispatch.Provider value={appContextDispatchValue}>
-        <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
-      </AppContextDispatch.Provider>
+      <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
     </AppContext.Provider>
   );
 }

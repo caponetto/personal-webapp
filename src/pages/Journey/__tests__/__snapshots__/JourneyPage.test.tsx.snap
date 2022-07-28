@@ -6,14 +6,10 @@ exports[`JourneyPage should match the snapshot 1`] = `
   data-testid="journey-page"
 >
   <div
-    class="MuiBox-root css-0"
+    class="MuiTypography-root MuiTypography-body1 css-1xx02jo-MuiTypography-root"
     style="opacity: 1; webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
   >
-    <div
-      class="MuiTypography-root MuiTypography-body1 css-1xx02jo-MuiTypography-root"
-    >
-      header
-    </div>
+    header
   </div>
   <div
     class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
@@ -159,7 +155,6 @@ exports[`JourneyPage should match the snapshot 1`] = `
                 >
                   <button
                     class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
-                    id="education-more-details-button"
                     tabindex="0"
                     type="button"
                   >
@@ -326,7 +321,6 @@ exports[`JourneyPage should match the snapshot 1`] = `
                 >
                   <button
                     class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
-                    id="certifications-more-details-button"
                     tabindex="0"
                     type="button"
                   >
@@ -1075,7 +1069,6 @@ exports[`JourneyPage should match the snapshot 1`] = `
                 >
                   <button
                     class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
-                    id="toolbox-more-details-button"
                     tabindex="0"
                     type="button"
                   >
@@ -1200,7 +1193,6 @@ exports[`JourneyPage should match the snapshot 1`] = `
                 >
                   <button
                     class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
-                    id="awards-more-details-button"
                     tabindex="0"
                     type="button"
                   >
@@ -1640,7 +1632,6 @@ exports[`JourneyPage should match the snapshot 1`] = `
             >
               <button
                 class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
-                id="experience-more-details-button"
                 tabindex="0"
                 type="button"
               >
