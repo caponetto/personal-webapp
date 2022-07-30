@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 const HtmlReplaceWebpackPlugin = require("html-replace-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
 const JsonMinimizerPlugin = require("json-minimizer-webpack-plugin");
 const { EnvironmentPlugin } = require("webpack");
 
@@ -40,7 +39,7 @@ module.exports = async (_env, argv) => {
         excludeModules: true,
       },
       optimization: {
-        minimizer: [new TerserPlugin(), new JsonMinimizerPlugin(), new HtmlMinimizerPlugin()],
+        minimizer: [`...`, new JsonMinimizerPlugin(), new HtmlMinimizerPlugin()],
       },
       module: {
         rules: [
