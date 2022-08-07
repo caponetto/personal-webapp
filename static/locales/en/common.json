@@ -3,7 +3,7 @@
     "tooltip": "{{kind}} Profile"
   },
   "location": {
-    "tooltip": "Currently based on {{location}}"
+    "tooltip": "Currently based in {{location}}"
   },
   "copyright": "© {{year}} {{name}}",
   "messages": {
