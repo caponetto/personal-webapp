@@ -154,7 +154,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   target="_blank"
                 >
                   <button
-                    class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
                     tabindex="0"
                     type="button"
                   >
@@ -320,7 +320,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   target="_blank"
                 >
                   <button
-                    class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
                     tabindex="0"
                     type="button"
                   >
@@ -1068,7 +1068,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   target="_blank"
                 >
                   <button
-                    class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
                     tabindex="0"
                     type="button"
                   >
@@ -1192,7 +1192,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   target="_blank"
                 >
                   <button
-                    class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
                     tabindex="0"
                     type="button"
                   >
@@ -1631,7 +1631,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
               target="_blank"
             >
               <button
-                class="MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root  css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
                 tabindex="0"
                 type="button"
               >
