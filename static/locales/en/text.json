@@ -1,6 +1,9 @@
 {
   "header": "Here you can find some of my <1>texts</1>",
   "mastersThesis": "Data-driven hierarchical structures in multi-task learning",
+  "patents": {
+    "smartServices": "Provisioning pluggable smart services for browser-based smart editing tools"
+  },
   "blogPosts": {
     "workspaceCollaboration": "Workspace collaboration via change requests",
     "playingWithObjectDetection": "Playing with object detection",

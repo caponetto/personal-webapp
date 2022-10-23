@@ -1,6 +1,12 @@
-export type PublicationKind = "kieCommunity" | "towardsDataScience" | "unicamp" | "theDevelopersConference" | "gitHub";
+export type PublicationKind =
+  | "kieCommunity"
+  | "towardsDataScience"
+  | "unicamp"
+  | "theDevelopersConference"
+  | "gitHub"
+  | "uspto";
 export type JourneyKind = "award" | "certification" | "education" | "experience" | "toolbox";
-export type MediaKind = "post" | "thesis" | "live" | "conference" | "code";
+export type MediaKind = "post" | "thesis" | "live" | "conference" | "code" | "patent";
 
 export interface Place {
   name: string;
@@ -55,6 +61,7 @@ export interface Journey {
 
 export interface Text {
   mastersTheses: MediaItem[];
+  patents: MediaItem[];
   blogPosts: MediaItem[];
 }
 

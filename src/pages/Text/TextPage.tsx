@@ -10,8 +10,9 @@ export default function TextPage() {
     schema: { text },
   } = useApp();
   const { t } = useTranslation();
-  const keywordSelection = useKeywordSelection(text.mastersTheses, text.blogPosts);
+  const keywordSelection = useKeywordSelection(text.mastersTheses, text.blogPosts, text.patents);
   const filteredMasterThesis = useFilteredMedias(text.mastersTheses, keywordSelection);
+  const filteredPatents = useFilteredMedias(text.patents, keywordSelection);
   const filteredBlogPosts = useFilteredMedias(text.blogPosts, keywordSelection);
 
   return (
@@ -29,6 +30,7 @@ export default function TextPage() {
         keywordSelection={keywordSelection}
         mediaItems={filteredMasterThesis}
       />
+      <MediaSection title={t("literal:patents")} keywordSelection={keywordSelection} mediaItems={filteredPatents} />
       <MediaSection title={t("literal:blogPosts")} keywordSelection={keywordSelection} mediaItems={filteredBlogPosts} />
     </Page>
   );
