@@ -266,6 +266,16 @@ export function useSchema() {
           url: "http://repositorio.unicamp.br/Acervo/Detalhe/987989",
         },
       ],
+      patents: [
+        {
+          kind: "patent",
+          title: t("text:patents.smartServices"),
+          releaseDate: new Date("Mar 29, 2021"),
+          publication: "uspto",
+          keywordKeys: ["backend", "services", "editors", "browser"],
+          url: "https://patents.google.com/patent/US20220308930A1",
+        },
+      ],
       blogPosts: [
         {
           kind: "post",

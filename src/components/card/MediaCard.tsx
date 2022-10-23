@@ -15,7 +15,7 @@ import { Fonts } from "../../fonts";
 import { KeywordSelection } from "../../hooks/useKeywordSelection";
 import { SupportedLanguages } from "../../i18n";
 import { routes } from "../../routes";
-import { MediaItem } from "../../schema";
+import { MediaItem, MediaKind } from "../../schema";
 import { ExternalLinkButton } from "../button";
 import { StaticChip } from "../chip/StaticChip";
 import { HoverableCard } from "./HoverableCard";
@@ -32,7 +32,7 @@ export function MediaCard(props: MediaCardProps) {
   const isLightMode = useMemo(() => colorMode === "light", [colorMode]);
 
   const accessMediaButtonLabel = useMemo(() => {
-    if (["post", "thesis"].includes(props.item.kind)) {
+    if ((["post", "thesis", "patent"] as MediaKind[]).includes(props.item.kind)) {
       return t("literal:read");
     }
 
@@ -60,7 +60,7 @@ export function MediaCard(props: MediaCardProps) {
   }, [i18n.resolvedLanguage]);
 
   const formattedMediaDate = useMemo(() => {
-    if (["code", "thesis"].includes(props.item.kind)) {
+    if ((["code", "thesis"] as MediaKind[]).includes(props.item.kind)) {
       return format(props.item.releaseDate, "yyyy");
     }
 
@@ -69,7 +69,7 @@ export function MediaCard(props: MediaCardProps) {
     });
   }, [dateLocale, props.item.kind, props.item.releaseDate]);
 
-  const publicationIcon = useMemo<{ name: string; route: string }>(() => {
+  const publicationIcon = useMemo<{ name: string; route: string } | undefined>(() => {
     switch (props.item.publication) {
       case "kieCommunity":
         return { name: t("literal:kieCommunity"), route: routes.static.images.kie };
@@ -87,8 +87,6 @@ export function MediaCard(props: MediaCardProps) {
           name: t("literal:github"),
           route: isLightMode ? routes.static.images.github.light : routes.static.images.github.dark,
         };
-      default:
-        throw new Error("Unsupported publication type");
     }
   }, [isLightMode, props.item.publication, t]);
 
