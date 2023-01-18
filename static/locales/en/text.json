@@ -17,6 +17,7 @@
     "authoringOnGitpod": "Four steps to author BPMN and DMN assets on gitpod.io",
     "dmnDevSandbox": "Deploy decisions to DMN Developer Sandbox",
     "teachableMachineBitingNails": "From training to deployment: Stop biting your nails with machine learning",
-    "deployKieSandboxToOpenshift": "Deploy your KIE Sandbox to OpenShift"
+    "deployKieSandboxToOpenshift": "Deploy your KIE Sandbox to OpenShift",
+    "deployDashboardsToOpenshift": "Deploy dashboards to OpenShift"
   }
 }

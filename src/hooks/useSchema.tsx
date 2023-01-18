@@ -381,6 +381,14 @@ export function useSchema() {
           keywordKeys: ["kieTools", "openShift"],
           url: "https://medium.com/@caponetto/deploy-your-kie-sandbox-to-openshift-f0b8442d046d",
         },
+        {
+          kind: "post",
+          title: t("text:blogPosts.deployDashboardsToOpenshift"),
+          releaseDate: new Date("Jan 17, 2023"),
+          publication: "kieCommunity",
+          keywordKeys: ["kieTools", "openShift", "dashbuilder", "knative"],
+          url: "https://medium.com/@caponetto/deploy-dashboards-to-openshift-58e5cf921f9d",
+        },
       ],
     }),
     [t]
