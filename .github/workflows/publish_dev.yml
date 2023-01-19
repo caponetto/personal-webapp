@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
 
+concurrency:
+  group: "publish-staging"
+  cancel-in-progress: true
+
 jobs:
   publish:
     runs-on: ubuntu-latest
