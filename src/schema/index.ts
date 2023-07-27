@@ -4,7 +4,8 @@ export type PublicationKind =
   | "unicamp"
   | "theDevelopersConference"
   | "gitHub"
-  | "uspto";
+  | "uspto"
+  | "devNation";
 export type JourneyKind = "award" | "certification" | "education" | "experience" | "toolbox";
 export type MediaKind = "post" | "thesis" | "live" | "conference" | "code" | "patent";
 

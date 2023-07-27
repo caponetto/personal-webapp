@@ -3,7 +3,8 @@
   "lives": {
     "workspaceCollaborationInBC": "Workspace collaboration in Business Central",
     "mavenArchetypesInBC": "Maven archetype support in Business Central",
-    "streamDecisionsWithDmnAndKafka": "Streaming decisions with DMN and Kafka"
+    "streamDecisionsWithDmnAndKafka": "Streaming decisions with DMN and Kafka",
+    "multiplyingArchitecture": "Transparent web platform decoupling with Multiplying Architecture"
   },
   "conferences": {
     "streamDecisionsWithDmnAndKafka": "Streaming suas decisões com DMN e Kafka (pt-BR)"
