@@ -27,6 +27,14 @@ runs:
         cache: "yarn"
         cache-dependency-path: ${{ inputs.path }}/yarn.lock
 
+    - name: "Setup Yarn"
+      shell: bash
+      run: |
+        echo "STEP: Setup Yarn"
+        cd ${{ inputs.path }}
+        npm install -g yarn@1.22.19
+        yarn config set network-timeout 1000000
+
     - name: "Bootstrap"
       shell: bash
       run: |
