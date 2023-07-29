@@ -399,6 +399,14 @@ export function useSchema() {
       lives: [
         {
           kind: "live",
+          title: t("talk:lives.multiplyingArchitecture"),
+          releaseDate: new Date("Jun 29, 2023"),
+          publication: "devNation",
+          keywordKeys: ["frontend", "architecture", "editors"],
+          url: "https://youtu.be/5XDKKGwtE98",
+        },
+        {
+          kind: "live",
           title: t("talk:lives.workspaceCollaborationInBC"),
           releaseDate: new Date("Sept 8, 2020"),
           publication: "kieCommunity",

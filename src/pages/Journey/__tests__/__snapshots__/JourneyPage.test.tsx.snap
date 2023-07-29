@@ -148,7 +148,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                 class="MuiBox-root css-8atqhb"
               >
                 <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-vql6bw-MuiTypography-root-MuiLink-root"
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
                   href="https://www.linkedin.com/in/ghcaponetto"
                   rel="noreferrer"
                   target="_blank"
@@ -314,7 +314,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                 class="MuiBox-root css-8atqhb"
               >
                 <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-vql6bw-MuiTypography-root-MuiLink-root"
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
                   href="https://www.linkedin.com/in/ghcaponetto"
                   rel="noreferrer"
                   target="_blank"
@@ -394,7 +394,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -407,7 +407,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -420,7 +420,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -433,7 +433,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -446,7 +446,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -459,7 +459,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -472,7 +472,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -485,7 +485,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -498,7 +498,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -511,7 +511,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -524,7 +524,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -537,7 +537,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -550,7 +550,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -563,7 +563,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -576,7 +576,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -589,7 +589,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -602,7 +602,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -615,7 +615,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -628,7 +628,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -641,7 +641,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -654,7 +654,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -667,7 +667,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -680,7 +680,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -693,7 +693,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -706,7 +706,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -719,7 +719,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -732,7 +732,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -745,7 +745,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -758,7 +758,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -771,7 +771,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -784,7 +784,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -797,7 +797,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -810,7 +810,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -823,7 +823,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -836,7 +836,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -849,7 +849,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -862,7 +862,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -875,7 +875,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -888,7 +888,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -901,7 +901,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -914,7 +914,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -927,7 +927,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -940,7 +940,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -953,7 +953,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -966,7 +966,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -979,7 +979,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -992,7 +992,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -1005,7 +1005,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -1018,7 +1018,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -1031,7 +1031,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -1044,7 +1044,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1j314qr-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-f89bfm-MuiChip-root"
                   >
                     <span
                       class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
@@ -1062,7 +1062,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                 class="MuiBox-root css-8atqhb"
               >
                 <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-vql6bw-MuiTypography-root-MuiLink-root"
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
                   href="https://www.linkedin.com/in/ghcaponetto"
                   rel="noreferrer"
                   target="_blank"
@@ -1186,7 +1186,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                 class="MuiBox-root css-8atqhb"
               >
                 <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-vql6bw-MuiTypography-root-MuiLink-root"
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
                   href="https://www.linkedin.com/in/ghcaponetto"
                   rel="noreferrer"
                   target="_blank"
@@ -1625,7 +1625,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
             class="MuiBox-root css-8atqhb"
           >
             <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-vql6bw-MuiTypography-root-MuiLink-root"
+              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
               href="https://www.linkedin.com/in/ghcaponetto"
               rel="noreferrer"
               target="_blank"
