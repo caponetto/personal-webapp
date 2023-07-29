@@ -12,7 +12,7 @@ exports[`AboutPage should match the snapshot 1`] = `
       class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-eegc1c-MuiPaper-root-MuiCard-root"
     >
       <div
-        class="css-678bp8-MuiStack-root"
+        class="MuiStack-root css-c789a6-MuiStack-root"
       >
         <div
           class="MuiTypography-root MuiTypography-body1 css-efiysx-MuiTypography-root"
@@ -126,7 +126,7 @@ exports[`AboutPage should match the snapshot 1`] = `
                 class="MuiBox-root css-1l4w6pd"
               >
                 <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-vql6bw-MuiTypography-root-MuiLink-root"
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
                   href="https://github.com/caponetto"
                   rel="noreferrer"
                   target="_blank"
@@ -165,7 +165,7 @@ exports[`AboutPage should match the snapshot 1`] = `
                 class="MuiBox-root css-1l4w6pd"
               >
                 <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-vql6bw-MuiTypography-root-MuiLink-root"
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
                   href="https://twitter.com/caponetto"
                   rel="noreferrer"
                   target="_blank"
@@ -204,7 +204,7 @@ exports[`AboutPage should match the snapshot 1`] = `
                 class="MuiBox-root css-1l4w6pd"
               >
                 <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-vql6bw-MuiTypography-root-MuiLink-root"
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
                   href="https://www.linkedin.com/in/ghcaponetto"
                   rel="noreferrer"
                   target="_blank"
