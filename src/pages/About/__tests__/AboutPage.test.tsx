@@ -21,8 +21,8 @@ describe("AboutPage", () => {
       usingTestingContext(
         <Router location={history.location} navigator={history}>
           <AboutPage />
-        </Router>
-      )
+        </Router>,
+      ),
     );
     expect(getByTestId(`${pageName}-page`)).toMatchSnapshot();
   });

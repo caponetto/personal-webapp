@@ -21,8 +21,8 @@ describe("CodePage", () => {
       usingTestingContext(
         <Router location={history.location} navigator={history}>
           <CodePage />
-        </Router>
-      )
+        </Router>,
+      ),
     );
     expect(getByTestId(`${pageName}-page`)).toMatchSnapshot();
   });

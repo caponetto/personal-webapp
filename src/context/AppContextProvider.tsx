@@ -47,7 +47,7 @@ export function AppContextProvider(props: AppContextProviderProps) {
           },
         },
       }),
-    [colorMode]
+    [colorMode],
   );
 
   useEffect(() => {
@@ -81,7 +81,7 @@ export function AppContextProvider(props: AppContextProviderProps) {
       openStateDispatch,
       updateColorMode,
     }),
-    [schema, colorMode, openState, updateColorMode]
+    [schema, colorMode, openState, updateColorMode],
   );
 
   return (

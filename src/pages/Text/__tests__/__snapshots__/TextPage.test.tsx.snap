@@ -19,12 +19,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           archetypes
         </span>
@@ -37,12 +37,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           backend
         </span>
@@ -55,12 +55,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           bpmn
         </span>
@@ -73,12 +73,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           browser
         </span>
@@ -91,12 +91,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           businessCentral
         </span>
@@ -109,12 +109,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           changeRequests
         </span>
@@ -127,12 +127,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           clustering
         </span>
@@ -145,12 +145,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           computerVision
         </span>
@@ -163,12 +163,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           dashbuilder
         </span>
@@ -181,12 +181,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           dmn
         </span>
@@ -199,12 +199,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           editors
         </span>
@@ -217,12 +217,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           git
         </span>
@@ -235,12 +235,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           github
         </span>
@@ -253,12 +253,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           gitpod
         </span>
@@ -271,12 +271,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           kieTools
         </span>
@@ -289,12 +289,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           knative
         </span>
@@ -307,12 +307,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           machineLearning
         </span>
@@ -325,12 +325,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           maven
         </span>
@@ -343,12 +343,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           multiTaskLearning
         </span>
@@ -361,12 +361,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           objectDetection
         </span>
@@ -379,12 +379,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           openShift
         </span>
@@ -397,12 +397,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           optimization
         </span>
@@ -415,12 +415,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           randomSearch
         </span>
@@ -433,12 +433,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           reactJs
         </span>
@@ -451,12 +451,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           services
         </span>
@@ -469,12 +469,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           syncRepositories
         </span>
@@ -487,12 +487,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           teachableMachine
         </span>
@@ -505,12 +505,12 @@ exports[`TextPage should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-19m5rvb-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
         >
           vsCode
         </span>
@@ -524,7 +524,7 @@ exports[`TextPage should match the snapshot 1`] = `
       style="opacity: 0; visibility: hidden;"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-clickable MuiChip-clickableColorSecondary MuiChip-filledSecondary css-p3w7oj-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-clickable MuiChip-clickableColorSecondary MuiChip-filledSecondary css-17fdhps-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
@@ -603,12 +603,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     multiTaskLearning
                   </span>
@@ -621,12 +621,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     machineLearning
                   </span>
@@ -639,12 +639,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     clustering
                   </span>
@@ -656,7 +656,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -667,7 +667,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 2017
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="http://repositorio.unicamp.br/Acervo/Detalhe/987989"
                 rel="noreferrer"
                 target="_blank"
@@ -689,7 +689,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -755,12 +755,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     services
                   </span>
@@ -773,12 +773,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     backend
                   </span>
@@ -791,12 +791,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     editors
                   </span>
@@ -809,12 +809,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     browser
                   </span>
@@ -826,7 +826,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -837,7 +837,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 March 29th, 2021
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://patents.google.com/patent/US20220308930A1"
                 rel="noreferrer"
                 target="_blank"
@@ -859,7 +859,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -938,12 +938,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     dashbuilder
                   </span>
@@ -956,12 +956,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     openShift
                   </span>
@@ -974,12 +974,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     kieTools
                   </span>
@@ -992,12 +992,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     knative
                   </span>
@@ -1009,7 +1009,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -1020,7 +1020,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 January 17th, 2023
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://medium.com/@caponetto/deploy-dashboards-to-openshift-58e5cf921f9d"
                 rel="noreferrer"
                 target="_blank"
@@ -1042,7 +1042,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -1098,12 +1098,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     openShift
                   </span>
@@ -1116,12 +1116,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     kieTools
                   </span>
@@ -1133,7 +1133,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -1144,7 +1144,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 January 27th, 2022
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://medium.com/@caponetto/deploy-your-kie-sandbox-to-openshift-f0b8442d046d"
                 rel="noreferrer"
                 target="_blank"
@@ -1166,7 +1166,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -1222,12 +1222,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     teachableMachine
                   </span>
@@ -1240,12 +1240,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     openShift
                   </span>
@@ -1258,12 +1258,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     reactJs
                   </span>
@@ -1275,7 +1275,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -1286,7 +1286,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 January 10th, 2022
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://towardsdatascience.com/from-training-to-deployment-stop-biting-your-nails-with-machine-learning-ffed31a59040"
                 rel="noreferrer"
                 target="_blank"
@@ -1308,7 +1308,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -1364,12 +1364,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     openShift
                   </span>
@@ -1382,12 +1382,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     kieTools
                   </span>
@@ -1400,12 +1400,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     dmn
                   </span>
@@ -1417,7 +1417,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -1428,7 +1428,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 August 23rd, 2021
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://medium.com/@caponetto/deploy-decisions-to-dmn-developer-sandbox-62c7d051b871"
                 rel="noreferrer"
                 target="_blank"
@@ -1450,7 +1450,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -1506,12 +1506,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     kieTools
                   </span>
@@ -1524,12 +1524,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     gitpod
                   </span>
@@ -1542,12 +1542,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     bpmn
                   </span>
@@ -1560,12 +1560,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     dmn
                   </span>
@@ -1577,7 +1577,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -1588,7 +1588,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 August 9th, 2021
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://medium.com/@caponetto/four-steps-to-author-bpmn-and-dmn-assets-on-gitpod-io-2e0aa82b33d7"
                 rel="noreferrer"
                 target="_blank"
@@ -1610,7 +1610,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -1666,12 +1666,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     kieTools
                   </span>
@@ -1684,12 +1684,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     backend
                   </span>
@@ -1702,12 +1702,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     vsCode
                   </span>
@@ -1719,7 +1719,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -1730,7 +1730,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 September 22nd, 2020
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://medium.com/kie-foundation/backend-support-on-kogito-tooling-8be682a60b88"
                 rel="noreferrer"
                 target="_blank"
@@ -1752,7 +1752,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -1808,12 +1808,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     kieTools
                   </span>
@@ -1826,12 +1826,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     github
                   </span>
@@ -1844,12 +1844,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     bpmn
                   </span>
@@ -1862,12 +1862,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     dmn
                   </span>
@@ -1879,7 +1879,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -1890,7 +1890,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 April 9th, 2020
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://medium.com/kie-foundation/exporting-diagrams-as-github-gists-a7c57b5f2b41"
                 rel="noreferrer"
                 target="_blank"
@@ -1912,7 +1912,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -1968,12 +1968,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     syncRepositories
                   </span>
@@ -1986,12 +1986,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     businessCentral
                   </span>
@@ -2004,12 +2004,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     git
                   </span>
@@ -2021,7 +2021,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -2032,7 +2032,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 March 31st, 2020
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://medium.com/kie-foundation/an-improved-development-workflow-on-business-central-using-our-new-devtools-48fb14f39be9"
                 rel="noreferrer"
                 target="_blank"
@@ -2054,7 +2054,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -2110,12 +2110,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     businessCentral
                   </span>
@@ -2128,12 +2128,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     maven
                   </span>
@@ -2146,12 +2146,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     git
                   </span>
@@ -2163,7 +2163,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -2174,7 +2174,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 February 28th, 2020
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://medium.com/kie-foundation/import-an-empty-repository-into-business-central-b3fb76bab103"
                 rel="noreferrer"
                 target="_blank"
@@ -2196,7 +2196,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -2252,12 +2252,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     businessCentral
                   </span>
@@ -2270,12 +2270,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     changeRequests
                   </span>
@@ -2288,12 +2288,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     git
                   </span>
@@ -2305,7 +2305,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -2316,7 +2316,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 February 28th, 2020
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://medium.com/kie-foundation/squash-commits-when-merging-a-change-request-bb8bcdc992c5"
                 rel="noreferrer"
                 target="_blank"
@@ -2338,7 +2338,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -2394,12 +2394,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     businessCentral
                   </span>
@@ -2412,12 +2412,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     archetypes
                   </span>
@@ -2430,12 +2430,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     maven
                   </span>
@@ -2447,7 +2447,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -2458,7 +2458,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 January 21st, 2020
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://medium.com/kie-foundation/maven-archetype-support-in-business-central-b5fdf5e98556"
                 rel="noreferrer"
                 target="_blank"
@@ -2480,7 +2480,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -2536,12 +2536,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     machineLearning
                   </span>
@@ -2554,12 +2554,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     optimization
                   </span>
@@ -2572,12 +2572,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     randomSearch
                   </span>
@@ -2589,7 +2589,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -2600,7 +2600,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 November 14th, 2019
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://towardsdatascience.com/random-search-vs-grid-search-for-hyperparameter-optimization-345e1422899d"
                 rel="noreferrer"
                 target="_blank"
@@ -2622,7 +2622,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -2678,12 +2678,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     machineLearning
                   </span>
@@ -2696,12 +2696,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     objectDetection
                   </span>
@@ -2714,12 +2714,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     computerVision
                   </span>
@@ -2731,7 +2731,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -2742,7 +2742,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 October 11th, 2019
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://towardsdatascience.com/playing-with-object-detection-8f116ec0ce4d"
                 rel="noreferrer"
                 target="_blank"
@@ -2764,7 +2764,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>
@@ -2820,12 +2820,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     businessCentral
                   </span>
@@ -2838,12 +2838,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     changeRequests
                   </span>
@@ -2856,12 +2856,12 @@ exports[`TextPage should match the snapshot 1`] = `
                 class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-op6572-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
                   >
                     git
                   </span>
@@ -2873,7 +2873,7 @@ exports[`TextPage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-adrxbm-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
@@ -2884,7 +2884,7 @@ exports[`TextPage should match the snapshot 1`] = `
                 September 25th, 2019
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1j4x1kt-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
                 href="https://medium.com/kie-foundation/workspace-collaboration-via-change-requests-65b5fe96564e"
                 rel="noreferrer"
                 target="_blank"
@@ -2906,7 +2906,7 @@ exports[`TextPage should match the snapshot 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
                       />
                     </svg>
                   </span>

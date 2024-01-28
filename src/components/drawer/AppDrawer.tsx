@@ -16,14 +16,14 @@ export function AppDrawer(props: AppDrawerProps) {
 
   const drawerContent = useMemo(
     () => <DrawerContent drawerItemWidth={props.drawerItemWidth} />,
-    [props.drawerItemWidth]
+    [props.drawerItemWidth],
   );
 
   const muiPaperStyle = useMemo(
     () => ({
       "& .MuiDrawer-paper": { overflow: "overlay", boxShadow: 2, boxSizing: "border-box", width: props.drawerWidth },
     }),
-    [props.drawerWidth]
+    [props.drawerWidth],
   );
 
   return (
