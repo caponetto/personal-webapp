@@ -19,7 +19,7 @@ describe("useFilteredMedias", () => {
         ...DEFAULT_KEYWORD_SELECTION,
         isAnySelected: true,
         selectionMap: new Map([["unknown", true]]),
-      })
+      }),
     );
     expect(result.current).toEqual([]);
   });
@@ -30,7 +30,7 @@ describe("useFilteredMedias", () => {
       createMediaItem({ title: "Bar", keywordKeys: ["bar"] }),
     ];
     const { result } = renderHook(() =>
-      useFilteredMedias(medias, { ...DEFAULT_KEYWORD_SELECTION, isAnySelected: false })
+      useFilteredMedias(medias, { ...DEFAULT_KEYWORD_SELECTION, isAnySelected: false }),
     );
     expect(result.current).toEqual(medias);
   });
@@ -39,7 +39,7 @@ describe("useFilteredMedias", () => {
     const foo = createMediaItem({ title: "Foo", keywordKeys: ["foo", "common"], releaseDate: new Date("2010-01-01") });
     const bar = createMediaItem({ title: "Bar", keywordKeys: ["bar", "common"], releaseDate: new Date("2020-01-01") });
     const { result } = renderHook(() =>
-      useFilteredMedias([foo, bar], { ...DEFAULT_KEYWORD_SELECTION, isAnySelected: false })
+      useFilteredMedias([foo, bar], { ...DEFAULT_KEYWORD_SELECTION, isAnySelected: false }),
     );
     expect(result.current).toEqual([bar, foo]);
   });
@@ -57,7 +57,7 @@ describe("useFilteredMedias", () => {
           ["bar1", true],
           ["baz1", true],
         ]),
-      })
+      }),
     );
     expect(result.current).toEqual([bar, baz]);
   });
@@ -71,7 +71,7 @@ describe("useFilteredMedias", () => {
         ...DEFAULT_KEYWORD_SELECTION,
         isAnySelected: true,
         selectionMap: new Map([["common", true]]),
-      })
+      }),
     );
     expect(result.current).toEqual([bar, foo]);
   });

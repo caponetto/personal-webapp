@@ -10,7 +10,7 @@ export function useCookie<T>(name: CookieNames, defaultValue: T, options?: Cooki
       path: "/",
       sameSite: "strict",
     }),
-    []
+    [],
   );
 
   const [value, setValue] = useState(() => {
@@ -31,7 +31,7 @@ export function useCookie<T>(name: CookieNames, defaultValue: T, options?: Cooki
       Cookies.set(name, JSON.stringify(newValue), options ?? defaultOptions);
       setValue(newValue);
     },
-    [defaultOptions, name, options]
+    [defaultOptions, name, options],
   );
 
   return [value, updateCookie];

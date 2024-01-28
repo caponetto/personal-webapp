@@ -21,8 +21,8 @@ describe("TalkPage", () => {
       usingTestingContext(
         <Router location={history.location} navigator={history}>
           <TalkPage />
-        </Router>
-      )
+        </Router>,
+      ),
     );
     expect(getByTestId(`${pageName}-page`)).toMatchSnapshot();
   });

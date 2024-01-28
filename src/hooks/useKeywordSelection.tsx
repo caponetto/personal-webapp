@@ -39,7 +39,7 @@ export function useKeywordSelection(...arrayOfArrays: MediaItem[][]): KeywordSel
   });
 
   const [selected, setSelected] = useState(() =>
-    [...selectionMap.entries()].filter(([, isSelected]) => isSelected).map(([keyword]) => keyword)
+    [...selectionMap.entries()].filter(([, isSelected]) => isSelected).map(([keyword]) => keyword),
   );
 
   const isAnySelected = useMemo(() => selected.length > 0, [selected]);
@@ -67,7 +67,7 @@ export function useKeywordSelection(...arrayOfArrays: MediaItem[][]): KeywordSel
       {
         search: isAnySelected ? `?${prepareKeywordsQueryParam(selected)}` : "",
       },
-      { replace: true }
+      { replace: true },
     );
   }, [navigate, selected, isAnySelected]);
 

@@ -19,7 +19,7 @@ describe("OpenState :: openStateReducer", () => {
       { ...DEFAULT_OPEN_STATE, drawer: true },
       {
         type: OpenStateActions.DRAWER_CLOSE,
-      }
+      },
     );
     expect(updatedState.drawer).toBeFalsy();
   });
@@ -47,7 +47,7 @@ describe("OpenState :: openStateReducer", () => {
       { ...DEFAULT_OPEN_STATE, settings: true },
       {
         type: OpenStateActions.SETTINGS_CLOSE,
-      }
+      },
     );
     expect(updatedState.settings).toBeFalsy();
   });
@@ -75,7 +75,7 @@ describe("OpenState :: openStateReducer", () => {
       { ...DEFAULT_OPEN_STATE, snackbar: true },
       {
         type: OpenStateActions.SNACKBAR_CLOSE,
-      }
+      },
     );
     expect(updatedState.snackbar).toBeFalsy();
   });

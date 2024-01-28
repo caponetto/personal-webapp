@@ -46,7 +46,7 @@ export function useSchema() {
         url: "https://www.b2ml.com.br",
       },
     }),
-    [t]
+    [t],
   );
 
   const personal = useMemo<Personal>(
@@ -64,7 +64,7 @@ export function useSchema() {
         twitter: "https://twitter.com/caponetto",
       },
     }),
-    [t]
+    [t],
   );
 
   const about = useMemo<About>(
@@ -72,7 +72,7 @@ export function useSchema() {
       welcome: t("about:welcome"),
       paragraphs: Array.from(t("about:paragraphs", { returnObjects: true })),
     }),
-    [t]
+    [t],
   );
 
   const journey = useMemo<Journey>(
@@ -251,7 +251,7 @@ export function useSchema() {
         t("literal:xmpp"),
       ],
     }),
-    [t, locations]
+    [t, locations],
   );
 
   const text = useMemo<Text>(
@@ -391,7 +391,7 @@ export function useSchema() {
         },
       ],
     }),
-    [t]
+    [t],
   );
 
   const talk = useMemo<Talk>(
@@ -441,7 +441,7 @@ export function useSchema() {
         },
       ],
     }),
-    [t]
+    [t],
   );
 
   const code = useMemo<Code>(
@@ -529,7 +529,7 @@ export function useSchema() {
         },
       ],
     }),
-    [t]
+    [t],
   );
 
   return useMemo<AppSchema>(
@@ -541,6 +541,6 @@ export function useSchema() {
       talk,
       code,
     }),
-    [about, code, journey, personal, talk, text]
+    [about, code, journey, personal, talk, text],
   );
 }

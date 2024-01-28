@@ -21,8 +21,8 @@ describe("JourneyPage", () => {
       usingTestingContext(
         <Router location={history.location} navigator={history}>
           <JourneyPage />
-        </Router>
-      )
+        </Router>,
+      ),
     );
     expect(getByTestId(`${pageName}-page`)).toMatchSnapshot();
   });
