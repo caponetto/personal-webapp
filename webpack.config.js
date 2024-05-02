@@ -100,6 +100,7 @@ module.exports = async (_env, argv) => {
         }),
       ],
       devServer: {
+        open: true,
         server: "https",
         host: "0.0.0.0",
         port: 9001,

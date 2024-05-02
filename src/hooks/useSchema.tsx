@@ -126,7 +126,7 @@ export function useSchema() {
       experience: [
         {
           kind: "experience",
-          title: `${t("literal:softwareEngineer")} → ${t("literal:seniorSoftwareEngineer")}`,
+          title: `${t("literal:softwareEngineer")} → ${t("literal:seniorSoftwareEngineer")} → ${t("literal:principalSoftwareEngineer")}`,
           period: {
             start: 2019,
             end: t("literal:present"),
