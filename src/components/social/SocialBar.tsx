@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
 import { SxProps, Theme } from "@mui/system";
-import { GitHubButton, LinkedInButton, TwitterButton } from "../button";
+import { GitHubButton, LinkedInButton, XButton } from "../button";
 
 interface SocialBarProps {
   sx?: SxProps<Theme>;
@@ -18,7 +18,7 @@ export function SocialBar(props: SocialBarProps) {
         <GitHubButton url={props.urls.github} />
       </Grid>
       <Grid item xs>
-        <TwitterButton url={props.urls.twitter} />
+        <XButton url={props.urls.twitter} />
       </Grid>
       <Grid item xs>
         <LinkedInButton url={props.urls.linkedin} />
