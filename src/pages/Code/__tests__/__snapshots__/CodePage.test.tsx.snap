@@ -6,392 +6,329 @@ exports[`CodePage should match the snapshot 1`] = `
   data-testid="code-page"
 >
   <div
-    class="MuiTypography-root MuiTypography-body1 css-1xx02jo-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-body1 css-qhreai-MuiTypography-root"
     style="opacity: 1; webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
   >
     header
   </div>
   <div
-    class="MuiGrid-root MuiGrid-container css-oys8bv-MuiGrid-root"
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-ihy9kz-MuiGrid-root"
     style="opacity: 1; webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
   >
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           apacheKafka
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           artifact
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           bayesianStatistics
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           clustering
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           computerVision
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           dmn
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           docker
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           gitDiff
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           gitHubActions
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           jupyterNotebooks
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           machineLearning
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           openShift
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           python
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           quarkus
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           reactJs
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           teachableMachine
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           tensorFlowJs
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           typeScript
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           vsCodeExtension
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-1x5wi4d-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-qtusb4-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-1jzq0dw-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-16cgrcw-MuiChip-label"
         >
           webApp
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item css-1uydgkw-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-awe7jq-MuiGrid-root"
       style="opacity: 0; visibility: hidden;"
     >
       <div
-        class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-clickable MuiChip-clickableColorSecondary MuiChip-filledSecondary css-17fdhps-MuiButtonBase-root-MuiChip-root"
+        class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-clickable MuiChip-clickableColorSecondary MuiChip-filledSecondary css-1eun1c-MuiButtonBase-root-MuiChip-root"
         role="button"
         tabindex="0"
       >
         <span
-          class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+          class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
         >
           showAll
         </span>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </div>
     </div>
   </div>
@@ -400,43 +337,45 @@ exports[`CodePage should match the snapshot 1`] = `
     style="opacity: 1; webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
   >
     <div
-      class="MuiDivider-root MuiDivider-fullWidth MuiDivider-withChildren MuiDivider-textAlignLeft css-1xz9eii-MuiDivider-root"
+      aria-orientation="horizontal"
+      class="MuiDivider-root MuiDivider-fullWidth MuiDivider-withChildren MuiDivider-textAlignLeft css-1s0eiec-MuiDivider-root"
       role="separator"
     >
       <span
-        class="MuiDivider-wrapper css-qywfm8-MuiDivider-wrapper"
+        class="MuiDivider-wrapper css-1134oje-MuiDivider-wrapper"
       >
         <div
-          class="MuiTypography-root MuiTypography-overline css-z7dlxs-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-overline css-1xe7o3-MuiTypography-root"
         >
           repositories
         </div>
       </span>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-zow5z4-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-3 css-1u8xl8z-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-sm-12 MuiGrid-grid-lg-6 MuiGrid-grid-xl-4 css-gwva8t-MuiGrid-root"
         style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
         >
           <div
-            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+            class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
           >
             <div
-              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+              class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
             >
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-p3gl0f-MuiTypography-root"
               >
                 repositories.teachableMachinePlayground
               </p>
             </div>
             <div
-              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+              class="MuiCardHeader-action css-116l9hl-MuiCardHeader-action"
             >
               <img
                 alt=""
@@ -450,96 +389,87 @@ exports[`CodePage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+            class="MuiCardContent-root css-1yvd4r-MuiCardContent-root"
           >
             <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-11rw99p-MuiGrid-root"
             >
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     teachableMachine
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     openShift
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     reactJs
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
             >
               <div
-                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-6y733r-MuiTypography-root"
               >
                 2022
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                 href="https://github.com/caponetto/teachable-machine-playground"
                 rel="noreferrer"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
                   view
                   <span
-                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                    class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                   >
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                       data-testid="LaunchIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -549,9 +479,6 @@ exports[`CodePage should match the snapshot 1`] = `
                       />
                     </svg>
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </a>
             </div>
@@ -559,26 +486,27 @@ exports[`CodePage should match the snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-sm-12 MuiGrid-grid-lg-6 MuiGrid-grid-xl-4 css-gwva8t-MuiGrid-root"
         style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
         >
           <div
-            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+            class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
           >
             <div
-              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+              class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
             >
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-p3gl0f-MuiTypography-root"
               >
                 repositories.personalWebApp
               </p>
             </div>
             <div
-              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+              class="MuiCardHeader-action css-116l9hl-MuiCardHeader-action"
             >
               <img
                 alt=""
@@ -592,96 +520,87 @@ exports[`CodePage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+            class="MuiCardContent-root css-1yvd4r-MuiCardContent-root"
           >
             <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-11rw99p-MuiGrid-root"
             >
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     typeScript
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     reactJs
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     webApp
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
             >
               <div
-                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-6y733r-MuiTypography-root"
               >
                 2021
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                 href="https://github.com/caponetto/personal-webapp"
                 rel="noreferrer"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
                   view
                   <span
-                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                    class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                   >
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                       data-testid="LaunchIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -691,9 +610,6 @@ exports[`CodePage should match the snapshot 1`] = `
                       />
                     </svg>
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </a>
             </div>
@@ -701,26 +617,27 @@ exports[`CodePage should match the snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-sm-12 MuiGrid-grid-lg-6 MuiGrid-grid-xl-4 css-gwva8t-MuiGrid-root"
         style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
         >
           <div
-            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+            class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
           >
             <div
-              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+              class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
             >
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-p3gl0f-MuiTypography-root"
               >
                 repositories.streamDecisionsWithDmnAndKafka
               </p>
             </div>
             <div
-              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+              class="MuiCardHeader-action css-116l9hl-MuiCardHeader-action"
             >
               <img
                 alt=""
@@ -734,114 +651,102 @@ exports[`CodePage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+            class="MuiCardContent-root css-1yvd4r-MuiCardContent-root"
           >
             <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-11rw99p-MuiGrid-root"
             >
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     apacheKafka
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     quarkus
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     docker
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     dmn
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
             >
               <div
-                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-6y733r-MuiTypography-root"
               >
                 2021
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                 href="https://github.com/caponetto/streaming-dmn-kafka"
                 rel="noreferrer"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
                   view
                   <span
-                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                    class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                   >
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                       data-testid="LaunchIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -851,9 +756,6 @@ exports[`CodePage should match the snapshot 1`] = `
                       />
                     </svg>
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </a>
             </div>
@@ -861,26 +763,27 @@ exports[`CodePage should match the snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-sm-12 MuiGrid-grid-lg-6 MuiGrid-grid-xl-4 css-gwva8t-MuiGrid-root"
         style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
         >
           <div
-            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+            class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
           >
             <div
-              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+              class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
             >
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-p3gl0f-MuiTypography-root"
               >
                 repositories.lessIsMore
               </p>
             </div>
             <div
-              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+              class="MuiCardHeader-action css-116l9hl-MuiCardHeader-action"
             >
               <img
                 alt=""
@@ -894,96 +797,87 @@ exports[`CodePage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+            class="MuiCardContent-root css-1yvd4r-MuiCardContent-root"
           >
             <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-11rw99p-MuiGrid-root"
             >
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     gitHubActions
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     typeScript
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     artifact
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
             >
               <div
-                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-6y733r-MuiTypography-root"
               >
                 2021
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                 href="https://github.com/caponetto/less-is-more"
                 rel="noreferrer"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
                   view
                   <span
-                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                    class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                   >
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                       data-testid="LaunchIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -993,9 +887,6 @@ exports[`CodePage should match the snapshot 1`] = `
                       />
                     </svg>
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </a>
             </div>
@@ -1003,26 +894,27 @@ exports[`CodePage should match the snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-sm-12 MuiGrid-grid-lg-6 MuiGrid-grid-xl-4 css-gwva8t-MuiGrid-root"
         style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
         >
           <div
-            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+            class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
           >
             <div
-              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+              class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
             >
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-p3gl0f-MuiTypography-root"
               >
                 repositories.vsCodeDiffViewer
               </p>
             </div>
             <div
-              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+              class="MuiCardHeader-action css-116l9hl-MuiCardHeader-action"
             >
               <img
                 alt=""
@@ -1036,96 +928,87 @@ exports[`CodePage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+            class="MuiCardContent-root css-1yvd4r-MuiCardContent-root"
           >
             <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-11rw99p-MuiGrid-root"
             >
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     vsCodeExtension
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     typeScript
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     gitDiff
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
             >
               <div
-                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-6y733r-MuiTypography-root"
               >
                 2021
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                 href="https://github.com/caponetto/vscode-diff-viewer"
                 rel="noreferrer"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
                   view
                   <span
-                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                    class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                   >
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                       data-testid="LaunchIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -1135,9 +1018,6 @@ exports[`CodePage should match the snapshot 1`] = `
                       />
                     </svg>
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </a>
             </div>
@@ -1145,26 +1025,27 @@ exports[`CodePage should match the snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-sm-12 MuiGrid-grid-lg-6 MuiGrid-grid-xl-4 css-gwva8t-MuiGrid-root"
         style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
         >
           <div
-            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+            class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
           >
             <div
-              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+              class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
             >
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-p3gl0f-MuiTypography-root"
               >
                 repositories.bhc
               </p>
             </div>
             <div
-              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+              class="MuiCardHeader-action css-116l9hl-MuiCardHeader-action"
             >
               <img
                 alt=""
@@ -1178,96 +1059,87 @@ exports[`CodePage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+            class="MuiCardContent-root css-1yvd4r-MuiCardContent-root"
           >
             <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-11rw99p-MuiGrid-root"
             >
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     bayesianStatistics
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     clustering
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     python
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
             >
               <div
-                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-6y733r-MuiTypography-root"
               >
                 2021
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                 href="https://github.com/caponetto/bayesian-hierarchical-clustering"
                 rel="noreferrer"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
                   view
                   <span
-                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                    class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                   >
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                       data-testid="LaunchIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -1277,9 +1149,6 @@ exports[`CodePage should match the snapshot 1`] = `
                       />
                     </svg>
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </a>
             </div>
@@ -1287,26 +1156,27 @@ exports[`CodePage should match the snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-sm-12 MuiGrid-grid-lg-6 MuiGrid-grid-xl-4 css-gwva8t-MuiGrid-root"
         style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
         >
           <div
-            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+            class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
           >
             <div
-              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+              class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
             >
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-p3gl0f-MuiTypography-root"
               >
                 repositories.vsCodeQuarkusDJL
               </p>
             </div>
             <div
-              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+              class="MuiCardHeader-action css-116l9hl-MuiCardHeader-action"
             >
               <img
                 alt=""
@@ -1320,114 +1190,102 @@ exports[`CodePage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+            class="MuiCardContent-root css-1yvd4r-MuiCardContent-root"
           >
             <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-11rw99p-MuiGrid-root"
             >
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     vsCodeExtension
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     computerVision
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     typeScript
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     quarkus
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
             >
               <div
-                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-6y733r-MuiTypography-root"
               >
                 2020
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                 href="https://github.com/caponetto/vscode-quarkus-djl"
                 rel="noreferrer"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
                   view
                   <span
-                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                    class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                   >
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                       data-testid="LaunchIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -1437,9 +1295,6 @@ exports[`CodePage should match the snapshot 1`] = `
                       />
                     </svg>
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </a>
             </div>
@@ -1447,26 +1302,27 @@ exports[`CodePage should match the snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-sm-12 MuiGrid-grid-lg-6 MuiGrid-grid-xl-4 css-gwva8t-MuiGrid-root"
         style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
         >
           <div
-            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+            class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
           >
             <div
-              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+              class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
             >
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-p3gl0f-MuiTypography-root"
               >
                 repositories.vsCodeToxicityClassifier
               </p>
             </div>
             <div
-              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+              class="MuiCardHeader-action css-116l9hl-MuiCardHeader-action"
             >
               <img
                 alt=""
@@ -1480,96 +1336,87 @@ exports[`CodePage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+            class="MuiCardContent-root css-1yvd4r-MuiCardContent-root"
           >
             <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-11rw99p-MuiGrid-root"
             >
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     vsCodeExtension
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     tensorFlowJs
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     typeScript
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
             >
               <div
-                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-6y733r-MuiTypography-root"
               >
                 2020
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                 href="https://github.com/caponetto/vscode-tfjs-toxicity"
                 rel="noreferrer"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
                   view
                   <span
-                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                    class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                   >
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                       data-testid="LaunchIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -1579,9 +1426,6 @@ exports[`CodePage should match the snapshot 1`] = `
                       />
                     </svg>
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </a>
             </div>
@@ -1589,26 +1433,27 @@ exports[`CodePage should match the snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-sm-12 MuiGrid-grid-lg-6 MuiGrid-grid-xl-4 css-gwva8t-MuiGrid-root"
         style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
         >
           <div
-            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+            class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
           >
             <div
-              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+              class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
             >
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-p3gl0f-MuiTypography-root"
               >
                 repositories.vsCodeObjectDetection
               </p>
             </div>
             <div
-              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+              class="MuiCardHeader-action css-116l9hl-MuiCardHeader-action"
             >
               <img
                 alt=""
@@ -1622,96 +1467,87 @@ exports[`CodePage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+            class="MuiCardContent-root css-1yvd4r-MuiCardContent-root"
           >
             <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-11rw99p-MuiGrid-root"
             >
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     vsCodeExtension
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     tensorFlowJs
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     typeScript
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
             >
               <div
-                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-6y733r-MuiTypography-root"
               >
                 2020
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                 href="https://github.com/caponetto/vscode-tfjs-coco-ssd"
                 rel="noreferrer"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
                   view
                   <span
-                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                    class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                   >
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                       data-testid="LaunchIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -1721,9 +1557,6 @@ exports[`CodePage should match the snapshot 1`] = `
                       />
                     </svg>
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </a>
             </div>
@@ -1731,26 +1564,27 @@ exports[`CodePage should match the snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-1fhmij9-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-sm-12 MuiGrid-grid-lg-6 MuiGrid-grid-xl-4 css-gwva8t-MuiGrid-root"
         style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
         >
           <div
-            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+            class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
           >
             <div
-              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+              class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
             >
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-b3j5hb-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-p3gl0f-MuiTypography-root"
               >
                 repositories.jupyterNotebooks
               </p>
             </div>
             <div
-              class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+              class="MuiCardHeader-action css-116l9hl-MuiCardHeader-action"
             >
               <img
                 alt=""
@@ -1764,78 +1598,72 @@ exports[`CodePage should match the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiCardContent-root css-1hizqsf-MuiCardContent-root"
+            class="MuiCardContent-root css-1yvd4r-MuiCardContent-root"
           >
             <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-d7vl6z-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-11rw99p-MuiGrid-root"
             >
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     jupyterNotebooks
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
               <div
-                class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
               >
                 <div
-                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-88n8qe-MuiButtonBase-root-MuiChip-root"
+                  class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorSuccess MuiChip-clickable MuiChip-clickableColorSuccess MuiChip-outlinedSuccess css-dcog70-MuiButtonBase-root-MuiChip-root"
                   role="button"
                   tabindex="0"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     machineLearning
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+            class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
           >
             <div
               class="MuiBox-root css-8atqhb"
             >
               <div
-                class="MuiTypography-root MuiTypography-body1 css-ijluv9-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-6y733r-MuiTypography-root"
               >
                 2019
               </div>
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                 href="https://github.com/caponetto/jupyter-notebooks"
                 rel="noreferrer"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
                   view
                   <span
-                    class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                    class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                   >
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                       data-testid="LaunchIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -1845,9 +1673,6 @@ exports[`CodePage should match the snapshot 1`] = `
                       />
                     </svg>
                   </span>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </a>
             </div>

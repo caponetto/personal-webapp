@@ -1,11 +1,20 @@
+import React from "react";
 import { renderHook } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
 import {
   prepareKeywordsQueryParam,
   QueryParams,
   useQueryParam,
   useQueryParamKeywords,
 } from "../../hooks/useQueryParam";
-import { mockLocationTo } from "../../jest/TestBuilders";
+
+const getWrapper = (testUrl: string) => {
+  const Wrapper = ({ children }: { children: React.ReactNode }) => (
+    <MemoryRouter initialEntries={[testUrl]}>{children}</MemoryRouter>
+  );
+  Wrapper.displayName = "TestWrapper";
+  return Wrapper;
+};
 
 describe("useQueryParam :: prepareKeywordsQueryParam", () => {
   it("should prepare 'keywords' query params accordingly", () => {
@@ -17,14 +26,13 @@ describe("useQueryParam :: prepareKeywordsQueryParam", () => {
 
 describe("useQueryParam :: useQueryParam", () => {
   it("should return undefined when the query param is not found", () => {
-    mockLocationTo({});
-    const { result } = renderHook(() => useQueryParam("inexistent"));
+    const { result } = renderHook(() => useQueryParam("inexistent"), { wrapper: MemoryRouter });
     expect(result.current).toBeUndefined();
   });
 
   it("should return the query param accordingly", () => {
-    mockLocationTo({ search: "?foo=bar&baz=foo" });
-    const { result } = renderHook(() => useQueryParam("foo"));
+    const testUrl = "/test?foo=bar&baz=123";
+    const { result } = renderHook(() => useQueryParam("foo"), { wrapper: getWrapper(testUrl) });
     expect(result.current).toEqual("bar");
   });
 });
@@ -32,14 +40,14 @@ describe("useQueryParam :: useQueryParam", () => {
 describe("useQueryParam :: useQueryParamKeywords", () => {
   it("should return the 'keywords' query param value accordingly", () => {
     const expectedKeywords = encodeURIComponent("foo,bar,baz");
-    mockLocationTo({ search: `?${QueryParams.KEYWORDS}=${expectedKeywords}&foo=bar` });
-    const { result } = renderHook(() => useQueryParamKeywords());
+    const testUrl = `/test?${QueryParams.KEYWORDS}=${expectedKeywords}&foo=bar`;
+    const { result } = renderHook(() => useQueryParamKeywords(), { wrapper: getWrapper(testUrl) });
     expect(result.current).toEqual(["foo", "bar", "baz"]);
   });
 
   it("should return empty array when 'keywords' query params is not found", () => {
-    mockLocationTo({ search: "?foo=bar&baz=foo" });
-    const { result } = renderHook(() => useQueryParamKeywords());
+    const testUrl = "/test?foo=bar&baz=123";
+    const { result } = renderHook(() => useQueryParamKeywords(), { wrapper: getWrapper(testUrl) });
     expect(result.current).toEqual([]);
   });
 });

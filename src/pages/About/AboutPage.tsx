@@ -36,9 +36,10 @@ export default function AboutPage() {
               >
                 {about.welcome}
               </Typography>
-              {about.paragraphs.map((paragraph: string, idx: number) => (
-                <Paragraph key={`about-paragraph-${idx}`} content={paragraph} />
-              ))}
+              {Array.isArray(about.paragraphs) &&
+                about.paragraphs.map((paragraph: string, idx: number) => (
+                  <Paragraph key={`about-paragraph-${idx}`} content={paragraph} />
+                ))}
             </Stack>
             <CardActions disableSpacing sx={{ display: { xs: "auto", md: "none" } }}>
               <Box sx={{ width: 1 }}>
