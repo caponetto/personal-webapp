@@ -14,13 +14,13 @@ interface SocialBarProps {
 export function SocialBar(props: SocialBarProps) {
   return (
     <Grid container sx={props.sx}>
-      <Grid item xs>
+      <Grid size="grow">
         <GitHubButton url={props.urls.github} />
       </Grid>
-      <Grid item xs>
+      <Grid size="grow">
         <XButton url={props.urls.twitter} />
       </Grid>
-      <Grid item xs>
+      <Grid size="grow">
         <LinkedInButton url={props.urls.linkedin} />
       </Grid>
     </Grid>

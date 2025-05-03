@@ -27,7 +27,7 @@ export function KeywordChips(props: KeywordChipsProps) {
         {[...props.keywordSelection.selectionMap.keys()]
           .sort((a, b) => resolveLiteral(a).localeCompare(resolveLiteral(b)))
           .map((keywordKey) => (
-            <Grid item key={`keyword-chip-${keywordKey}`}>
+            <Grid key={`keyword-chip-${keywordKey}`}>
               <StaticChip
                 label={resolveLiteral(keywordKey)}
                 color="success"
@@ -38,7 +38,7 @@ export function KeywordChips(props: KeywordChipsProps) {
             </Grid>
           ))}
         <Fade in={props.keywordSelection.isAnySelected} timeout={300}>
-          <Grid item sx={{ display: props.keywordSelection.isAnySelected ? "block" : "none" }}>
+          <Grid sx={{ display: props.keywordSelection.isAnySelected ? "block" : "none" }}>
             <StaticChip
               label={t("literal:showAll")}
               color="secondary"

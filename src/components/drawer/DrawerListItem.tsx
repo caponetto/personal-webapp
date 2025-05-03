@@ -1,4 +1,4 @@
-import ListItem from "@mui/material/ListItem";
+import { ListItemButton } from "@mui/material";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -20,9 +20,8 @@ export function DrawerListItem(props: DrawerListItemProps) {
   const showSecondary = useMediaQuery("(min-height:580px)");
 
   return (
-    <ListItem
+    <ListItemButton
       data-testid={`${props.title.toLowerCase()}-item-button`}
-      button
       key={`nav-${props.title}`}
       selected={props.selected}
       onClick={props.onClick}
@@ -30,10 +29,14 @@ export function DrawerListItem(props: DrawerListItemProps) {
     >
       <ListItemIcon>{props.selected ? props.icon.selected : props.icon.initial}</ListItemIcon>
       <ListItemText
-        primaryTypographyProps={{ fontWeight: props.selected ? "bold" : "light" }}
+        slotProps={{
+          primary: {
+            fontWeight: props.selected ? "bold" : "light",
+          },
+        }}
         primary={props.title}
         secondary={showSecondary ? props.subtitle : ""}
       />
-    </ListItem>
+    </ListItemButton>
   );
 }

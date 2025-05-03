@@ -12,7 +12,7 @@ export function ChipGrid(props: ChipGridProps) {
       {[...props.items]
         .sort((a, b) => a.localeCompare(b))
         .map((item: string) => (
-          <Grid item key={`${props.groupName}-${item}`}>
+          <Grid key={`${props.groupName}-${item}`}>
             <Chip label={item} color="default" variant="outlined" size="small" sx={{ borderRadius: "8px" }} />
           </Grid>
         ))}
