@@ -25,6 +25,7 @@ runs:
       with:
         node-version: 22
         cache: "npm"
+        cache-dependency-path: ${{ inputs.path }}/package-lock.json
 
     - name: "Bootstrap"
       shell: bash
