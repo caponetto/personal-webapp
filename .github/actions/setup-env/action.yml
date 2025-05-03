@@ -21,38 +21,29 @@ runs:
         git config --global user.email "638737+caponetto@users.noreply.github.com"
 
     - name: "Setup Node"
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: 18
-        cache: "yarn"
-        cache-dependency-path: ${{ inputs.path }}/yarn.lock
-
-    - name: "Setup Yarn"
-      shell: bash
-      run: |
-        echo "STEP: Setup Yarn"
-        cd ${{ inputs.path }}
-        npm install -g yarn@1.22.19
-        yarn config set network-timeout 1000000
+        node-version: 22
+        cache: "npm"
 
     - name: "Bootstrap"
       shell: bash
       run: |
         echo "STEP: Bootstrap"
         cd ${{ inputs.path }}
-        yarn install
+        npm install
 
-    - name: "Check yarn.lock"
+    - name: "Check package-lock.json"
       shell: bash
       run: |
-        echo "STEP: Check yarn.lock"
+        echo "STEP: Check package-lock.json"
         cd ${{ inputs.path }}
-        git diff yarn.lock;
-        [ "0" == "$(git diff yarn.lock | wc -l | tr -d ' ')" ]
+        git diff package-lock.json;
+        [ "0" == "$(git diff package-lock.json | wc -l | tr -d ' ')" ]
 
     - name: "Check format"
       shell: bash
       run: |
         echo "STEP: Check format"
         cd ${{ inputs.path }}
-        yarn format:check
+        npm run format:check

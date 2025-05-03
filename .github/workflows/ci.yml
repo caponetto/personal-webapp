@@ -10,10 +10,6 @@ concurrency:
   group: ${{ github.event.pull_request && format('ci-pr-{0}', github.event.pull_request.number) || 'ci-main' }}
   cancel-in-progress: true
 
-env:
-  DISPLAY: ":99.0"
-  START_SERVER_AND_TEST_INSECURE: 1
-
 jobs:
   build:
     strategy:
@@ -23,7 +19,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -35,23 +31,23 @@ jobs:
       - name: "Build"
         shell: bash
         run: |
-          yarn build:prod
+          npm run build:prod
 
       - name: "Test"
         shell: bash
         run: |
-          yarn test
+          npm run test
 
       - name: "Upload build artifact (Ubuntu only)"
         if: matrix.os == 'ubuntu-latest'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: webapp-build
           path: |
             dist
 
       - name: "Upload Test artifacts"
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-artifacts-${{ matrix.os }}
           path: |

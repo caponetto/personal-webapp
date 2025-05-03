@@ -1,4 +1,4 @@
-import { act, renderHook } from "@testing-library/react-hooks/dom";
+import { act, renderHook } from "@testing-library/react";
 import * as router from "react-router";
 import { buildInitialSelectionMap, useKeywordSelection } from "../../hooks/useKeywordSelection";
 import { useQueryParamKeywords } from "../../hooks/useQueryParam";

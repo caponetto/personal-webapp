@@ -100,10 +100,10 @@ module.exports = async (_env, argv) => {
         }),
       ],
       devServer: {
-        open: true,
+        open: false,
         server: "https",
         host: "0.0.0.0",
-        port: 9001,
+        port: 9000,
         compress: true,
         historyApiFallback: true,
         static: [path.join(__dirname, "./dist"), path.join(__dirname, "./static")],

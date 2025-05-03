@@ -17,7 +17,7 @@ jobs:
       - name: "Get release"
         id: get_release
         if: ${{ github.event_name != 'workflow_dispatch' }}
-        uses: bruceadams/get-release@v1.2.3
+        uses: bruceadams/get-release@74c3d60f5a28f358ccf241a00c9021ea16f0569f # v1.3.2
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
@@ -32,14 +32,14 @@ jobs:
           fi
 
       - name: "Checkout personal-webapp"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: ${{ steps.resolve_version.outputs.version }}
           path: ${{ github.workspace }}/personal-webapp
 
       - name: "Checkout caponetto.github.io"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           path: ${{ github.workspace }}/caponetto.github.io
@@ -58,7 +58,7 @@ jobs:
           VERSION: ${{ steps.resolve_version.outputs.version }}
         shell: bash
         run: |
-          yarn build:prod
+          npm run build:prod
 
       - name: "Deploy to GitHub Pages (caponetto.github.io)"
         working-directory: ${{ github.workspace }}/caponetto.github.io
