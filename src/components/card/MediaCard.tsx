@@ -125,7 +125,7 @@ export function MediaCard(props: MediaCardProps) {
           {[...props.item.keywordKeys]
             .sort((a, b) => b.length - a.length)
             .map((keywordKey) => (
-              <Grid item key={`media-keyword-${keywordKey}`}>
+              <Grid key={`media-keyword-${keywordKey}`}>
                 <StaticChip
                   // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   label={t(`literal:${keywordKey}` as any) as string}

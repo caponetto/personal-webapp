@@ -6,36 +6,37 @@ exports[`JourneyPage should match the snapshot 1`] = `
   data-testid="journey-page"
 >
   <div
-    class="MuiTypography-root MuiTypography-body1 css-1xx02jo-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-body1 css-qhreai-MuiTypography-root"
     style="opacity: 1; webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
   >
     header
   </div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-zjhuaj-MuiGrid-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-7 css-117e5y7-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-lg-7 css-te8ssr-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-zjhuaj-MuiGrid-root"
       >
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-xl-6 css-sh4yt4-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-xl-6 css-naonax-MuiGrid-root"
           style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
           >
             <div
-              class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+              class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
             >
               <div
-                class="MuiCardHeader-avatar css-1ssile9-MuiCardHeader-avatar"
+                class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                   data-testid="SchoolOutlinedIcon"
                   focusable="false"
                   viewBox="0 0 24 24"
@@ -46,50 +47,50 @@ exports[`JourneyPage should match the snapshot 1`] = `
                 </svg>
               </div>
               <div
-                class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-qscxtw-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-igcuwh-MuiTypography-root"
                 >
                   education
                 </p>
               </div>
             </div>
             <div
-              class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+              class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
             >
               <ul
-                class="MuiList-root MuiList-padding MuiList-dense css-h4y409-MuiList-root"
+                class="MuiList-root MuiList-padding MuiList-dense css-b7dj7n-MuiList-root"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                     >
                       education.master.title
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                     >
                       <span
                         class="MuiBox-root css-0"
                       >
                         <span
-                          class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                         >
                           2017
                         </span>
                         <span
-                          class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                         >
                           @
                         </span>
                         <a
-                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                           href="https://www.unicamp.br"
                           rel="noreferrer"
                           target="_blank"
@@ -101,34 +102,34 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   </div>
                 </li>
                 <li
-                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                     >
                       education.bachelor.title
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                     >
                       <span
                         class="MuiBox-root css-0"
                       >
                         <span
-                          class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                         >
                           2011
                         </span>
                         <span
-                          class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                         >
                           @
                         </span>
                         <a
-                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                           href="https://unifei.edu.br"
                           rel="noreferrer"
                           target="_blank"
@@ -142,29 +143,29 @@ exports[`JourneyPage should match the snapshot 1`] = `
               </ul>
             </div>
             <div
-              class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+              class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
             >
               <div
                 class="MuiBox-root css-8atqhb"
               >
                 <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                   href="https://www.linkedin.com/in/ghcaponetto"
                   rel="noreferrer"
                   target="_blank"
                 >
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                     tabindex="0"
                     type="button"
                   >
                     moreDetails
                     <span
-                      class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                      class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                         data-testid="LaunchIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
@@ -174,9 +175,6 @@ exports[`JourneyPage should match the snapshot 1`] = `
                         />
                       </svg>
                     </span>
-                    <span
-                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                    />
                   </button>
                 </a>
               </div>
@@ -184,21 +182,22 @@ exports[`JourneyPage should match the snapshot 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-xl-6 css-sh4yt4-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-xl-6 css-naonax-MuiGrid-root"
           style="opacity: 1; webkit-transition: opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
           >
             <div
-              class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+              class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
             >
               <div
-                class="MuiCardHeader-avatar css-1ssile9-MuiCardHeader-avatar"
+                class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                   data-testid="VerifiedOutlinedIcon"
                   focusable="false"
                   viewBox="0 0 24 24"
@@ -212,50 +211,50 @@ exports[`JourneyPage should match the snapshot 1`] = `
                 </svg>
               </div>
               <div
-                class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-qscxtw-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-igcuwh-MuiTypography-root"
                 >
                   certifications
                 </p>
               </div>
             </div>
             <div
-              class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+              class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
             >
               <ul
-                class="MuiList-root MuiList-padding MuiList-dense css-h4y409-MuiList-root"
+                class="MuiList-root MuiList-padding MuiList-dense css-b7dj7n-MuiList-root"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                     >
                       computerVisionNanoDegree
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                     >
                       <span
                         class="MuiBox-root css-0"
                       >
                         <span
-                          class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                         >
                           2019
                         </span>
                         <span
-                          class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                         >
                           @
                         </span>
                         <a
-                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                           href="https://www.udacity.com"
                           rel="noreferrer"
                           target="_blank"
@@ -267,34 +266,34 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   </div>
                 </li>
                 <li
-                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                     >
                       oracleCertifiedProfessionalJavaSix
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                     >
                       <span
                         class="MuiBox-root css-0"
                       >
                         <span
-                          class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                         >
                           2012
                         </span>
                         <span
-                          class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                         >
                           @
                         </span>
                         <a
-                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                           href="https://www.oracle.com"
                           rel="noreferrer"
                           target="_blank"
@@ -308,29 +307,29 @@ exports[`JourneyPage should match the snapshot 1`] = `
               </ul>
             </div>
             <div
-              class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+              class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
             >
               <div
                 class="MuiBox-root css-8atqhb"
               >
                 <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                   href="https://www.linkedin.com/in/ghcaponetto"
                   rel="noreferrer"
                   target="_blank"
                 >
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                     tabindex="0"
                     type="button"
                   >
                     moreDetails
                     <span
-                      class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                      class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                         data-testid="LaunchIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
@@ -340,9 +339,6 @@ exports[`JourneyPage should match the snapshot 1`] = `
                         />
                       </svg>
                     </span>
-                    <span
-                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                    />
                   </button>
                 </a>
               </div>
@@ -350,21 +346,22 @@ exports[`JourneyPage should match the snapshot 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 css-yqiqnf-MuiGrid-root"
           style="opacity: 1; webkit-transition: opacity 1600ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1600ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
           >
             <div
-              class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+              class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
             >
               <div
-                class="MuiCardHeader-avatar css-1ssile9-MuiCardHeader-avatar"
+                class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                   data-testid="HomeRepairServiceOutlinedIcon"
                   focusable="false"
                   viewBox="0 0 24 24"
@@ -375,679 +372,679 @@ exports[`JourneyPage should match the snapshot 1`] = `
                 </svg>
               </div>
               <div
-                class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-qscxtw-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-igcuwh-MuiTypography-root"
                 >
                   toolbox
                 </p>
               </div>
             </div>
             <div
-              class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+              class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
             >
               <div
-                class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-a5rdam-MuiGrid-root"
+                class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-1yvsbrk-MuiGrid-root"
               >
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       amazonWebServices
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       android
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       apacheKafka
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       architecture
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       backend
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       cicd
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       classification
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       clustering
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       computerVision
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       cpp
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       csharp
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       css
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       deepLearning
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       designPatterns
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       docker
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       frontend
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       git
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       gwt
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       html
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       java
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       javaScript
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       jboss
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       jni
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       jpa
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       kanban
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       machineLearning
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       matlab
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       multiTaskLearning
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       neuralNetworks
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       nodeJs
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       noSql
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       oop
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       openShift
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       optimization
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       python
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       quarkus
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       reactJs
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       recommenderSystems
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       regression
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       restfulWs
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       scrum
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       speechEnhancement
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       springFramework
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       sql
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       systemDesign
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       tdd
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       tensorFlow
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       tomcat
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       typeScript
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       universalWindowsPlatform
                     </span>
                   </div>
                 </div>
                 <div
-                  class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-g9zlw2-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
                   >
                     <span
-                      class="MuiChip-label MuiChip-labelSmall css-rrn746-MuiChip-label"
+                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                     >
                       xmpp
                     </span>
@@ -1056,29 +1053,29 @@ exports[`JourneyPage should match the snapshot 1`] = `
               </div>
             </div>
             <div
-              class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+              class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
             >
               <div
                 class="MuiBox-root css-8atqhb"
               >
                 <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                   href="https://www.linkedin.com/in/ghcaponetto"
                   rel="noreferrer"
                   target="_blank"
                 >
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                     tabindex="0"
                     type="button"
                   >
                     moreDetails
                     <span
-                      class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                      class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                         data-testid="LaunchIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
@@ -1088,9 +1085,6 @@ exports[`JourneyPage should match the snapshot 1`] = `
                         />
                       </svg>
                     </span>
-                    <span
-                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                    />
                   </button>
                 </a>
               </div>
@@ -1098,21 +1092,22 @@ exports[`JourneyPage should match the snapshot 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-xl-6 css-sh4yt4-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-xl-6 css-naonax-MuiGrid-root"
           style="opacity: 1; webkit-transition: opacity 1400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
           >
             <div
-              class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+              class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
             >
               <div
-                class="MuiCardHeader-avatar css-1ssile9-MuiCardHeader-avatar"
+                class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                   data-testid="EmojiEventsOutlinedIcon"
                   focusable="false"
                   viewBox="0 0 24 24"
@@ -1123,50 +1118,50 @@ exports[`JourneyPage should match the snapshot 1`] = `
                 </svg>
               </div>
               <div
-                class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-qscxtw-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-igcuwh-MuiTypography-root"
                 >
                   awards
                 </p>
               </div>
             </div>
             <div
-              class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+              class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
             >
               <ul
-                class="MuiList-root MuiList-padding MuiList-dense css-h4y409-MuiList-root"
+                class="MuiList-root MuiList-padding MuiList-dense css-b7dj7n-MuiList-root"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                     >
                       meritHonorDiploma
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                     >
                       <span
                         class="MuiBox-root css-0"
                       >
                         <span
-                          class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                         >
                           2011
                         </span>
                         <span
-                          class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                         >
                           @
                         </span>
                         <a
-                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                           href="https://unifei.edu.br"
                           rel="noreferrer"
                           target="_blank"
@@ -1180,29 +1175,29 @@ exports[`JourneyPage should match the snapshot 1`] = `
               </ul>
             </div>
             <div
-              class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+              class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
             >
               <div
                 class="MuiBox-root css-8atqhb"
               >
                 <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
                   href="https://www.linkedin.com/in/ghcaponetto"
                   rel="noreferrer"
                   target="_blank"
                 >
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                     tabindex="0"
                     type="button"
                   >
                     moreDetails
                     <span
-                      class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                      class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                         data-testid="LaunchIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
@@ -1212,9 +1207,6 @@ exports[`JourneyPage should match the snapshot 1`] = `
                         />
                       </svg>
                     </span>
-                    <span
-                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                    />
                   </button>
                 </a>
               </div>
@@ -1224,21 +1216,22 @@ exports[`JourneyPage should match the snapshot 1`] = `
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-5 css-14tayut-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-lg-5 css-1bgkxhf-MuiGrid-root"
       style="opacity: 1; webkit-transition: opacity 1800ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1800ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
     >
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-935hc6-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
       >
         <div
-          class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+          class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
         >
           <div
-            class="MuiCardHeader-avatar css-1ssile9-MuiCardHeader-avatar"
+            class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
               data-testid="WorkOutlineOutlinedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1249,55 +1242,55 @@ exports[`JourneyPage should match the snapshot 1`] = `
             </svg>
           </div>
           <div
-            class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+            class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
           >
             <p
-              class="MuiTypography-root MuiTypography-body1 css-qscxtw-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body1 css-igcuwh-MuiTypography-root"
             >
               experience
             </p>
           </div>
         </div>
         <div
-          class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
         >
           <ul
-            class="MuiList-root MuiList-padding MuiList-dense css-h4y409-MuiList-root"
+            class="MuiList-root MuiList-padding MuiList-dense css-b7dj7n-MuiList-root"
           >
             <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
             >
               <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
               >
                 <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                 >
                   softwareEngineer → seniorSoftwareEngineer → principalSoftwareEngineer
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                 >
                   <span
                     class="MuiBox-root css-0"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                     >
                       2019
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-t28qx3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
                     >
                       → present
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                     >
                       @
                     </span>
                     <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                       href="https://www.redhat.com"
                       rel="noreferrer"
                       target="_blank"
@@ -1309,39 +1302,39 @@ exports[`JourneyPage should match the snapshot 1`] = `
               </div>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
             >
               <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
               >
                 <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                 >
                   softwareEngineer → seniorSoftwareEngineer
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                 >
                   <span
                     class="MuiBox-root css-0"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                     >
                       2017
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-t28qx3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
                     >
                       → 2019
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                     >
                       @
                     </span>
                     <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                       href="https://www.samsung.com"
                       rel="noreferrer"
                       target="_blank"
@@ -1353,39 +1346,39 @@ exports[`JourneyPage should match the snapshot 1`] = `
               </div>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
             >
               <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
               >
                 <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                 >
                   softwareEngineer
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                 >
                   <span
                     class="MuiBox-root css-0"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                     >
                       2017
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-t28qx3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
                     >
                       → 2017
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                     >
                       @
                     </span>
                     <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                       href="https://www.ifood.com.br"
                       rel="noreferrer"
                       target="_blank"
@@ -1397,39 +1390,39 @@ exports[`JourneyPage should match the snapshot 1`] = `
               </div>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
             >
               <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
               >
                 <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                 >
                   graduateResearcher
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                 >
                   <span
                     class="MuiBox-root css-0"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                     >
                       2015
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-t28qx3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
                     >
                       → 2017
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                     >
                       @
                     </span>
                     <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                       href="https://www.unicamp.br"
                       rel="noreferrer"
                       target="_blank"
@@ -1441,39 +1434,39 @@ exports[`JourneyPage should match the snapshot 1`] = `
               </div>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
             >
               <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
               >
                 <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                 >
                   juniorSoftwareEngineer
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                 >
                   <span
                     class="MuiBox-root css-0"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                     >
                       2012
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-t28qx3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
                     >
                       → 2015
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                     >
                       @
                     </span>
                     <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                       href="https://www.samsung.com"
                       rel="noreferrer"
                       target="_blank"
@@ -1485,39 +1478,39 @@ exports[`JourneyPage should match the snapshot 1`] = `
               </div>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
             >
               <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
               >
                 <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                 >
                   softwareDevelopmentIntern
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                 >
                   <span
                     class="MuiBox-root css-0"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                     >
                       2011
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-t28qx3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
                     >
                       → 2011
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                     >
                       @
                     </span>
                     <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                       href="https://www.motorola.com"
                       rel="noreferrer"
                       target="_blank"
@@ -1529,39 +1522,39 @@ exports[`JourneyPage should match the snapshot 1`] = `
               </div>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
             >
               <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
               >
                 <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                 >
                   undergraduateResearcher
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                 >
                   <span
                     class="MuiBox-root css-0"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                     >
                       2007
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-t28qx3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
                     >
                       → 2010
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                     >
                       @
                     </span>
                     <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                       href="https://unifei.edu.br"
                       rel="noreferrer"
                       target="_blank"
@@ -1573,39 +1566,39 @@ exports[`JourneyPage should match the snapshot 1`] = `
               </div>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-n53s5t-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
             >
               <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
               >
                 <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
                 >
                   softwareDevelopmentIntern
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
                 >
                   <span
                     class="MuiBox-root css-0"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
                     >
                       2007
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-t28qx3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
                     >
                       → 2007
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1hhmkv1-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
                     >
                       @
                     </span>
                     <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-f1fbwt-MuiTypography-root-MuiLink-root"
+                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
                       href="https://www.b2ml.com.br"
                       rel="noreferrer"
                       target="_blank"
@@ -1619,29 +1612,29 @@ exports[`JourneyPage should match the snapshot 1`] = `
           </ul>
         </div>
         <div
-          class="MuiCardActions-root MuiCardActions-spacing css-3y9r84-MuiCardActions-root"
+          class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
         >
           <div
             class="MuiBox-root css-8atqhb"
           >
             <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-sy308k-MuiTypography-root-MuiLink-root"
+              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
               href="https://www.linkedin.com/in/ghcaponetto"
               rel="noreferrer"
               target="_blank"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall css-1g8q1dn-MuiButtonBase-root-MuiButton-root"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
                 tabindex="0"
                 type="button"
               >
                 moreDetails
                 <span
-                  class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                  class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                     data-testid="LaunchIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1651,9 +1644,6 @@ exports[`JourneyPage should match the snapshot 1`] = `
                     />
                   </svg>
                 </span>
-                <span
-                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                />
               </button>
             </a>
           </div>

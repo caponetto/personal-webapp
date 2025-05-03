@@ -7,20 +7,19 @@ Code of my personal [website](https://caponetto.dev).
 
 ## Requirements
 
-- Node `18+`
-- Yarn (`npm install -g yarn`)
+- Node `22+`
 
 ## Build for development
 
-Run `yarn install && yarn build:dev`
+Run `npm install && npm run build:dev`
 
 ## Running for development
 
-Run `yarn start` and then access `https://localhost:9001`
+Run `npm run start` and then access `https://localhost:9000`
 
 ## Bulid for production
 
-Run `yarn install && yarn build:prod`
+Run `npm install && npm run build:prod`
 
 Artifacts will be available in the `dist` directory.
 

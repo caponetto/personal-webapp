@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 import { I18nextProvider } from "react-i18next";
 import { AppContextProvider } from "../context/AppContextProvider";
 import i18n from "./I18nForTests";
+import { MemoryRouter } from "react-router";
 
 export function usingTestingI18nContext(children: ReactElement) {
   return {
@@ -16,5 +17,5 @@ export function usingTestingAppContext(children: ReactElement) {
 }
 
 export function usingTestingContext(children: ReactElement) {
-  return usingTestingI18nContext(usingTestingAppContext(children).wrapper).wrapper;
+  return <MemoryRouter>{usingTestingI18nContext(usingTestingAppContext(children).wrapper).wrapper}</MemoryRouter>;
 }

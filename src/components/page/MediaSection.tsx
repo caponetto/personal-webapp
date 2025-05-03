@@ -43,7 +43,7 @@ export function MediaSection(props: MediaSectionProps) {
             <Grid container spacing={3}>
               {props.mediaItems.map((item: MediaItem, idx: number) => (
                 <Fade in={true} timeout={props.fadeTime?.item ?? DEFAULT_FADE_TIME.item} key={`${props.title}-${idx}`}>
-                  <Grid item sx={{ width: { xs: "100%", lg: "50%", xl: "33%" } }}>
+                  <Grid size={{ sm: 12, lg: 6, xl: 4 }}>
                     <MediaCard item={item} keywordSelection={props.keywordSelection} />
                   </Grid>
                 </Fade>

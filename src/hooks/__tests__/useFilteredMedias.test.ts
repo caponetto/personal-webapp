@@ -1,4 +1,4 @@
-import { renderHook } from "@testing-library/react-hooks/dom";
+import { renderHook } from "@testing-library/react";
 import { useFilteredMedias } from "../../hooks/useFilteredMedias";
 import { createMediaItem, DEFAULT_KEYWORD_SELECTION } from "../../jest/TestBuilders";
 

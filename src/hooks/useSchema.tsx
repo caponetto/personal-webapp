@@ -70,7 +70,7 @@ export function useSchema() {
   const about = useMemo<About>(
     () => ({
       welcome: t("about:welcome"),
-      paragraphs: Array.from(t("about:paragraphs", { returnObjects: true })),
+      paragraphs: t("about:paragraphs", { returnObjects: true }) as string[],
     }),
     [t],
   );

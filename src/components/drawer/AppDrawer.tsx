@@ -37,7 +37,6 @@ export function AppDrawer(props: AppDrawerProps) {
         onClose={() => app.openStateDispatch({ type: OpenStateActions.DRAWER_CLOSE })}
         ModalProps={{
           keepMounted: true,
-          onBackdropClick: () => app.openStateDispatch({ type: OpenStateActions.DRAWER_CLOSE }),
         }}
         sx={{
           display: { xs: "block", md: "none" },

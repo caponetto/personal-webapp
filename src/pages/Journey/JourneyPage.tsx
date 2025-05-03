@@ -36,10 +36,10 @@ export default function JourneyPage() {
       }
     >
       <Grid container spacing={2}>
-        <Grid item xs={12} lg={7}>
+        <Grid size={{ xs: 12, lg: 7 }}>
           <Grid container spacing={2}>
             <Fade in={true} timeout={SECTION_FADE_TIME.education}>
-              <Grid item xs={12} xl={6}>
+              <Grid size={{ xs: 12, xl: 6 }}>
                 <JourneyCard
                   title={t("literal:education")}
                   icon={<SchoolOutlinedIcon />}
@@ -50,7 +50,7 @@ export default function JourneyPage() {
               </Grid>
             </Fade>
             <Fade in={true} timeout={SECTION_FADE_TIME.certifications}>
-              <Grid item xs={12} xl={6}>
+              <Grid size={{ xs: 12, xl: 6 }}>
                 <JourneyCard
                   title={t("literal:certifications")}
                   icon={<VerifiedOutlinedIcon />}
@@ -61,7 +61,7 @@ export default function JourneyPage() {
               </Grid>
             </Fade>
             <Fade in={true} timeout={SECTION_FADE_TIME.toolbox}>
-              <Grid item xs={12}>
+              <Grid size={{ xs: 12 }}>
                 <JourneyCard
                   title={t("literal:toolbox")}
                   icon={<HomeRepairServiceOutlinedIcon />}
@@ -72,7 +72,7 @@ export default function JourneyPage() {
               </Grid>
             </Fade>
             <Fade in={true} timeout={SECTION_FADE_TIME.awards}>
-              <Grid item xs={12} xl={6}>
+              <Grid size={{ xs: 12, xl: 6 }}>
                 <JourneyCard
                   title={t("literal:awards")}
                   icon={<EmojiEventsOutlinedIcon />}
@@ -85,7 +85,7 @@ export default function JourneyPage() {
           </Grid>
         </Grid>
         <Fade in={true} timeout={SECTION_FADE_TIME.experience}>
-          <Grid item xs={12} lg={5}>
+          <Grid size={{ xs: 12, lg: 5 }}>
             <JourneyCard
               title={t("literal:experience")}
               icon={<WorkOutlineOutlinedIcon />}
