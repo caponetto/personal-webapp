@@ -1,1 +1,1 @@
-export { SettingsPopover } from "./SettingsPopover";
+export { SettingsDrawer } from "./SettingsDrawer";

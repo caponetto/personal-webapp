@@ -1,11 +1,14 @@
 {
-  "header": "Aqui você encontra um resumo de minha <1>jornada</1>",
   "education": {
-    "master": {
-      "title": "Mestrado em Aprendizado de Máquina"
-    },
     "bachelor": {
       "title": "Bacharelado em Ciência da Computação"
+    },
+    "master": {
+      "title": "Mestrado em Aprendizado de Máquina"
     }
-  }
+  },
+  "header": "Experiência em resumo",
+  "headerSubtitle": "Veja minha trajetória em formação, papéis e habilidades principais.",
+  "toolboxShowLess": "Mostrar menos habilidades",
+  "toolboxShowMore": "Mostrar mais habilidades"
 }

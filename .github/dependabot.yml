@@ -1,0 +1,46 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: "America/Sao_Paulo"
+    open-pull-requests-limit: 8
+    groups:
+      eslint:
+        patterns:
+          - "eslint*"
+          - "@typescript-eslint/*"
+      testing:
+        patterns:
+          - "jest*"
+          - "@jest/*"
+          - "@testing-library/*"
+          - "cypress*"
+          - "@cypress/*"
+      typescript:
+        patterns:
+          - "typescript"
+          - "ts-*"
+          - "@types/*"
+      mui:
+        patterns:
+          - "@mui/*"
+      webpack:
+        patterns:
+          - "webpack*"
+          - "*loader"
+      i18n:
+        patterns:
+          - "i18next*"
+          - "react-i18next"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: "America/Sao_Paulo"

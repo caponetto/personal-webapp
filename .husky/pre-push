@@ -1,0 +1,5 @@
+npm run verify
+if [ $? -ne 0 ]; then
+  echo "Verification failed. Please fix before pushing."
+  exit 1
+fi

@@ -1,0 +1,12 @@
+{
+  "project": ["src/**/*.{ts,tsx}", "scripts/**/*.{mjs,js,ts}", "cypress/**/*.{ts,tsx}"],
+  "ignore": ["dist/**", "dist-test/**", "coverage/**"],
+  "ignoreDependencies": [
+    "@percy/cli",
+    "@percy/cypress",
+    "babel-plugin-istanbul",
+    "pretty-quick",
+    "ts-node",
+    "webpack-node-externals"
+  ]
+}

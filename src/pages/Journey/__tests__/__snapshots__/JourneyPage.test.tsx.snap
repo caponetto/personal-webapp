@@ -1,1651 +1,1112 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`JourneyPage should match the snapshot 1`] = `
 <div
-  class="MuiBox-root css-zcrwk5"
+  class="MuiBox-root css-hgqw70"
   data-testid="journey-page"
 >
   <div
-    class="MuiTypography-root MuiTypography-body1 css-qhreai-MuiTypography-root"
-    style="opacity: 1; webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    class="MuiStack-root css-15d7mpu-MuiStack-root"
+    style="opacity: 1; transition: opacity 280ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
   >
-    header
+    <h1
+      class="MuiTypography-root MuiTypography-h1 css-1h5vfun-MuiTypography-root"
+    >
+      header
+    </h1>
+    <div
+      class="MuiTypography-root MuiTypography-body1 css-7xbzes-MuiTypography-root"
+    >
+      headerSubtitle
+    </div>
   </div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-zjhuaj-MuiGrid-root"
+    class="MuiBox-root css-scoxp0"
   >
     <div
-      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-lg-7 css-te8ssr-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-x40ulv-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-zjhuaj-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-lg-7 css-te8ssr-MuiGrid-root"
       >
         <div
-          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-xl-6 css-naonax-MuiGrid-root"
-          style="opacity: 1; webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+          class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-x40ulv-MuiGrid-root"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
-            style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
+            class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-xl-6 css-naonax-MuiGrid-root"
+            style="opacity: 1; transition: opacity 220ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
           >
             <div
-              class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1264uy2-MuiPaper-root-MuiCard-root"
+              style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
             >
               <div
-                class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
+                class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
               >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                  data-testid="SchoolOutlinedIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
+                <div
+                  class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
                 >
-                  <path
-                    d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73z"
-                  />
-                </svg>
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    data-testid="SchoolOutlinedIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-1wus953-MuiTypography-root"
+                  >
+                    education
+                  </p>
+                </div>
               </div>
               <div
-                class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+                class="MuiCardContent-root css-1dygs93-MuiCardContent-root"
               >
-                <p
-                  class="MuiTypography-root MuiTypography-body1 css-igcuwh-MuiTypography-root"
+                <ul
+                  class="MuiList-root MuiList-padding MuiList-dense css-b7dj7n-MuiList-root"
                 >
-                  education
-                </p>
-              </div>
-            </div>
-            <div
-              class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
-            >
-              <ul
-                class="MuiList-root MuiList-padding MuiList-dense css-b7dj7n-MuiList-root"
-              >
-                <li
-                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-                >
-                  <div
-                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                  <li
+                    class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-10ubrnt-MuiListItem-root"
                   >
-                    <span
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                    >
-                      education.master.title
-                    </span>
-                    <p
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-1ay94tb-MuiListItemText-root"
                     >
                       <span
-                        class="MuiBox-root css-0"
+                        class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-a9tp9i-MuiTypography-root"
+                      >
+                        education.master.title
+                      </span>
+                      <p
+                        class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-vp7hrr-MuiTypography-root"
                       >
                         <span
-                          class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
+                          class="MuiStack-root css-ymvxnu-MuiStack-root"
                         >
-                          2017
+                          <span
+                            class="MuiTypography-root MuiTypography-overline css-nxx9hn-MuiTypography-root"
+                          >
+                            2017
+                          </span>
+                          <span
+                            class="MuiTypography-root MuiTypography-overline css-1kv0ovy-MuiTypography-root"
+                          >
+                            @
+                          </span>
+                          <a
+                            class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-14sn42o-MuiTypography-root-MuiLink-root"
+                            href="https://www.unicamp.br"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            unicamp
+                          </a>
                         </span>
-                        <span
-                          class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
-                        >
-                          @
-                        </span>
-                        <a
-                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                          href="https://www.unicamp.br"
-                          rel="noreferrer"
-                          target="_blank"
-                        >
-                          unicamp
-                        </a>
-                      </span>
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-                >
-                  <div
-                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-10ubrnt-MuiListItem-root"
                   >
-                    <span
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                    >
-                      education.bachelor.title
-                    </span>
-                    <p
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-1ay94tb-MuiListItemText-root"
                     >
                       <span
-                        class="MuiBox-root css-0"
+                        class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-a9tp9i-MuiTypography-root"
                       >
-                        <span
-                          class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
-                        >
-                          2011
-                        </span>
-                        <span
-                          class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
-                        >
-                          @
-                        </span>
-                        <a
-                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                          href="https://unifei.edu.br"
-                          rel="noreferrer"
-                          target="_blank"
-                        >
-                          unifei
-                        </a>
+                        education.bachelor.title
                       </span>
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div
-              class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
-            >
-              <div
-                class="MuiBox-root css-8atqhb"
-              >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
-                  href="https://www.linkedin.com/in/ghcaponetto"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
-                    tabindex="0"
-                    type="button"
-                  >
-                    moreDetails
-                    <span
-                      class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                        data-testid="LaunchIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
+                      <p
+                        class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-vp7hrr-MuiTypography-root"
                       >
-                        <path
-                          d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                </a>
+                        <span
+                          class="MuiStack-root css-ymvxnu-MuiStack-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiTypography-overline css-nxx9hn-MuiTypography-root"
+                          >
+                            2011
+                          </span>
+                          <span
+                            class="MuiTypography-root MuiTypography-overline css-1kv0ovy-MuiTypography-root"
+                          >
+                            @
+                          </span>
+                          <a
+                            class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-14sn42o-MuiTypography-root-MuiLink-root"
+                            href="https://unifei.edu.br"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            unifei
+                          </a>
+                        </span>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-xl-6 css-naonax-MuiGrid-root"
-          style="opacity: 1; webkit-transition: opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
-        >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
-            style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
+            class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-xl-6 css-naonax-MuiGrid-root"
+            style="opacity: 1; transition: opacity 260ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
           >
             <div
-              class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1264uy2-MuiPaper-root-MuiCard-root"
+              style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
             >
               <div
-                class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
+                class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
               >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                  data-testid="VerifiedOutlinedIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
+                <div
+                  class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
                 >
-                  <path
-                    d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47z"
-                  />
-                  <path
-                    d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"
-                  />
-                </svg>
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    data-testid="WorkspacePremiumOutlinedIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9.68 13.69 12 11.93l2.31 1.76-.88-2.85L15.75 9h-2.84L12 6.19 11.09 9H8.25l2.31 1.84zM20 10c0-4.42-3.58-8-8-8s-8 3.58-8 8c0 2.03.76 3.87 2 5.28V23l6-2 6 2v-7.72c1.24-1.41 2-3.25 2-5.28m-8-6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0 15-4 1.02v-3.1c1.18.68 2.54 1.08 4 1.08s2.82-.4 4-1.08v3.1z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-1wus953-MuiTypography-root"
+                  >
+                    certifications
+                  </p>
+                </div>
               </div>
               <div
-                class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+                class="MuiCardContent-root css-1dygs93-MuiCardContent-root"
               >
-                <p
-                  class="MuiTypography-root MuiTypography-body1 css-igcuwh-MuiTypography-root"
+                <ul
+                  class="MuiList-root MuiList-padding MuiList-dense css-b7dj7n-MuiList-root"
                 >
-                  certifications
-                </p>
-              </div>
-            </div>
-            <div
-              class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
-            >
-              <ul
-                class="MuiList-root MuiList-padding MuiList-dense css-b7dj7n-MuiList-root"
-              >
-                <li
-                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-                >
-                  <div
-                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                  <li
+                    class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-10ubrnt-MuiListItem-root"
                   >
-                    <span
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                    >
-                      computerVisionNanoDegree
-                    </span>
-                    <p
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-1ay94tb-MuiListItemText-root"
                     >
                       <span
-                        class="MuiBox-root css-0"
+                        class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-a9tp9i-MuiTypography-root"
+                      >
+                        computerVisionNanoDegree
+                      </span>
+                      <p
+                        class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-vp7hrr-MuiTypography-root"
                       >
                         <span
-                          class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
+                          class="MuiStack-root css-ymvxnu-MuiStack-root"
                         >
-                          2019
+                          <span
+                            class="MuiTypography-root MuiTypography-overline css-nxx9hn-MuiTypography-root"
+                          >
+                            2019
+                          </span>
+                          <span
+                            class="MuiTypography-root MuiTypography-overline css-1kv0ovy-MuiTypography-root"
+                          >
+                            @
+                          </span>
+                          <a
+                            class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-14sn42o-MuiTypography-root-MuiLink-root"
+                            href="https://www.udacity.com"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            udacity
+                          </a>
                         </span>
-                        <span
-                          class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
-                        >
-                          @
-                        </span>
-                        <a
-                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                          href="https://www.udacity.com"
-                          rel="noreferrer"
-                          target="_blank"
-                        >
-                          udacity
-                        </a>
-                      </span>
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-                >
-                  <div
-                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-10ubrnt-MuiListItem-root"
                   >
-                    <span
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                    >
-                      oracleCertifiedProfessionalJavaSix
-                    </span>
-                    <p
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-1ay94tb-MuiListItemText-root"
                     >
                       <span
-                        class="MuiBox-root css-0"
+                        class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-a9tp9i-MuiTypography-root"
                       >
-                        <span
-                          class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
-                        >
-                          2012
-                        </span>
-                        <span
-                          class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
-                        >
-                          @
-                        </span>
-                        <a
-                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                          href="https://www.oracle.com"
-                          rel="noreferrer"
-                          target="_blank"
-                        >
-                          oracle
-                        </a>
+                        oracleCertifiedProfessionalJavaSix
                       </span>
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div
-              class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
-            >
-              <div
-                class="MuiBox-root css-8atqhb"
-              >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
-                  href="https://www.linkedin.com/in/ghcaponetto"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
-                    tabindex="0"
-                    type="button"
-                  >
-                    moreDetails
-                    <span
-                      class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                        data-testid="LaunchIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
+                      <p
+                        class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-vp7hrr-MuiTypography-root"
                       >
-                        <path
-                          d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                </a>
+                        <span
+                          class="MuiStack-root css-ymvxnu-MuiStack-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiTypography-overline css-nxx9hn-MuiTypography-root"
+                          >
+                            2012
+                          </span>
+                          <span
+                            class="MuiTypography-root MuiTypography-overline css-1kv0ovy-MuiTypography-root"
+                          >
+                            @
+                          </span>
+                          <a
+                            class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-14sn42o-MuiTypography-root-MuiLink-root"
+                            href="https://www.oracle.com"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            oracle
+                          </a>
+                        </span>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 css-yqiqnf-MuiGrid-root"
-          style="opacity: 1; webkit-transition: opacity 1600ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1600ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
-        >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
-            style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
+            class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 css-yqiqnf-MuiGrid-root"
+            style="opacity: 1; transition: opacity 340ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
           >
             <div
-              class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1264uy2-MuiPaper-root-MuiCard-root"
+              style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
             >
               <div
-                class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
+                class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
               >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                  data-testid="HomeRepairServiceOutlinedIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
+                <div
+                  class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
                 >
-                  <path
-                    d="M20 8h-3V6c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v10h20V10c0-1.1-.9-2-2-2M9 6h6v2H9zm11 12H4v-3h2v1h2v-1h8v1h2v-1h2zm-2-5v-1h-2v1H8v-1H6v1H4v-3h16v3z"
-                  />
-                </svg>
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    data-testid="BuildOutlinedIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="m22.61 18.99-9.08-9.08c.93-2.34.45-5.1-1.44-7C9.79.61 6.21.4 3.66 2.26L7.5 6.11 6.08 7.52 2.25 3.69C.39 6.23.6 9.82 2.9 12.11c1.86 1.86 4.57 2.35 6.89 1.48l9.11 9.11c.39.39 1.02.39 1.41 0l2.3-2.3c.4-.38.4-1.01 0-1.41m-3 1.6-9.46-9.46c-.61.45-1.29.72-2 .82-1.36.2-2.79-.21-3.83-1.25C3.37 9.76 2.93 8.5 3 7.26l3.09 3.09 4.24-4.24-3.09-3.09c1.24-.07 2.49.37 3.44 1.31 1.08 1.08 1.49 2.57 1.24 3.96-.12.71-.42 1.37-.88 1.96l9.45 9.45z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-1wus953-MuiTypography-root"
+                  >
+                    toolbox
+                  </p>
+                </div>
               </div>
               <div
-                class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
-              >
-                <p
-                  class="MuiTypography-root MuiTypography-body1 css-igcuwh-MuiTypography-root"
-                >
-                  toolbox
-                </p>
-              </div>
-            </div>
-            <div
-              class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
-            >
-              <div
-                class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-1yvsbrk-MuiGrid-root"
+                class="MuiCardContent-root css-1dygs93-MuiCardContent-root"
               >
                 <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-1 css-1yvsbrk-MuiGrid-root"
                 >
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
                   >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
                     >
-                      amazonWebServices
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      android
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      apacheKafka
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      architecture
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      backend
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      cicd
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      classification
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      clustering
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      computerVision
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      cpp
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      csharp
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      css
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      deepLearning
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      designPatterns
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      docker
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      frontend
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      git
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      gwt
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      html
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      java
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      javaScript
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      jboss
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      jni
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      jpa
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      kanban
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      machineLearning
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      matlab
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      multiTaskLearning
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      neuralNetworks
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      nodeJs
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      noSql
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      oop
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      openShift
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      optimization
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      python
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      quarkus
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      reactJs
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      recommenderSystems
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      regression
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      restfulWs
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      scrum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      speechEnhancement
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      springFramework
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      sql
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      systemDesign
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      tdd
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      tensorFlow
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      tomcat
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      typeScript
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      universalWindowsPlatform
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
-                >
-                  <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-1f8r048-MuiChip-root"
-                  >
-                    <span
-                      class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
-                    >
-                      xmpp
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
-            >
-              <div
-                class="MuiBox-root css-8atqhb"
-              >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
-                  href="https://www.linkedin.com/in/ghcaponetto"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
-                    tabindex="0"
-                    type="button"
-                  >
-                    moreDetails
-                    <span
-                      class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                        data-testid="LaunchIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                       >
-                        <path
-                          d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                </a>
+                        amazonWebServices
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        android
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        apacheKafka
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        architecture
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        backend
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        cicd
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        classification
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        clustering
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        computerVision
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        cpp
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        csharp
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        css
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        deepLearning
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        designPatterns
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        docker
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        frontend
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        git
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        gwt
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        html
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+                  >
+                    <div
+                      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault MuiChip-outlinedDefault css-b55u7i-MuiChip-root"
+                    >
+                      <span
+                        class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
+                      >
+                        java
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 css-yqiqnf-MuiGrid-root"
+                  >
+                    <button
+                      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-wkclpk-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      toolboxShowMore
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-xl-6 css-naonax-MuiGrid-root"
-          style="opacity: 1; webkit-transition: opacity 1400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
-        >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
-            style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
+            class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-xl-6 css-naonax-MuiGrid-root"
+            style="opacity: 1; transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
           >
             <div
-              class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1264uy2-MuiPaper-root-MuiCard-root"
+              style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
             >
               <div
-                class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
+                class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
               >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                  data-testid="EmojiEventsOutlinedIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
+                <div
+                  class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
                 >
-                  <path
-                    d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2M5 8V7h2v3.82C5.84 10.4 5 9.3 5 8m7 6c-1.65 0-3-1.35-3-3V5h6v6c0 1.65-1.35 3-3 3m7-6c0 1.3-.84 2.4-2 2.82V7h2z"
-                  />
-                </svg>
-              </div>
-              <div
-                class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
-              >
-                <p
-                  class="MuiTypography-root MuiTypography-body1 css-igcuwh-MuiTypography-root"
-                >
-                  awards
-                </p>
-              </div>
-            </div>
-            <div
-              class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
-            >
-              <ul
-                class="MuiList-root MuiList-padding MuiList-dense css-b7dj7n-MuiList-root"
-              >
-                <li
-                  class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-                >
-                  <div
-                    class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    data-testid="EmojiEventsOutlinedIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
                   >
-                    <span
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                    >
-                      meritHonorDiploma
-                    </span>
-                    <p
-                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                    <path
+                      d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2M5 8V7h2v3.82C5.84 10.4 5 9.3 5 8m7 6c-1.65 0-3-1.35-3-3V5h6v6c0 1.65-1.35 3-3 3m7-6c0 1.3-.84 2.4-2 2.82V7h2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-1wus953-MuiTypography-root"
+                  >
+                    awards
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiCardContent-root css-1dygs93-MuiCardContent-root"
+              >
+                <ul
+                  class="MuiList-root MuiList-padding MuiList-dense css-b7dj7n-MuiList-root"
+                >
+                  <li
+                    class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-10ubrnt-MuiListItem-root"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-1ay94tb-MuiListItemText-root"
                     >
                       <span
-                        class="MuiBox-root css-0"
+                        class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-a9tp9i-MuiTypography-root"
                       >
-                        <span
-                          class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
-                        >
-                          2011
-                        </span>
-                        <span
-                          class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
-                        >
-                          @
-                        </span>
-                        <a
-                          class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                          href="https://unifei.edu.br"
-                          rel="noreferrer"
-                          target="_blank"
-                        >
-                          unifei
-                        </a>
+                        meritHonorDiploma
                       </span>
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div
-              class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
-            >
-              <div
-                class="MuiBox-root css-8atqhb"
-              >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
-                  href="https://www.linkedin.com/in/ghcaponetto"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
-                    tabindex="0"
-                    type="button"
-                  >
-                    moreDetails
-                    <span
-                      class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                        data-testid="LaunchIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
+                      <p
+                        class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-vp7hrr-MuiTypography-root"
                       >
-                        <path
-                          d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                </a>
+                        <span
+                          class="MuiStack-root css-ymvxnu-MuiStack-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiTypography-overline css-nxx9hn-MuiTypography-root"
+                          >
+                            2011
+                          </span>
+                          <span
+                            class="MuiTypography-root MuiTypography-overline css-1kv0ovy-MuiTypography-root"
+                          >
+                            @
+                          </span>
+                          <a
+                            class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-14sn42o-MuiTypography-root-MuiLink-root"
+                            href="https://unifei.edu.br"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            unifei
+                          </a>
+                        </span>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-lg-5 css-1bgkxhf-MuiGrid-root"
-      style="opacity: 1; webkit-transition: opacity 1800ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 1800ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
-    >
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
-        style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-lg-5 css-1bgkxhf-MuiGrid-root"
+        style="opacity: 1; transition: opacity 380ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
-          class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1264uy2-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
         >
           <div
-            class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
+            class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
           >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="WorkOutlineOutlinedIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
+            <div
+              class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"
             >
-              <path
-                d="M14 6V4h-4v2zM4 8v11h16V8zm16-2c1.11 0 2 .89 2 2v11c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2l.01-11c0-1.11.88-2 1.99-2h4V4c0-1.11.89-2 2-2h4c1.11 0 2 .89 2 2v2z"
-              />
-            </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="WorkOutlineOutlinedIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M14 6V4h-4v2zM4 8v11h16V8zm16-2c1.11 0 2 .89 2 2v11c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2l.01-11c0-1.11.88-2 1.99-2h4V4c0-1.11.89-2 2-2h4c1.11 0 2 .89 2 2v2z"
+                />
+              </svg>
+            </div>
+            <div
+              class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-1wus953-MuiTypography-root"
+              >
+                experience
+              </p>
+            </div>
           </div>
           <div
-            class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+            class="MuiCardContent-root css-1dygs93-MuiCardContent-root"
           >
-            <p
-              class="MuiTypography-root MuiTypography-body1 css-igcuwh-MuiTypography-root"
+            <ul
+              class="MuiTimeline-root MuiTimeline-positionRight css-xp3u7l-MuiTimeline-root"
             >
-              experience
-            </p>
-          </div>
-        </div>
-        <div
-          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
-        >
-          <ul
-            class="MuiList-root MuiList-padding MuiList-dense css-b7dj7n-MuiList-root"
-          >
-            <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-            >
-              <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+              <li
+                class="MuiTimelineItem-root MuiTimelineItem-positionRight MuiTimelineItem-missingOppositeContent css-1u4i3t7-MuiTimelineItem-root"
               >
-                <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                >
-                  softwareEngineer → seniorSoftwareEngineer → principalSoftwareEngineer
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                <div
+                  class="MuiTimelineSeparator-root css-1muvgbz-MuiTimelineSeparator-root"
                 >
                   <span
-                    class="MuiBox-root css-0"
+                    class="MuiTimelineDot-root MuiTimelineDot-filled MuiTimelineDot-filledPrimary css-1cbp1fh-MuiTimelineDot-root"
+                  />
+                  <span
+                    class="MuiTimelineConnector-root css-1ami7lv-MuiTimelineConnector-root"
+                  />
+                </div>
+                <div
+                  class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionRight css-18sznxe-MuiTypography-root-MuiTimelineContent-root"
+                >
+                  <div
+                    class="MuiStack-root css-1i7twpk-MuiStack-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-aajfer-MuiTypography-root"
                     >
-                      2019
+                      2019 → present
                     </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-1x1j2vz-MuiTypography-root"
                     >
-                      → present
-                    </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
+                      principalSoftwareEngineer
+                    </p>
+                    <ul
+                      class="MuiBox-root css-1hftfgk"
                     >
-                      @
-                    </span>
-                    <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                      href="https://www.redhat.com"
-                      rel="noreferrer"
-                      target="_blank"
+                      <li
+                        class="MuiTypography-root MuiTypography-caption css-10l5a1-MuiTypography-root"
+                      >
+                        seniorSoftwareEngineer
+                      </li>
+                      <li
+                        class="MuiTypography-root MuiTypography-caption css-10l5a1-MuiTypography-root"
+                      >
+                        softwareEngineer
+                      </li>
+                    </ul>
+                    <div
+                      class="MuiTypography-root MuiTypography-overline css-tiqt6w-MuiTypography-root"
                     >
-                      redHat
-                    </a>
-                  </span>
-                </p>
-              </div>
-            </li>
-            <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-            >
-              <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                      @ 
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-3uxcnm-MuiTypography-root-MuiLink-root"
+                        href="https://www.redhat.com"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        redHat
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="MuiTimelineItem-root MuiTimelineItem-positionRight MuiTimelineItem-missingOppositeContent css-1u4i3t7-MuiTimelineItem-root"
               >
-                <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                >
-                  softwareEngineer → seniorSoftwareEngineer
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                <div
+                  class="MuiTimelineSeparator-root css-1muvgbz-MuiTimelineSeparator-root"
                 >
                   <span
-                    class="MuiBox-root css-0"
+                    class="MuiTimelineDot-root MuiTimelineDot-outlined MuiTimelineDot-outlinedGrey css-gnvf0o-MuiTimelineDot-root"
+                  />
+                  <span
+                    class="MuiTimelineConnector-root css-1ami7lv-MuiTimelineConnector-root"
+                  />
+                </div>
+                <div
+                  class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionRight css-18sznxe-MuiTypography-root-MuiTimelineContent-root"
+                >
+                  <div
+                    class="MuiStack-root css-1i7twpk-MuiStack-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-aajfer-MuiTypography-root"
                     >
-                      2017
+                      2017 → 2019
                     </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-1x1j2vz-MuiTypography-root"
                     >
-                      → 2019
-                    </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
+                      seniorSoftwareEngineer
+                    </p>
+                    <ul
+                      class="MuiBox-root css-1hftfgk"
                     >
-                      @
-                    </span>
-                    <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                      href="https://www.samsung.com"
-                      rel="noreferrer"
-                      target="_blank"
+                      <li
+                        class="MuiTypography-root MuiTypography-caption css-10l5a1-MuiTypography-root"
+                      >
+                        softwareEngineer
+                      </li>
+                    </ul>
+                    <div
+                      class="MuiTypography-root MuiTypography-overline css-tiqt6w-MuiTypography-root"
                     >
-                      samsung
-                    </a>
-                  </span>
-                </p>
-              </div>
-            </li>
-            <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-            >
-              <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                      @ 
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-3uxcnm-MuiTypography-root-MuiLink-root"
+                        href="https://www.samsung.com"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        samsung
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="MuiTimelineItem-root MuiTimelineItem-positionRight MuiTimelineItem-missingOppositeContent css-1u4i3t7-MuiTimelineItem-root"
               >
-                <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                >
-                  softwareEngineer
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                <div
+                  class="MuiTimelineSeparator-root css-1muvgbz-MuiTimelineSeparator-root"
                 >
                   <span
-                    class="MuiBox-root css-0"
+                    class="MuiTimelineDot-root MuiTimelineDot-outlined MuiTimelineDot-outlinedGrey css-gnvf0o-MuiTimelineDot-root"
+                  />
+                  <span
+                    class="MuiTimelineConnector-root css-1ami7lv-MuiTimelineConnector-root"
+                  />
+                </div>
+                <div
+                  class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionRight css-18sznxe-MuiTypography-root-MuiTimelineContent-root"
+                >
+                  <div
+                    class="MuiStack-root css-1i7twpk-MuiStack-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-aajfer-MuiTypography-root"
                     >
-                      2017
+                      2017 → 2017
                     </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-1x1j2vz-MuiTypography-root"
                     >
-                      → 2017
-                    </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
+                      softwareEngineer
+                    </p>
+                    <div
+                      class="MuiTypography-root MuiTypography-overline css-tiqt6w-MuiTypography-root"
                     >
-                      @
-                    </span>
-                    <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                      href="https://www.ifood.com.br"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      iFood
-                    </a>
-                  </span>
-                </p>
-              </div>
-            </li>
-            <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-            >
-              <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                      @ 
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-3uxcnm-MuiTypography-root-MuiLink-root"
+                        href="https://www.ifood.com.br"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        iFood
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="MuiTimelineItem-root MuiTimelineItem-positionRight MuiTimelineItem-missingOppositeContent css-1u4i3t7-MuiTimelineItem-root"
               >
-                <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                >
-                  graduateResearcher
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                <div
+                  class="MuiTimelineSeparator-root css-1muvgbz-MuiTimelineSeparator-root"
                 >
                   <span
-                    class="MuiBox-root css-0"
+                    class="MuiTimelineDot-root MuiTimelineDot-outlined MuiTimelineDot-outlinedGrey css-gnvf0o-MuiTimelineDot-root"
+                  />
+                  <span
+                    class="MuiTimelineConnector-root css-1ami7lv-MuiTimelineConnector-root"
+                  />
+                </div>
+                <div
+                  class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionRight css-18sznxe-MuiTypography-root-MuiTimelineContent-root"
+                >
+                  <div
+                    class="MuiStack-root css-1i7twpk-MuiStack-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-aajfer-MuiTypography-root"
                     >
-                      2015
+                      2015 → 2017
                     </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-1x1j2vz-MuiTypography-root"
                     >
-                      → 2017
-                    </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
+                      graduateResearcher
+                    </p>
+                    <div
+                      class="MuiTypography-root MuiTypography-overline css-tiqt6w-MuiTypography-root"
                     >
-                      @
-                    </span>
-                    <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                      href="https://www.unicamp.br"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      unicamp
-                    </a>
-                  </span>
-                </p>
-              </div>
-            </li>
-            <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-            >
-              <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                      @ 
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-3uxcnm-MuiTypography-root-MuiLink-root"
+                        href="https://www.unicamp.br"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        unicamp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="MuiTimelineItem-root MuiTimelineItem-positionRight MuiTimelineItem-missingOppositeContent css-1u4i3t7-MuiTimelineItem-root"
               >
-                <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                >
-                  juniorSoftwareEngineer
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                <div
+                  class="MuiTimelineSeparator-root css-1muvgbz-MuiTimelineSeparator-root"
                 >
                   <span
-                    class="MuiBox-root css-0"
+                    class="MuiTimelineDot-root MuiTimelineDot-outlined MuiTimelineDot-outlinedGrey css-gnvf0o-MuiTimelineDot-root"
+                  />
+                  <span
+                    class="MuiTimelineConnector-root css-1ami7lv-MuiTimelineConnector-root"
+                  />
+                </div>
+                <div
+                  class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionRight css-18sznxe-MuiTypography-root-MuiTimelineContent-root"
+                >
+                  <div
+                    class="MuiStack-root css-1i7twpk-MuiStack-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-aajfer-MuiTypography-root"
                     >
-                      2012
+                      2012 → 2015
                     </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-1x1j2vz-MuiTypography-root"
                     >
-                      → 2015
-                    </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
+                      juniorSoftwareEngineer
+                    </p>
+                    <div
+                      class="MuiTypography-root MuiTypography-overline css-tiqt6w-MuiTypography-root"
                     >
-                      @
-                    </span>
-                    <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                      href="https://www.samsung.com"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      samsung
-                    </a>
-                  </span>
-                </p>
-              </div>
-            </li>
-            <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-            >
-              <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                      @ 
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-3uxcnm-MuiTypography-root-MuiLink-root"
+                        href="https://www.samsung.com"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        samsung
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="MuiTimelineItem-root MuiTimelineItem-positionRight MuiTimelineItem-missingOppositeContent css-1u4i3t7-MuiTimelineItem-root"
               >
-                <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                >
-                  softwareDevelopmentIntern
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                <div
+                  class="MuiTimelineSeparator-root css-1muvgbz-MuiTimelineSeparator-root"
                 >
                   <span
-                    class="MuiBox-root css-0"
+                    class="MuiTimelineDot-root MuiTimelineDot-outlined MuiTimelineDot-outlinedGrey css-gnvf0o-MuiTimelineDot-root"
+                  />
+                  <span
+                    class="MuiTimelineConnector-root css-1ami7lv-MuiTimelineConnector-root"
+                  />
+                </div>
+                <div
+                  class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionRight css-18sznxe-MuiTypography-root-MuiTimelineContent-root"
+                >
+                  <div
+                    class="MuiStack-root css-1i7twpk-MuiStack-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-aajfer-MuiTypography-root"
                     >
-                      2011
+                      2011 → 2011
                     </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-1x1j2vz-MuiTypography-root"
                     >
-                      → 2011
-                    </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
+                      softwareDevelopmentIntern
+                    </p>
+                    <div
+                      class="MuiTypography-root MuiTypography-overline css-tiqt6w-MuiTypography-root"
                     >
-                      @
-                    </span>
-                    <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                      href="https://www.motorola.com"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      motorola
-                    </a>
-                  </span>
-                </p>
-              </div>
-            </li>
-            <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-            >
-              <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                      @ 
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-3uxcnm-MuiTypography-root-MuiLink-root"
+                        href="https://www.motorola.com"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        motorola
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="MuiTimelineItem-root MuiTimelineItem-positionRight MuiTimelineItem-missingOppositeContent css-1u4i3t7-MuiTimelineItem-root"
               >
-                <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                >
-                  undergraduateResearcher
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                <div
+                  class="MuiTimelineSeparator-root css-1muvgbz-MuiTimelineSeparator-root"
                 >
                   <span
-                    class="MuiBox-root css-0"
+                    class="MuiTimelineDot-root MuiTimelineDot-outlined MuiTimelineDot-outlinedGrey css-gnvf0o-MuiTimelineDot-root"
+                  />
+                  <span
+                    class="MuiTimelineConnector-root css-1ami7lv-MuiTimelineConnector-root"
+                  />
+                </div>
+                <div
+                  class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionRight css-18sznxe-MuiTypography-root-MuiTimelineContent-root"
+                >
+                  <div
+                    class="MuiStack-root css-1i7twpk-MuiStack-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-overline css-aajfer-MuiTypography-root"
                     >
-                      2007
+                      2007 → 2010
                     </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-1x1j2vz-MuiTypography-root"
                     >
-                      → 2010
-                    </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
+                      undergraduateResearcher
+                    </p>
+                    <div
+                      class="MuiTypography-root MuiTypography-overline css-tiqt6w-MuiTypography-root"
                     >
-                      @
-                    </span>
-                    <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                      href="https://unifei.edu.br"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      unifei
-                    </a>
-                  </span>
-                </p>
-              </div>
-            </li>
-            <li
-              class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-qyw6ft-MuiListItem-root"
-            >
-              <div
-                class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                      @ 
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-3uxcnm-MuiTypography-root-MuiLink-root"
+                        href="https://unifei.edu.br"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        unifei
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="MuiTimelineItem-root MuiTimelineItem-positionRight MuiTimelineItem-missingOppositeContent css-1vt8g3y-MuiTimelineItem-root"
               >
-                <span
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
-                >
-                  softwareDevelopmentIntern
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                <div
+                  class="MuiTimelineSeparator-root css-1muvgbz-MuiTimelineSeparator-root"
                 >
                   <span
-                    class="MuiBox-root css-0"
-                  >
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-1c7xfgu-MuiTypography-root"
-                    >
-                      2007
-                    </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-4xqwlr-MuiTypography-root"
-                    >
-                      → 2007
-                    </span>
-                    <span
-                      class="MuiTypography-root MuiTypography-overline css-1654ss2-MuiTypography-root"
-                    >
-                      @
-                    </span>
-                    <a
-                      class="MuiTypography-root MuiTypography-overline MuiLink-root MuiLink-underlineHover css-47xts5-MuiTypography-root-MuiLink-root"
-                      href="https://www.b2ml.com.br"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      b2mlSystems
-                    </a>
-                  </span>
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div
-          class="MuiCardActions-root MuiCardActions-spacing css-1ilmthd-MuiCardActions-root"
-        >
-          <div
-            class="MuiBox-root css-8atqhb"
-          >
-            <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1y171jh-MuiTypography-root-MuiLink-root"
-              href="https://www.linkedin.com/in/ghcaponetto"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorSuccess css-osp3w-MuiButtonBase-root-MuiButton-root"
-                tabindex="0"
-                type="button"
-              >
-                moreDetails
-                <span
-                  class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeSmall css-itrjwl-MuiButton-endIcon"
+                    class="MuiTimelineDot-root MuiTimelineDot-outlined MuiTimelineDot-outlinedGrey css-gnvf0o-MuiTimelineDot-root"
+                  />
+                </div>
+                <div
+                  class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionRight css-18sznxe-MuiTypography-root-MuiTimelineContent-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                    data-testid="LaunchIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="MuiStack-root css-1i7twpk-MuiStack-root"
                   >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </a>
+                    <span
+                      class="MuiTypography-root MuiTypography-overline css-aajfer-MuiTypography-root"
+                    >
+                      2007 → 2007
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-1x1j2vz-MuiTypography-root"
+                    >
+                      softwareDevelopmentIntern
+                    </p>
+                    <div
+                      class="MuiTypography-root MuiTypography-overline css-tiqt6w-MuiTypography-root"
+                    >
+                      @ 
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-3uxcnm-MuiTypography-root-MuiLink-root"
+                        href="https://www.b2ml.com.br"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        b2mlSystems
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

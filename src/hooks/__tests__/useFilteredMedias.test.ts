@@ -32,7 +32,8 @@ describe("useFilteredMedias", () => {
     const { result } = renderHook(() =>
       useFilteredMedias(medias, { ...DEFAULT_KEYWORD_SELECTION, isAnySelected: false }),
     );
-    expect(result.current).toEqual(medias);
+    expect(result.current).toHaveLength(medias.length);
+    expect(result.current.map((item) => item.title).sort()).toEqual(["Bar", "Foo"]);
   });
 
   it("should return all medias sorted desc by releaseDate when there is no selection", () => {

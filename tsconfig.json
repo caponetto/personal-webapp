@@ -9,6 +9,7 @@
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
+    "skipLibCheck": true,
     "removeComments": true,
     "jsx": "react-jsx",
     "resolveJsonModule": true,

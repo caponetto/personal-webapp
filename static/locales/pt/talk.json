@@ -1,12 +1,13 @@
 {
-  "header": "Aqui você encontra algumas de minhas <1>apresentações</1>",
-  "lives": {
-    "workspaceCollaborationInBC": "Workspace collaboration in Business Central",
-    "mavenArchetypesInBC": "Maven archetype support in Business Central",
-    "streamDecisionsWithDmnAndKafka": "Streaming decisions with DMN and Kafka",
-    "multiplyingArchitecture": "Transparent web platform decoupling with Multiplying Architecture"
-  },
   "conferences": {
     "streamDecisionsWithDmnAndKafka": "Streaming suas decisões com DMN e Kafka"
+  },
+  "header": "Palestras e apresentações",
+  "headerSubtitle": "Navegue por sessões em conferências e lives por tema.",
+  "lives": {
+    "mavenArchetypesInBC": "Maven archetype support in Business Central",
+    "multiplyingArchitecture": "Transparent web platform decoupling with Multiplying Architecture",
+    "streamDecisionsWithDmnAndKafka": "Streaming decisions with DMN and Kafka",
+    "workspaceCollaborationInBC": "Workspace collaboration in Business Central"
   }
 }

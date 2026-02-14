@@ -1,15 +1,16 @@
 {
-  "header": "Aquí puedes encontrar algo de mi <1>código</1>",
+  "header": "Proyectos y experimentos",
+  "headerSubtitle": "Explora proyectos seleccionados, experimentos y herramientas para desarrolladores.",
   "repositories": {
     "bhc": "Bayesian Hierarchical Clustering",
-    "vsCodeQuarkusDJL": "Servicios para editores en VS Code con Quarkus y DJL",
-    "lessIsMore": "Menos es más",
     "jupyterNotebooks": "Jupyter Notebooks",
-    "vsCodeDiffViewer": "Visor de archivos git diff en VS Code",
-    "vsCodeToxicityClassifier": "Clasificación de toxicidad en VS Code",
+    "lessIsMore": "Menos es más",
+    "personalWebApp": "Esta aplicación web :)",
     "streamDecisionsWithDmnAndKafka": "Streaming decisiones con DMN y Kafka",
+    "teachableMachinePlayground": "Teachable Machine Playground",
+    "vsCodeDiffViewer": "Visor de archivos git diff en VS Code",
     "vsCodeObjectDetection": "Detección de objetos en VS Code",
-    "personalWebApp": "Esta web app :)",
-    "teachableMachinePlayground": "Teachable Machine Playground"
+    "vsCodeQuarkusDJL": "Servicios para editores en VS Code con Quarkus y DJL",
+    "vsCodeToxicityClassifier": "Clasificación de toxicidad en VS Code"
   }
 }

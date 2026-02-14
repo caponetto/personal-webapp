@@ -1,13 +1,4 @@
-import "@fontsource/nunito/400.css";
-import "@fontsource/oxygen/400.css";
-import "@fontsource/philosopher/400.css";
-import "@fontsource/quicksand/400.css";
-import "@fontsource/roboto/400.css";
-
-export enum Fonts {
-  NUNITO = "Nunito",
-  OXYGEN = "Oxygen",
-  PHILOSOPHER = "Philosopher",
-  QUICKSAND = "Quicksand",
-  ROBOTO = "Roboto",
-}
+import "@fontsource/nunito/latin-400.css";
+import "@fontsource/nunito/latin-500.css";
+import "@fontsource/nunito/latin-600.css";
+import "@fontsource/quicksand/latin-600.css";

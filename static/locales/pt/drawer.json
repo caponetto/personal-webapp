@@ -1,17 +1,17 @@
 {
   "about": {
-    "subtitle": "Palavras sobre mim"
-  },
-  "journey": {
-    "subtitle": "Educação & experiência"
-  },
-  "text": {
-    "subtitle": "Conteúdo que escrevi"
-  },
-  "talk": {
-    "subtitle": "Assuntos que apresentei"
+    "subtitle": "Visão geral"
   },
   "code": {
-    "subtitle": "Projetos que destaco"
+    "subtitle": "Projetos e experimentos"
+  },
+  "journey": {
+    "subtitle": "Educação e carreira"
+  },
+  "talk": {
+    "subtitle": "Palestras e apresentações"
+  },
+  "text": {
+    "subtitle": "Artigos e pesquisa"
   }
 }

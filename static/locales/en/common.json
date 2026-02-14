@@ -1,12 +1,27 @@
 {
-  "social": {
-    "tooltip": "{{kind}} Profile"
+  "copyright": "© {{year}} {{name}}",
+  "filters": {
+    "clearFilters": "Clear",
+    "results": "{{shown}} of {{total}} items shown",
+    "sectionResults_one": "{{count}} result",
+    "sectionResults_other": "{{count}} results",
+    "showLessTopics": "Show fewer topics",
+    "showMoreTopics": "Show more topics",
+    "summaryCompact": "{{selected}} active"
   },
   "location": {
     "tooltip": "Currently based in {{location}}"
   },
-  "copyright": "© {{year}} {{name}}",
   "messages": {
-    "storedCookies": "Your preferences are saved in your browser storage."
+    "storedPreferences": "Your preferences are saved in your browser storage."
+  },
+  "social": {
+    "tooltip": "{{kind}} profile"
+  },
+  "ui": {
+    "close": "Close",
+    "closeSettings": "Close settings",
+    "openDrawer": "Open drawer",
+    "openSettings": "Open settings"
   }
 }

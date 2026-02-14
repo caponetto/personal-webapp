@@ -5,13 +5,12 @@ import Toolbar from "@mui/material/Toolbar";
 import { ReactNode, Suspense } from "react";
 import { I18nextProvider } from "react-i18next";
 import { HashRouter } from "react-router-dom";
-import { Colors } from "./colors";
 import { AppBar } from "./components/appbar";
 import { AppDrawer } from "./components/drawer";
 import { ScrollTop } from "./components/scrolltop";
 import { StorageSnackbar } from "./components/snackbar";
-import { AppContext } from "./context/AppContext";
 import { AppContextProvider } from "./context/AppContextProvider";
+import { useThemeModeContext, useUiStateContext } from "./context/AppContext";
 import { OpenStateActions } from "./context/OpenState";
 import "./fonts";
 import i18n from "./i18n";
@@ -23,54 +22,65 @@ const DRAWER_ITEM_WIDTH = DRAWER_WIDTH - 16;
 
 export function App() {
   return (
+    <AppProviders>
+      <AppShell />
+    </AppProviders>
+  );
+}
+
+type AppProvidersProps = Readonly<{
+  children: ReactNode;
+}>;
+
+function AppProviders(props: AppProvidersProps) {
+  return (
     <HashRouter>
       <I18nextProvider i18n={i18n}>
-        <CssBaseline />
-        <Suspense fallback={<LinearProgress color="inherit" sx={{ height: "2px" }} />}>
-          <AppContainer>
-            <AppBar drawerWidth={DRAWER_WIDTH} />
-            <AppDrawer drawerWidth={DRAWER_WIDTH} drawerItemWidth={DRAWER_ITEM_WIDTH} />
-            <Box component="main" sx={{ flexGrow: 1 }}>
-              <Toolbar id={BACK_TO_TOP_ANCHOR} />
-              <Suspense fallback={<LinearProgress sx={{ height: "2px" }} />}>
-                <RouteSwitch />
-              </Suspense>
-            </Box>
-          </AppContainer>
+        <Suspense
+          fallback={
+            <LinearProgress
+              color="inherit"
+              sx={{ position: "fixed", top: 0, left: 0, right: 0, height: "2px", zIndex: 2000 }}
+            />
+          }
+        >
+          <AppContextProvider>{props.children}</AppContextProvider>
         </Suspense>
       </I18nextProvider>
     </HashRouter>
   );
 }
 
-function AppContainer(props: { children: ReactNode }) {
-  const linearGradient = (startColor: string, endColor: string) =>
-    `linear-gradient(90deg, ${startColor} 0%, ${endColor} 100%)`;
+function AppShell() {
+  const { colorMode } = useThemeModeContext();
+  const { openState, openStateDispatch } = useUiStateContext();
 
   return (
-    <AppContextProvider>
-      <AppContext.Consumer>
-        {(app) => (
-          <Box
-            sx={{
-              display: "flex",
-              minHeight: "100vh",
-              background:
-                app.colorMode === "light"
-                  ? linearGradient(Colors.LightGray, Colors.WhiteGray)
-                  : linearGradient(Colors.BlueUniverse, Colors.DarkGray),
-            }}
-          >
-            <CssBaseline />
-            {props.children}
-            <StorageSnackbar
-              isOpen={app.openState.snackbar}
-              onClose={() => app.openStateDispatch({ type: OpenStateActions.SNACKBAR_CLOSE })}
-            />
-            <ScrollTop canShow={!app.openState.snackbar} anchor={BACK_TO_TOP_ANCHOR} />
-          </Box>
-        )}
-      </AppContext.Consumer>
-    </AppContextProvider>
+    <Box
+      sx={{
+        display: "flex",
+        minHeight: "100vh",
+        backgroundColor: "background.default",
+        backgroundImage:
+          colorMode === "light"
+            ? "radial-gradient(1200px 560px at 100% -10%, rgba(148, 163, 184, 0.12), transparent 60%)"
+            : "radial-gradient(1000px 500px at 100% -10%, rgba(94, 234, 212, 0.1), transparent 60%)",
+      }}
+    >
+      <CssBaseline />
+      <AppBar drawerWidth={DRAWER_WIDTH} />
+      <AppDrawer drawerWidth={DRAWER_WIDTH} drawerItemWidth={DRAWER_ITEM_WIDTH} />
+      <Box component="main" sx={{ flexGrow: 1 }}>
+        <Toolbar id={BACK_TO_TOP_ANCHOR} sx={{ minHeight: { xs: 52, sm: 56 } }} />
+        <Suspense fallback={<LinearProgress sx={{ height: "2px" }} />}>
+          <RouteSwitch />
+        </Suspense>
+      </Box>
+      <StorageSnackbar
+        isOpen={openState.snackbar}
+        onClose={() => openStateDispatch({ type: OpenStateActions.SNACKBAR_CLOSE })}
+      />
+      <ScrollTop canShow={!openState.snackbar} anchor={BACK_TO_TOP_ANCHOR} />
+    </Box>
   );
 }
