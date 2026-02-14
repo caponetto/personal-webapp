@@ -1,10 +1,7 @@
 name: "Setup environment"
+description: "Setup environment for CI/CD pipelines"
 
 inputs:
-  os:
-    description: "Operating System"
-    required: false
-    default: "ubuntu-latest"
   path:
     description: "context path"
     required: false
@@ -32,19 +29,4 @@ runs:
       run: |
         echo "STEP: Bootstrap"
         cd ${{ inputs.path }}
-        npm install
-
-    - name: "Check package-lock.json"
-      shell: bash
-      run: |
-        echo "STEP: Check package-lock.json"
-        cd ${{ inputs.path }}
-        git diff package-lock.json;
-        [ "0" == "$(git diff package-lock.json | wc -l | tr -d ' ')" ]
-
-    - name: "Check format"
-      shell: bash
-      run: |
-        echo "STEP: Check format"
-        cd ${{ inputs.path }}
-        npm run format:check
+        npm ci

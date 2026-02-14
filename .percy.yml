@@ -1,0 +1,10 @@
+version: 2
+snapshot:
+  widths:
+    - 1280
+    - 390
+  minHeight: 900
+  percyCSS: |
+    [data-testid="scroll-top-button"] {
+      display: none !important;
+    }

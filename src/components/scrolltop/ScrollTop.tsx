@@ -1,23 +1,23 @@
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { Tooltip } from "@mui/material";
-import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Zoom from "@mui/material/Zoom";
 import { MouseEvent } from "react";
 import { useTranslation } from "react-i18next";
 
-interface ScrollTopProps {
+type ScrollTopProps = Readonly<{
   anchor: string;
   canShow: boolean;
-}
+}>;
 
 export function ScrollTop(props: ScrollTopProps) {
   const { t } = useTranslation();
   const scrollTrigger = useScrollTrigger();
+  const scrollToTopLabel = t("literal:scrollToTop").toString();
 
-  const scrollToAnchor = (event: MouseEvent<HTMLDivElement>) => {
-    const anchor = ((event.target as HTMLDivElement).ownerDocument || document).querySelector(`#${props.anchor}`);
+  const scrollToAnchor = (event: MouseEvent<HTMLButtonElement>) => {
+    const anchor = (event.currentTarget.ownerDocument || document).querySelector(`#${props.anchor}`);
 
     if (!anchor) {
       return;
@@ -33,13 +33,25 @@ export function ScrollTop(props: ScrollTopProps) {
     <>
       {props.canShow && (
         <Zoom in={scrollTrigger}>
-          <Box onClick={scrollToAnchor} role="presentation" sx={{ position: "fixed", bottom: 16, right: 16 }}>
-            <Tooltip title={t("literal:scrollToTop")} arrow>
-              <Fab color="secondary" size="small" aria-label="scroll back to top">
-                <KeyboardArrowUpIcon />
-              </Fab>
-            </Tooltip>
-          </Box>
+          <Tooltip title={scrollToTopLabel} arrow>
+            <Fab
+              color="success"
+              size="small"
+              aria-label={scrollToTopLabel}
+              onClick={scrollToAnchor}
+              sx={{
+                position: "fixed",
+                bottom: 16,
+                right: 16,
+                boxShadow: 4,
+                "&:hover": {
+                  backgroundColor: "success.dark",
+                },
+              }}
+            >
+              <KeyboardArrowUpIcon />
+            </Fab>
+          </Tooltip>
         </Zoom>
       )}
     </>

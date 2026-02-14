@@ -2,17 +2,17 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import { useMemo } from "react";
-import { useApp } from "../../context/AppContext";
+import { useUiStateContext } from "../../context/AppContext";
 import { OpenStateActions } from "../../context/OpenState";
 import { DrawerContent } from "./DrawerContent";
 
-interface AppDrawerProps {
+type AppDrawerProps = Readonly<{
   drawerWidth: number;
   drawerItemWidth: number;
-}
+}>;
 
 export function AppDrawer(props: AppDrawerProps) {
-  const app = useApp();
+  const { openState, openStateDispatch } = useUiStateContext();
 
   const drawerContent = useMemo(
     () => <DrawerContent drawerItemWidth={props.drawerItemWidth} />,
@@ -21,7 +21,13 @@ export function AppDrawer(props: AppDrawerProps) {
 
   const muiPaperStyle = useMemo(
     () => ({
-      "& .MuiDrawer-paper": { overflow: "overlay", boxShadow: 2, boxSizing: "border-box", width: props.drawerWidth },
+      "& .MuiDrawer-paper": {
+        overflowY: "auto",
+        overflowX: "hidden",
+        boxShadow: 2,
+        boxSizing: "border-box",
+        width: props.drawerWidth,
+      },
     }),
     [props.drawerWidth],
   );
@@ -32,9 +38,9 @@ export function AppDrawer(props: AppDrawerProps) {
         data-testid="temporary-drawer"
         disableSwipeToOpen
         variant="temporary"
-        open={app.openState.drawer}
-        onOpen={() => app.openStateDispatch({ type: OpenStateActions.DRAWER_OPEN })}
-        onClose={() => app.openStateDispatch({ type: OpenStateActions.DRAWER_CLOSE })}
+        open={openState.drawer}
+        onOpen={() => openStateDispatch({ type: OpenStateActions.DRAWER_OPEN })}
+        onClose={() => openStateDispatch({ type: OpenStateActions.DRAWER_CLOSE })}
         ModalProps={{
           keepMounted: true,
         }}

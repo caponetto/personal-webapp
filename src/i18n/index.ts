@@ -20,6 +20,10 @@ i18n
     fallbackLng: SupportedLanguages.English,
     supportedLngs: Object.values(SupportedLanguages),
     ns: NAMESPACES,
+    detection: {
+      order: ["localStorage", "cookie", "navigator", "htmlTag"],
+      caches: ["localStorage", "cookie"],
+    },
     interpolation: {
       escapeValue: false,
     },

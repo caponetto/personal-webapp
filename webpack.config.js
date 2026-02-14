@@ -8,13 +8,15 @@ const { EnvironmentPlugin } = require("webpack");
 
 module.exports = async (_env, argv) => {
   const isDevelopment = argv.mode === "development";
+  const enableCoverageInstrumentation = process.env.CYPRESS_COVERAGE === "true";
   const gtmResource = getGtmResource();
-  const devtool = isDevelopment ? { devtool: "inline-source-map" } : {};
+  const devtool = isDevelopment ? { devtool: "eval-cheap-module-source-map" } : {};
   const sourceMapsLoader = isDevelopment
     ? [
         {
           test: /\.js$/,
           enforce: "pre",
+          include: [path.resolve("./src")],
           use: ["source-map-loader"],
         },
       ]
@@ -32,13 +34,42 @@ module.exports = async (_env, argv) => {
       },
       output: {
         path: path.resolve("./dist"),
-        filename: "[name].js",
-        chunkFilename: "[name].bundle.js",
+        filename: isDevelopment ? "[name].js" : "[name].[contenthash].js",
+        chunkFilename: isDevelopment ? "[name].bundle.js" : "[name].[contenthash].bundle.js",
+        clean: true,
+      },
+      cache: {
+        type: "filesystem",
       },
       stats: {
         excludeModules: true,
       },
       optimization: {
+        ...(isDevelopment
+          ? {}
+          : {
+              runtimeChunk: "single",
+              splitChunks: {
+                chunks: "all",
+                cacheGroups: {
+                  reactVendor: {
+                    test: /[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom)[\\/]/,
+                    name: "react-vendor",
+                    priority: 30,
+                  },
+                  muiVendor: {
+                    test: /[\\/]node_modules[\\/]@mui[\\/]/,
+                    name: "mui-vendor",
+                    priority: 20,
+                  },
+                  vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: "vendor",
+                    priority: 10,
+                  },
+                },
+              },
+            }),
         minimizer: [`...`, new JsonMinimizerPlugin(), new HtmlMinimizerPlugin()],
       },
       module: {
@@ -47,6 +78,16 @@ module.exports = async (_env, argv) => {
           {
             test: /\.tsx?$/,
             use: [
+              ...(enableCoverageInstrumentation
+                ? [
+                    {
+                      loader: "babel-loader",
+                      options: {
+                        plugins: ["istanbul"],
+                      },
+                    },
+                  ]
+                : []),
               {
                 loader: "ts-loader",
                 options: {
@@ -59,7 +100,15 @@ module.exports = async (_env, argv) => {
           },
           {
             test: /\.css$/,
-            use: ["style-loader", "css-loader"],
+            use: [
+              {
+                loader: "style-loader",
+                options: {
+                  esModule: false,
+                },
+              },
+              "css-loader",
+            ],
           },
         ],
       },
@@ -70,7 +119,7 @@ module.exports = async (_env, argv) => {
       plugins: [
         new HtmlWebpackPlugin({
           template: "./static/index.html",
-          inject: false,
+          inject: "body",
           minify: false,
         }),
         new HtmlReplaceWebpackPlugin([

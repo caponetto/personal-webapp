@@ -35,6 +35,12 @@ describe("useQueryParam :: useQueryParam", () => {
     const { result } = renderHook(() => useQueryParam("foo"), { wrapper: getWrapper(testUrl) });
     expect(result.current).toEqual("bar");
   });
+
+  it("should not throw with malformed escape sequences", () => {
+    const testUrl = "/test?k=%";
+    const { result } = renderHook(() => useQueryParam(QueryParams.KEYWORDS), { wrapper: getWrapper(testUrl) });
+    expect(result.current).toEqual("%");
+  });
 });
 
 describe("useQueryParam :: useQueryParamKeywords", () => {

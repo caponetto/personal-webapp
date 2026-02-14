@@ -1,97 +1,75 @@
 import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
-import HomeRepairServiceOutlinedIcon from "@mui/icons-material/HomeRepairServiceOutlined";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
-import VerifiedOutlinedIcon from "@mui/icons-material/VerifiedOutlined";
+import WorkspacePremiumOutlinedIcon from "@mui/icons-material/WorkspacePremiumOutlined";
 import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
+import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
 import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Grid";
-import { Trans, useTranslation } from "react-i18next";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTranslation } from "react-i18next";
 import { ChipGrid } from "../../components/chip";
 import { Page } from "../../components/page";
-import { useApp } from "../../context/AppContext";
+import { useSchemaContext } from "../../context/AppContext";
+import { ExperienceTimeline } from "./ExperienceTimeline";
 import { JourneyCard } from "./JourneyCard";
 import { JourneyList } from "./JourneyList";
 
 const SECTION_FADE_TIME = {
-  education: 1000,
-  certifications: 1200,
-  awards: 1400,
-  toolbox: 1600,
-  experience: 1800,
+  education: 220,
+  certifications: 260,
+  awards: 300,
+  toolbox: 340,
+  experience: 380,
 };
 
 export default function JourneyPage() {
-  const {
-    schema: { personal, journey },
-  } = useApp();
+  const { journey } = useSchemaContext();
   const { t } = useTranslation();
+  const reduceMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
+
+  const fadeTime = reduceMotion
+    ? { education: 0, certifications: 0, awards: 0, toolbox: 0, experience: 0 }
+    : SECTION_FADE_TIME;
 
   return (
-    <Page
-      name="journey"
-      headerContent={
-        <Trans i18nKey="journey:header">
-          Here you can see my <strong>journey</strong> summary
-        </Trans>
-      }
-    >
-      <Grid container spacing={2}>
+    <Page name="journey" headerContent={t("journey:header")} headerSubtitle={t("journey:headerSubtitle")}>
+      <Grid container spacing={2} alignItems="flex-start">
         <Grid size={{ xs: 12, lg: 7 }}>
-          <Grid container spacing={2}>
-            <Fade in={true} timeout={SECTION_FADE_TIME.education}>
+          <Grid container spacing={2} alignItems="flex-start">
+            <Fade in={true} timeout={fadeTime.education}>
               <Grid size={{ xs: 12, xl: 6 }}>
-                <JourneyCard
-                  title={t("literal:education")}
-                  icon={<SchoolOutlinedIcon />}
-                  moreDetailsUrl={personal.urls.linkedin}
-                >
+                <JourneyCard title={t("literal:education")} icon={<SchoolOutlinedIcon />}>
                   <JourneyList kind="education" items={journey.education} />
                 </JourneyCard>
               </Grid>
             </Fade>
-            <Fade in={true} timeout={SECTION_FADE_TIME.certifications}>
+            <Fade in={true} timeout={fadeTime.certifications}>
               <Grid size={{ xs: 12, xl: 6 }}>
-                <JourneyCard
-                  title={t("literal:certifications")}
-                  icon={<VerifiedOutlinedIcon />}
-                  moreDetailsUrl={personal.urls.linkedin}
-                >
+                <JourneyCard title={t("literal:certifications")} icon={<WorkspacePremiumOutlinedIcon />}>
                   <JourneyList kind="certification" items={journey.certification} />
                 </JourneyCard>
               </Grid>
             </Fade>
-            <Fade in={true} timeout={SECTION_FADE_TIME.toolbox}>
+            <Fade in={true} timeout={fadeTime.toolbox}>
               <Grid size={{ xs: 12 }}>
-                <JourneyCard
-                  title={t("literal:toolbox")}
-                  icon={<HomeRepairServiceOutlinedIcon />}
-                  moreDetailsUrl={personal.urls.linkedin}
-                >
+                <JourneyCard title={t("literal:toolbox")} icon={<BuildOutlinedIcon />}>
                   <ChipGrid groupName="skills" items={journey.toolbox} />
                 </JourneyCard>
               </Grid>
             </Fade>
-            <Fade in={true} timeout={SECTION_FADE_TIME.awards}>
+            <Fade in={true} timeout={fadeTime.awards}>
               <Grid size={{ xs: 12, xl: 6 }}>
-                <JourneyCard
-                  title={t("literal:awards")}
-                  icon={<EmojiEventsOutlinedIcon />}
-                  moreDetailsUrl={personal.urls.linkedin}
-                >
+                <JourneyCard title={t("literal:awards")} icon={<EmojiEventsOutlinedIcon />}>
                   <JourneyList kind="award" items={journey.award} />
                 </JourneyCard>
               </Grid>
             </Fade>
           </Grid>
         </Grid>
-        <Fade in={true} timeout={SECTION_FADE_TIME.experience}>
+        <Fade in={true} timeout={fadeTime.experience}>
           <Grid size={{ xs: 12, lg: 5 }}>
-            <JourneyCard
-              title={t("literal:experience")}
-              icon={<WorkOutlineOutlinedIcon />}
-              moreDetailsUrl={personal.urls.linkedin}
-            >
-              <JourneyList kind="experience" items={journey.experience} />
+            <JourneyCard title={t("literal:experience")} icon={<WorkOutlineOutlinedIcon />}>
+              <ExperienceTimeline items={journey.experience} />
             </JourneyCard>
           </Grid>
         </Fade>

@@ -3,32 +3,39 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
-import { ExternalLink } from "../link";
+import { EXTERNAL_LINK_PROPS } from "../../utils/externalLink";
 
-interface SocialButtonProps {
+type SocialButtonProps = Readonly<{
   label: string;
   icon: ReactNode;
   url: string;
   disableSpacing?: boolean;
-}
+}>;
 
 export function SocialButton(props: SocialButtonProps) {
   const { t } = useTranslation();
+  const tooltipLabel: string = t("common:social.tooltip", { kind: props.label });
 
   return (
     <Box display="flex" justifyContent="center">
-      <ExternalLink href={props.url}>
-        <Tooltip title={t("common:social.tooltip", { kind: props.label }).toString()} arrow>
-          <IconButton
-            id={`${props.label}-button`}
-            data-testid={`${props.label}-button`}
-            sx={{ p: props.disableSpacing ? "0" : "8px" }}
-            aria-label={`Open ${props.label}`}
-          >
-            {props.icon}
-          </IconButton>
-        </Tooltip>
-      </ExternalLink>
+      <Tooltip title={tooltipLabel} arrow>
+        <IconButton
+          sx={{
+            p: props.disableSpacing ? "0" : "8px",
+            "&:focus-visible": {
+              outline: "2px solid",
+              outlineColor: "success.main",
+              outlineOffset: 2,
+            },
+          }}
+          aria-label={`Open ${props.label}`}
+          component="a"
+          href={props.url}
+          {...EXTERNAL_LINK_PROPS}
+        >
+          {props.icon}
+        </IconButton>
+      </Tooltip>
     </Box>
   );
 }

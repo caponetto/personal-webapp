@@ -8,9 +8,11 @@ export const DEFAULT_KEYWORD_SELECTION = {
 };
 
 export const createMediaItem = (args: Partial<MediaItem>): MediaItem => ({
+  id: args.id ?? "media-item-id",
   title: args.title ?? "Title",
   keywordKeys: args.keywordKeys ?? [],
   kind: args.kind ?? "post",
   releaseDate: args.releaseDate ?? new Date(),
   publication: args.publication ?? "gitHub",
+  url: args.url,
 });

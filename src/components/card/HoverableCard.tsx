@@ -1,23 +1,40 @@
-import Card from "@mui/material/Card";
+import Card, { CardProps } from "@mui/material/Card";
 import { SxProps, Theme } from "@mui/system";
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
 
-interface HoverableCardProps {
+type HoverableCardProps = Readonly<{
   children: ReactNode;
   sx?: SxProps<Theme>;
-}
+}> &
+  Omit<CardProps, "children" | "sx">;
 
 export function HoverableCard(props: HoverableCardProps) {
-  const [isMouseOver, setMouseOver] = useState(false);
+  const { children, sx, ...cardProps } = props;
 
   return (
     <Card
-      sx={{ ...props.sx }}
-      elevation={isMouseOver ? 5 : 2}
-      onMouseOver={() => setMouseOver(true)}
-      onMouseLeave={() => setMouseOver(false)}
+      {...cardProps}
+      elevation={2}
+      sx={[
+        {
+          border: "1px solid",
+          borderColor: "divider",
+          transition: "border-color 140ms ease, box-shadow 140ms ease, transform 140ms ease",
+          "&:hover, &:focus-within": {
+            boxShadow: 6,
+            borderColor: "action.active",
+            transform: "translateY(-1px)",
+          },
+          "&:focus-visible": {
+            outline: "2px solid",
+            outlineColor: "success.main",
+            outlineOffset: 2,
+          },
+        },
+        ...(Array.isArray(sx) ? sx : [sx]),
+      ]}
     >
-      {props.children}
+      {children}
     </Card>
   );
 }

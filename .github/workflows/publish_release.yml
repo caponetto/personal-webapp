@@ -32,14 +32,14 @@ jobs:
           fi
 
       - name: "Checkout personal-webapp"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           ref: ${{ steps.resolve_version.outputs.version }}
           path: ${{ github.workspace }}/personal-webapp
 
       - name: "Checkout caponetto.github.io"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           path: ${{ github.workspace }}/caponetto.github.io

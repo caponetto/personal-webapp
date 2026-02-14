@@ -1,17 +1,17 @@
 {
   "about": {
-    "subtitle": "Words about myself"
-  },
-  "journey": {
-    "subtitle": "Education & experience"
-  },
-  "text": {
-    "subtitle": "Content that I've written"
-  },
-  "talk": {
-    "subtitle": "Things that I've talked about"
+    "subtitle": "Profile overview"
   },
   "code": {
-    "subtitle": "Projects worth highlighting"
+    "subtitle": "Projects & experiments"
+  },
+  "journey": {
+    "subtitle": "Education & career"
+  },
+  "talk": {
+    "subtitle": "Talks & presentations"
+  },
+  "text": {
+    "subtitle": "Articles & research"
   }
 }

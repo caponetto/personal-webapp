@@ -13,7 +13,7 @@ export function useQueryParam(name: string): string | undefined {
     return;
   }
 
-  return decodeURIComponent(value);
+  return value;
 }
 
 export function useQueryParamKeywords(): string[] {

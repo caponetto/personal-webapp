@@ -1,11 +1,12 @@
 import { MemoryRouter } from "react-router-dom";
+import * as router from "react-router";
 import { act, renderHook } from "@testing-library/react";
 import { buildInitialSelectionMap, useKeywordSelection } from "../../hooks/useKeywordSelection";
 import { useQueryParamKeywords } from "../../hooks/useQueryParam";
 import { createMediaItem } from "../../jest/TestBuilders";
 
-jest.mock("react-router-dom", () => {
-  const actual = jest.requireActual("react-router-dom");
+jest.mock("react-router", () => {
+  const actual = jest.requireActual("react-router");
   return {
     ...actual,
     useNavigate: jest.fn(),
@@ -13,6 +14,14 @@ jest.mock("react-router-dom", () => {
 });
 jest.mock("../../hooks/useQueryParam");
 const mockUseQueryParamKeywords = useQueryParamKeywords as jest.MockedFunction<typeof useQueryParamKeywords>;
+const mockUseNavigate = router.useNavigate as jest.MockedFunction<typeof router.useNavigate>;
+const mockNavigate = jest.fn();
+
+beforeEach(() => {
+  mockNavigate.mockClear();
+  mockUseNavigate.mockReturnValue(mockNavigate);
+  mockUseQueryParamKeywords.mockReset();
+});
 
 describe("useKeywordSelection :: buildInitialSelectionMap", () => {
   it("should build an empty map when there is no media", () => {
@@ -50,7 +59,7 @@ describe("useKeywordSelection :: buildInitialSelectionMap", () => {
 
 describe("useKeywordSelection :: useKeywordSelection", () => {
   it("should initialize the KeywordSelection with all entries unselected", () => {
-    mockUseQueryParamKeywords.mockReturnValueOnce([]);
+    mockUseQueryParamKeywords.mockReturnValue([]);
 
     const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
     const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
@@ -71,7 +80,7 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
   });
 
   it("should initialize the KeywordSelection with selected keywords that match with query param", () => {
-    mockUseQueryParamKeywords.mockReturnValueOnce(["Machine Learning", "TensorFlow"]);
+    mockUseQueryParamKeywords.mockReturnValue(["Machine Learning", "TensorFlow"]);
 
     const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
     const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
@@ -92,7 +101,7 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
   });
 
   it("should not do anything when the selection map does not have the given keyword", () => {
-    mockUseQueryParamKeywords.mockReturnValueOnce([]);
+    mockUseQueryParamKeywords.mockReturnValue([]);
 
     const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
     const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
@@ -119,7 +128,7 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
   });
 
   it("should select keywords through onToggleSelection accordingly", () => {
-    mockUseQueryParamKeywords.mockReturnValueOnce([]);
+    mockUseQueryParamKeywords.mockReturnValue([]);
 
     const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
     const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
@@ -144,11 +153,11 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
 
     expect(result.current.isAnySelected).toBeTruthy();
     expect(result.current.selectionMap).toEqual(expectedSelectionMap);
-    //expect(router.useNavigate).toHaveBeenCalled();
+    expect(mockNavigate).toHaveBeenCalled();
   });
 
   it("should unselect keywords through onToggleSelection accordingly", () => {
-    mockUseQueryParamKeywords.mockReturnValueOnce(["Machine Learning", "TensorFlow"]);
+    mockUseQueryParamKeywords.mockReturnValue(["Machine Learning", "TensorFlow"]);
 
     const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
     const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });
@@ -173,11 +182,11 @@ describe("useKeywordSelection :: useKeywordSelection", () => {
 
     expect(result.current.isAnySelected).toBeFalsy();
     expect(result.current.selectionMap).toEqual(expectedSelectionMap);
-    //expect(router.useNavigate).toHaveBeenCalled();
+    expect(mockNavigate).toHaveBeenCalled();
   });
 
   it("should clear the selection through onClearSelection", () => {
-    mockUseQueryParamKeywords.mockReturnValueOnce(["Machine Learning", "TensorFlow"]);
+    mockUseQueryParamKeywords.mockReturnValue(["Machine Learning", "TensorFlow"]);
 
     const media1 = createMediaItem({ title: "Media 1", keywordKeys: ["TypeScript", "ReactJS"] });
     const media2 = createMediaItem({ title: "Media 2", keywordKeys: ["TypeScript", "ReactJS", "Machine Learning"] });

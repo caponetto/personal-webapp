@@ -5,3 +5,9 @@
 # misc
 .DS_Store
 npm-debug.log*
+.cache
+cypress/videos
+cypress/screenshots
+cypress/downloads
+.nyc_output
+coverage

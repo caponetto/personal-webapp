@@ -6,49 +6,128 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+
 concurrency:
   group: ${{ github.event.pull_request && format('ci-pr-{0}', github.event.pull_request.number) || 'ci-main' }}
   cancel-in-progress: true
 
 jobs:
-  build:
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
+  quality:
+    runs-on: ubuntu-latest
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - name: "Setup environment"
         uses: ./.github/actions/setup-env
+
+      - name: "Restore Jest cache"
+        uses: actions/cache@v4
         with:
-          os: ${{ matrix.os }}
+          path: .cache/jest
+          key: ${{ runner.os }}-jest-${{ hashFiles('package-lock.json', 'jest.config.ts', 'babel.config.js') }}
 
-      - name: "Build"
+      - name: "Verify"
         shell: bash
         run: |
-          npm run build:prod
+          npm run verify
 
-      - name: "Test"
+      - name: "Architecture boundary checks"
         shell: bash
         run: |
-          npm run test
+          npm run check:deps:boundaries
 
-      - name: "Upload build artifact (Ubuntu only)"
-        if: matrix.os == 'ubuntu-latest'
-        uses: actions/upload-artifact@v4
+      - name: "Dependency usage checks (advisory)"
+        continue-on-error: true
+        shell: bash
+        run: |
+          npm run check:deps:unused
+
+      - name: "Bundle size gate"
+        shell: bash
+        run: |
+          npm run size
+
+      - name: "E2E coverage (Cypress)"
+        uses: cypress-io/github-action@v7
+        with:
+          install: false
+          command: npm run e2e:run:coverage
+        env:
+          CI: "true"
+
+      - name: "Merge coverage reports"
+        shell: bash
+        run: |
+          npm run coverage:merge
+
+      - name: "Enforce coverage thresholds"
+        shell: bash
+        run: |
+          npm run coverage:check
+
+      - name: "Upload Cypress artifacts"
+        if: failure()
+        uses: actions/upload-artifact@v6
+        with:
+          name: cypress-artifacts
+          path: |
+            cypress/videos
+            cypress/screenshots
+
+      - name: "Upload combined coverage report"
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./dist-test/coverage-combined/lcov.info
+          flags: combined
+          fail_ci_if_error: true
+
+      - name: "Upload coverage artifacts"
+        uses: actions/upload-artifact@v6
+        with:
+          name: coverage-combined
+          path: |
+            dist-test/coverage-combined
+
+      - name: "Upload build artifact"
+        uses: actions/upload-artifact@v6
         with:
           name: webapp-build
           path: |
             dist
 
-      - name: "Upload Test artifacts"
-        uses: actions/upload-artifact@v4
+      - name: "Upload test artifacts"
+        uses: actions/upload-artifact@v6
         with:
-          name: test-artifacts-${{ matrix.os }}
+          name: test-artifacts
           path: |
             dist-test
+
+  smoke:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: "Setup environment"
+        uses: ./.github/actions/setup-env
+
+      - name: "Smoke checks"
+        shell: bash
+        run: |
+          git diff --exit-code -- package-lock.json
+          npm run check:types
+          npm run check:types:cypress
+          npm run check:locales
+          npm run check:format
