@@ -64,7 +64,7 @@ export function AppBar(props: AppBarProps) {
             {`${personal.firstName} ${personal.lastName}`}
           </Typography>
         </Box>
-        <Tooltip title={tLiteral(t, "settings").toString()} arrow>
+        <Tooltip title={tLiteral(t, "settings").toString()} arrow disableFocusListener disableTouchListener>
           <Box>
             <IconButton
               data-testid="open-settings-button"

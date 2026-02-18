@@ -5,6 +5,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { obfuscateEmailAddress } from "../../utils/emailFormatting";
 
 const COPIED_FEEDBACK_MS = 1200;
 
@@ -15,7 +16,7 @@ type EmailContactProps = Readonly<{
 export function EmailContact(props: EmailContactProps) {
   const { t } = useTranslation();
   const [copied, setCopied] = useState(false);
-  const obfuscatedEmail = props.email.replace("@", " [at] ");
+  const obfuscatedEmail = obfuscateEmailAddress(props.email);
 
   const copyEmail = async () => {
     if (!navigator.clipboard) {
