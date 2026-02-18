@@ -76,10 +76,12 @@ export function AppBar(props: AppBarProps) {
             </IconButton>
           </Box>
         </Tooltip>
-        <SettingsDrawer
-          open={openState.settings}
-          onClose={() => openStateDispatch({ type: OpenStateActions.SETTINGS_CLOSE })}
-        />
+        {openState.settings && (
+          <SettingsDrawer
+            open={openState.settings}
+            onClose={() => openStateDispatch({ type: OpenStateActions.SETTINGS_CLOSE })}
+          />
+        )}
       </Toolbar>
     </MuiAppBar>
   );

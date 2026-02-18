@@ -1,6 +1,5 @@
 import Box from "@mui/material/Box";
 import { ReactNode } from "react";
-import { usePageActive } from "../../hooks/usePageActive";
 import { PageNames } from "../../routes";
 import { PageHeader } from "./PageHeader";
 
@@ -12,8 +11,6 @@ type PageProps = Readonly<{
 }>;
 
 export function Page(props: PageProps) {
-  const active = usePageActive(0);
-
   return (
     <Box
       data-testid={`${props.name}-page`}
@@ -27,7 +24,7 @@ export function Page(props: PageProps) {
       }}
     >
       {props.headerContent && <PageHeader title={props.headerContent} subtitle={props.headerSubtitle} />}
-      {active && <Box sx={{ mt: props.headerContent ? { xs: 1, md: 1.5 } : 0 }}>{props.children}</Box>}
+      <Box sx={{ mt: props.headerContent ? { xs: 1, md: 1.5 } : 0 }}>{props.children}</Box>
     </Box>
   );
 }

@@ -44,21 +44,16 @@ export function MediaCatalogPage(props: MediaCatalogPageProps) {
     () => filteredSections.reduce((accumulator, section) => accumulator + section.mediaItems.length, 0),
     [filteredSections],
   );
-  const sectionFadeStep = 55;
 
   return (
     <Page name={props.pageName} headerContent={props.headerContent} headerSubtitle={props.headerSubtitle}>
       <KeywordChips keywordSelection={keywordSelection} resultCount={resultCount} totalCount={totalCount} />
-      {filteredSections.map((section, index) => (
+      {filteredSections.map((section) => (
         <MediaSection
           key={`media-section-${props.pageName}-${section.title}`}
           title={section.title}
           keywordSelection={keywordSelection}
           mediaItems={section.mediaItems}
-          fadeTime={{
-            title: 220 + Math.min(index * sectionFadeStep, 220),
-            item: 320 + Math.min(index * sectionFadeStep, 220),
-          }}
         />
       ))}
     </Page>

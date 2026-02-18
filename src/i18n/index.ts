@@ -2,6 +2,7 @@ import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
+import { resources } from "./resources";
 
 export enum SupportedLanguages {
   English = "en",
@@ -20,6 +21,10 @@ i18n
     fallbackLng: SupportedLanguages.English,
     supportedLngs: Object.values(SupportedLanguages),
     ns: NAMESPACES,
+    resources: {
+      [SupportedLanguages.English]: resources,
+    },
+    partialBundledLanguages: true,
     detection: {
       order: ["localStorage", "cookie", "navigator", "htmlTag"],
       caches: ["localStorage", "cookie"],

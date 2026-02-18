@@ -119,6 +119,7 @@
     "prepare": "husky",
     "size": "npm run check:size",
     "start": "webpack serve --env dev --mode development",
+    "start:lighthouse": "webpack serve --mode production",
     "start:coverage": "CYPRESS_COVERAGE=true webpack serve --env dev --mode development",
     "test": "rimraf dist-test && npm run test:unit",
     "test:visual": "start-server-and-test start tcp:9000 \"percy exec -- cypress run --config-file cypress.percy.config.ts --spec cypress/percy/visualRegression.cy.ts\"",

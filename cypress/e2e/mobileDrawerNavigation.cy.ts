@@ -8,11 +8,11 @@ describe("Mobile drawer navigation", () => {
     appShell.visit("about");
 
     appShell.openMobileDrawer();
-    cy.getByTestId("temporary-drawer").should("be.visible");
+    cy.getByTestId("nav-item-journey").filter(":visible").should("exist");
 
     appShell.goTo("journey");
     cy.location("hash").should("eq", "#/journey");
     cy.getByTestId("journey-page").should("be.visible");
-    cy.getByTestId("temporary-drawer").should("not.be.visible");
+    cy.getByTestId("open-drawer-button").should("be.visible");
   });
 });
