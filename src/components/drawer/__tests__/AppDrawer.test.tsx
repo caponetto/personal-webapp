@@ -39,12 +39,12 @@ describe("AppDrawer", () => {
     mockDispatch.mockReset();
   });
 
-  it("renders temporary and permanent drawers", () => {
+  it("renders temporary drawer on mobile", () => {
     render(<AppDrawer drawerWidth={300} drawerItemWidth={284} />);
 
     expect(screen.getByTestId("temporary-drawer")).toBeInTheDocument();
-    expect(screen.getByTestId("permanent-drawer")).toBeInTheDocument();
-    expect(screen.getAllByTestId("drawer-content")).toHaveLength(2);
+    expect(screen.queryByTestId("permanent-drawer")).not.toBeInTheDocument();
+    expect(screen.getAllByTestId("drawer-content")).toHaveLength(1);
   });
 
   it("dispatches open and close actions on temporary drawer callbacks", () => {

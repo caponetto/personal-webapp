@@ -1,27 +1,14 @@
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
-import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { KeywordSelection } from "../../hooks/useKeywordSelection";
 import { MediaItem } from "../../schema";
 import { MediaCard } from "../card";
 
-const DEFAULT_FADE_TIME: MediaSectionFadeTime = {
-  title: 220,
-  item: 320,
-};
-
-export interface MediaSectionFadeTime {
-  title: number;
-  item: number;
-}
-
 type MediaSectionProps = Readonly<{
   title: string;
   mediaItems: MediaItem[];
-  fadeTime?: MediaSectionFadeTime;
   keywordSelection: KeywordSelection;
 }>;
 
@@ -36,8 +23,6 @@ function resolveCardGridSize(isSingleItemSection: boolean, isTwoItemSection: boo
 }
 
 export function MediaSection(props: MediaSectionProps) {
-  const reduceMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
-
   if (props.mediaItems.length === 0) {
     return null;
   }
@@ -47,40 +32,32 @@ export function MediaSection(props: MediaSectionProps) {
   const cardGridSize = resolveCardGridSize(isSingleItemSection, isTwoItemSection);
 
   return (
-    <Fade in={true} timeout={reduceMotion ? 0 : (props.fadeTime?.title ?? DEFAULT_FADE_TIME.title)}>
-      <Box sx={{ mt: { xs: 4, md: 5 } }}>
-        <Divider
-          textAlign="left"
-          sx={{
-            mb: { xs: 2.5, md: 3 },
-            "::before": { width: "1%" },
-            "::after": { width: "99%" },
-            opacity: 0.55,
-          }}
+    <Box sx={{ mt: { xs: 4, md: 5 } }}>
+      <Divider
+        textAlign="left"
+        sx={{
+          mb: { xs: 2.5, md: 3 },
+          "::before": { width: "1%" },
+          "::after": { width: "99%" },
+          opacity: 0.55,
+        }}
+      >
+        <Typography
+          fontWeight={600}
+          variant="overline"
+          component="div"
+          sx={{ fontSize: { xs: "0.82rem", md: "0.86rem" }, color: "text.secondary" }}
         >
-          <Typography
-            fontWeight={600}
-            variant="overline"
-            component="div"
-            sx={{ fontSize: { xs: "0.82rem", md: "0.86rem" }, color: "text.secondary" }}
-          >
-            {`${props.title} (${props.mediaItems.length})`}
-          </Typography>
-        </Divider>
-        <Grid container spacing={2.5}>
-          {props.mediaItems.map((item: MediaItem, index: number) => (
-            <Fade
-              in={true}
-              timeout={reduceMotion ? 0 : (props.fadeTime?.item ?? DEFAULT_FADE_TIME.item) + Math.min(index * 50, 220)}
-              key={item.id}
-            >
-              <Grid size={cardGridSize} sx={{ display: "flex" }}>
-                <MediaCard item={item} keywordSelection={props.keywordSelection} />
-              </Grid>
-            </Fade>
-          ))}
-        </Grid>
-      </Box>
-    </Fade>
+          {`${props.title} (${props.mediaItems.length})`}
+        </Typography>
+      </Divider>
+      <Grid container spacing={2.5}>
+        {props.mediaItems.map((item: MediaItem) => (
+          <Grid key={item.id} size={cardGridSize} sx={{ display: "flex" }}>
+            <MediaCard item={item} keywordSelection={props.keywordSelection} />
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
   );
 }

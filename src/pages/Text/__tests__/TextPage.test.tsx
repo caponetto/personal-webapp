@@ -1,14 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import { usePageActive } from "../../../hooks/usePageActive";
 import { usingTestingContext } from "../../../jest/TestContextWrapper";
 import TextPage from "../TextPage";
 
-jest.mock("../../../hooks/usePageActive");
-const mockUsePageActive = usePageActive as jest.MockedFunction<typeof usePageActive>;
-
 describe("TextPage", () => {
   it("renders page structure and key sections", () => {
-    mockUsePageActive.mockReturnValue(true);
     render(usingTestingContext(<TextPage />));
 
     expect(screen.getByTestId("text-page")).toBeInTheDocument();

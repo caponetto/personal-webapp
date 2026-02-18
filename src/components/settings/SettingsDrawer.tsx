@@ -33,7 +33,7 @@ export function SettingsDrawer(props: SettingsDrawerProps) {
       onOpen={() => undefined}
       onClose={props.onClose}
       ModalProps={{
-        keepMounted: true,
+        keepMounted: false,
         disableRestoreFocus: true,
       }}
       sx={{

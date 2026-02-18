@@ -67,6 +67,13 @@ export function FaceBadge(props: FaceBadgeProps) {
           <Avatar
             alt={props.name}
             src={props.imageSource}
+            slotProps={{
+              img: {
+                loading: "eager",
+                fetchPriority: "high",
+                decoding: "async",
+              },
+            }}
             sx={{
               width: 150,
               height: 150,
