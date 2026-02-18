@@ -37,7 +37,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
             style="opacity: 1; transition: opacity 220ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1264uy2-MuiPaper-root-MuiCard-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1msn8qz-MuiPaper-root-MuiCard-root"
               style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
             >
               <div
@@ -161,7 +161,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
             style="opacity: 1; transition: opacity 260ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1264uy2-MuiPaper-root-MuiCard-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1msn8qz-MuiPaper-root-MuiCard-root"
               style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
             >
               <div
@@ -285,7 +285,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
             style="opacity: 1; transition: opacity 340ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1264uy2-MuiPaper-root-MuiCard-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1msn8qz-MuiPaper-root-MuiCard-root"
               style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
             >
               <div
@@ -602,7 +602,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
             style="opacity: 1; transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1264uy2-MuiPaper-root-MuiCard-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1msn8qz-MuiPaper-root-MuiCard-root"
               style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
             >
               <div
@@ -689,7 +689,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
         style="opacity: 1; transition: opacity 380ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1264uy2-MuiPaper-root-MuiCard-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1msn8qz-MuiPaper-root-MuiCard-root"
           style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
         >
           <div
@@ -756,17 +756,35 @@ exports[`JourneyPage should match the snapshot 1`] = `
                       principalSoftwareEngineer
                     </p>
                     <ul
-                      class="MuiBox-root css-1hftfgk"
+                      class="MuiBox-root css-7rezzn"
                     >
                       <li
-                        class="MuiTypography-root MuiTypography-caption css-10l5a1-MuiTypography-root"
+                        class="MuiBox-root css-0"
                       >
-                        seniorSoftwareEngineer
+                        <span
+                          class="MuiTypography-root MuiTypography-caption css-10l5a1-MuiTypography-root"
+                        >
+                          ◦
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiTypography-caption css-10l5a1-MuiTypography-root"
+                        >
+                          seniorSoftwareEngineer
+                        </span>
                       </li>
                       <li
-                        class="MuiTypography-root MuiTypography-caption css-10l5a1-MuiTypography-root"
+                        class="MuiBox-root css-0"
                       >
-                        softwareEngineer
+                        <span
+                          class="MuiTypography-root MuiTypography-caption css-10l5a1-MuiTypography-root"
+                        >
+                          ◦
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiTypography-caption css-10l5a1-MuiTypography-root"
+                        >
+                          softwareEngineer
+                        </span>
                       </li>
                     </ul>
                     <div
@@ -815,12 +833,21 @@ exports[`JourneyPage should match the snapshot 1`] = `
                       seniorSoftwareEngineer
                     </p>
                     <ul
-                      class="MuiBox-root css-1hftfgk"
+                      class="MuiBox-root css-7rezzn"
                     >
                       <li
-                        class="MuiTypography-root MuiTypography-caption css-10l5a1-MuiTypography-root"
+                        class="MuiBox-root css-0"
                       >
-                        softwareEngineer
+                        <span
+                          class="MuiTypography-root MuiTypography-caption css-10l5a1-MuiTypography-root"
+                        >
+                          ◦
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiTypography-caption css-10l5a1-MuiTypography-root"
+                        >
+                          softwareEngineer
+                        </span>
                       </li>
                     </ul>
                     <div

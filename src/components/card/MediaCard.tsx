@@ -87,6 +87,10 @@ function mediaCardSx(hasTargetUrl: boolean) {
       opacity: 0,
       transform: "translateY(2px)",
       transition: "opacity 120ms ease, transform 120ms ease",
+      "@media (hover: none), (pointer: coarse)": {
+        opacity: 1,
+        transform: "translateY(0)",
+      },
     },
     "& .media-card-publication-icon": {
       transition: "transform 180ms ease",

@@ -45,7 +45,7 @@ export function AppBar(props: AppBarProps) {
           size="large"
           edge="start"
           color="inherit"
-          aria-label={t("common:ui.openDrawer")}
+          aria-label={t("literal:openDrawer")}
           sx={{ mr: 2, display: { md: "none" } }}
         >
           <MenuIcon />
@@ -70,7 +70,7 @@ export function AppBar(props: AppBarProps) {
               data-testid="open-settings-button"
               onClick={() => openStateDispatch({ type: OpenStateActions.SETTINGS_OPEN })}
               color="inherit"
-              aria-label={t("common:ui.openSettings")}
+              aria-label={t("literal:openSettings")}
             >
               <SettingsIcon />
             </IconButton>

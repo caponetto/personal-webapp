@@ -103,16 +103,22 @@ export function ExperienceTimeline(props: ExperienceTimelineProps) {
                     component="ul"
                     sx={{
                       m: 0,
-                      pl: 1.65,
+                      p: 0,
+                      listStyle: "none",
                       color: "text.secondary",
-                      "& li": { mb: 0.15 },
+                      "& li": { mb: 0.15, display: "flex", alignItems: "baseline", gap: 0.6 },
                       "& li:last-of-type": { mb: 0 },
                     }}
                   >
                     {priorRoles.map((step) => (
-                      <Typography key={step} component="li" variant="caption" sx={{ lineHeight: 1.3 }}>
-                        {step}
-                      </Typography>
+                      <Box key={step} component="li">
+                        <Typography component="span" variant="caption" sx={{ lineHeight: 1.3 }}>
+                          {"\u25e6"}
+                        </Typography>
+                        <Typography component="span" variant="caption" sx={{ lineHeight: 1.3 }}>
+                          {step}
+                        </Typography>
+                      </Box>
                     ))}
                   </Box>
                 )}

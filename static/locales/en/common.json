@@ -13,15 +13,9 @@
     "tooltip": "Currently based in {{location}}"
   },
   "messages": {
-    "storedPreferences": "Your preferences are saved in your browser storage."
+    "storedPreferences": "Preferences saved in your browser."
   },
   "social": {
     "tooltip": "{{kind}} profile"
-  },
-  "ui": {
-    "close": "Close",
-    "closeSettings": "Close settings",
-    "openDrawer": "Open drawer",
-    "openSettings": "Open settings"
   }
 }

@@ -9,6 +9,7 @@ describe("profile mappers", () => {
 
     expect(personal.firstName).toBe("personal:firstName");
     expect(personal.lastName).toBe("personal:lastName");
+    expect(personal.email).toBe("hey@caponetto.dev");
     expect(personal.country.name).toBe("literal:brazil");
     expect(personal.urls.github).toBe("https://github.com/caponetto");
   });

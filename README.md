@@ -15,7 +15,7 @@ Run `npm install && npm run build:dev`
 
 ## Running for development
 
-Run `npm run start` and then access `https://localhost:9000`
+Run `npm run start` and then access `https://127.0.0.1:9000` (or `https://localhost:9000`).
 
 ## Local checks
 
@@ -35,7 +35,6 @@ Run `npm run start` and then access `https://localhost:9000`
 
 - `CI`: core gate (verify, dependency boundaries, dependency usage advisory, bundle size, Cypress run, merged coverage upload).
 - `Commitlint`: validates PR commit messages against conventional commit rules.
-- `Signed Commits`: validates that commits in PRs are GitHub-verified signed commits.
 - `Dependency Review` + `CodeQL` + `Security Audit`: supply-chain and code security checks.
 - `Lighthouse` + `Visual Regression`: UI quality guardrails for performance/accessibility and visual stability.
 

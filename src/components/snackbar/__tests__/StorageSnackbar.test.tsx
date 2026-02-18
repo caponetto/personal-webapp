@@ -18,7 +18,7 @@ describe("StorageSnackbar", () => {
     const onClose = jest.fn();
     render(<StorageSnackbar isOpen={true} onClose={onClose} />);
 
-    fireEvent.click(screen.getByLabelText("common:ui.close"));
+    fireEvent.click(screen.getByLabelText("literal:close"));
 
     expect(onClose).toHaveBeenCalledTimes(1);
   });

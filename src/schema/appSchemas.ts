@@ -35,6 +35,7 @@ export const journeyItemSchema = z.object({
 export const personalSchema = z.object({
   firstName: z.string(),
   lastName: z.string(),
+  email: z.email(),
   country: placeSchema.extend({
     url: z.string(),
     emoji: z.string(),
