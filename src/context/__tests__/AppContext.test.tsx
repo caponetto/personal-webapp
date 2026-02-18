@@ -17,6 +17,7 @@ const APP_SCHEMA: AppSchema = {
   personal: {
     firstName: "John",
     lastName: "Doe",
+    email: "john@doe.dev",
     country: { name: "Brazil", url: "https://example.com/brazil", emoji: "🇧🇷" },
     urls: {
       github: "https://github.com/johndoe",

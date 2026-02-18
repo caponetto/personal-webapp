@@ -4,8 +4,8 @@ import PaletteOutlinedIcon from "@mui/icons-material/PaletteOutlined";
 import SellOutlinedIcon from "@mui/icons-material/SellOutlined";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Typography from "@mui/material/Typography";
 import { useTranslation } from "react-i18next";
 import { useThemeModeContext } from "../../context/AppContext";
@@ -25,11 +25,17 @@ export function SettingsDrawer(props: SettingsDrawerProps) {
   const sectionIconSx = { fontSize: "0.95rem", color: "text.secondary" };
 
   return (
-    <Drawer
+    <SwipeableDrawer
       data-testid="settings-drawer"
       open={props.open}
       anchor="right"
+      disableSwipeToOpen
+      onOpen={() => undefined}
       onClose={props.onClose}
+      ModalProps={{
+        keepMounted: true,
+        disableRestoreFocus: true,
+      }}
       sx={{
         "& .MuiDrawer-paper": {
           width: 300,
@@ -54,7 +60,7 @@ export function SettingsDrawer(props: SettingsDrawerProps) {
             onClick={props.onClose}
             size="small"
             color="inherit"
-            aria-label={t("common:ui.closeSettings")}
+            aria-label={t("literal:closeSettings")}
           >
             <CloseIcon />
           </IconButton>
@@ -92,6 +98,6 @@ export function SettingsDrawer(props: SettingsDrawerProps) {
           </Box>
         </Box>
       </Box>
-    </Drawer>
+    </SwipeableDrawer>
   );
 }

@@ -13,15 +13,9 @@
     "tooltip": "Actualmente vivo en {{location}}"
   },
   "messages": {
-    "storedPreferences": "Sus preferencias se guardan en su navegador."
+    "storedPreferences": "Preferencias guardadas en su navegador."
   },
   "social": {
     "tooltip": "Perfil {{kind}}"
-  },
-  "ui": {
-    "close": "Cerrar",
-    "closeSettings": "Cerrar ajustes",
-    "openDrawer": "Abrir menu",
-    "openSettings": "Abrir ajustes"
   }
 }

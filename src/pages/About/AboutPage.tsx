@@ -32,7 +32,7 @@ export default function AboutPage() {
       <Grid container spacing={2.5} alignItems="flex-start">
         <Fade in={true} timeout={FADE_TIME.summary}>
           <Grid size={{ md: 12, lg: 4 }}>
-            <AboutSummaryCard urls={personal.urls} />
+            <AboutSummaryCard email={personal.email} urls={personal.urls} />
           </Grid>
         </Fade>
         <Fade in={true} timeout={FADE_TIME.narrative}>

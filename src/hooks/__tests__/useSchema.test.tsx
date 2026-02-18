@@ -28,6 +28,7 @@ describe("useSchema :: integration", () => {
       linkedin: "https://www.linkedin.com/in/ghcaponetto",
       x: "https://x.com/caponetto",
     });
+    expect(schema.personal.email).toBe("hey@caponetto.dev");
     expect(schema.personal.country.emoji).toBe("🇧🇷");
 
     expect(schema.journey.award).toHaveLength(1);

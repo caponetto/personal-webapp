@@ -6,6 +6,7 @@ export function buildPersonal(t: TFunction): Personal {
   return {
     firstName: t("personal:firstName"),
     lastName: t("personal:lastName"),
+    email: "hey@caponetto.dev",
     country: {
       name: tLiteral(t, "brazil"),
       url: "https://www.google.com/maps/place/Brazil",

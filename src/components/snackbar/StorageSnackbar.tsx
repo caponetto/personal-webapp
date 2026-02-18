@@ -19,7 +19,7 @@ export function StorageSnackbar(props: StorageSnackbarProps) {
       onClose={props.onClose}
       message={t("common:messages.storedPreferences")}
       action={
-        <IconButton size="small" aria-label={t("common:ui.close")} color="inherit" onClick={props.onClose}>
+        <IconButton size="small" aria-label={t("literal:close")} color="inherit" onClick={props.onClose}>
           <CloseIcon fontSize="small" />
         </IconButton>
       }

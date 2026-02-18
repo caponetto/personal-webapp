@@ -3,10 +3,12 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTranslation } from "react-i18next";
 import { HoverableCard } from "../../components/card";
+import { EmailContact } from "../../components/email";
 import { SocialBar } from "../../components/social";
 import { SocialUrls } from "../../components/social/SocialBar";
 
 type AboutSummaryCardProps = Readonly<{
+  email: string;
   urls: SocialUrls;
 }>;
 
@@ -41,6 +43,7 @@ export function AboutSummaryCard(props: AboutSummaryCardProps) {
         </Stack>
         <Divider />
         <Stack spacing={1}>
+          <EmailContact email={props.email} />
           <Typography variant="caption" sx={{ color: "text.secondary", letterSpacing: "0.04em" }}>
             {t("literal:findMeOnline")}
           </Typography>

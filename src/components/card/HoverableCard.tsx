@@ -20,10 +20,17 @@ export function HoverableCard(props: HoverableCardProps) {
           border: "1px solid",
           borderColor: "divider",
           transition: "border-color 140ms ease, box-shadow 140ms ease, transform 140ms ease",
-          "&:hover, &:focus-within": {
+          "&:focus-within": {
             boxShadow: 6,
             borderColor: "action.active",
             transform: "translateY(-1px)",
+          },
+          "@media (hover: hover) and (pointer: fine)": {
+            "&:hover": {
+              boxShadow: 6,
+              borderColor: "action.active",
+              transform: "translateY(-1px)",
+            },
           },
           "&:focus-visible": {
             outline: "2px solid",
