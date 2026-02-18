@@ -100,21 +100,37 @@ function mediaCardSx(hasTargetUrl: boolean) {
       transition: "color 160ms ease",
     },
     ...(hasTargetUrl && {
-      "&:hover, &:focus-visible, &:focus-within": {
+      "&:focus-visible, &:focus-within": {
         borderColor: "success.main",
         backgroundColor: "rgba(0, 128, 96, 0.04)",
         transform: "translateY(-1px)",
       },
-      "&:hover .media-card-publication-icon, &:focus-visible .media-card-publication-icon, &:focus-within .media-card-publication-icon":
-        {
-          transform: "scale(1.02)",
-        },
-      "&:hover .media-card-title, &:focus-visible .media-card-title, &:focus-within .media-card-title": {
+      "&:focus-visible .media-card-publication-icon, &:focus-within .media-card-publication-icon": {
+        transform: "scale(1.02)",
+      },
+      "&:focus-visible .media-card-title, &:focus-within .media-card-title": {
         color: "success.dark",
       },
-      "&:hover .media-card-open-hint, &:focus-visible .media-card-open-hint, &:focus-within .media-card-open-hint": {
+      "&:focus-visible .media-card-open-hint, &:focus-within .media-card-open-hint": {
         opacity: 1,
         transform: "translateY(0)",
+      },
+      "@media (hover: hover) and (pointer: fine)": {
+        "&:hover": {
+          borderColor: "success.main",
+          backgroundColor: "rgba(0, 128, 96, 0.04)",
+          transform: "translateY(-1px)",
+        },
+        "&:hover .media-card-publication-icon": {
+          transform: "scale(1.02)",
+        },
+        "&:hover .media-card-title": {
+          color: "success.dark",
+        },
+        "&:hover .media-card-open-hint": {
+          opacity: 1,
+          transform: "translateY(0)",
+        },
       },
     }),
     ...(!hasTargetUrl && {

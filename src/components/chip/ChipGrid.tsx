@@ -35,7 +35,22 @@ export function ChipGrid(props: ChipGridProps) {
     <Grid container spacing={1}>
       {visibleItems.map((item: string) => (
         <Grid key={`${props.groupName}-${item}`}>
-          <StaticChip label={item} color="default" variant="outlined" size="small" sx={{ borderRadius: "8px" }} />
+          <StaticChip
+            label={item}
+            color="default"
+            variant="outlined"
+            size="small"
+            sx={{
+              borderRadius: "8px",
+              "@media (hover: none), (pointer: coarse)": {
+                "&:hover": {
+                  backgroundColor: "transparent",
+                  opacity: 0.86,
+                  color: "text.secondary",
+                },
+              },
+            }}
+          />
         </Grid>
       ))}
       {shouldCollapseItems && (

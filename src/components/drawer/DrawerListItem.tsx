@@ -1,4 +1,4 @@
-import { ListItemButton } from "@mui/material";
+import { Box, ListItemButton } from "@mui/material";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { alpha } from "@mui/material/styles";
@@ -67,7 +67,44 @@ export function DrawerListItem(props: DrawerListItemProps) {
         },
       })}
     >
-      <ListItemIcon>{props.selected ? props.icon.selected : props.icon.initial}</ListItemIcon>
+      <ListItemIcon sx={{ minWidth: 40 }}>
+        <Box
+          sx={{
+            position: "relative",
+            width: 24,
+            height: 24,
+          }}
+        >
+          <Box
+            aria-hidden
+            sx={{
+              position: "absolute",
+              inset: 0,
+              display: "grid",
+              placeItems: "center",
+              opacity: props.selected ? 0 : 1,
+              transform: props.selected ? "scale(0.86)" : "scale(1)",
+              transition: "opacity 120ms ease-in-out, transform 120ms ease-in-out",
+            }}
+          >
+            {props.icon.initial}
+          </Box>
+          <Box
+            aria-hidden
+            sx={{
+              position: "absolute",
+              inset: 0,
+              display: "grid",
+              placeItems: "center",
+              opacity: props.selected ? 1 : 0,
+              transform: props.selected ? "scale(1)" : "scale(0.86)",
+              transition: "opacity 120ms ease-in-out, transform 120ms ease-in-out",
+            }}
+          >
+            {props.icon.selected}
+          </Box>
+        </Box>
+      </ListItemIcon>
       <ListItemText
         slotProps={{
           primary: {

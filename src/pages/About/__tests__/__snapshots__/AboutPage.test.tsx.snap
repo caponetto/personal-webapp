@@ -108,7 +108,7 @@ exports[`AboutPage should match the snapshot 1`] = `
                   <p
                     class="MuiTypography-root MuiTypography-body1 css-1cb0tj7-MuiTypography-root"
                   >
-                    hey [at] caponetto.dev
+                    hey [at] caponetto [dot] dev
                   </p>
                   <button
                     aria-label="copyEmail"
