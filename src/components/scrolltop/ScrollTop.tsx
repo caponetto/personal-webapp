@@ -13,7 +13,10 @@ type ScrollTopProps = Readonly<{
 
 export function ScrollTop(props: ScrollTopProps) {
   const { t } = useTranslation();
-  const scrollTrigger = useScrollTrigger();
+  const scrollTrigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 100,
+  });
   const scrollToTopLabel = t("literal:scrollToTop").toString();
 
   const scrollToAnchor = (event: MouseEvent<HTMLButtonElement>) => {
@@ -30,30 +33,26 @@ export function ScrollTop(props: ScrollTopProps) {
   };
 
   return (
-    <>
-      {props.canShow && (
-        <Zoom in={scrollTrigger}>
-          <Tooltip title={scrollToTopLabel} arrow>
-            <Fab
-              color="success"
-              size="small"
-              aria-label={scrollToTopLabel}
-              onClick={scrollToAnchor}
-              sx={{
-                position: "fixed",
-                bottom: 16,
-                right: 16,
-                boxShadow: 4,
-                "&:hover": {
-                  backgroundColor: "success.dark",
-                },
-              }}
-            >
-              <KeyboardArrowUpIcon />
-            </Fab>
-          </Tooltip>
-        </Zoom>
-      )}
-    </>
+    <Zoom in={props.canShow && scrollTrigger} mountOnEnter unmountOnExit>
+      <Tooltip title={scrollToTopLabel} arrow>
+        <Fab
+          color="success"
+          size="small"
+          aria-label={scrollToTopLabel}
+          onClick={scrollToAnchor}
+          sx={{
+            position: "fixed",
+            bottom: 16,
+            right: 16,
+            boxShadow: 4,
+            "&:hover": {
+              backgroundColor: "success.dark",
+            },
+          }}
+        >
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </Tooltip>
+    </Zoom>
   );
 }
