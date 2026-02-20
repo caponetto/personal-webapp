@@ -7,7 +7,7 @@ import { I18nextProvider } from "react-i18next";
 import { HashRouter } from "react-router-dom";
 import { AppBar } from "./components/appbar";
 import { AppDrawer } from "./components/drawer";
-import { ScrollTop } from "./components/scrolltop";
+import { ScrollRestoration, ScrollTop } from "./components/scrolltop";
 import { StorageSnackbar } from "./components/snackbar";
 import { AppContextProvider } from "./context/AppContextProvider";
 import { useThemeModeContext, useUiStateContext } from "./context/AppContext";
@@ -35,6 +35,7 @@ type AppProvidersProps = Readonly<{
 function AppProviders(props: AppProvidersProps) {
   return (
     <HashRouter>
+      <ScrollRestoration />
       <I18nextProvider i18n={i18n}>
         <Suspense
           fallback={
