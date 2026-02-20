@@ -28,6 +28,7 @@ jest.mock("../components/drawer", () => ({
 }));
 
 jest.mock("../components/scrolltop", () => ({
+  ScrollRestoration: () => <div data-testid="app-shell-scroll-restoration" />,
   ScrollTop: ({ canShow }: { canShow: boolean }) => <div data-testid="app-shell-scrolltop">{`${canShow}`}</div>,
 }));
 
@@ -64,6 +65,7 @@ describe("App", () => {
   it("renders app shell components", () => {
     render(<App />);
 
+    expect(screen.getByTestId("app-shell-scroll-restoration")).toBeInTheDocument();
     expect(screen.getByTestId("app-shell-appbar")).toBeInTheDocument();
     expect(screen.getByTestId("app-shell-drawer")).toBeInTheDocument();
     expect(screen.getByTestId("app-shell-routes")).toBeInTheDocument();
