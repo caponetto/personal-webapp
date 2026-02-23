@@ -58,7 +58,7 @@
     "cypress": "^15.10.0",
     "dependency-cruiser": "^17.3.8",
     "eslint": "^9.0.0",
-    "eslint-plugin-cypress": "^5.3.0",
+    "eslint-plugin-cypress": "^6.1.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "globals": "^17.3.0",
