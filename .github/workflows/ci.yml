@@ -72,7 +72,7 @@ jobs:
 
       - name: "Upload Cypress artifacts"
         if: failure()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: cypress-artifacts
           path: |
@@ -88,21 +88,21 @@ jobs:
           fail_ci_if_error: true
 
       - name: "Upload coverage artifacts"
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: coverage-combined
           path: |
             dist-test/coverage-combined
 
       - name: "Upload build artifact"
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: webapp-build
           path: |
             dist
 
       - name: "Upload test artifacts"
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: test-artifacts
           path: |
