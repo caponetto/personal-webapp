@@ -59,7 +59,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   </svg>
                 </div>
                 <div
-                  class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+                  class="MuiCardHeader-content css-16o2p3x-MuiCardHeader-content"
                 >
                   <p
                     class="MuiTypography-root MuiTypography-body1 css-1wus953-MuiTypography-root"
@@ -78,7 +78,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                     class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-10ubrnt-MuiListItem-root"
                   >
                     <div
-                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-1ay94tb-MuiListItemText-root"
+                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-okba3g-MuiListItemText-root"
                     >
                       <span
                         class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-a9tp9i-MuiTypography-root"
@@ -117,7 +117,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                     class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-10ubrnt-MuiListItem-root"
                   >
                     <div
-                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-1ay94tb-MuiListItemText-root"
+                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-okba3g-MuiListItemText-root"
                     >
                       <span
                         class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-a9tp9i-MuiTypography-root"
@@ -183,7 +183,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   </svg>
                 </div>
                 <div
-                  class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+                  class="MuiCardHeader-content css-16o2p3x-MuiCardHeader-content"
                 >
                   <p
                     class="MuiTypography-root MuiTypography-body1 css-1wus953-MuiTypography-root"
@@ -202,7 +202,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                     class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-10ubrnt-MuiListItem-root"
                   >
                     <div
-                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-1ay94tb-MuiListItemText-root"
+                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-okba3g-MuiListItemText-root"
                     >
                       <span
                         class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-a9tp9i-MuiTypography-root"
@@ -241,7 +241,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                     class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-10ubrnt-MuiListItem-root"
                   >
                     <div
-                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-1ay94tb-MuiListItemText-root"
+                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-okba3g-MuiListItemText-root"
                     >
                       <span
                         class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-a9tp9i-MuiTypography-root"
@@ -307,7 +307,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   </svg>
                 </div>
                 <div
-                  class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+                  class="MuiCardHeader-content css-16o2p3x-MuiCardHeader-content"
                 >
                   <p
                     class="MuiTypography-root MuiTypography-body1 css-1wus953-MuiTypography-root"
@@ -624,7 +624,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                   </svg>
                 </div>
                 <div
-                  class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+                  class="MuiCardHeader-content css-16o2p3x-MuiCardHeader-content"
                 >
                   <p
                     class="MuiTypography-root MuiTypography-body1 css-1wus953-MuiTypography-root"
@@ -643,7 +643,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
                     class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-10ubrnt-MuiListItem-root"
                   >
                     <div
-                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-1ay94tb-MuiListItemText-root"
+                      class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-okba3g-MuiListItemText-root"
                     >
                       <span
                         class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-a9tp9i-MuiTypography-root"
@@ -711,7 +711,7 @@ exports[`JourneyPage should match the snapshot 1`] = `
               </svg>
             </div>
             <div
-              class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+              class="MuiCardHeader-content css-16o2p3x-MuiCardHeader-content"
             >
               <p
                 class="MuiTypography-root MuiTypography-body1 css-1wus953-MuiTypography-root"
