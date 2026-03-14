@@ -36,7 +36,7 @@
     "@babel/preset-env": "^7.29.0",
     "@babel/preset-react": "^7.28.5",
     "@commitlint/cli": "^20.4.2",
-    "@commitlint/config-conventional": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.3",
     "@cypress/code-coverage": "^4.0.1",
     "@jest/types": "^30.2.0",
     "@percy/cli": "^1.31.9",
