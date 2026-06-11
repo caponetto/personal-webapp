@@ -15,6 +15,7 @@ export function buildPersonal(t: TFunction): Personal {
     urls: {
       github: "https://github.com/caponetto",
       linkedin: "https://www.linkedin.com/in/ghcaponetto",
+      strava: "https://www.strava.com/athletes/34965373",
       x: "https://x.com/caponetto",
     },
   };

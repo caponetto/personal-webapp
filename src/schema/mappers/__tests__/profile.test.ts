@@ -12,6 +12,7 @@ describe("profile mappers", () => {
     expect(personal.email).toBe("hey@caponetto.dev");
     expect(personal.country.name).toBe("literal:brazil");
     expect(personal.urls.github).toBe("https://github.com/caponetto");
+    expect(personal.urls.strava).toBe("https://www.strava.com/athletes/34965373");
   });
 
   it("builds about paragraphs from array and filters non-strings", () => {
