@@ -22,6 +22,7 @@ const APP_SCHEMA: AppSchema = {
     urls: {
       github: "https://github.com/johndoe",
       linkedin: "https://linkedin.com/in/johndoe",
+      strava: "https://www.strava.com/athletes/johndoe",
       x: "https://x.com/johndoe",
     },
   },

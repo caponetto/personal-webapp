@@ -43,6 +43,7 @@ export const personalSchema = z.object({
   urls: z.object({
     github: z.url(),
     linkedin: z.url(),
+    strava: z.url(),
     x: z.url(),
   }),
 });

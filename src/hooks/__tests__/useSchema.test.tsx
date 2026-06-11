@@ -26,6 +26,7 @@ describe("useSchema :: integration", () => {
     expect(schema.personal.urls).toEqual({
       github: "https://github.com/caponetto",
       linkedin: "https://www.linkedin.com/in/ghcaponetto",
+      strava: "https://www.strava.com/athletes/34965373",
       x: "https://x.com/caponetto",
     });
     expect(schema.personal.email).toBe("hey@caponetto.dev");

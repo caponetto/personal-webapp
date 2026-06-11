@@ -226,6 +226,34 @@ exports[`AboutPage should match the snapshot 1`] = `
                     </a>
                   </div>
                 </div>
+                <div
+                  class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-grow css-1ynczkt-MuiGrid-root"
+                >
+                  <div
+                    class="MuiBox-root css-1l4w6pd"
+                  >
+                    <a
+                      aria-label="Open strava"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1uwfzqa-MuiButtonBase-root-MuiIconButton-root"
+                      data-mui-internal-clone-element="true"
+                      href="https://www.strava.com/athletes/34965373"
+                      rel="noopener noreferrer"
+                      tabindex="0"
+                      target="_blank"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066M10.463 8.229l2.836 5.599h4.172L10.463 0l-7 13.828h4.169"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

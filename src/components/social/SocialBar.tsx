@@ -6,10 +6,12 @@ import { SxProps, Theme } from "@mui/system";
 import { useTranslation } from "react-i18next";
 import { tLiteral } from "../../i18n/literal";
 import { SocialButton } from "../button";
+import { StravaIcon } from "./StravaIcon";
 
 export interface SocialUrls {
   github: string;
   linkedin: string;
+  strava: string;
   x: string;
 }
 
@@ -22,18 +24,21 @@ const SOCIAL_ICON_MAP = {
   github: <GitHubIcon />,
   x: <XIcon />,
   linkedin: <LinkedInIcon />,
+  strava: <StravaIcon />,
 };
 
 const SOCIAL_URL_KEY_MAP = {
   github: "github",
   x: "x",
   linkedin: "linkedin",
+  strava: "strava",
 } as const;
 
 const SOCIAL_ITEMS = [
   { key: "github", labelKey: "github" },
   { key: "x", labelKey: "x" },
   { key: "linkedin", labelKey: "linkedin" },
+  { key: "strava", labelKey: "strava" },
 ] as const;
 
 export function SocialBar(props: SocialBarProps) {
