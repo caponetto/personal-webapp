@@ -85,9 +85,9 @@
     "ts-node": "^10.9.2",
     "tslib": "^2.8.1",
     "typescript": "^5.9.3",
-    "webpack": "^5.108.1",
-    "webpack-cli": "^7.1.0",
-    "webpack-dev-server": "^5.2.5",
+    "webpack": "^5.108.4",
+    "webpack-cli": "^7.2.1",
+    "webpack-dev-server": "^6.0.0",
     "webpack-node-externals": "^3.0.0"
   },
   "scripts": {
