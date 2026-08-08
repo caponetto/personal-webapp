@@ -1,10 +1,10 @@
 import { defineConfig } from "cypress";
-import codeCoverageTask from "@cypress/code-coverage/task";
+import codeCoverageTask from "@bahmutov/cypress-code-coverage/task";
 
 const isCi = process.env["CI"] === "true";
 
 export default defineConfig({
-  allowCypressEnv: false,
+  allowCypressEnv: true,
   viewportWidth: 1440,
   viewportHeight: 900,
   retries: {

@@ -1,10 +1,10 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import { KeywordSelection } from "../../../hooks/useKeywordSelection";
 import { MediaItem } from "../../../schema";
 import { MediaSection } from "../MediaSection";
 
 jest.mock("../../card", () => {
+  const React = jest.requireActual("react");
   const mountCounts = new Map<string, number>();
 
   const MediaCard = ({ item }: { item: { id: string; title: string } }) => {

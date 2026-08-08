@@ -15,7 +15,7 @@ export default async (): Promise<Config.InitialOptions> => {
     },
     transform: {
       "^.+\\.jsx?$": "babel-jest",
-      "^.+\\.tsx?$": "ts-jest",
+      "^.+\\.tsx?$": "babel-jest",
     },
     collectCoverage: true,
     collectCoverageFrom: [
