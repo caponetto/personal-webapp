@@ -4,7 +4,7 @@ import LinearProgress from "@mui/material/LinearProgress";
 import Toolbar from "@mui/material/Toolbar";
 import { ReactNode, Suspense } from "react";
 import { I18nextProvider } from "react-i18next";
-import { HashRouter } from "react-router-dom";
+import { HashRouter } from "react-router";
 import { AppBar } from "./components/appbar";
 import { AppDrawer } from "./components/drawer";
 import { ScrollRestoration, ScrollTop } from "./components/scrolltop";

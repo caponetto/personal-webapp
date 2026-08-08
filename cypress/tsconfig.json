@@ -3,7 +3,7 @@
   "include": ["./**/*.ts", "./**/*.tsx", "./**/*.d.ts"],
   "compilerOptions": {
     "types": ["cypress", "node"],
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "noEmit": true
   }
 }
