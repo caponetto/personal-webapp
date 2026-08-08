@@ -108,7 +108,7 @@ export function DrawerListItem(props: DrawerListItemProps) {
       <ListItemText
         slotProps={{
           primary: {
-            fontWeight: props.selected ? "bold" : "light",
+            sx: { fontWeight: props.selected ? "bold" : "light" },
           },
           secondary: {
             noWrap: true,

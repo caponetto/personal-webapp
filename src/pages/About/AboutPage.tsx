@@ -29,7 +29,7 @@ export default function AboutPage() {
 
   return (
     <Page name={"about"} headerContent={about.welcome} headerSubtitle={t("about:intro")}>
-      <Grid container spacing={2.5} alignItems="flex-start">
+      <Grid container spacing={2.5} sx={{ alignItems: "flex-start" }}>
         <Fade in={true} timeout={FADE_TIME.summary}>
           <Grid size={{ md: 12, lg: 4 }}>
             <AboutSummaryCard email={personal.email} urls={personal.urls} />

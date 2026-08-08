@@ -43,10 +43,9 @@ export function MediaSection(props: MediaSectionProps) {
         }}
       >
         <Typography
-          fontWeight={600}
           variant="overline"
           component="div"
-          sx={{ fontSize: { xs: "0.82rem", md: "0.86rem" }, color: "text.secondary" }}
+          sx={{ fontWeight: 600, fontSize: { xs: "0.82rem", md: "0.86rem" }, color: "text.secondary" }}
         >
           {`${props.title} (${props.mediaItems.length})`}
         </Typography>
