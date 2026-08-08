@@ -3,11 +3,12 @@ import { routes } from "../../../routes";
 import { DrawerContent } from "../DrawerContent";
 
 const mockNavigate = jest.fn();
+const mockRoutes = routes;
 
 jest.mock("react-router", () => ({
   ...jest.requireActual("react-router"),
   useNavigate: () => mockNavigate,
-  useLocation: () => ({ pathname: routes.nav.about }),
+  useLocation: () => ({ pathname: mockRoutes.nav.about }),
 }));
 
 jest.mock("react-i18next", () => ({
