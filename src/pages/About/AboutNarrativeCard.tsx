@@ -35,7 +35,7 @@ export function AboutNarrativeCard(props: AboutNarrativeCardProps) {
       <Stack spacing={3}>
         {props.sections.map((section, idx) => (
           <Stack key={`about-section-${idx}`} spacing={1}>
-            <Stack direction="row" spacing={1} alignItems="center">
+            <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
               <Stack
                 aria-hidden
                 sx={{

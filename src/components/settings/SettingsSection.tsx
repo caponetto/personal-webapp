@@ -22,7 +22,7 @@ export function SettingsSection(props: SettingsSectionProps) {
   return (
     <FormControl sx={{ width: "100%" }}>
       <FormLabel id={props.id} focused={false}>
-        <Stack direction="row" spacing={0.75} alignItems="center">
+        <Stack direction="row" spacing={0.75} sx={{ alignItems: "center" }}>
           {props.icon}
           <Typography variant="overline" sx={sectionLabelSx}>
             {props.label}

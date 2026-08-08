@@ -15,7 +15,7 @@ exports[`AboutPage should match the snapshot 1`] = `
       welcome
     </h1>
     <div
-      class="MuiTypography-root MuiTypography-body1 css-7xbzes-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 css-1rr56th-MuiTypography-root"
     >
       intro
     </div>

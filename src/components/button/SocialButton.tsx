@@ -17,7 +17,7 @@ export function SocialButton(props: SocialButtonProps) {
   const tooltipLabel: string = t("common:social.tooltip", { kind: props.label });
 
   return (
-    <Box display="flex" justifyContent="center">
+    <Box sx={{ display: "flex", justifyContent: "center" }}>
       <Tooltip title={tooltipLabel} arrow>
         <IconButton
           sx={{

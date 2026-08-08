@@ -32,7 +32,7 @@ export function EmailContact(props: EmailContactProps) {
       <Typography variant="caption" sx={{ color: "text.secondary", letterSpacing: "0.04em" }}>
         {t("literal:email")}
       </Typography>
-      <Stack direction="row" spacing={0.25} alignItems="center" sx={{ width: "fit-content" }}>
+      <Stack direction="row" spacing={0.25} sx={{ alignItems: "center", width: "fit-content" }}>
         <Typography sx={{ fontWeight: 600 }}>{obfuscatedEmail}</Typography>
         <Tooltip title={copied ? t("literal:copied") : t("literal:copyEmail")} arrow>
           <IconButton

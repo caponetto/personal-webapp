@@ -33,9 +33,9 @@ export default function JourneyPage() {
 
   return (
     <Page name="journey" headerContent={t("journey:header")} headerSubtitle={t("journey:headerSubtitle")}>
-      <Grid container spacing={2} alignItems="flex-start">
+      <Grid container spacing={2} sx={{ alignItems: "flex-start" }}>
         <Grid size={{ xs: 12, lg: 7 }}>
-          <Grid container spacing={2} alignItems="flex-start">
+          <Grid container spacing={2} sx={{ alignItems: "flex-start" }}>
             <Fade in={true} timeout={fadeTime.education}>
               <Grid size={{ xs: 12, xl: 6 }}>
                 <JourneyCard title={t("literal:education")} icon={<SchoolOutlinedIcon />}>

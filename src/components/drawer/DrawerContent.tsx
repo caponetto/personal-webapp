@@ -3,7 +3,7 @@ import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
 import CodeIcon from "@mui/icons-material/Code";
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import PersonIcon from "@mui/icons-material/Person";
-import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutlined";
 import RecordVoiceOverIcon from "@mui/icons-material/RecordVoiceOver";
 import RecordVoiceOverOutlinedIcon from "@mui/icons-material/RecordVoiceOverOutlined";
 import TimelineIcon from "@mui/icons-material/Timeline";
