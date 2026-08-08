@@ -1,4 +1,4 @@
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter } from "react-router";
 import * as router from "react-router";
 import { act, renderHook } from "@testing-library/react";
 import { buildInitialSelectionMap, useKeywordSelection } from "../../hooks/useKeywordSelection";

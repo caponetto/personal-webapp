@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { Suspense } from "react";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter } from "react-router";
 import { RouteSwitch } from "../RouteSwitch";
 
 function mockPageModule(testId: string) {

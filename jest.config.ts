@@ -10,6 +10,7 @@ export default async (): Promise<Config.InitialOptions> => {
     testRegex: String.raw`/__tests__/.*\.test\.(jsx?|tsx?)$`,
     testEnvironment: "jsdom",
     moduleNameMapper: {
+      "^react-router$": "<rootDir>/node_modules/react-router-test-compat/dist/production/index.js",
       "\\.(css|less|sass|scss)$": "<rootDir>/src/jest/__mocks__/styleMock.ts",
     },
     transform: {
