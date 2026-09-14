@@ -39,7 +39,7 @@
     "@commitlint/cli": "^20.5.2",
     "@commitlint/config-conventional": "^21.0.2",
     "@jest/types": "^30.4.1",
-    "@percy/cli": "^1.31.11",
+    "@percy/cli": "^1.32.9",
     "@percy/cypress": "^3.1.9",
     "@size-limit/file": "^13.0.3",
     "@testing-library/jest-dom": "^7.0.1",
